@@ -1,3 +1,3 @@
 # Introduction @redat97
 
-Hi my name my username is @redat97 and I'll be working at CFIA as DevOps. I am very excited to start working with everyone and help out the team !
+Hello, my username is @redat97. I am happy to announce my role as a DevOps Engineer at CFIA. My primary responsibilities include ensuring the reliability and efficiency of our technical processes as well as making sure a strong level of security is maintained
