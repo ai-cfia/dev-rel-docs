@@ -7,3 +7,7 @@ My interest in IT dates back to my childhood and I have always enjoyed solving t
 I like to do lots of different projects, which I list on my website (https://jolanthomassin.fr). I hope to be able to continue working on many different things and to increase my programming  skills in the future.
 
 I hope we can get along, and build the technological world of tomorrow !
+
+Contact : 
+Linkedin : https://www.linkedin.com/in/jolan-thomassin-839b341b9/
+Mail : jolan.thomassin@inspection.gc.ca
