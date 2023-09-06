@@ -8,6 +8,5 @@ I like to do lots of different projects, which I list on [my website](https://jo
 
 I hope we can get along, and build the technological world of tomorrow !
 
-> My contact :    
-> [LinkedIn](https://www.linkedin.com/in/jolan-thomassin-839b341b9/)  
-> Mail : jolan.thomassin@inspection.gc.ca
+- [LinkedIn](https://www.linkedin.com/in/jolan-thomassin-839b341b9/)  
+- Mail : jolan.thomassin@inspection.gc.ca
