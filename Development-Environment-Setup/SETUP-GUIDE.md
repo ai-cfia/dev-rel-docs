@@ -1,6 +1,6 @@
 # Dev Environment Setup Guide
 
-This guide introduces the use of the Windows Subsystem for Linux (WSL) for those on Windows and delves into Visual Studio Code's Dev Containers, aiming to provide a consistent development environment regardless of your OS.
+This guide introduces the use of Visual Studio Code's Dev Containers, aiming to provide a consistent development environment.
 
 ## Table of Contents
 
@@ -20,25 +20,24 @@ This guide introduces the use of the Windows Subsystem for Linux (WSL) for those
 Before proceeding, ensure you have:
 
 - **Visual Studio Code**
-- **VS Code Extensions**: Install the following:
-  - WSL (For Windows Users)
-  - Dev Containers
+- **VS Code Extensions**: Install `Remote Development` or install `WSL` and `Dev COntainers` separatly.
 
 ## Setting up Windows Subsystem for Linux (Optional for Windows Users)
 
-For those on Windows, WSL offers the versatility of Linux without leaving the Windows environment, enhancing security through added isolation. WSL 2 is recommended over WSL 1 due to its improved performance, full Linux kernel integration, and better Docker compatibility. However, it's essential to remain cautious, as no system is entirely impenetrable.
+For those on Windows, WSL offers the versatility of Linux without leaving the Windows environment, enhancing security through added isolation. WSL 2 is recommended over WSL 1 due to its improved performance, full Linux kernel integration, and better Docker compatibility.
 
-### Steps:
+Follow the [WSL installation guide](https://docs.microsoft.com/en-us/windows/wsl/install).
 
-1. Check your Windows version for WSL 2 support. To do this, press `Win + R`, type `winver`, and press Enter. Ensure your version is 1903 or higher with Build 18362 or higher. If uncertain, consult [Microsoft's WSL 2 documentation](https://docs.microsoft.com/en-us/windows/wsl/install) for detailed requirements.
-2. Follow the [WSL installation guide](https://docs.microsoft.com/en-us/windows/wsl/install).
+TODO: git
 
 
 ## Docker Installation without Docker Desktop
 
-Docker is a platform designed to make it easier to develop, ship, and run applications inside containers. Containers package up the code and all its dependencies, ensuring the application runs in the same manner regardless of where it is deployed, leading to consistent environments and streamlined workflows. While Docker Desktop provides a convenient interface for managing containers on Windows and Mac, there are cases, such as licensing restrictions or user preferences, where setting up Docker independently is desirable. Below is a guide on how to do just that:
+Dev Containers use Docker which is a platform designed to make it easier to develop, ship, and run applications inside containers. Containers package up the code and all its dependencies, ensuring the application runs in the same manner regardless of where it is deployed, leading to consistent environments and streamlined workflows. 
 
-#### Installing Docker in WSL 2 on Windows:
+Docker Desktop provides a convenient interface for managing containers on Windows and Mac, but could require a paid subscription. Below is a guide to install Docker Server and Docker CLI which are free of charge.
+
+#### Installing Docker in WSL 2 on Windows
     
 Inside your WSL 2 Linux distribution:
    ```bash
@@ -61,5 +60,12 @@ While Docker Desktop is the primary method for macOS users, those seeking an alt
 
 ## Dev Containers in Visual Studio Code
 
-Dev Containers encapsulate your environment, ensuring consistency and reproducibility..
+### Configuration 
+Configure the `Dev Containers` extension to run in `WSL`:
+1. In Command Palette, type `Dev Container: Settings` and select it or go to: Extensions > Dev Containers > Settings > Extension Settings
+2. In the page search for the option `Execute in WSL` and checkmark it.
+
+
+### 
+
 
