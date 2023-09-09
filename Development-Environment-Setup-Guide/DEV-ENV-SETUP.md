@@ -14,6 +14,8 @@ This guide introduces the use of Visual Studio Code's Dev Containers to provide 
     - [Create a Dev Container](#create-a-dev-container)
     - [Open an Existing Dev Container Project](#open-an-existing-dev-container-project)
     - [Directives for Dev Container Configuration](#directives-for-dev-container-configuration)
+      - [Minimum configuration](#minimum-configuration)
+      - [Create or connect to a container network](#create-or-connect-to-a-container-network)
 
 ## Requirements
 
@@ -81,10 +83,28 @@ mkdir -p your-folder-name/.devcontainer && touch your-folder-name/.devcontainer/
 
 ### Directives for Dev Container Configuration
 
-Ensure to include the following fields:
+#### Minimum configuration
+
+Make sure to include the following fields:
 
 - **name**: Container name for VS Code.
 - **image**: The Docker image to use. We recommended using the Dev Container base images provided by Microsoft: [Docker Hub](https://hub.docker.com/_/microsoft-devcontainers?tab=description).
 - **postCreateCommand**: Commands that will execute after the container's creation. This is useful for the installation of dependencies or initial setup tasks.
 
 For a comprehensive list of options, refer to the [official documentation](https://containers.dev/implementors/json_reference/).
+
+#### Create or connect to a container network
+
+If you need to connect your container to a container network or create a new one, add these fields to your `devcontainer.json`:
+
+```json
+{
+  "initializeCommand": "docker network inspect <network-name> > /dev/null || docker network create <network-name> --attachable",
+
+  "runArgs": [
+    "--dns=8.8.8.8",
+    "--hostname=<hostname-for-current-container>",
+    "--network=<network-name>"
+  ]
+}
+```
