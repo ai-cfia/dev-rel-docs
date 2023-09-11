@@ -48,7 +48,7 @@ mkdir <your-project-folder>
 6. In Command Palette, select `Dev Containers: Add Dev Container Configuration Files..`, then select `Python 3`, then select the version you're interested in, for instance `3.11.bullseye`. Click `OK`.
 7. Uncomment the `postCreateCommand` to allow the container to install the dependencies in `requirements.txt`.
 
-```json
+```javascript
 //.devcontainer/devcontainer.json
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
