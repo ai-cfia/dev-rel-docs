@@ -2,21 +2,6 @@
 
 This guide introduces the use of Visual Studio Code's Dev Containers to provide a consistent development environment.
 
-## Table of Contents
-
-- [Development Environment Setup Guide](#development-environment-setup-guide)
-  - [Table of Contents](#table-of-contents)
-  - [Requirements](#requirements)
-  - [Setting up Windows Subsystem for Linux](#setting-up-windows-subsystem-for-linux)
-  - [Docker Installation](#docker-installation)
-  - [Dev Containers in VS Code](#dev-containers-in-vs-code)
-    - [Configuration](#configuration)
-    - [Create a Dev Container](#create-a-dev-container)
-    - [Open an Existing Dev Container Project](#open-an-existing-dev-container-project)
-    - [Directives for Dev Container Configuration](#directives-for-dev-container-configuration)
-      - [Minimum configuration](#minimum-configuration)
-      - [Create or connect to a container network](#create-or-connect-to-a-container-network)
-
 ## Requirements
 
 Before proceeding, ensure you have:
@@ -53,26 +38,44 @@ Note: The last command adds the current user to the Docker group to run Docker c
 1. Open VS Code.
 2. Open Command Palette, select `WSL: Connect to WSL`.
 3. Open terminal: `Terminal > New Terminal` or `` Ctrl+` ``.
-4. `cd path/to/your-directory`
-5. Create the dev container structure:
+4. Create your project's folder in your working directory:
 
 ```bash
-mkdir -p your-folder-name/.devcontainer && touch your-folder-name/.devcontainer/devcontainer.json
+mkdir <your-project-folder>
 ```
 
-6. In Command Palette, select `WSL: Open Folder in WSL...` and choose your folder.
-7. Configure `devcontainer.json`. Example for Python 3 with `requirements.txt`:
+5. In Command Palette, select `WSL: Open Folder in WSL...` and choose your project folder.
+6. In Command Palette, select `Dev Containers: Add Dev Container Configuration Files..`, then select `Python 3`, then select the version you're interested in, for instance `3.11.bullseye`. Click `OK`.
+7. Uncomment the `postCreateCommand` to allow the container to install the dependencies in `requirements.txt`.
 
 ```json
+//.devcontainer/devcontainer.json
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
   "name": "Python 3",
-  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "pip3 install --user -r requirements.txt"
+
+  // Configure tool-specific properties.
+  // "customizations": {},
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
 }
 ```
 
-8. In the Command Palette, select `Dev Containers: Open Folder in Container...`.
-9. Once inside the containerized environment, you can start developing.
+8.  In the Command Palette, select `Dev Containers: Open Folder in Container...`.
+9.  Once inside the containerized environment, you can start developing.
 
 ### Open an Existing Dev Container Project
 
@@ -99,12 +102,12 @@ If you need to connect your container to a container network or create a new one
 
 ```json
 {
-  "initializeCommand": "docker network inspect <network-name> > /dev/null || docker network create <network-name> --attachable",
+  "initializeCommand": "docker network inspect ailab_network > /dev/null || docker network create ailab_network --attachable",
 
   "runArgs": [
     "--dns=8.8.8.8",
-    "--hostname=<hostname-for-current-container>",
-    "--network=<network-name>"
+    "--hostname=<repository-name>",
+    "--network=ailab_network"
   ]
 }
 ```
