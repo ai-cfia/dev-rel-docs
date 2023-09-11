@@ -1,12 +1,6 @@
 # Dev-Rel-Docs
 
-Welcome to the Developer Related Docs repository! 
-
-This repository serves as a knowledge base containing essential resources, guides, and best practices for developers closely associated with our projects.
-
-
-ajouter nom et description au readMe (markdown spepare avec link dans readme)
-
+Welcome to the Developer Related Docs repository! This repository serves as a knowledge base containing essential resources, guides, and best practices for developers closely associated with our projects.
 
 ---
 
