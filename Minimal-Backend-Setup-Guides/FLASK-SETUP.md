@@ -11,7 +11,7 @@
 
 ## Create the GitHub repository
 
-1. Create an empty repository in the organization on GitHub. Give it a meaningful name. Make sure to follow the naming patterns of the existing repositories (ie: lowercase, dash instead of underscore...).
+1. Create an empty repository in the organization on GitHub. Give it a meaningful name and description. Make sure to follow the naming patterns of the existing repositories (ie: lowercase, dash instead of underscore...).
 2. Protect the main branch: Check `Require a pull request before merging` and `Require Approvals`.
 3. Clone the repository to your working directory and open it in VS Code via WSL.
 4. Open an issue for the creation of the app. Make sure the title and description are meaningful. Use appropriate labels. Avoid creating new labels specifically for the repository.

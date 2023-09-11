@@ -11,24 +11,11 @@
 
 ## Create the GitHub repository
 
-1. Create an empty repository in the organization on GitHub. Give it a meaningful name. Make sure to follow the naming patterns of the existing repositories (ie: lowercase, dash instead of underscore...).
-2. Protect the main branch: Check `Require a pull request before merging` and `Require Approvals`.
-3. Clone the repository to your working directory and open it in VS Code via WSL.
-4. Open an issue for the creation of the app. Make sure the title and description are meaningful. Use appropriate labels. Avoid creating new labels specifically for the repository.
-5. Checkout to a new branch where the changes will be pushed. Name the branch after the issue (ie, `<username>/issue<issue-number>-a-meaningful-tag`)
-6. Create a `devcontainer` as per [this guide](../Development-Environment-Setup-Guide/DEV-EVN-SETUP.md).
+Refer to [QuickStart: Flask Backend with Dev Containers](./FLASK-SETUP.md).
 
 ## Creating a FastAPI App
 
-1. Configure `devcontainer.json`:
-
-```json
-{
-  "name": "Python 3",
-  "image": "mcr.microsoft.com/devcontainers/python:3.11",
-  "postCreateCommand": "pip3 install --user -r requirements.txt"
-}
-```
+1. Configure `devcontainer.json`: refer to [QuickStart: Flask Backend with Dev Containers](./FLASK-SETUP.md).
 
 2. At the root of the project, Create a `requirements.txt` file:
 
@@ -68,7 +55,7 @@ def read_root():
     return {"current_time": unix_timestamp}
 ```
 
-**Note**: Don't run the app from the code (i.e., with: `uvicorn.run(app, host="0.0.0.0", port=8000)`) as this violates several rules from the 12 factor app.
+**Note**: Don't run the app from the code (i.e., with: `uvicorn.run(app, host="0.0.0.0", port=8000)`) as this violates several rules from the [12 factor app](https://12factor.net).
 
 6. Setting up tests:
 
@@ -142,34 +129,8 @@ docker run -p $PORT:$PORT -e PORT=$PORT fastapi-app
 
 ## Pushing the App to GitHub
 
-1. Create a `.gitignore`:
-
-```
-__pycache__/
-*.pyc
-.cache/
-env/
-```
-
-2. Create a `README.md`:
-
-```
-# Presentation
-...
-# Steps to Run the Project from Dev Containers
-...
-# Running the unit tests from Dev Containers
-...
-# Steps to Run the Project from Dockerfile
-...
-```
-
-3. Commit and push the changes to the repository. Make sure the commit references the issue (ie, `issue #<issue-number>`). Make sure the commit message is meaningful.
-4. Create a Pull Request and submit for review. Make sure the PR references the issue. Make sure the PR's description includes a tag such as `issue<issue-number>-keywords`. Make sure the PR description is meaningful. Make sure to add a reviewer and notify him.
+Refer to [QuickStart: Flask Backend with Dev Containers](./FLASK-SETUP.md).
 
 ## Merging the changes
 
-If the changes are approved:
-
-1. Add `Closes #<issue-number>` to your PR's description.
-2. Merge your PR.
+Refer to [QuickStart: Flask Backend with Dev Containers](./FLASK-SETUP.md).
