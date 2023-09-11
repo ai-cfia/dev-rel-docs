@@ -45,35 +45,8 @@ mkdir <your-project-folder>
 ```
 
 5. In Command Palette, select `WSL: Open Folder in WSL...` and choose your project folder.
-6. In Command Palette, select `Dev Containers: Add Dev Container Configuration Files..`, then select `Python 3`, then select the version you're interested in, for instance `3.11.bullseye`. Click `OK`.
-7. Uncomment the `postCreateCommand` to allow the container to install the dependencies in `requirements.txt`.
-
-```javascript
-//.devcontainer/devcontainer.json
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/python
-{
-  "name": "Python 3",
-  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
-
-  // Features to add to the dev container. More info: https://containers.dev/features.
-  // "features": {},
-
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
-
-  // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "pip3 install --user -r requirements.txt"
-
-  // Configure tool-specific properties.
-  // "customizations": {},
-
-  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-  // "remoteUser": "root"
-}
-```
-
+6. In Command Palette, select `Dev Containers: Add Dev Container Configuration Files..`, then select a template that suits your needs, for instance: `Python 3`, then select the version you're interested in, for instance `3.11.bullseye`. Click `OK`.
+7. Configure the `devcontainer.json` file to suit your needs. See the [Directives for Dev Container Configuration](#directives-for-dev-container-configuration).
 8.  In the Command Palette, select `Dev Containers: Open Folder in Container...`.
 9.  Once inside the containerized environment, you can start developing.
 
