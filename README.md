@@ -8,7 +8,7 @@ Welcome to the Developer Related Docs repository! This repository serves as a kn
 
 **[TypeScript App Versioning Guide](./TypeScript-AppVersion/APPVERSION-SETUP.md)** - Guide to Setting Up Application Versioning in a TypeScript React Project.
 
-**[Minimal Python Backend Setup Guide](./Minimal-Backend-Setup-Guides/FLASK-SETUP.md)** - A guide to quickly spinning up a minimal Flask backend app, including dev containers configurations.
+**[Minimal Python Backend Setup Guide](./Minimal-Backend-Setup-Guides/PYTHON-BACKEND-SETUP.md)** - A guide to quickly spinning up a minimal python backend using Flask, including dev containers configurations.
 
 
 ---

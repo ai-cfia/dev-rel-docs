@@ -1,14 +1,5 @@
 # Quickstart: Flask Backend with Dev Containers
 
-## Table of Contents
-
-- [Quickstart: Flask Backend with Dev Containers](#quickstart-flask-backend-with-dev-containers)
-  - [Table of Contents](#table-of-contents)
-  - [Create the GitHub repository](#create-the-github-repository)
-  - [Creating a Flask App](#creating-a-flask-app)
-  - [Pushing the App to GitHub](#pushing-the-app-to-github)
-  - [Merging the changes](#merging-the-changes)
-
 ## Create the GitHub repository
 
 1. Create an empty repository in the organization on GitHub. Give it a meaningful name and description. Make sure to follow the naming patterns of the existing repositories (ie: lowercase, dash instead of underscore...).
@@ -16,7 +7,7 @@
 3. Clone the repository to your working directory and open it in VS Code via WSL.
 4. Open an issue for the creation of the app. Make sure the title and description are meaningful. Use appropriate labels. Avoid creating new labels specifically for the repository.
 5. Checkout to a new branch where the changes will be pushed. Name the branch after the issue (ie, `<username>/issue<issue-number>-a-meaningful-tag`)
-6. Create a `devcontainer` as per [this guide](../Development-Environment-Setup-Guide/DEV-EVN-SETUP.md).
+6. Create a `devcontainer` as per [this guide](../Development-Environment-Setup-Guide/DEV-ENV-SETUP.md).
 
 ## Creating a Flask App
 
@@ -67,7 +58,7 @@ def read_root():
     return {"current_time": unix_timestamp}
 ```
 
-**Note**: Don't run the app from the code (i.e., with: `app.run(host='0.0.0.0', port=8000)`) as this violates several rules from the 12 factor app.
+**Note**: Don't run the app from the code (i.e., with: `app.run(host='0.0.0.0', port=8000)`) as this violates several rules from the [12 factor app](https://12factor.net).
 
 6. Setting up tests:
 
