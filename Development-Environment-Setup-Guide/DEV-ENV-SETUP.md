@@ -84,6 +84,23 @@ For `python` projects:
         "GitHub.vscode-pull-request-github",
         "ms-python.python",
         "ms-python.black-formatter",
+      ]
+    }
+  }
+}
+```
+
+For `sql + shell + python` projects:
+
+```json
+{
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "charliermarsh.ruff",
+        "GitHub.vscode-pull-request-github",
+        "ms-python.python",
+        "ms-python.black-formatter",
         "timonwong.shellcheck"
       ]
     }
