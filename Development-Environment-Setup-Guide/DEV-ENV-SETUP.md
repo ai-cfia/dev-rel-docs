@@ -101,7 +101,7 @@ For `sql + shell + python` projects:
         "GitHub.vscode-pull-request-github",
         "ms-python.python",
         "ms-python.black-formatter",
-        "timonwong.shellcheck"
+        "timonwong.shellcheck",
       ]
     }
   }
