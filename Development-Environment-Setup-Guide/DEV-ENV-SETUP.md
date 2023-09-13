@@ -47,8 +47,8 @@ mkdir <your-project-folder>
 5. In Command Palette, select `WSL: Open Folder in WSL...` and choose your project folder.
 6. In Command Palette, select `Dev Containers: Add Dev Container Configuration Files..`, then select a template that suits your needs, for instance: `Python 3`, then select the version you're interested in, for instance `3.11.bullseye`. Click `OK`.
 7. Configure the `devcontainer.json` file to suit your needs. See the [Directives for Dev Container Configuration](#directives-for-dev-container-configuration).
-8.  In the Command Palette, select `Dev Containers: Open Folder in Container...`.
-9.  Once inside the containerized environment, you can start developing.
+8. In the Command Palette, select `Dev Containers: Open Folder in Container...`.
+9. Once inside the containerized environment, you can start developing.
 
 ### Open an Existing Dev Container Project
 
@@ -68,6 +68,27 @@ Make sure to include the following fields:
 - **postCreateCommand**: Commands that will execute after the container's creation. This is useful for the installation of dependencies or initial setup tasks.
 
 For a comprehensive list of options, refer to the [official documentation](https://containers.dev/implementors/json_reference/).
+
+#### Default extensions
+
+To add VS Code extensions to your Dev Container, use the `customization` field.
+
+For `python` projects:
+
+```json
+{
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "charliermarsh.ruff",
+        "GitHub.vscode-pull-request-github",
+        "ms-python.python",
+        "ms-python.black-formatter",
+      ]
+    }
+  }
+}
+```
 
 #### Create or connect to a container network
 
