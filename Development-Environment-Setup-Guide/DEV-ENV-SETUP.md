@@ -73,9 +73,9 @@ For a comprehensive list of options, refer to the [official documentation](https
 
 To add VS Code extensions to your Dev Container, use the `customization` field.
 
-For python projects:
+For `python` projects:
 
-```javascript
+```json
 {
   "customizations": {
     "vscode": {
