@@ -12,6 +12,7 @@ Welcome to the Developer Related Docs repository! This repository serves as a kn
 
 **[Minimal Python Backend Setup Guide](./Minimal-Backend-Setup-Guides/PYTHON-BACKEND-SETUP.md)** - A guide to quickly spinning up a minimal python backend using Flask, including dev containers configurations.
 
+**[Naming things](./Naming-Conventions/NAMING-RESOURCES.md)** - A document outlining standard naming conventions for resources.
 
 ---
 
