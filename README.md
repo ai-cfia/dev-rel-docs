@@ -14,6 +14,8 @@ Welcome to the Developer Related Docs repository! This repository serves as a kn
 
 **[Naming things](./Naming-Conventions/NAMING-RESOURCES.md)** - A document outlining standard naming conventions for resources.
 
+**[TypeScript Environment Variables Setup Guide](./TypeScript-EnvironmentVariables/ENVIRONMENT-VARIABLES-SETUP.md)** - Documentation that provides step-by-step instructions on how to set up and effectively manage environment variables in a TypeScript project. The guide emphasizes best practices, security considerations, and offers a structured approach to seamlessly integrate environment variables into your development workflow.
+
 ---
 
 We hope you find the Developer Relative Documentation helpful and engaging. If you have any questions or need assistance, please reach out to the Ai-CFIA team.
