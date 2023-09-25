@@ -19,15 +19,19 @@ This document outlines the standard naming conventions for resources that are su
 
 ### Environment variables
 - **Convention**: Start with the uppercase repository name, followed by the actual variable name, separating words with underscores.
-- **Example**: `REPO_NAME_MY_ENV_VAR`
+- **Example**: `PROJECT_NAME_MY_ENV_VAR`
 
 ### Azure resource groups
 - **Convention**: Start with `rg-` followed by the name in lowercase, separating words with dashes.
-- **Example**: `rg-my-resource-group`
+- **Example**: `rg-resource-group`
 
 ### Azure resources
 - **Convention**: Use lowercase and separate words with dashes. Include the project name and type of resource.
-- **Example**: `my-project-storage-account`
+- **Example**: `$(PROJECT_NAME)-storage-account`. So for `PROJECT_NAME=nachet`, use `nachet-storage-account`.
+
+### SQL Files
+- **Convention**: Use prefix with date format YYYY-mm-dd followed by a description of the script.
+- **Example**: `2023-09-24-description-of-script.sql`
 
 ## Notes
 - These naming conventions should be followed for all new resources that can be accessed or manipulated via CLI.
