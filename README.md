@@ -10,10 +10,9 @@ Welcome to the Developer Related Docs repository! This repository serves as a kn
 
 **[TypeScript App Versioning Guide](./TypeScript-AppVersion/APPVERSION-SETUP.md)** - Guide to Setting Up Application Versioning in a TypeScript React Project.
 
-**[TypeScript Environment Variables Setup Guide](./TypeScript-EnvironmentVariables/ENVIRONMENTVARIABLES-SETUP.md)** - Guide to Setting Up Application Versioning in a TypeScript React Project.
+**[TypeScript Environment Variables Setup Guide](./TypeScript-EnvironmentVariables/ENVIRONMENT-VARIABLES-SETUP.md)** - Documentation that provides step-by-step instructions on how to set up and effectively manage environment variables in a TypeScript project. The guide emphasizes best practices, security considerations, and offers a structured approach to seamlessly integrate environment variables into your development workflow.
 
 **[Minimal Python Backend Setup Guide](./Minimal-Backend-Setup-Guides/PYTHON-BACKEND-SETUP.md)** - A guide to quickly spinning up a minimal python backend using Flask, including dev containers configurations.
-
 
 ---
 
