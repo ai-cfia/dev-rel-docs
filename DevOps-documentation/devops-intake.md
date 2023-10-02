@@ -1,8 +1,8 @@
 * [ ] **Project Initialization and Documentation**
-   * [ ] Internal AI Project intake and criteria for internal AI products [documented on the internal Wiki](https://dev.azure.com/CFIA-DevOps-ACIA/AI-Lab/_wiki/wikis/AI-Lab.wiki/689/AI-Lab-Wiki-HomePage).
+   * [ ] Internal AI Project intake and criteria for internal AI products.
    * [ ] Product functionality explained in the Wiki.
    * [ ] [GitHub project created](https://github.com/orgs/ai-cfia/projects) for managing the product.
-   * [ ] [Repository main branch Security Configured](https://dev.azure.com/CFIA-DevOps-ACIA/AI-Lab/_wiki/wikis/AI-Lab.wiki/1012/Creating-a-GitHub-repository).
+   * [ ] Configure repository to our own internal standards.
    * [ ] Architecture documented with a diagram.
 
 * [ ] **Developer Documentation**
