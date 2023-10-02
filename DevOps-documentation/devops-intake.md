@@ -26,9 +26,11 @@ information and guidance on the tasks mentioned.
    * [ ] Tests documentation.
 
 * [ ] **Code and Testing**
-   * [ ] Automated unit test suite 
+   * [ ] **Testing**
+   * [ ] Automated unit test suite.
    * [ ] Unit test suite implemented with a minimum of X% code coverage.
    * [ ] Documentation for unit tests and integration tests available.
+   * [ ] Manual test plan established.
 
 * [ ] **Continuous Integration and Deployment**
    * [ ] Continuous lint, test, build, and deployment pipeline established.
