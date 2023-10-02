@@ -6,6 +6,7 @@ The purpose of this document is to provide a clear and concise set of tasks and 
 
 ## Pre-requisites
 Before proceeding with this checklist, please ensure that:
+- The project has reached a stage where a software solution has been prototyped and is ready to be developed into a production-ready product.
 - You have read and understood the guidelines and objectives outlined in each section.
 - You consult the linked resources for detailed 
 information and guidance on the tasks mentioned.
