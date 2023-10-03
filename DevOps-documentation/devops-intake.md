@@ -11,9 +11,6 @@ Before proceeding with this checklist, please ensure that:
 - You consult the linked resources for detailed 
 information and guidance on the tasks mentioned.
 
-
-## Checklist
-
 ## Context
 This intake checklist serves as a structured guide for both internal team members and external contributors to keep track of the progress and ensure the seamless advancement of the project. It has been designed to promote transparency, clarify expectations, and aid in the meticulous documentation and development of the project.
 
@@ -50,13 +47,17 @@ information and guidance on the tasks mentioned.
    * [ ] Code conforms to linting standards.
    * [ ] Code builds into a container without errors.
    * [ ] Code deployable to the cloud and accessible via a publicly available URL.
+   <br/><br/>
    > **References:**
    > - [GCP Deployment Guide](https://github.com/ai-cfia/devops/blob/main/gcp-setup-script/gcp-project-setup-guide.md)
    > - [Reusable workflows](https://github.com/ai-cfia/github-workflows/tree/main/.github/workflows)
+   <br/><br/>
 
 * [ ] **Monitoring and Reporting**
    * [ ] Monitoring and reporting mechanisms in place.
    * [ ] Reporting of daily active users available.
+   <br/><br/>
    > **Resources:**
    > - [Understanding GitHub Actions](https://docs.github.com/fr/actions/learn-github-actions/understanding-github-actions)
    > - [Setting Up Secrets in GitHub](https://docs.github.com/fr/actions/security-guides/using-secrets-in-github-actions)
+   <br/><br/>
