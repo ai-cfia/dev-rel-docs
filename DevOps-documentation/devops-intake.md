@@ -8,7 +8,7 @@ The purpose of this document is to provide a clear and concise set of tasks and 
 Before proceeding with this checklist, please ensure that:
 - The project has reached a stage where a software solution has been prototyped and is ready to be developed into a production-ready product.
 - You have read and understood the guidelines and objectives outlined in each section.
-- You consult the linked resources for detailed 
+- You consult the linked resources for detailed
 information and guidance on the tasks mentioned.
 
 ## Context
@@ -21,7 +21,7 @@ The purpose of this document is to provide a clear and concise set of tasks and 
 Before proceeding with this checklist, please ensure that:
 - The project has reached a stage where a software solution has been prototyped and is ready to be developed into a production-ready product.
 - You have read and understood the guidelines and objectives outlined in each section.
-- You consult the linked resources for detailed 
+- You consult the linked resources for detailed
 information and guidance on the tasks mentioned.
 
 
@@ -31,7 +31,7 @@ information and guidance on the tasks mentioned.
    * [ ] Internal AI Project intake and criteria for internal AI products.
    * [ ] Product functionality explained in the Wiki.
    * [ ] [GitHub project created](https://github.com/orgs/ai-cfia/projects) for managing the product.
-   * [ ] Configure repository to our own internal standards.
+   * [ ] [Configure repository to our own internal standards](https://github.com/ai-cfia/devops/blob/main/github-repository-creation-guide.md).
    * [ ] Architecture documented with a diagram.
 
 * [ ] **Developer Documentation**
@@ -39,11 +39,13 @@ information and guidance on the tasks mentioned.
    * [ ] Tests documentation.
 
 * [ ] **Testing**
-   * [ ] Automated unit test suite 
+   * [ ] Automated unit test suite
    * [ ] Unit test suite implemented with a minimum of X% code coverage.
+   * [ ]  Manual test plan established.
+
 
 * [ ] **Continuous Integration and Deployment**
-   * [ ] Continuous lint, test, build, and deployment pipeline established. 
+   * [ ] Continuous lint, test, build, and deployment pipeline established.
    * [ ] Code conforms to linting standards.
    * [ ] Code builds into a container without errors.
    * [ ] Code deployable to the cloud and accessible via a publicly available URL.
