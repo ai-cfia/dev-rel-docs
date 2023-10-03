@@ -54,10 +54,11 @@ information and guidance on the tasks mentioned.
 * [ ] **Monitoring and Reporting**
    * [ ] Monitoring and reporting mechanisms in place.
    * [ ] Reporting of daily active users available.
-   > **Resources:**
-   > - [Understanding GitHub Actions](https://docs.github.com/fr/actions/learn-github-actions/understanding-github-actions)
-   > - [Setting Up Secrets in GitHub](https://docs.github.com/fr/actions/security-guides/using-secrets-in-github-actions)
 
-   > **CI/CD References:**
-   > - [GCP Deployment Guide](https://github.com/ai-cfia/devops/blob/main/gcp-setup-script/gcp-project-setup-guide.md)
-   > - [Reusable workflows](https://github.com/ai-cfia/github-workflows/tree/main)
+### CI/CD References
+- [GCP Deployment Guide](https://github.com/ai-cfia/devops/blob/main/gcp-setup-script/gcp-project-setup-guide.md)
+- [Reusable workflows](https://github.com/ai-cfia/github-workflows/tree/main)
+
+### General Documentation
+- [Understanding GitHub Actions](https://docs.github.com/fr/actions/learn-github-actions/understanding-github-actions)
+- [Setting Up Secrets in GitHub](https://docs.github.com/fr/actions/security-guides/using-secrets-in-github-actions)
