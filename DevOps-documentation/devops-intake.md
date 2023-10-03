@@ -1,8 +1,24 @@
+## Context
+This intake checklist serves as a structured guide for both internal team members and external contributors to keep track of the progress and ensure the seamless advancement of the project. It has been designed to promote transparency, clarify expectations, and aid in the meticulous documentation and development of the project.
+
+## Introduction
+The purpose of this document is to provide a clear and concise set of tasks and prerequisites that need to be addressed for the successful initialization, documentation, development, and deployment of the project. It serves as a mutual reference point, allowing contributors to stay informed about the project’s status and understand the completion state of different components and documentation. Each item in the checklist represents a crucial step in the project lifecycle and is essential for maintaining the quality and integrity of the project.
+
+## Pre-requisites
+Before proceeding with this checklist, please ensure that:
+- The project has reached a stage where a software solution has been prototyped and is ready to be developed into a production-ready product.
+- You have read and understood the guidelines and objectives outlined in each section.
+- You consult the linked resources for detailed 
+information and guidance on the tasks mentioned.
+
+
+## Checklist
+
 * [ ] **Project Initialization and Documentation**
-   * [ ] Internal AI Project intake and criteria for internal AI products [documented on the internal Wiki](https://dev.azure.com/CFIA-DevOps-ACIA/AI-Lab/_wiki/wikis/AI-Lab.wiki/689/AI-Lab-Wiki-HomePage).
+   * [ ] Internal AI Project intake and criteria for internal AI products.
    * [ ] Product functionality explained in the Wiki.
    * [ ] [GitHub project created](https://github.com/orgs/ai-cfia/projects) for managing the product.
-   * [ ] [Repository main branch Security Configured](https://dev.azure.com/CFIA-DevOps-ACIA/AI-Lab/_wiki/wikis/AI-Lab.wiki/1012/Creating-a-GitHub-repository).
+   * [ ] Configure repository to our own internal standards.
    * [ ] Architecture documented with a diagram.
 
 * [ ] **Developer Documentation**
