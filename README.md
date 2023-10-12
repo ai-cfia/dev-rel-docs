@@ -4,7 +4,7 @@ Welcome to the Developer Related Docs repository! This repository serves as a kn
 
 ---
 
-**[ADR: AI-Lab using ADR](./adr/001-ailab-using-adr.md)** - Why we decided to use Architectural Decision Records.
+**[Architecture Decision Records](./adr/index.md)** - A list of all our ADRs.
 
 **[Development Environment Setup Guide](./Development-Environment-Setup-Guide/DEV-ENV-SETUP.md)** - A guide to setting up a development environment with Dev Containers.
 
