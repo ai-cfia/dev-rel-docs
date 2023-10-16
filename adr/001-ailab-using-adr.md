@@ -4,9 +4,13 @@
 
 AI-Lab, comprised of developers and data scientists at the Canadian Food Inspection Agency (CFIA), is dedicated to leveraging AI technologies to address a range of challenges, both within the organization and in external engagements. As the team and its projects have grown, challenges have arisen in maintaining a clear and understandable history of architectural decisions. These challenges include:
 
-- Repeated discussions about previously made decisions
-- Difficulty in onboarding new team members
-- Inconsistent architectural approaches across different parts of the project
+- Repeated discussions about previously made decisions: The lack of a formalized decision-making process means that decisions are often revisited, causing wasted time and effort.
+  
+- Difficulty in onboarding new team members: The absence of a single, definitive source for architectural decisions complicates the onboarding process.
+
+- Inconsistent architectural approaches: Different projects or project parts sometimes adopt varying approaches, leading to long-term maintainability issues.
+
+These challenges have led the team to explore various solutions for maintaining a more coherent, version-controlled, and accessible record of significant architectural decisions.
 
 ### Solutions Considered
 
