@@ -2,7 +2,7 @@
 
 ## Context
 
-AI-Lab, comprised of developers and data scientists at CFIA, is dedicated to leveraging AI technologies to address a range of challenges, both within the organization and in external engagements. As the team and its projects have grown, challenges have arisen in maintaining a clear and understandable history of architectural decisions. These challenges include:
+AI-Lab, comprised of developers and data scientists at the Canadian Food Inspection Agency (CFIA), is dedicated to leveraging AI technologies to address a range of challenges, both within the organization and in external engagements. As the team and its projects have grown, challenges have arisen in maintaining a clear and understandable history of architectural decisions. These challenges include:
 
 - Repeated discussions about previously made decisions
 - Difficulty in onboarding new team members
@@ -71,8 +71,8 @@ Pros:
 
 Cons:
 
-- Requires the initial overhead of setting up a version control system
-- Could be considered over-engineered for very small or short-term projects
+- Introduces the challenge of ensuring that all team members actively contribute to and read ADRs.
+- Additional time needed to write, review, and maintain ADRs can slow down the initial phases of projects.
 - Requires ongoing discipline to maintain and update records
 
 
@@ -80,7 +80,34 @@ Cons:
 
 After evaluating these options, ADRs emerged as the best solution for maintaining a version-controlled, easily accessible record of architectural decisions.
 
-ADRs should contain the rationale, context, and implications of significant architectural decisions, such as choosing a database or adopting a particular architectural pattern like microservices. They should not be about trivial details such as specific code snippets.
+ADRs should contain the rationale, context, and implications of significant architectural decisions, such as choosing a database or adopting a particular architectural pattern. They should not be about trivial details.
+
+#### Example of decisions that could be addressed by ADR
+
+- Which database engine should we use and why?
+- Should we move to a microservices architecture?
+- What authentication strategy should we adopt?
+- How will we handle API versioning?
+- What approach will we take for caching?
+- Which cloud provider should we use?
+- What logging and monitoring solutions will be adopted?
+- Should we use containers for deployment, and if so, which orchestration tool?
+- Which message broker to use for asynchronous operations?
+- What is our strategy for data backup and recovery?
+
+#### Example of decisions that should not be addressed by ADR
+
+- What color should the login button be?
+- How do we implement a specific function in code?
+- What are the specific firewall rules?
+- What specific libraries to use for string manipulation?
+- Which individual UI components to use?
+- Code style and formatting rules.
+- Choice of specific IDEs or development tools.
+- Setting up environment variables for local development.
+- File or folder naming conventions.
+
+
 
 ### Format
 
@@ -112,11 +139,11 @@ ADRs should contain the rationale, context, and implications of significant arch
 
 1. Start by creating a GitHub issue to discuss the need for major changes in the existing ADR. Include all the team.
 2. Once there's agreement, create a new branch for the changes.
-3. In the new branch, create a new ADR with a new number but retain the original tag. This new ADR should reference the old one.
-4. Update the old ADR to reference the new one and prepare it to be moved to `adr/archives/`.
-5. Update the [index](./index.md).
-6. Submit these changes as a pull request from the new branch, linking it to the original GitHub issue for context.
-7. Once the pull request is approved by the whole team, merge it.
+     - In the new branch, create a new ADR with a new number but retain the original tag. This new ADR should reference the old one.
+     - Update the old ADR to reference the new one and prepare it to be moved to `adr/archives/`.
+     - Update the [index](./index.md).
+     - Submit these changes as a pull request from the new branch, linking it to the original GitHub issue for context.
+3. Once the pull request is approved by the whole team, merge it.
 
 ## Consequences
 
