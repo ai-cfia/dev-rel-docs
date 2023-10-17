@@ -2,7 +2,7 @@
 
 ## Context
 
-AI-Lab, comprised of developers and data scientists at the Canadian Food
+AI-Lab, comprised of software developers and data scientists at the Canadian Food
 Inspection Agency (CFIA), is dedicated to leveraging AI technologies to address
 a range of challenges, both within the organization and in external engagements.
 As the team and its projects have grown, challenges have arisen in maintaining a
@@ -101,13 +101,15 @@ After evaluating these options, ADRs emerged as the best solution for
 maintaining a version-controlled, easily accessible record of architectural
 decisions.
 
-ADRs are designed to document decisions that have wide-reaching implications
-across multiple projects and products and are of such significance that they
-require uniform compliance from all teams involved. Each ADR will elucidate the
-reasoning, background, and consequences of important architectural choices, like
-opting for a certain database or committing to a specific architectural
-framework. Decisions that do not meet these broad criteria are deemed too
-trivial for ADR documentation.
+### What is an ADR?
+
+An ADR is a document designed to capture decisions that have wide-reaching
+implications across multiple projects and products and are of such significance
+that they require uniform compliance from all teams involved. Each ADR will
+elucidate the reasoning, background, and consequences of important architectural
+choices, like opting for a certain database or committing to a specific
+architectural framework. Decisions that do not meet these broad criteria are
+deemed too trivial for ADR documentation.
 
 #### Example of decisions that could be addressed by ADR
 
@@ -189,17 +191,19 @@ trivial for ADR documentation.
   subject tags and by consulting the version history for context.
 - ADRs will serve as a point of reference for future architectural decisions,
   reducing the need for repeated discussions.
+- This ADR will be reviewed periodically to assess its outcomes.
 
 ## References
 
+- [Architecture decision record (ADR)](https://github.com/joelparkerhenderson/architecture-decision-record) - Joel Parker Henderson
+- [Decision record template](https://github.com/joelparkerhenderson/architecture-decision-record/blob/main/templates/decision-record-template-by-michael-nygard/index.md) - Mychael Nygard
 - [Communicating and documenting architectural
   decisions](https://www.youtube.com/watch?v=rwfXkSjFhzc) - David Ayers
 - [A Structured RFC
   Process](https://philcalcado.com/2018/11/19/a_structured_rfc_process.html) -
   Phil Calçado
 - [DACI: decision
-  documentation](https://www.atlassian.com/software/confluence/templates/decision)
-  - Atlassian Confluence
+  documentation](https://www.atlassian.com/software/confluence/templates/decision) - Atlassian Confluence
 - [How to use a project decision log for optimal
   results](https://monday.com/blog/project-management/decision-log/) -
   Monday.com
