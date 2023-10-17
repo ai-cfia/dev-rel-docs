@@ -32,63 +32,63 @@ architectural decisions.
 
 Pros:
 
-- Quick and simple to update
-- No additional tools required
+- Quick and simple to update.
+- No additional tools required.
 
 Cons:
 
-- Lacks version control, leading to potential confusion
-- Prone to becoming outdated
-- Inadequate for tracking decision history
+- Lacks version control, leading to potential confusion.
+- Prone to becoming outdated.
+- Inadequate for tracking decision history.
 
 #### Request for Comments (RFC)
 
 Pros:
 
-- Facilitates team-wide discussions for decision-making
-- Formalizes the decision-making process
+- Facilitates team-wide discussions for decision-making.
+- Formalizes the decision-making process.
 
 Cons:
 
-- Consumes significant time for discussion and approval
-- Formal process may deter contributions from less experienced team members
+- Consumes significant time for discussion and approval.
+- Formal process may deter contributions from less experienced team members.
 
 #### Confluence
 
 Pros:
 
-- Supports rich text and multimedia for comprehensive documentation
-- Integrates well with other tools like Jira
+- Supports rich text and multimedia for comprehensive documentation.
+- Integrates well with other tools like Jira.
 
 Cons:
 
-- Additional cost for licenses
-- Complexity can lead to disorganization
+- Additional cost for licenses.
+- Complexity can lead to disorganization.
 
 #### Decision Log
 
 Pros:
 
-- Simple, low-tech solution
-- Easy to maintain and update
-- Can be integrated into existing project management tools
+- Simple, low-tech solution.
+- Easy to maintain and update.
+- Can be integrated into existing project management tools.
 
 Cons:
 
-- May lack detailed context and rationale behind decisions
-- Not inherently version-controlled
-- Could become disorganized if not maintained properly
+- May lack detailed context and rationale behind decisions.
+- Not inherently version-controlled.
+- Could become disorganized if not maintained properly.
 
 #### Architecture Decision Records (ADRs)
 
 Pros:
 
 - Provides a version-controlled history of decisions, aligning well with the
-  team's need for traceability
+  team's need for traceability.
 - Facilitates quick onboarding by offering a single source of truth for
-  architectural decisions
+  architectural decisions.
 - Promotes consistency across projects by documenting decisions and their
-  rationales
+  rationales.
 
 Cons:
 
@@ -96,7 +96,7 @@ Cons:
   to and read ADRs.
 - Additional time needed to write, review, and maintain ADRs can slow down the
   initial phases of projects.
-- Requires ongoing discipline to maintain and update records
+- Requires ongoing discipline to maintain and update records.
 
 ## Decision
 
@@ -136,7 +136,7 @@ deemed too trivial for ADR documentation.
 - Which individual UI components to use?
 - Setting up environment variables for local development.
 - Pagination limits for lists and tables.
-- Algorithm to use for a single, specific task
+- Algorithm to use for a single, specific task.
 
 ### Format
 
