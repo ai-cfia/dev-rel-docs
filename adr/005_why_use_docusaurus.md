@@ -1,7 +1,7 @@
 # ADR 5: Using Docusaurus to develop the AI-Lab website
 
 ## Context
-The CFIA (Canadian Food Inspection Agency) AI Lab (Artificial Intelligence Laboratory) is at a strategic juncture in its development, recognizing the imperative to establish a dedicated publishing platform. This platform will act as a channel for spreading information about our specialized endeavors within the realm of AI. Our primary goal is to construct a platform where we can systematically inform visitors about the AI Lab, its spectrum of activities, and the various projects/products that stem from our work. This initiative will ensure a consistent flow of information, insights, and scholarly content, all delivered efficiently to a diverse and international audience.
+The Canadian Food Inspection Agency (CFIA) Artificial Intelligence Laboratory (AI Lab) is at a strategic juncture in its development, recognizing the imperative to establish a dedicated publishing platform. This platform will act as a channel for spreading information about our specialized endeavors within the realm of AI. Our primary goal is to construct a platform where we can systematically inform visitors about the AI Lab, its spectrum of activities, and the various projects/products that stem from our work. This initiative will ensure a consistent flow of information, insights, and scholarly content, all delivered efficiently to a diverse and international audience.
 
 A pivotal component of this platform is the inclusion of a dedicated blog section. This feature will empower our Data Science team, alongside other professionals, to post regular updates, analytical content, and thought leadership pieces, thereby nurturing a culture of knowledge exchange and community engagement.
 
