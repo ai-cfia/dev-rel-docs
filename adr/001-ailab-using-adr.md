@@ -2,15 +2,26 @@
 
 ## Context
 
-AI-Lab, comprised of developers and data scientists at the Canadian Food Inspection Agency (CFIA), is dedicated to leveraging AI technologies to address a range of challenges, both within the organization and in external engagements. As the team and its projects have grown, challenges have arisen in maintaining a clear and understandable history of architectural decisions. These challenges include:
+AI-Lab, comprised of developers and data scientists at the Canadian Food
+Inspection Agency (CFIA), is dedicated to leveraging AI technologies to address
+a range of challenges, both within the organization and in external engagements.
+As the team and its projects have grown, challenges have arisen in maintaining a
+clear and understandable history of architectural decisions. These challenges
+include:
 
-- Repeated discussions about previously made decisions: The lack of a formalized decision-making process means that decisions are often revisited, causing wasted time and effort.
-  
-- Difficulty in onboarding new team members: The absence of a single, definitive source for architectural decisions complicates the onboarding process.
+- Repeated discussions about previously made decisions: The lack of a formalized
+  decision-making process means that decisions are often revisited, causing
+  wasted time and effort.
+- Difficulty in onboarding new team members: The absence of a single, definitive
+  source for architectural decisions complicates the onboarding process.
 
-- Inconsistent architectural approaches: Different projects or project parts sometimes adopt varying approaches, leading to long-term maintainability issues.
+- Inconsistent architectural approaches: Different projects or project parts
+  sometimes adopt varying approaches, leading to long-term maintainability
+  issues.
 
-These challenges have led the team to explore various solutions for maintaining a more coherent, version-controlled, and accessible record of significant architectural decisions.
+These challenges have led the team to explore various solutions for maintaining
+a more coherent, version-controlled, and accessible record of significant
+architectural decisions.
 
 ### Solutions Considered
 
@@ -69,22 +80,34 @@ Cons:
 
 Pros:
 
-- Provides a version-controlled history of decisions, aligning well with the team's need for traceability
-- Facilitates quick onboarding by offering a single source of truth for architectural decisions
-- Promotes consistency across projects by documenting decisions and their rationales
+- Provides a version-controlled history of decisions, aligning well with the
+  team's need for traceability
+- Facilitates quick onboarding by offering a single source of truth for
+  architectural decisions
+- Promotes consistency across projects by documenting decisions and their
+  rationales
 
 Cons:
 
-- Introduces the challenge of ensuring that all team members actively contribute to and read ADRs.
-- Additional time needed to write, review, and maintain ADRs can slow down the initial phases of projects.
+- Introduces the challenge of ensuring that all team members actively contribute
+  to and read ADRs.
+- Additional time needed to write, review, and maintain ADRs can slow down the
+  initial phases of projects.
 - Requires ongoing discipline to maintain and update records
-
 
 ## Decision
 
-After evaluating these options, ADRs emerged as the best solution for maintaining a version-controlled, easily accessible record of architectural decisions.
+After evaluating these options, ADRs emerged as the best solution for
+maintaining a version-controlled, easily accessible record of architectural
+decisions.
 
-ADRs are designed to document decisions that have wide-reaching implications across multiple projects and products and are of such significance that they require uniform compliance from all teams involved. Each ADR will elucidate the reasoning, background, and consequences of important architectural choices, like opting for a certain database or committing to a specific architectural framework. Decisions that do not meet these broad criteria are deemed too trivial for ADR documentation.
+ADRs are designed to document decisions that have wide-reaching implications
+across multiple projects and products and are of such significance that they
+require uniform compliance from all teams involved. Each ADR will elucidate the
+reasoning, background, and consequences of important architectural choices, like
+opting for a certain database or committing to a specific architectural
+framework. Decisions that do not meet these broad criteria are deemed too
+trivial for ADR documentation.
 
 #### Example of decisions that could be addressed by ADR
 
@@ -110,26 +133,33 @@ ADRs are designed to document decisions that have wide-reaching implications acr
 - Pagination limits for lists and tables.
 - Algorithm to use for a single, specific task
 
-
 ### Format
 
-- File Naming: ADRs will follow the naming convention `NNN-tag.md`, for example, `001-ailab-using-adr.md`.
+- File Naming: ADRs will follow the naming convention `NNN-tag.md`, for example,
+  `001-ailab-using-adr.md`.
   - `NNN`: A three-digit number to ensure ADRs are listed in numerical order.
   - `tag`: A descriptive tag of the decision.
 - Sections will include: Context, Decision, Consequences and References.
 
 ### Implicit Statuses
 
-- PROPOSED: ADRs or modifications proposed via active pull requests and placed in the `adr/` folder.
+- PROPOSED: ADRs or modifications proposed via active pull requests and placed
+  in the `adr/` folder.
 - ACCEPTED: ADRs merged in the main branch.
-- REJECTED: Pull requests that have been rejected or issues that led to a decision not to proceed.
-- DEPRECATED: ADRs moved to the `adr/archives/` folder, indicating the decision is void.
-- SUPERSEDED: ADRs replaced by a new one and moved to `adr/archives/`, retaining their original tag but assigned a new number.
-- MODIFIED: Minor changes to an existing ADR, retaining its original number and tag.
+- REJECTED: Pull requests that have been rejected or issues that led to a
+  decision not to proceed.
+- DEPRECATED: ADRs moved to the `adr/archives/` folder, indicating the decision
+  is void.
+- SUPERSEDED: ADRs replaced by a new one and moved to `adr/archives/`, retaining
+  their original tag but assigned a new number.
+- MODIFIED: Minor changes to an existing ADR, retaining its original number and
+  tag.
 
 ### Storage
 
-- ADRs will be stored in a dedicated directory within this [repository](https://github.com/ai-cfia/dev-rel-docs), under the folder `adr/`.
+- ADRs will be stored in a dedicated directory within this
+  [repository](https://github.com/ai-cfia/dev-rel-docs), under the folder
+  `adr/`.
 - Deprecated and superseded ADRs will be moved to `adr/archives/`.
 
 ### Review and Update Process
@@ -139,23 +169,37 @@ ADRs are designed to document decisions that have wide-reaching implications acr
 
 #### Example: Superseding an ADR
 
-1. Start by creating a GitHub issue to discuss the need for major changes in the existing ADR. Include all the team.
+1. Start by creating a GitHub issue to discuss the need for major changes in the
+   existing ADR. Include all the team.
 2. Once there's agreement, create a new branch for the changes.
-     - In the new branch, create a new ADR with a new number but retain the original tag. This new ADR should reference the old one.
-     - Update the old ADR to reference the new one and prepare it to be moved to `adr/archives/`.
-     - Update the [index](./index.md).
-     - Submit these changes as a pull request from the new branch, linking it to the original GitHub issue for context.
+   - In the new branch, create a new ADR with a new number but retain the
+     original tag. This new ADR should reference the old one.
+   - Update the old ADR to reference the new one and prepare it to be moved to
+     `adr/archives/`.
+   - Update the [index](./index.md).
+   - Submit these changes as a pull request from the new branch, linking it to
+     the original GitHub issue for context.
 3. Once the pull request is approved by the whole team, merge it.
 
 ## Consequences
 
-- All significant architectural decisions will be documented, making it easier to understand the history and current state of the system.
-- New team members can get up to speed by reviewing the ADRs based on their subject tags and by consulting the version history for context.
-- ADRs will serve as a point of reference for future architectural decisions, reducing the need for repeated discussions.
-
+- All significant architectural decisions will be documented, making it easier
+  to understand the history and current state of the system.
+- New team members can get up to speed by reviewing the ADRs based on their
+  subject tags and by consulting the version history for context.
+- ADRs will serve as a point of reference for future architectural decisions,
+  reducing the need for repeated discussions.
 
 ## References
-- [Communicating and documenting architectural decisions](https://www.youtube.com/watch?v=rwfXkSjFhzc) - David Ayers
-- [A Structured RFC Process](https://philcalcado.com/2018/11/19/a_structured_rfc_process.html) - Phil Calçado
-- [DACI: decision documentation](https://www.atlassian.com/software/confluence/templates/decision) - Atlassian Confluence
-- [How to use a project decision log for optimal results](https://monday.com/blog/project-management/decision-log/) - Monday.com
+
+- [Communicating and documenting architectural
+  decisions](https://www.youtube.com/watch?v=rwfXkSjFhzc) - David Ayers
+- [A Structured RFC
+  Process](https://philcalcado.com/2018/11/19/a_structured_rfc_process.html) -
+  Phil Calçado
+- [DACI: decision
+  documentation](https://www.atlassian.com/software/confluence/templates/decision)
+  - Atlassian Confluence
+- [How to use a project decision log for optimal
+  results](https://monday.com/blog/project-management/decision-log/) -
+  Monday.com
