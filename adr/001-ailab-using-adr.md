@@ -84,7 +84,7 @@ Cons:
 
 After evaluating these options, ADRs emerged as the best solution for maintaining a version-controlled, easily accessible record of architectural decisions.
 
-ADRs should contain the rationale, context, and implications of significant architectural decisions, such as choosing a database or adopting a particular architectural pattern. They should not be about trivial details.
+ADRs are designed to document decisions that have wide-reaching implications across multiple projects and products and are of such significance that they require uniform compliance from all teams involved. Each ADR will elucidate the reasoning, background, and consequences of important architectural choices, like opting for a certain database or committing to a specific architectural framework. Decisions that do not meet these broad criteria are deemed too trivial for ADR documentation.
 
 #### Example of decisions that could be addressed by ADR
 
@@ -106,11 +106,9 @@ ADRs should contain the rationale, context, and implications of significant arch
 - What are the specific firewall rules?
 - What specific libraries to use for string manipulation?
 - Which individual UI components to use?
-- Code style and formatting rules.
-- Choice of specific IDEs or development tools.
 - Setting up environment variables for local development.
-- File or folder naming conventions.
-
+- Pagination limits for lists and tables.
+- Algorithm to use for a single, specific task
 
 
 ### Format
