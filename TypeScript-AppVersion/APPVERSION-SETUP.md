@@ -4,11 +4,12 @@ TS-AppVersion is a package designed to extract version information from a projec
 
 ## Key Features and Usage
 
-**Installation**: 
+**Installation**:
 
 ```bash
 npm i @saithodev/ts-appversion
 ```
+
 ### Running the Script
 
 Before building the application, you need to run the TS-AppVersion script. This can be achieved using "prestart" and "prebuild" scripts in your package.json:
@@ -16,6 +17,7 @@ Before building the application, you need to run the TS-AppVersion script. This 
 **Getting Started**
 
 package.json:
+
 ```json
 {
   "scripts": {
@@ -60,6 +62,7 @@ export const environment = {
 ```
 
 environments/environment.staging.ts:
+
 ```typescript
 import versions from '../_versions';
 
@@ -70,6 +73,7 @@ export const environment = {
 ```
 
 environments/environment.prod.ts:
+
 ```typescript
 import versions from '../_versions';
 
@@ -79,7 +83,7 @@ export const environment = {
 };
 ```
 
-##Example of Accessing the Version in the Environment Component
+## Example of Accessing the Version in the Environment Component
 
 app.component.ts:
 
