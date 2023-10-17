@@ -1,5 +1,9 @@
 # ADR 1: Adopting Architecture Decision Records (ADRs)
 
+## Abstract
+
+This ADR establishes the use of ADRs within AI-Lab at CFIA for documenting key architectural decisions. We chose ADRs for their version-controlled, clear, and accessible format, addressing issues such as repeated discussions, inconsistent approaches, and difficulties in onboarding. The document sets the standards for ADR creation, storage, and modification.
+
 ## Context
 
 AI-Lab, comprised of software developers and data scientists at the Canadian Food
@@ -206,3 +210,4 @@ deemed too trivial for ADR documentation.
 - [How to use a project decision log for optimal
   results](https://monday.com/blog/project-management/decision-log/) -
   Monday.com
+
