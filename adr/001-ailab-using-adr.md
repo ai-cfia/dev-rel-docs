@@ -14,7 +14,6 @@ include:
   wasted time and effort.
 - Difficulty in onboarding new team members: The absence of a single, definitive
   source for architectural decisions complicates the onboarding process.
-
 - Inconsistent architectural approaches: Different projects or project parts
   sometimes adopt varying approaches, leading to long-term maintainability
   issues.
