@@ -2,16 +2,20 @@
 
 ## Abstract
 
-This ADR establishes the use of ADRs within AI-Lab at CFIA for documenting key architectural decisions. We chose ADRs for their version-controlled, clear, and accessible format, addressing issues such as repeated discussions, inconsistent approaches, and difficulties in onboarding. The document sets the standards for ADR creation, storage, and modification.
+This ADR establishes the use of ADRs within AI-Lab at CFIA for documenting key
+architectural decisions. We chose ADRs for their version-controlled, clear, and
+accessible format, addressing issues such as repeated discussions, inconsistent
+approaches, and difficulties in onboarding. The document sets the standards for
+ADR creation, storage, and modification.
 
 ## Context
 
-AI-Lab, comprised of software developers and data scientists at the Canadian Food
-Inspection Agency (CFIA), is dedicated to leveraging AI technologies to address
-a range of challenges, both within the organization and in external engagements.
-As the team and its projects have grown, challenges have arisen in maintaining a
-clear and understandable history of architectural decisions. These challenges
-include:
+AI-Lab, comprised of software developers and data scientists at the Canadian
+Food Inspection Agency (CFIA), is dedicated to leveraging AI technologies to
+address a range of challenges, both within the organization and in external
+engagements. As the team and its projects have grown, challenges have arisen in
+maintaining a clear and understandable history of architectural decisions. These
+challenges include:
 
 - Repeated discussions about previously made decisions: The lack of a formalized
   decision-making process means that decisions are often revisited, causing
@@ -144,7 +148,7 @@ deemed too trivial for ADR documentation.
   `001-ailab-using-adr.md`.
   - `NNN`: A three-digit number to ensure ADRs are listed in numerical order.
   - `tag`: A descriptive tag of the decision.
-- Sections will include: Context, Decision, Consequences and References.
+- Sections will include: Abstract, Context, Decision, Consequences and References.
 
 ### Implicit Statuses
 
