@@ -122,12 +122,12 @@ ADRs should contain the rationale, context, and implications of significant arch
 
 ### Implicit Statuses
 
-- Proposed: ADRs or modifications proposed via active pull requests and placed in the `adr/` folder.
-- Accepted: ADRs merged in the main branch.
-- Rejected: Pull requests that have been rejected or issues that led to a decision not to proceed.
-- Deprecated: ADRs moved to the `adr/archives/` folder, indicating the decision is void.
-- Superseded: ADRs replaced by a new one and moved to `adr/archives/`, retaining their original tag but assigned a new number.
-- Modified: Minor changes to an existing ADR, retaining its original number and tag.
+- PROPOSED: ADRs or modifications proposed via active pull requests and placed in the `adr/` folder.
+- ACCEPTED: ADRs merged in the main branch.
+- REJECTED: Pull requests that have been rejected or issues that led to a decision not to proceed.
+- DEPRECATED: ADRs moved to the `adr/archives/` folder, indicating the decision is void.
+- SUPERSEDED: ADRs replaced by a new one and moved to `adr/archives/`, retaining their original tag but assigned a new number.
+- MODIFIED: Minor changes to an existing ADR, retaining its original number and tag.
 
 ### Storage
 
