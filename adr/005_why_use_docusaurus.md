@@ -9,18 +9,20 @@ Accessibility remains a critical concern in our operational blueprint, compellin
 
 Furthermore, our operations' global footprint necessitates the integration of internationalization capabilities in our platform, enabling content creation in multiple languages and making our insights accessible to a worldwide audience.
 
-Guiding our strategic approach are the Digital Standards set forth by the Government of Canada. These principles emphasize the adoption of 'open standards and solutions', advocate for 'working in the open by default', and demand a continuous commitment to 'iterate and improve frequently'. Central to these standards is the foundational mandate to 'build in accessibility from the start'. These tenets shape our operational philosophy and inform our technical decisions, reinforcing our dedication to transparency, inclusivity, and ongoing improvement.
+Guiding our strategic approach are the [Digital Standards](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html) set forth by the Government of Canada. These principles emphasize the adoption of 'open standards and solutions', advocate for 'working in the open by default', and demand a continuous commitment to 'iterate and improve frequently'. Central to these standards is the foundational mandate to 'build in accessibility from the start'. These tenets shape our operational philosophy and inform our technical decisions, reinforcing our dedication to transparency, inclusivity, and ongoing improvement.
 
 In light of these requirements and guiding principles, we have ventured into assessing various technical solutions. Our focus has been on identifying a system that facilitates rapid content publishing, supports seamless internationalization, meets strict accessibility norms, and fits within an open-source development framework conducive to continuous evolution and refinement.
 
 ## Solutions Considered
-1. **Jekyll**: A robust system, yet it requires multiple plugins for internationalization and has certain limitations in implementing uniform accessibility standards.
+1. **[Jekyll](https://jekyllrb.com/)**: A robust system, yet it requires multiple plugins for internationalization and has certain limitations in implementing uniform accessibility standards.
 
-2. **Hugo**: Though it's fast and efficient, Hugo requires a substantial amount of custom work to fully support internationalization and integrate consistent accessibility features.
+2. **[Hugo](https://gohugo.io/)**: Though it's fast and efficient, Hugo requires a substantial amount of custom work to fully support internationalization and integrate consistent accessibility features.
 
-3. **Gatsby**: Powerful and feature-rich, but its complexity can make the integration of consistent accessibility features and internationalization support challenging.
+3. **[Gatsby](https://www.gatsbyjs.com/)**: Powerful and feature-rich, but its complexity can make the integration of consistent accessibility features and internationalization support challenging.
 
-4. **Docusaurus**: Offers a balanced approach with built-in support for internationalization, is built on the familiar environment of React, and allows for extensive accessibility customizations, making it a strong contender.
+4. **[Docusaurus](https://docusaurus.io/)**: Offers a balanced approach with built-in support for internationalization, is built on the familiar environment of React, and allows for extensive accessibility customizations, making it a strong contender.
+
+5. **[Wordpress](https://wordpress.com/)**: Popular, user-friendly, and open source, but its reliance on numerous plugins for full functionality raises security and maintenance concerns, complicating adherence to strict accessibility and internationalization standards.
 
 ## Decision
 After a comprehensive evaluation of various platforms and considering our specific needs for accessibility, rapid content updates, and internationalization, we have decided to adopt Docusaurus as the development framework for the CFIA AI Lab's new website.
@@ -41,3 +43,11 @@ Docusaurus offers a perfect blend of the features we prioritize:
 
 ## Consequences
 The decision to use Docusaurus will set the stage for the development of a robust, user-centric, and inclusive publishing platform. It will facilitate the swift sharing of knowledge, foster greater community engagement, and ensure our content is globally accessible and compliant with the highest standards of web accessibility. While this approach comes with the responsibility of ongoing management and engagement with user feedback, it underscores our commitment to openness, inclusivity, and continual growth, positioning the CFIA AI Lab as a globally recognized, credible, and accessible source of AI knowledge.
+
+## References
+* [Jekyll](https://jekyllrb.com/)
+* [Hugo](https://gohugo.io/)
+* [Gatsby](https://www.gatsbyjs.com/)
+* [Docusaurus](https://docusaurus.io/)
+* [Wordpress](https://wordpress.com/)
+* [Government of Canada Digital Standards: Playbook](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
