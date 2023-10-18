@@ -5,7 +5,7 @@
 *This ADR details our thought process regarding a database system's choice and highlights the factors influencing this choice. We considerd both MySQL and PostgreSQL, ultimately opting for PostgreSQL because of its robust features, scalability, and suitability for our specific needs.*
 
 ## Context: 
-Today, effective data management is crucial to CFIA as we manage enormous amounts of information, requiring a database management system (DBMS). This choice is vital to ensure the security of sensitive data, offer high performance and scalability, support data analysis,facilitate collaboration between teams, and reduce operational costs.
+Today, effective data management is crucial to CFIA's AI Lab as we manage enormous amounts of information, requiring a database management system (DBMS). This choice is vital to ensure the security of sensitive data, offer high performance and scalability, support data analysis,facilitate collaboration between teams, and reduce operational costs.
 
 ## Solutions considered:
 ### PostgreSQL:
