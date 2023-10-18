@@ -8,7 +8,16 @@ This ADR details our decisions regarding the database structure and highlights t
 - **Title:** ADR on our choices of database structure
 - **Status:** Proposed
 - **Evaluation Criteria:** We want to figure out the best way to set up the database so that many products can work together smoothly. This will make things flexible, easy to take care of, and help different teams work together better.
-- **Candidates to Consider:** We looked at different ways to set up the database for lots of products, like keeping them separate or changing how they're organized.
+
+**Candidates to Consider:**
+1. **Separate Databases (Current Setup)**
+Our current database structure maintains separate databases, like "louis-db" and "nachet-db." This can make the code easier to understand at first, but there are some difficulties. It can result in redundancy, reduced flexibility, collaboration challenges between teams, and potential data conflicts.
+3. **Consolidated Database Approach**
+The proposed idea is to use a single database for all our products.
+This approach has benefits like easier teamwork, no repeated data, and more flexibility in managing different products.
+However, there are a lot of files to change, and it can make the developing process harder.
+
+
 
 ## Research and Analysis of Each Candidate
 In our investigation, we looked very closely at how "louis-db" and "nachet-db" are set up right now, and we also checked out the idea to change things. We found that having separate databases like drawers made it hard to change and work together. But if we put everything in one big "wardrobe," it would be much better. This change would make it easier to take care of, prevent mistakes, and help us with all the different products we have. So, we think switching to the big "wardrobe" is the best way to go for our database.
