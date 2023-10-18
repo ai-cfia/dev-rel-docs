@@ -56,8 +56,8 @@ Cons:
 #### Continuing with Wiki-based Documentation
 
 A Wiki is a platform that allows collaborative editing of content. Generally
-used for internal documentation, FAQs, and quick guidelines. We've been using
-a wiki so far.
+used for internal documentation, FAQs, and quick guidelines. We've been using a
+wiki so far.
 
 Pros:
 
@@ -146,8 +146,10 @@ committing to a specific architectural framework, not trivial decisions.
   `001-ailab-using-adr.md`.
   - `NNN`: A three-digit number to ensure ADRs are listed in numerical order.
   - `tag`: A descriptive tag of the decision.
-- Sections will include: Abstract, Context, Decision, Consequences and
-  References.
+- Attachments: Attachments will be in the same name prefixe as the ADR, for
+  example, `001-ailab-using-adr-template.md`.
+- Sections of an ADR will include: Executive Summary, Context, Decision,
+  Consequences and References.
 
 ### Implicit Statuses
 
@@ -165,10 +167,11 @@ committing to a specific architectural framework, not trivial decisions.
 
 ### Storage
 
-- ADRs will be stored in a dedicated directory within this
+- ADRs and attachments will be stored in a dedicated directory within this
   [repository](https://github.com/ai-cfia/dev-rel-docs), under the folder
   `adr/`.
-- Deprecated and superseded ADRs will be moved to `adr/archives/`.
+- Deprecated and superseded ADRs and attachments will be moved to
+  `adr/archives/`.
 
 ### Review and Update Process
 
@@ -204,8 +207,8 @@ committing to a specific architectural framework, not trivial decisions.
 - [Architecture decision record
   (ADR)](https://github.com/joelparkerhenderson/architecture-decision-record) -
   Joel Parker Henderson
-- [Decision record
-  template](https://github.com/joelparkerhenderson/architecture-decision-record/blob/main/templates/decision-record-template-by-michael-nygard/index.md) - Mychael Nygard
+- [Record architecture
+  decisions](https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/) - Code With Engineering Playbook
 - [Communicating and documenting architectural
   decisions](https://www.youtube.com/watch?v=rwfXkSjFhzc) - David Ayers
 - [A Structured RFC
