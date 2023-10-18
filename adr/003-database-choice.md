@@ -1,13 +1,18 @@
 # ADR 3: Adopting PostgreSQL as the Database System
 
-## Abstract
+## Executive Summary
 
 *This ADR details our thought process regarding a database system's choice and highlights the factors influencing this choice. We considerd MySQL, Microsoft SQL Server, and PostgreSQL, ultimately opting for PostgreSQL because of its robust features, scalability, and suitability for our specific needs thanks to its pgvector extension.*
 
 ## Context: 
 Today, effective data management is crucial to CFIA's AI Lab as we manage enormous amounts of information, requiring a database management system (DBMS). This choice is vital to ensure the security of sensitive data, offer high performance and scalability, support data analysis,facilitate collaboration between teams, and reduce operational costs.
 
-## Solutions considered:
+## Decision:
+We decided to adopt PostgreSQL as our database management system (DBMS) due to its open-source nature and the presence of a large and active community. This guarantees regular updates, bug fixes, and a rich array of extensions and plugins such as pgvector and PostGIS, making it exceptionally well-suited for handling diverse data, including vector and geographic data. This attribute is particularly significant for AI applications which is what the AI Lab do. Furthermore, the availability of PostgreSQL as a Database-as-a-Service in Azure enhances flexibility and scalability, offering a substantial advantage for our applications.
+
+While PostgreSQL has several advantages, it's important to consider the cons as well, especially the complexity of configuration and the steeper learning curve for beginners. However, these issues may be mitigated by experienced database administrators or the availability of managed PostgreSQL services that handle many administrative tasks.
+
+## Alternatives Considered:
 ### PostgreSQL:
 #### Pros:
 PostgreSQL stands out as a great DBMS solution that offers traditional database benefits with an emphasis on reliability and maturity. Notably, it's also available as a Database-as-a-Service in Azure. Here are some key advantages of PostgreSQL:
@@ -41,11 +46,6 @@ Security Features: Advanced security features for data protection.
 - **Scalability:** Limited scalability for handling complex queries and large datasets.
 - **Data Integrity:** Less strict data integrity enforcement.
 - **Customization:** Limited customization and extensibility.
-
-## Decision:
-We decided to adopt PostgreSQL as our database management system (DBMS) due to its open-source nature and the presence of a large and active community. This guarantees regular updates, bug fixes, and a rich array of extensions and plugins such as pgvector and PostGIS, making it exceptionally well-suited for handling diverse data, including vector and geographic data. This attribute is particularly significant for AI applications which is what the AI Lab do. Furthermore, the availability of PostgreSQL as a Database-as-a-Service in Azure enhances flexibility and scalability, offering a substantial advantage for our applications.
-
-While PostgreSQL has several advantages, it's important to consider the cons as well, especially the complexity of configuration and the steeper learning curve for beginners. However, these issues may be mitigated by experienced database administrators or the availability of managed PostgreSQL services that handle many administrative tasks.
 
 ## Consequences: 
 The adoption of PostgreSQL will facilitate data integrity, elevate reliability, offer the flexibility to adapt to evolving needs, and accommodate future growth. It also grants us access to an active community. However, it will require some investment in training and infrastructure setup to maximize the benefits of PostgreSQL for our projects.
