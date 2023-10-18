@@ -1,8 +1,8 @@
-![AiLab-db](./002-database-structure-diagram.png)
-
 # ADR on our choices of database structure
 
 This ADR details our decisions regarding the database structure and highlights the factors influencing our choices.
+
+![AiLab-db](./002-database-structure-diagram.png)
 
 ## Top-level
 - **Title:** ADR on our choices of database structure
