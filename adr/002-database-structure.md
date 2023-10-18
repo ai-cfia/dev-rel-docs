@@ -24,10 +24,15 @@ During our research, we took a close look at how "louis-db" and "nachet-db" are 
 Our current separate databases aren't good because they lead to repeating information, lack flexibility, and make teamwork difficult. But the changes we want to make are better because they make things work together, are easier to handle, and improve the computer code.
 
 ## How Did You Evaluate the Candidates?
-We evaluated the candidates based on the criteria of efficiency, flexibility, maintainability, and collaborative potential. The proposed changes best align with these criteria.
+We evaluated the candidates based on the following criteria:
+- Efficiency
+- Flexibility
+- Simplicity
+- Maintainability
+- Collaborative potential
 
 ## Why Did You Choose the Winner?
-We picked the changes we suggested because they fit with our goal of making one simple database that can easily work with lots of different products.
+We chose the second option, a Consolidated Database Approach. It is more efficient, flexible, maintainable, and much easier to collaborate with other team members. The only aspect that's challenging to assess is simplicity. Renaming and moving folders for all related projects will require a significant amount of work, but it will certainly prove beneficial in the future.
 
 ## What Is Happening Since Then?
 The proposed changes are under consideration for implementation, with a focus on developing the "ailab-db" as the core database and creating a modular product integration system.
