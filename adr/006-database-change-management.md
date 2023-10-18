@@ -1,4 +1,4 @@
-# ADR 3: How we manage changes in databases
+# ADR 6: How we manage changes in databases
 
 ## Abstract
 
