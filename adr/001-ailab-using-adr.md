@@ -28,93 +28,12 @@ of architectural decisions. These challenges include:
   sometimes adopt varying approaches, leading to long-term maintainability
   issues.
 
-These challenges have led the team to explore various solutions for maintaining
-a more coherent, version-controlled, and accessible record of significant
-architectural decisions.
-
-### Alternatives Considered
-
-#### Architecture Decision Records (ADRs)
-
-Pros:
-
-- Provides a version-controlled history of decisions, aligning well with the
-  team's need for traceability.
-- Facilitates quick onboarding by offering a single source of truth for
-  architectural decisions.
-- Promotes consistency across projects by documenting decisions and their
-  rationales.
-
-Cons:
-
-- Introduces the challenge of ensuring that all team members actively contribute
-  to and read ADRs.
-- Additional time needed to write, review, and maintain ADRs can slow down the
-  initial phases of projects.
-- Requires ongoing discipline to maintain and update records.
-
-#### Continuing with Wiki-based Documentation
-
-A Wiki is a platform that allows collaborative editing of content. Generally
-used for internal documentation, FAQs, and quick guidelines. We've been using a
-wiki so far.
-
-Pros:
-
-- Quick and simple to update.
-- No additional tools required.
-
-Cons:
-
-- Lacks version control, leading to potential confusion.
-- Prone to becoming outdated.
-- Inadequate for tracking decision history.
-
-#### Request for Comments (RFC)
-
-Pros:
-
-- Facilitates team-wide discussions for decision-making.
-- Formalizes the decision-making process.
-
-Cons:
-
-- Consumes significant time for discussion and approval.
-- Formal process may deter contributions from less experienced team members.
-
-#### Confluence
-
-Pros:
-
-- Supports rich text and multimedia for comprehensive documentation.
-- Integrates well with other tools like Jira.
-
-Cons:
-
-- Additional cost for licenses.
-- Complexity can lead to disorganization.
-
-#### Decision Log
-
-Pros:
-
-- Simple, low-tech solution.
-- Easy to maintain and update.
-- Can be integrated into existing project management tools.
-
-Cons:
-
-- May lack detailed context and rationale behind decisions.
-- Not inherently version-controlled.
-- Could become disorganized if not maintained properly.
-
 ## Decision
 
-After evaluating these options, ADRs emerged as the best solution for
-maintaining a version-controlled, easily accessible record of architectural
-decisions. Each ADR will explain the reasoning, background, and consequences of
-important architectural choices, like opting for a certain database or
-committing to a specific architectural framework, not trivial decisions.
+After evaluating various options, we chose to implement ADRs to maintain a
+version-controlled and easily accessible record of important architectural
+decisions. Each ADR will detail the reasoning, background, and consequences of
+significant architectural choices, not trivial decisions.
 
 #### Example of decisions that could be addressed by ADR
 
@@ -146,10 +65,29 @@ committing to a specific architectural framework, not trivial decisions.
   `001-ailab-using-adr.md`.
   - `NNN`: A three-digit number to ensure ADRs are listed in numerical order.
   - `tag`: A descriptive tag of the decision.
-- Attachments: Attachments will be in the same name prefixe as the ADR, for
-  example, `001-ailab-using-adr-template.md`.
-- Sections of an ADR will include: Executive Summary, Context, Decision,
-  Consequences and References.
+- Attachments: Attachments like illustrations and diagrams will share the same
+  name prefixe as the ADR, for example, `001-ailab-using-adr-template.md`.
+- Sections of an ADR will include: Executive Summary, optional illustration,
+  Context, Decision, Alternatives Considered, Consequences and References. See
+  [ADR Template](./001-ailab-using-adr-template.md) for more details.
+
+### Format
+
+- File Naming: ADRs will follow the naming convention `NNN-tag.md`, for example,
+  `001-ailab-using-adr.md`.
+  - `NNN`: A three-digit number to ensure ADRs are listed in numerical order.
+  - `tag`: A descriptive tag of the decision.
+- Attachments: Attachments like illustrations and diagrams will share the same
+  name prefix as the ADR, for example, `001-ailab-using-adr-template.md`.
+- Title Format: Titles for ADRs (and attachments if required) should start with
+  the prefix `# ADR [Number]:` followed by a brief description of the decision.
+  The numbers should match between the file name and the title. Example: `# ADR
+  1: Adopting Architecture Decision Records (ADRs)`.
+- Sections: An ADR will include the following sections: Executive Summary,
+  optional illustration, Context, Decision, Alternatives Considered,
+  Consequences, and References. See [ADR
+  Template](./001-ailab-using-adr-template.md) for more details.
+
 
 ### Implicit Statuses
 
@@ -167,10 +105,10 @@ committing to a specific architectural framework, not trivial decisions.
 
 ### Storage
 
-- ADRs and attachments will be stored in a dedicated directory within this
-  [repository](https://github.com/ai-cfia/dev-rel-docs), under the folder
+- ADRs and theirs attachments will be stored in a dedicated directory within
+  this [repository](https://github.com/ai-cfia/dev-rel-docs), under the folder
   `adr/`.
-- Deprecated and superseded ADRs and attachments will be moved to
+- Deprecated and superseded ADRs and their attachments will be moved to
   `adr/archives/`.
 
 ### Review and Update Process
@@ -191,6 +129,82 @@ committing to a specific architectural framework, not trivial decisions.
    - Submit these changes as a pull request from the new branch, linking it to
      the original GitHub issue for context.
 3. Once the pull request is approved by the whole team, merge it.
+
+## Alternatives Considered
+
+### ADR
+
+Pros:
+
+- Provides a version-controlled history of decisions, aligning well with the
+  team's need for traceability.
+- Facilitates quick onboarding by offering a single source of truth for
+  architectural decisions.
+- Promotes consistency across projects by documenting decisions and their
+  rationales.
+
+Cons:
+
+- Introduces the challenge of ensuring that all team members actively contribute
+  to and read ADRs.
+- Additional time needed to write, review, and maintain ADRs can slow down the
+  initial phases of projects.
+- Requires ongoing discipline to maintain and update records.
+
+### Continuing with Wiki-based Documentation
+
+A Wiki is a platform that allows collaborative editing of content. Generally
+used for internal documentation, FAQs, and quick guidelines. We've been using a
+wiki so far.
+
+Pros:
+
+- Quick and simple to update.
+- No additional tools required.
+
+Cons:
+
+- Lacks version control, leading to potential confusion.
+- Prone to becoming outdated.
+- Inadequate for tracking decision history.
+
+### Request for Comments (RFC)
+
+Pros:
+
+- Facilitates team-wide discussions for decision-making.
+- Formalizes the decision-making process.
+
+Cons:
+
+- Consumes significant time for discussion and approval.
+- Formal process may deter contributions from less experienced team members.
+
+### Confluence
+
+Pros:
+
+- Supports rich text and multimedia for comprehensive documentation.
+- Integrates well with other tools like Jira.
+
+Cons:
+
+- Additional cost for licenses.
+- Complexity can lead to disorganization.
+
+### Decision Log
+
+Pros:
+
+- Simple, low-tech solution.
+- Easy to maintain and update.
+- Can be integrated into existing project management tools.
+
+Cons:
+
+- May lack detailed context and rationale behind decisions.
+- Not inherently version-controlled.
+- Could become disorganized if not maintained properly.
 
 ## Consequences
 
