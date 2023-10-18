@@ -1,21 +1,23 @@
 # ADR 1: Adopting Architecture Decision Records (ADRs)
 
-## Abstract
+## Executive Summary
 
-This ADR establishes the use of ADRs within AI-Lab at CFIA for documenting key
-architectural decisions. We chose ADRs for their version-controlled, clear, and
-accessible format, addressing issues such as repeated discussions, inconsistent
-approaches, and difficulties in onboarding. The document sets the standards for
-ADR creation, storage, and modification.
+This ADR establishes the use of ADRs within AI-Lab at Canadian Food Inspection
+Agency (CFIA) for documenting key architectural decisions. An ADR is a document
+designed to capture decisions across multiple projects and products and are of
+such significance that they require uniform compliance from all teams involved.
+We chose ADRs for their version-controlled, clear, and accessible format,
+addressing issues such as repeated discussions, inconsistent approaches, and
+difficulties in onboarding. The document sets the standards for ADR creation,
+storage, and modification.
 
 ## Context
 
-AI-Lab, comprised of software developers and data scientists at the Canadian
-Food Inspection Agency (CFIA), is dedicated to leveraging AI technologies to
-address a range of challenges, both within the organization and in external
-engagements. As the team and its projects have grown, challenges have arisen in
-maintaining a clear and understandable history of architectural decisions. These
-challenges include:
+AI-Lab, comprised of software developers and data scientists, is dedicated to
+leveraging AI technologies to address a range of challenges, both within the
+organization and in external engagements. As the team and its projects have
+grown, challenges have arisen in maintaining a clear and understandable history
+of architectural decisions. These challenges include:
 
 - Repeated discussions about previously made decisions: The lack of a formalized
   decision-making process means that decisions are often revisited, causing
@@ -30,9 +32,32 @@ These challenges have led the team to explore various solutions for maintaining
 a more coherent, version-controlled, and accessible record of significant
 architectural decisions.
 
-### Solutions Considered
+### Alternatives Considered
+
+#### Architecture Decision Records (ADRs)
+
+Pros:
+
+- Provides a version-controlled history of decisions, aligning well with the
+  team's need for traceability.
+- Facilitates quick onboarding by offering a single source of truth for
+  architectural decisions.
+- Promotes consistency across projects by documenting decisions and their
+  rationales.
+
+Cons:
+
+- Introduces the challenge of ensuring that all team members actively contribute
+  to and read ADRs.
+- Additional time needed to write, review, and maintain ADRs can slow down the
+  initial phases of projects.
+- Requires ongoing discipline to maintain and update records.
 
 #### Continuing with Wiki-based Documentation
+
+A Wiki is a platform that allows collaborative editing of content. Generally
+used for internal documentation, FAQs, and quick guidelines. We've been using
+a wiki so far.
 
 Pros:
 
@@ -83,40 +108,13 @@ Cons:
 - Not inherently version-controlled.
 - Could become disorganized if not maintained properly.
 
-#### Architecture Decision Records (ADRs)
-
-Pros:
-
-- Provides a version-controlled history of decisions, aligning well with the
-  team's need for traceability.
-- Facilitates quick onboarding by offering a single source of truth for
-  architectural decisions.
-- Promotes consistency across projects by documenting decisions and their
-  rationales.
-
-Cons:
-
-- Introduces the challenge of ensuring that all team members actively contribute
-  to and read ADRs.
-- Additional time needed to write, review, and maintain ADRs can slow down the
-  initial phases of projects.
-- Requires ongoing discipline to maintain and update records.
-
 ## Decision
 
 After evaluating these options, ADRs emerged as the best solution for
 maintaining a version-controlled, easily accessible record of architectural
-decisions.
-
-### What is an ADR?
-
-An ADR is a document designed to capture decisions that have wide-reaching
-implications across multiple projects and products and are of such significance
-that they require uniform compliance from all teams involved. Each ADR will
-elucidate the reasoning, background, and consequences of important architectural
-choices, like opting for a certain database or committing to a specific
-architectural framework. Decisions that do not meet these broad criteria are
-deemed too trivial for ADR documentation.
+decisions. Each ADR will explain the reasoning, background, and consequences of
+important architectural choices, like opting for a certain database or
+committing to a specific architectural framework, not trivial decisions.
 
 #### Example of decisions that could be addressed by ADR
 
@@ -148,7 +146,8 @@ deemed too trivial for ADR documentation.
   `001-ailab-using-adr.md`.
   - `NNN`: A three-digit number to ensure ADRs are listed in numerical order.
   - `tag`: A descriptive tag of the decision.
-- Sections will include: Abstract, Context, Decision, Consequences and References.
+- Sections will include: Abstract, Context, Decision, Consequences and
+  References.
 
 ### Implicit Statuses
 
@@ -202,8 +201,11 @@ deemed too trivial for ADR documentation.
 
 ## References
 
-- [Architecture decision record (ADR)](https://github.com/joelparkerhenderson/architecture-decision-record) - Joel Parker Henderson
-- [Decision record template](https://github.com/joelparkerhenderson/architecture-decision-record/blob/main/templates/decision-record-template-by-michael-nygard/index.md) - Mychael Nygard
+- [Architecture decision record
+  (ADR)](https://github.com/joelparkerhenderson/architecture-decision-record) -
+  Joel Parker Henderson
+- [Decision record
+  template](https://github.com/joelparkerhenderson/architecture-decision-record/blob/main/templates/decision-record-template-by-michael-nygard/index.md) - Mychael Nygard
 - [Communicating and documenting architectural
   decisions](https://www.youtube.com/watch?v=rwfXkSjFhzc) - David Ayers
 - [A Structured RFC
