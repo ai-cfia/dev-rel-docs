@@ -16,10 +16,6 @@ In our investigation, we looked very closely at how "louis-db" and "nachet-db" a
 - **Does/Doesn't Meet Criteria and Why:**
 The way we have separate databases right now isn't good because it causes repetition, is not flexible, and makes it hard for us to work together. But the changes we want to make are better because they make things work together, are easier to manage, and make the computer code better.
 
-## Opinions and Feedback
-- **Internal Opinions and Feedback:** Waiting for team members' opinions about the proposed changes.
-- **External Opinions and Feedback:** Waiting for external opinions about the proposed changes.
-
 ## How Did You Evaluate the Candidates?
 We evaluated the candidates based on the criteria of efficiency, flexibility, maintainability, and collaborative potential. The proposed changes best align with these criteria.
 
