@@ -1,4 +1,4 @@
-![AiLab-db](https://github.com/ai-cfia/dev-rel-docs/assets/98430140/d1795d78-8a13-4c94-86bb-94dd8f824581)
+![AiLab-db](./002-database-structure-diagram.png)
 
 # ADR on our choices of database structure
 
