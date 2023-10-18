@@ -17,13 +17,11 @@ The proposed idea is to use a single database for all our products.
 This approach has benefits like easier teamwork, no repeated data, and more flexibility in managing different products.
 However, there are a lot of files to change, and it can make the developing process harder.
 
-
-
 ## Research and Analysis of Each Candidate
-In our investigation, we looked very closely at how "louis-db" and "nachet-db" are set up right now, and we also checked out the idea to change things. We found that having separate databases like drawers made it hard to change and work together. But if we put everything in one big "wardrobe," it would be much better. This change would make it easier to take care of, prevent mistakes, and help us with all the different products we have. So, we think switching to the big "wardrobe" is the best way to go for our database.
+During our research, we took a close look at how "louis-db" and "nachet-db" are set up right now and thought about changing things. We found that having separate databases created problems when it came to making changes and working together. Bringing these databases together into one place has a lot of benefits. It makes managing the database easier, lowers the chances of errors, and better supports the products we handle. Switching to a single, unified database structure is the best choice for our database.
 
 - **Does/Doesn't Meet Criteria and Why:**
-The way we have separate databases right now isn't good because it causes repetition, is not flexible, and makes it hard for us to work together. But the changes we want to make are better because they make things work together, are easier to manage, and make the computer code better.
+Our current separate databases aren't good because they lead to repeating information, lack flexibility, and make teamwork difficult. But the changes we want to make are better because they make things work together, are easier to handle, and improve the computer code.
 
 ## How Did You Evaluate the Candidates?
 We evaluated the candidates based on the criteria of efficiency, flexibility, maintainability, and collaborative potential. The proposed changes best align with these criteria.
