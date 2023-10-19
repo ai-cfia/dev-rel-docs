@@ -45,54 +45,54 @@ Blue-Green Deployment, and the concept of Database Views and Abstraction Layers.
 
 ## Solutions Considered
 
-1. **Manual SQL Scripts**:
+- **Manual SQL Scripts**:
    - *Pros*: Full control, no dependencies on third-party tools.
    - *Cons*: Prone to human error, time-consuming, complex changes can be
      challenging.
 
-2. **Database Migration Tools**:
+- **Database Migration Tools**:
    - *Pros*: Version control for database schema, controlled application of
      changes, support for multiple database systems.
    - *Cons*: Learning curve for tools, added dependency on migration tool.
 
-3. **Change Management Systems**:
+- **Change Management Systems**:
    - *Pros*: Structured and formalized approach, enforces approvals and
      documentation.
    - *Cons*: Slower process, can be rigid and bureaucratic.
 
-4. **Database as Code**:
+- **Database as Code**:
    - *Pros*: Infrastructure-as-Code (IaC) principles, easy integration with
      DevOps practices, consistent versioning.
    - *Cons*: Learning curve for IaC tools, potential for infrastructure and
      database code to diverge.
 
-5. **Blue-Green Deployment**:
+- **Blue-Green Deployment**:
    - *Pros*: Minimizes downtime, easy rollback, isolated testing of new schema.
    - *Cons*: Requires additional infrastructure, may lead to data
      synchronization challenges.
 
-6. **Feature Flags**:
+- **Feature Flags**:
    - *Pros*: Gradual and selective introduction of changes, easy rollbacks.
    - *Cons*: Requires additional feature flag management, potential complexity
      in codebase.
 
-7. **Database Views and Abstraction Layers**:
+- **Database Views and Abstraction Layers**:
    - *Pros*: Provides backward compatibility, eases schema changes for
      applications.
    - *Cons*: May not suit all use cases, additional complexity in database
      design.
 
-8. **Data Virtualization**:
+- **Data Virtualization**:
     - *Pros*: Presents a consistent virtual schema, allows physical schema
       changes.
     - *Cons*: Additional layer of complexity, potential performance overhead.
 
-9. **Continuous Integration/Continuous Deployment (CI/CD)**:
+- **Continuous Integration/Continuous Deployment (CI/CD)**:
     - *Pros*: Automated changes within CI/CD pipeline, data integrity testing.
     - *Cons*: Requires careful testing, potential for data integrity issues if
       not managed correctly.
 
-10. **Cloud Database Services**:
+- **Cloud Database Services**:
     - *Pros*: Automated schema management, scaling, and backups.
     - *Cons*: Vendor lock-in, limited control over infrastructure.
 
