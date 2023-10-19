@@ -4,18 +4,18 @@
 
 This ADR details our thought process regarding our database management system and highlights the factors influencing this choice. We considerd a few solutions before coming to a combination of different options.
 
-Our solution is to incorporate semantic versioning information into schema names to maintain version control as well as to clone the current schema to migrate and transform data in a new schema implementings changes. This ensure data integrity as well as good changes management.
+Our solution is to incorporate semantic versioning information into schema names to maintain version control as well as to clone the current schema to migrate and transform data in a new schema implementing changes. This ensure data integrity as well as good change management.
 
-## Context: 
+## Context
 CFIA projects Finesse and Louis Chat depend heavily on the PostgreSQL database. Changes to the database schema need to follow changes to the code as we introduce new features. 
 
 When deploying, we need to be able to:
 
 * Deploy known set of changes associated with the version of the backend we want to deploy.
-* verify changes are correctly applied by running a test suite (probably backend test suite as it relates to the database).
-* revert changes if necessary (or switch back to an older version of the database).
+* Verify changes are correctly applied by running a test suite (probably backend test suite as it relates to the database).
+* Revert changes if necessary (or switch back to an older version of the database).
 
-## Decision:
+## Decision
 
 To address the context and requirements, the following approach is proposed:
 
@@ -42,7 +42,7 @@ Our decision to adopt this approach was influenced by a combination of multiple 
    - *Cons*: Slower process, can be rigid and bureaucratic.
 
 4. **Database as Code**:
-   - *Pros*: Infra-as-Code (IaC) principles, easy integration with DevOps practices, consistent versioning.
+   - *Pros*: Infrastructure-as-Code (IaC) principles, easy integration with DevOps practices, consistent versioning.
    - *Cons*: Learning curve for IaC tools, potential for infrastructure and database code to diverge.
 
 5. **Blue-Green Deployment**:
@@ -69,6 +69,8 @@ Our decision to adopt this approach was influenced by a combination of multiple 
     - *Pros*: Automated schema management, scaling, and backups.
     - *Cons*: Vendor lock-in, limited control over infrastructure.
 
-## Consequences:
+## Consequences
 
-[The consequences of the decision go here.]
+
+
+## References
