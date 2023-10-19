@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This ADR details our thought process regarding our database system choice and highlights the factors influencing this choice. We considerd MySQL, Microsoft SQL Server, and PostgreSQL, ultimately opting for PostgreSQL because of its robust features, scalability, and suitability for our specific needs thanks to its pgvector extension.
+This ADR details our thought process regarding our database system's choice and highlights the factors influencing this choice. We considered MySQL, Microsoft SQL Server, and PostgreSQL, ultimately opting for PostgreSQL because of its robust features, scalability, and suitability for our specific needs thanks to its pgvector extension.
 
 ## Context
 Today, effective data management is crucial to CFIA's AI Lab as we manage enormous amounts of information, requiring a database management system (DBMS). This choice is vital to ensure the security of sensitive data, offer high performance and scalability, support data analysis,facilitate collaboration between teams, and reduce operational costs.
