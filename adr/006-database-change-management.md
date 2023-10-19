@@ -2,9 +2,9 @@
 
 ## Executive Summary
 
-*This ADR details our thought process regarding our database managment system and highlights the factors influencing this choice. We considerd a few solutions before coming to a combination of different options.*
+This ADR details our thought process regarding our database management system and highlights the factors influencing this choice. We considerd a few solutions before coming to a combination of different options.
 
-*Our solution is to incorporate semantic versioning information into schema names to maintain version control as well as to clone the current schema to migrate and transform data in a new schema implementings changes. This ensure data integrity as well as good changes managment.*
+Our solution is to incorporate semantic versioning information into schema names to maintain version control as well as to clone the current schema to migrate and transform data in a new schema implementings changes. This ensure data integrity as well as good changes management.
 
 ## Context: 
 CFIA projects Finesse and Louis Chat depend heavily on the PostgreSQL database. Changes to the database schema need to follow changes to the code as we introduce new features. 
