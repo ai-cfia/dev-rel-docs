@@ -9,7 +9,7 @@ robust features, scalability, and suitability for our specific needs thanks to
 its pgvector extension.
 
 ## Context
-Today, effective data management is crucial to CFIA's AI Lab as we manage
+Today, effective data management is crucial to Canadian Food Inspection Agency's (CFIA) Artificial Intelligence (AI) Lab as we manage
 enormous amounts of information, requiring a database management system (DBMS).
 This choice is vital to ensure the security of sensitive data, offer high
 performance and scalability, support data analysis, facilitate collaboration
@@ -40,7 +40,7 @@ benefits with an emphasis on reliability and maturity. Notably, it's also
 available as a Database-as-a-Service in Azure. Here are some key advantages of
 PostgreSQL:
 
-- **Open Source and Community Support:** Open-source nature and big community
+- **Open Source and Community Support:** Open source nature and big community
   ensure regular updates, bug fixes, and a lot of extensions and plugins.
 - **Security Features:** Role-based access control, SSL/TLS support, and data
   encryption.
@@ -98,5 +98,5 @@ PostgreSQL for our projects.
 - [What is PostgreSQL and why do banking software developers love
   it?](https://ubuntu.com/blog/what-is-postgresql) - Kris Sharma
 - [Why more and more enterprises are choosing PostgreSQL as their go-to
-database!](https://www.enterprisedb.com/postgres-tutorials/why-more-and-more-enterprises-are-choosing-postgresql-their-go-database#:~:text=take%20another%20look.-,PostgreSQL%20is%20reliable,the%20transaction%20is%20then%20committed.)
+database!](https://www.enterprisedb.com/postgres-tutorials/why-more-and-more-enterprises-are-choosing-postgresql-their-go-database)
 - Thom Brown
