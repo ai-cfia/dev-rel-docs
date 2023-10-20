@@ -1,7 +1,10 @@
 # ADR 4: Open Source Development
 
+## Executive Summary
+The Canadian Food Inspection Food Agency (CFIA) Artificial Intelligence Laboratory (AI Lab) is adopting Full Open Source Development, releasing all software publicly to encourage transparent collaboration per the Government of Canada's standards. We've selected the MIT License for its flexibility, balancing open innovation with safeguarding sensitive data. This approach aims to harness collective expertise for enhanced innovation and trust in the digital public sector.
+
 ## Context
-The Canadian Food Inspection Food Agency (CFIA) Artificial Intelligence Lab's (AI Lab) mission is to push the boundaries of what AI is capable of doing. Our goal is to make it more accessible to CFIA employees by developing practical applications that help the CFIA fulfill its mandate. We are committed to open research and sharing our results with the broader AI community. In order to do so, opting for open source development is a must.
+The CFIA AI Lab is dedicated to advancing the practical applications of AI to support the agency's specific needs and objectives. By creating accessible AI-driven tools, we enhance CFIA employees' work, directly contributing to the agency's mission. While we are rooted in applied solutions, not theoretical research, we recognize the value of open source development to leverage collective expertise, ensuring our initiatives are robust, innovative, and transparent.
 
 Open source development offers numerous advantages including:
 
@@ -25,35 +28,37 @@ On the flip side, potential concerns include:
 
 Furthermore, our current technological landscape is heavily interwoven with open source tools. The Government of Canada has also shown a commitment towards experimentation and open development, as reflected in platforms like alpha.canada.ca and the Digital Standards.
 
-
-### Solutions Considered
-#### Development
-**Full Open Source Development**: Release all projects, without exception, to the public, encouraging community contribution and collaboration.
-
-**Hybrid Approach**: Develop core functionalities privately while making ancillary components or tools open source.
-
-**Private Development**: Keep all developments internal, only releasing tools and products after thorough vetting and quality assurance.
-
-#### Licenses
-As we are doing open source development, the choice of license is critical, as it will dictate how other uses can use, modify, and distribute our work. 
-
-1. **MIT License**: Known for its brevity and flexibility, the MIT license allows users to do almost anything they want with the products we develop, like making proprietary versions. However, it requires the inclusion of the original license and copyright notice in any substantial portion of the software, which ensures that credit is always given to the CFIA AI Lab.
-
-2. **GNU General Public License (GPL)**: The GPL is designed to ensure that any adaptations or larger works based on a GPL-licensed project are also open source. It's often chosen to encourage the growth of open source ecosystems, though it can be restrictive for those wanting to incorporate the licensed code into proprietary software.
-
-3. **Apache License 2.0**: This is a permissive license similar to the MIT License but also provides an express grant of patent rights from contributors to users. It allows code use in proprietary software but requires preservation of the original copyright and license notices, along with a list of any significant changes made to the licensed material.
-
-4. **Creative Commons Attribution 4.0**: While not typically used for software, CC BY 4.0 is ideal for creative works. It allows sharing and adaptation of the material as long as appropriate credit is given, a link to the license is provided, and any changes made are indicated.
-
-
 ## Decision
-After extensive evaluation, we have chosen to adopt the Full Open Source Development approach.
+We have chosen to adopt the Full Open Source Development approach.
 
-Every project undertaken by the AI Lab will be released publicly, embracing the ethos of open source development at its core. This means every aspect of our development – from core functionalities to ancillary tools – will be made available to the public, allowing for community contributions, feedback, and collaboration right from the inception of any project.
+Every software product undertaken by the AI Lab will be released publicly, embracing the ethos of open source development at its core. This means every aspect of our development – from core functionalities to ancillary tools – will be made available to the public, allowing for community contributions, feedback, and collaboration right from the inception of any project.
 
 By committing to full open source development, the AI Lab is not just adopting a development approach but embracing a philosophy. We believe in the power of community-driven development and are eager to see the innovative solutions this collaborative effort will bring.
 
 For the license, we opted for the MIT License due to its straightforward nature, permitting free usage and distribution of our work without cumbersome restrictions, thereby encouraging wider adoption and collaboration.
+
+### Handling of Sensitive Data
+In our approach, we balance public development with private deployment. All coding and development are conducted openly, to encourage collaboration, while sensitive data and documents remain secured, only existing in our private, controlled environments to ensure confidentiality and integrity.
+
+
+## Solutions Considered
+### Development
+* **Full Open Source Development**: Release all projects, without exception, to the public, encouraging community contribution and collaboration.
+
+* **Hybrid Approach**: Develop core functionalities privately while making ancillary components or tools open source.
+
+* **Private Development**: Keep all developments internal, only releasing tools and products after thorough vetting and quality assurance.
+
+### Licenses
+As we are doing open source development, the choice of license is critical, as it will dictate how other uses can use, modify, and distribute our work. 
+
+* **MIT License**: Known for its brevity and flexibility, the MIT license allows users to do almost anything they want with the products we develop, like making proprietary versions. However, it requires the inclusion of the original license and copyright notice in any substantial portion of the software, which ensures that credit is always given to the CFIA AI Lab.
+
+* **GNU General Public License (GPL)**: The GPL is designed to ensure that any adaptations or larger works based on a GPL-licensed project are also open source. It's often chosen to encourage the growth of open source ecosystems, though it can be restrictive for those wanting to incorporate the licensed code into proprietary software.
+
+* **Apache License 2.0**: This is a permissive license similar to the MIT License but also provides an express grant of patent rights from contributors to users. It allows code use in proprietary software but requires preservation of the original copyright and license notices, along with a list of any significant changes made to the licensed material.
+
+* **Creative Commons Attribution 4.0**: While not typically used for software, CC BY 4.0 is ideal for creative works. It allows sharing and adaptation of the material as long as appropriate credit is given, a link to the license is provided, and any changes made are indicated.
 
 
 ## Consequences
@@ -69,6 +74,9 @@ For the license, we opted for the MIT License due to its straightforward nature,
 **Dynamic Feedback and Adaptability**: Immediate feedback from the community means the lab can swiftly pivot, adapt, or modify projects based on real-time insights and suggestions.
 
 **Potential Risks and Mitigation**: It's essential to acknowledge potential security risks associated with sensitive data. Proactive measures, including data anonymization, regular security audits, and stringent contribution guidelines, will be instituted to mitigate these risks.
+
+
+
 
 ## References
 * [Government of Canada Digital Standards: Playbook](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
