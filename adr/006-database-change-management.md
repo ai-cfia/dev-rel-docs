@@ -3,7 +3,7 @@
 ## Executive Summary
 
 This ADR details our thought process regarding our database management system
-and highlights the factors influencing this choice. We considerd a few solutions
+and highlights the factors influencing this choice. We considered a few solutions
 before coming to a combination of different options.
 
 Our solution is to incorporate semantic versioning information into schema names
