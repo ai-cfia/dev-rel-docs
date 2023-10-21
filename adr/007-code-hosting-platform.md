@@ -9,52 +9,52 @@ A choice needed to be made to be able to manage and share code. It needed to be 
 ## Decision
 In light of the open source mindset of the agency, GitHub clearly stood out from the rest of the options available for a couple reasons :
 
-* **Community and Open-Source Focus**
+* Community and Open-Source Focus
     * GitHub has a more prominent community of developers and is better suited for open-source code development and open-source projects. It's a platform where programmers from around the world collaborate on projects, often with varying levels of knowledge and commitment.
 
-* **Version Control**
+* Version Control
     * GitHub’s interface and workflow are considered intuitive, especially for open-source developers.
 
-* **Pipeline Automation with GitHub Actions**
-    * **Reusable Workflows**: The GitHub Marketplace provides a platform for developers to share and reuse workflows, reducing the need to recreate common workflow configurations. This is especially useful for common tasks and standard processes across projects.
+* Pipeline Automation with GitHub Actions
+    * Reusable Workflows: The GitHub Marketplace provides a platform for developers to share and reuse workflows, reducing the need to recreate common workflow configurations. This is especially useful for common tasks and standard processes across projects.
 
-    * **Extensive Integration**: It offers a range of third-party integrations and actions that can extend the capabilities of your projects on GitHub. You can find tools for monitoring, testing, deploying, and more.
+    * Extensive Integration: It offers a range of third-party integrations and actions that can extend the capabilities of your projects on GitHub. You can find tools for monitoring, testing, deploying, and more.
 
-    * **Community-Driven**: The marketplace is community-driven, meaning developers can contribute their own actions and workflows, making it a rich ecosystem of tools and automation processes. This is particularly beneficial for open-source projects, as it fosters collaboration and sharing of resources.
+    * Community-Driven: The marketplace is community-driven, meaning developers can contribute their own actions and workflows, making it a rich ecosystem of tools and automation processes. This is particularly beneficial for open-source projects, as it fosters collaboration and sharing of resources.
 
 
 ## Alternatives Considered
 
 ### Alternative 1: GitLab
-**Pros**:
+Pros:
 - Workflow Tools: Suite of tools for team collaboration.
 - DevSecOps Platform: Supports teams in software development.
 
-**Cons**:
+Cons:
 - Interface Navigation can be challenging, especially for new users.
 - Issue Tracking Customization is limited for some users.
 - CI/Automation integration
 
 ### Alternative 2: Azure DevOps
-**Pros**:
+Pros:
 - Good at managing and securing git repositories.
 
 - Flexible and powerful set supporting agile and DevOps.
 
 - Allows efficient build, commit, and deployment of code.
 
-**Cons**:
+Cons:
 - Mainly suited for developers.
 
 - Less prominent open-source community compared to GitHub.
 
 ### Alternative 3: Bitbucket
-**Pros**:
+Pros:
 - Easy collaboration with public/private repositories.
 
 - Seamless management of repositories, branches, and pull requests.
 
-**Cons**:
+Cons:
 - Challenging with external tools or platforms.
 - Feature limitations and less community-driven.
 - No built-in Continuous Integration/Continuous Deployment capabilities.
