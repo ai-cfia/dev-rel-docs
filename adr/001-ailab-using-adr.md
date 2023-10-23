@@ -1,8 +1,9 @@
-# ADR 1: Adopting Architecture Decision Records (ADRs)
+# ADR 1: Adopting Architecture Decision Records
 
 ## Executive Summary
 
-This ADR establishes the use of ADRs within AI-Lab at Canadian Food Inspection
+This Architecture Decision Record (ADR) establishes the use of ADRs within the 
+Artificial Intelligence Laboratory (AI-Lab) at Canadian Food Inspection
 Agency (CFIA) for documenting key architectural decisions. An ADR is a document
 designed to capture decisions across multiple projects and products and are of
 such significance that they require uniform compliance from all teams involved.
@@ -61,28 +62,28 @@ significant architectural choices, not trivial decisions.
 
 ### Format
 
-- File Naming: ADRs will follow the naming convention `NNN-tag.md`, for example,
-  `001-ailab-using-adr.md`.
-  - `NNN`: A three-digit number to ensure ADRs are listed in numerical order.
-  - `tag`: A descriptive tag of the decision.
+- File Naming: ADRs will follow the naming convention NNN-tag.md, for example,
+  001-ailab-using-adr.md.
+  - NNN: A three-digit number to ensure ADRs are listed in numerical order.
+  - tag: A descriptive tag of the decision.
 - Attachments: Attachments like illustrations and diagrams will share the same
-  name prefixe as the ADR, for example, `001-ailab-using-adr-template.md`.
+  name prefixe as the ADR, for example, 001-ailab-using-adr-template.md.
 - Sections of an ADR will include: Executive Summary, optional illustration,
   Context, Decision, Alternatives Considered, Consequences and References. See
   [ADR Template](./001-ailab-using-adr-template.md) for more details.
 
 ### Format
 
-- File Naming: ADRs will follow the naming convention `NNN-tag.md`, for example,
-  `001-ailab-using-adr.md`.
-  - `NNN`: A three-digit number to ensure ADRs are listed in numerical order.
-  - `tag`: A descriptive tag of the decision.
+- File Naming: ADRs will follow the naming convention NNN-tag.md, for example,
+  001-ailab-using-adr.md.
+  - NNN: A three-digit number to ensure ADRs are listed in numerical order.
+  - tag: A descriptive tag of the decision.
 - Attachments: Attachments like illustrations and diagrams will share the same
-  name prefix as the ADR, for example, `001-ailab-using-adr-template.md`.
+  name prefix as the ADR, for example, 001-ailab-using-adr-template.md.
 - Title Format: Titles for ADRs (and attachments if required) should start with
-  the prefix `# ADR [Number]:` followed by a brief description of the decision.
-  The numbers should match between the file name and the title. Example: `# ADR
-  1: Adopting Architecture Decision Records (ADRs)`.
+  the prefix "# ADR [Number]": followed by a brief description of the decision.
+  The numbers should match between the file name and the title. Example: "# ADR
+  1: Adopting Architecture Decision Records (ADRs)".
 - Sections: An ADR will include the following sections: Executive Summary,
   optional illustration, Context, Decision, Alternatives Considered,
   Consequences, and References. See [ADR
@@ -92,13 +93,13 @@ significant architectural choices, not trivial decisions.
 ### Implicit Statuses
 
 - PROPOSED: ADRs or modifications proposed via active pull requests and placed
-  in the `adr/` folder.
+  in the adr/ folder.
 - ACCEPTED: ADRs merged in the main branch.
 - REJECTED: Pull requests that have been rejected or issues that led to a
   decision not to proceed.
-- DEPRECATED: ADRs moved to the `adr/archives/` folder, indicating the decision
+- DEPRECATED: ADRs moved to the adr/archives/ folder, indicating the decision
   is void.
-- SUPERSEDED: ADRs replaced by a new one and moved to `adr/archives/`, retaining
+- SUPERSEDED: ADRs replaced by a new one and moved to adr/archives/, retaining
   their original tag but assigned a new number.
 - MODIFIED: Minor changes to an existing ADR, retaining its original number and
   tag.
@@ -107,9 +108,9 @@ significant architectural choices, not trivial decisions.
 
 - ADRs and theirs attachments will be stored in a dedicated directory within
   this [repository](https://github.com/ai-cfia/dev-rel-docs), under the folder
-  `adr/`.
+  adr/.
 - Deprecated and superseded ADRs and their attachments will be moved to
-  `adr/archives/`.
+  adr/archives/.
 
 ### Review and Update Process
 
@@ -124,7 +125,7 @@ significant architectural choices, not trivial decisions.
    - In the new branch, create a new ADR with a new number but retain the
      original tag. This new ADR should reference the old one.
    - Update the old ADR to reference the new one and prepare it to be moved to
-     `adr/archives/`.
+     adr/archives/.
    - Update the [index](./index.md).
    - Submit these changes as a pull request from the new branch, linking it to
      the original GitHub issue for context.
