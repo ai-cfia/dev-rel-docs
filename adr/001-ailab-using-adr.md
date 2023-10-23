@@ -1,8 +1,8 @@
-# ADR 1: Adopting Architecture Decision Records
+# ADR-001: Adopting Architecture Decision Records
 
 ## Executive Summary
 
-This Architecture Decision Record (ADR) establishes the use of ADRs within the 
+This Architecture Decision Record (ADR) establishes the use of ADRs within the
 Artificial Intelligence Laboratory (AI-Lab) at Canadian Food Inspection
 Agency (CFIA) for documenting key architectural decisions. An ADR is a document
 designed to capture decisions across multiple projects and products and are of
@@ -62,21 +62,20 @@ significant architectural choices, not trivial decisions.
 
 ### Format
 
-- File Naming: ADRs will follow the naming convention NNN-tag.md, for example,
+- File Naming: ADRs will follow the naming convention XXX-tag.md, for example,
   001-ailab-using-adr.md.
-  - NNN: A three-digit number to ensure ADRs are listed in numerical order.
+  - XXX: A three-digit number to ensure ADRs are listed in numerical order.
   - tag: A descriptive tag of the decision.
 - Attachments: Attachments like illustrations and diagrams will share the same
   name prefix as the ADR, for example, 001-ailab-using-adr-template.md.
 - Title Format: Titles for ADRs (and attachments if required) should start with
-  the prefix "# ADR [Number]": followed by a brief description of the decision.
-  The numbers should match between the file name and the title. Example: "# ADR
-  1: Adopting Architecture Decision Records (ADRs)".
+  the prefix "ADR-XXX: " followed by a brief description of the decision.
+  The numbers should match between the file name and the title. Example:
+  "ADR-001: Adopting Architecture Decision Records".
 - Sections: An ADR will include the following sections: Executive Summary,
   optional illustration, Context, Decision, Alternatives Considered,
   Consequences, and References. See [ADR
   Template](./001-ailab-using-adr-template.md) for more details.
-
 
 ### Implicit Statuses
 
@@ -222,4 +221,3 @@ Cons:
 - [How to use a project decision log for optimal
   results](https://monday.com/blog/project-management/decision-log/) -
   Monday.com
-

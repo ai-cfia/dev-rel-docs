@@ -1,4 +1,4 @@
-# ADR XX : Title
+# ADR-XXX : Title
 
 ## Optional Illustration
 
