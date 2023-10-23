@@ -67,18 +67,6 @@ significant architectural choices, not trivial decisions.
   - NNN: A three-digit number to ensure ADRs are listed in numerical order.
   - tag: A descriptive tag of the decision.
 - Attachments: Attachments like illustrations and diagrams will share the same
-  name prefixe as the ADR, for example, 001-ailab-using-adr-template.md.
-- Sections of an ADR will include: Executive Summary, optional illustration,
-  Context, Decision, Alternatives Considered, Consequences and References. See
-  [ADR Template](./001-ailab-using-adr-template.md) for more details.
-
-### Format
-
-- File Naming: ADRs will follow the naming convention NNN-tag.md, for example,
-  001-ailab-using-adr.md.
-  - NNN: A three-digit number to ensure ADRs are listed in numerical order.
-  - tag: A descriptive tag of the decision.
-- Attachments: Attachments like illustrations and diagrams will share the same
   name prefix as the ADR, for example, 001-ailab-using-adr-template.md.
 - Title Format: Titles for ADRs (and attachments if required) should start with
   the prefix "# ADR [Number]": followed by a brief description of the decision.
