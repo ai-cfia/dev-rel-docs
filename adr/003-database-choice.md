@@ -10,22 +10,21 @@ its pgvector extension.
 
 ## Context
 Today, effective data management is crucial to Canadian Food Inspection Agency's
-(CFIA) Artificial Intelligence (AI) Lab as we manage enormous amounts of
-information, requiring a database management system (DBMS). This choice is vital
-to ensure the security of sensitive data, offer high performance and
+(CFIA) Artificial Intelligence Laboratory (AI Lab) as we manage enormous amounts
+of information, requiring a database management system (DBMS). This choice is
+vital to ensure the security of sensitive data, offer high performance and
 scalability, support data analysis, facilitate collaboration between teams, and
 reduce operational costs.
 
 ## Decision
-We decided to adopt PostgreSQL as our DBMS due to
-its open source nature and the presence of a large and active community. This
-guarantees regular updates, bug fixes, and a rich array of extensions and
-plugins such as pgvector and PostGIS, making it exceptionally well-suited for
-handling diverse data, including vector and geographic data. This attribute is
-particularly significant for AI applications which is what the AI Lab does.
-Furthermore, the availability of PostgreSQL as a Database-as-a-Service in Azure
-enhances flexibility and scalability, offering a substantial advantage for our
-applications.
+We decided to adopt PostgreSQL as our DBMS due to its open source nature and the
+presence of a large and active community. This guarantees regular updates, bug
+fixes, and a rich array of extensions and plugins such as pgvector and PostGIS,
+making it exceptionally well-suited for handling diverse data, including vector
+and geographic data. This attribute is particularly significant for AI
+applications which is what the AI Lab does. Furthermore, the availability of
+PostgreSQL as a Database-as-a-Service in Azure enhances flexibility and
+scalability, offering a substantial advantage for our applications.
 
 While PostgreSQL has several advantages, it's important to consider the cons as
 well, especially the complexity of configuration and the steeper learning curve
