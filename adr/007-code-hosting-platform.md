@@ -22,68 +22,105 @@ In light of the open source mindset of the agency, GitHub clearly stood out from
 
     * Community-Driven: The marketplace is community-driven, meaning developers can contribute their own actions and workflows, making it a rich ecosystem of tools and automation processes. This is particularly beneficial for open-source projects, as it fosters collaboration and sharing of resources.
 
+* Alignment with Microsoft:
+    * As a Microsoft product, GitHub integration aligns with existing service agreements.
+
+    * Microsoft is a major contributor to GitHub.
+
+    * The platform’s extensive user base includes over 100 million developers, 4 million organizations, and 330 million repositories, with adoption by 90% of Fortune 100 companies.
+
 
 ## Alternatives Considered
 
 ### Alternative 1: GitLab
 Pros:
-- Workflow Tools: Suite of tools for team collaboration.
-- DevSecOps Platform: Supports teams in software development.
+* Iron Mountain plateform with GitLab ultimate :
+    * $150k in approximate cost savings per year
+
+    * 20 hrs saved in onboarding time per project
+
+* Integraded AI software.
+
+* User data not used to train AI.
+
+* DevSecOps Platform: Supports teams in software development.
+
+* Named a Leader in the Gartner® Magic Quadrant™ for DevOps Platforms.
+
+* 30m + registered users.
+
+* Used by 50%+ of fortune 100.
 
 Cons:
-- Interface Navigation can be challenging, especially for new users.
-- Issue Tracking Customization is limited for some users.
-- CI/Automation integration
+* Interface Navigation can be challenging, especially for new users.
+
+* Issue Tracking Customization is limited for some users.
+
+* Certain reviews point out lack of documentation
+
+* CI/Automation integration
 
 ### Alternative 2: Azure DevOps
 Pros:
-- Good at managing and securing git repositories.
+* Azure DevOps includs Azure Boards a project management tool which allows to track work items, such as user stories, tasks, bugs, and features. This feature is especially useful for those following agile methods
 
-- Flexible and powerful set supporting agile and DevOps.
+* Azure Test Plans is a testing tool that allows you to plan, execute, and track  manual and automated tests.
 
-- Allows efficient build, commit, and deployment of code.
+* Integrates easily with other Azure services and Microsoft products like Visual Studio, Office 365, Azure, etc.
 
 Cons:
-- Mainly suited for developers.
+* Mainly suited for developers.
 
-- Less prominent open-source community compared to GitHub.
+* Less prominent open-source community compared to GitHub.
+
+* Can be very overwhelming and complex for small teams as it offers a lot of services and features which are not always useful for smaller projects.
+
+* Pricing is based on the number of users, pipelines, agents, storage space, etc. You may end up paying more than you would with other platforms or tools.
 
 ### Alternative 3: Bitbucket
 Pros:
-- Easy collaboration with public/private repositories.
+* Supports Mercurial as well as Git for version control.
 
-- Seamless management of repositories, branches, and pull requests.
+* Supports Semantic Search features such as classes, and interfaces, etc thus saving a lot of time.
+
+* Allows you than give developers access to every branch in a repo or restrict access to a single branch which reduces the risk of accidental master/main push, it is a key differentiator for Bitbucket.
+
+* Bitbucket supports Git Large File Storage (LFS) which means shorter clone and fetch times for those working with large files.
 
 Cons:
-- Challenging with external tools or platforms.
-- Feature limitations and less community-driven.
-- No built-in Continuous Integration/Continuous Deployment capabilities.
+* Challenging with external tools or platforms.
+
+* Feature limitations and less community-driven.
+
+* No built-in Continuous Integration/Continuous Deployment capabilities.
 
 ## Consequences
 
 The decision to use GitHub will help the agency's reach; it will get more people to look at the products and support the open source goals. It will also make DevOps a lot easier with its large community marketplace for workflow. It will also help developers be more productive and improve their work. That being said, the agency has two computer science teams and one team works with GitHub and the other with Azure DevOps, which could lead to some complications.
 
 ## References
-[GetApp - GitLab Reviews](https://www.getapp.com/it-management-software/a/gitlab/reviews/#:~:text=Pros.%20Its%20intuitive%20interface%20and%20robust%20feature%20set,challenging%20for%20new%20users%20to%20get%20started.%20IR)
+[GetApp * GitLab Reviews](https://www.getapp.com/it-management-software/a/gitlab/reviews/#:~:text=Pros.%20Its%20intuitive%20interface%20and%20robust%20feature%20set,challenging%20for%20new%20users%20to%20get%20started.%20IR)
 
-[TrustRadius - Pros and Cons of GitLab 2023](https://www.trustradius.com/products/gitlab/reviews)
+[TrustRadius * Pros and Cons of GitLab 2023](https://www.trustradius.com/products/gitlab/reviews)
 
-[Vince The IT Guy - Pros and Cons for Using GitLab](https://vincetheitguy.com/gitlab-pros-and-cons/)
+[Vince The IT Guy * Pros and Cons for Using GitLab](https://vincetheitguy.com/gitlab-pros-and-cons/)
 
-[Capiche - GitLab Pros and Cons](https://capiche.com/q/gitlab-pros-and-cons)
+[Capiche * GitLab Pros and Cons](https://capiche.com/q/gitlab-pros-and-cons)
 
-[TrustRadius - Azure DevOps Services Reviews](https://www.trustradius.com/products/azure-devops-services/reviews?qs=pros-and-cons)
+[TrustRadius * Azure DevOps Services Reviews](https://www.trustradius.com/products/azure-devops-services/reviews?qs=pros-and-cons)
 
-[Software Advice - Azure DevOps Services Software Reviews, Pros and Cons - 2023](https://www.softwareadvice.com/devops/azure-devops-profile/reviews/)
+[Software Advice * Azure DevOps Services Software Reviews, Pros and Cons * 2023](https://www.softwareadvice.com/devops/azure-devops-profile/reviews/)
 
-[Dev.to - Azure DevOps vs GitHub: Which Toolstack Is Better for Software Teams?](https://dev.to/devteams/azure-devops-vs-github-which-toolstack-is-better-for-software-teams)
+[Dev.to * Azure DevOps vs GitHub: Which Toolstack Is Better for Software Teams?](https://dev.to/devteams/azure-devops-vs-github-which-toolstack-is-better-for-software-teams)
 
-[StackShare - Reviews, Pros & Cons | Companies using Azure DevOps](https://stackshare.io/azure-devops)
+[StackShare * Reviews, Pros & Cons | Companies using Azure DevOps](https://stackshare.io/azure-devops)
 
-[TrustRadius - Pros and Cons of Bitbucket 2023](https://www.trustradius.com/products/bitbucket/reviews)
+[TrustRadius * Pros and Cons of Bitbucket 2023](https://www.trustradius.com/products/bitbucket/reviews)
 
-[Sysgeeker - Bitbucket Review - Streamline Your Code Collaboration Effortlessly](https://www.sysgeeker.com/bitbucket-review.html)
+[Sysgeeker * Bitbucket Review * Streamline Your Code Collaboration Effortlessly](https://www.sysgeeker.com/bitbucket-review.html)
 
-[CompareCamp - BitBucket Review: Pricing, Pros, Cons & Features](https://comparecamp.com/bitbucket-review-pricing-pros-cons-features/)
+[CompareCamp * BitBucket Review: Pricing, Pros, Cons & Features](https://comparecamp.com/bitbucket-review-pricing-pros-cons-features/)
 
-[Capterra - Bitbucket Reviews 2023](https://www.capterra.com/p/166497/Bitbucket/reviews/)
+[Capterra * Bitbucket Reviews 2023](https://www.capterra.com/p/166497/Bitbucket/reviews/)
+
+[https://about.gitlab.com/customers/iron-mountain/](https://about.gitlab.com/customers/iron-mountain/)
