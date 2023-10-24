@@ -1,4 +1,4 @@
-# ADR 3: Adopting PostgreSQL as the Database System
+# ADR-003: Adopting PostgreSQL as the Database System
 
 ## Executive Summary
 
