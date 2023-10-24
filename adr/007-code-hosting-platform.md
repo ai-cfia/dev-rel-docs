@@ -13,7 +13,7 @@ In light of the open source mindset of the AI Lab, GitHub clearly stood out from
     * GitHub has a more prominent community of developers and is better suited for open-source code development and open-source projects. It's a platform where programmers from around the world collaborate on projects, often with varying levels of knowledge and commitment.
 
 * Version Control
-    * GitHub’s interface and workflow are considered intuitive, especially for open-source developers.
+    * GitHub’s interface and workflow are considered intuitive, especially for open-source developers which explains the large userbase which includes over 100 million developers.
 
 * Pipeline Automation with GitHub Actions
     * Reusable Workflows: The GitHub Marketplace provides a platform for developers to share and reuse workflows, reducing the need to recreate common workflow configurations. This is especially useful for common tasks and standard processes across projects.
@@ -27,7 +27,7 @@ In light of the open source mindset of the AI Lab, GitHub clearly stood out from
 
     * Microsoft is a major contributor to GitHub.
 
-    * The platform’s extensive user base includes over 100 million developers, 4 million organizations, and 330 million repositories, with adoption by 90% of Fortune 100 companies.
+    * The platform’s extensive user base includes 4 million organizations, and 330 million repositories, with adoption by 90% of Fortune 100 companies.
 
 
 ## Alternatives Considered
