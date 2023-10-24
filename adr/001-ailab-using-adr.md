@@ -12,6 +12,26 @@ addressing issues such as repeated discussions, inconsistent approaches, and
 difficulties in onboarding. The document sets the standards for ADR creation,
 storage, and modification.
 
+## Definitions
+
+- Version control: A system that records changes to a file or set of files over
+  time so that specific versions can be recalled later, like GitHub.
+- Repository: A central location in which version-controlled data is stored and
+  managed.
+- GitHub Issue: A section on GitHub where project issues, enhancements, tasks,
+  and other kinds of questions are tracked.
+- GitHub Pull Request: A method of submitting contributions to an open
+  development project hosted on GitHub.
+- Wiki: A collaborative platform that allows for the editing of interlinked
+  web pages, commonly used for documentation.
+- Request for Comment (RFC): A method that enables collective deliberation
+  on a particular issue or proposed feature, often formalized and version-
+  controlled.
+- Confluence: A collaboration software program developed by Atlassian that
+  serves as an enterprise wiki and project management tool.
+- Decision Log: A simple record-keeping method that logs key decisions made
+  throughout the course of a project, usually lacking version control.
+
 ## Context
 
 AI-Lab, comprised of software developers and data scientists, is dedicated to
@@ -62,28 +82,32 @@ significant architectural choices, not trivial decisions.
 
 ### Format
 
+- Language: ADRs should be written in English for uniformity and broader reach. 
+  French versions should be provided eventually.
+- Clarity: Aim for straightforward and simple language in the ADRs.
+- Proofreading: Review each ADR for linguistic and grammatical errors before
+  finalizing. Tools like Antidote can be useful.
 - File Naming: ADRs will follow the naming convention XXX-tag.md, for example,
   001-ailab-using-adr.md.
   - XXX: A three-digit number to ensure ADRs are listed in numerical order.
   - tag: A descriptive tag of the decision.
-- Attachments: Attachments like illustrations and diagrams will share the same
-  name prefix as the ADR, for example, 001-ailab-using-adr-template.md.
-- Title Format: Titles for ADRs (and attachments if required) should start with
-  the prefix "ADR-XXX: " followed by a brief description of the decision.
-  The numbers should match between the file name and the title. Example:
-  "ADR-001: Adopting Architecture Decision Records".
-- Sections: An ADR will include the following sections: Executive Summary,
-  optional illustration, Context, Decision, Alternatives Considered,
-  Consequences, and References. See [ADR
+- French Versions: French translations will carry the same name prefix as the
+  original ADR, followed by '.fr-ca'. For example, 001-ailab-using-adr.fr-ca.md.
+- Attachments: Diagrams and other attachments will carry the original ADR's
+  name prefix. For example, 001-ailab-using-adr-template.md.
+- Title Format: Titles should start with "ADR-XXX: ", followed by a brief
+  description. Numbers should match between the file name and title.
+- Sections: An ADR will include Executive Summary, Context, Decision,
+  Alternatives Considered, Consequences, and References. See [ADR
   Template](./001-ailab-using-adr-template.md) for more details.
 
 ### Implicit Statuses
 
-- PROPOSED: ADRs or modifications proposed via active pull requests and placed
-  in the adr/ folder.
+- PROPOSED: ADRs or modifications proposed via active GitHub pull requests and
+  placed in the adr/ folder.
 - ACCEPTED: ADRs merged in the main branch.
-- REJECTED: Pull requests that have been rejected or issues that led to a
-  decision not to proceed.
+- REJECTED: GitHub pull requests that have been rejected or GitHub issues that
+  led to a decision not to proceed.
 - DEPRECATED: ADRs moved to the adr/archives/ folder, indicating the decision
   is void.
 - SUPERSEDED: ADRs replaced by a new one and moved to adr/archives/, retaining
@@ -99,10 +123,14 @@ significant architectural choices, not trivial decisions.
 - Deprecated and superseded ADRs and their attachments will be moved to
   adr/archives/.
 
-### Review and Update Process
+### Responsibilities, Creation and Update Process
 
-- New ADRs and modifications will be proposed through issues and pull requests.
-- Must be approved by the whole team before merging.
+- Proposals: Any member of the ai-cfia GitHub organization may initiate new
+  ADRs or changes via GitHub issues and pull requests.
+- Approval: All members of the ai-cfia GitHub organization must approve pull
+  requests before merging.
+- Disagreements: Any strong objections will pause the process until a
+  consensus is reached.
 
 #### Example: Superseding an ADR
 
@@ -140,10 +168,6 @@ Cons:
 - Requires ongoing discipline to maintain and update records.
 
 ### Continuing with Wiki-based Documentation
-
-A Wiki is a platform that allows collaborative editing of content. Generally
-used for internal documentation, FAQs, and quick guidelines. We've been using a
-wiki so far.
 
 Pros:
 
