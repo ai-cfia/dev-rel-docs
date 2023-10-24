@@ -1,13 +1,13 @@
 # ADR 7 : Selecting GitHub as Code Hosting Platform
 
 ## Executive Summary
-This ADR documents the decision to select GitHub as the primary platform for hosting, managing, and sharing code within our agency.
+This ADR documents the decision to select GitHub as the primary platform for hosting, managing, and sharing code within our agency's AI (Artificial Intelligence) lab.
 
 ## Context
-A choice needed to be made to be able to manage and share code. It needed to be an online platform so that team members could work together in real time from anywhere in the country as well as allow access to external developers all around the world. Since the agency takes an open source approach, it means it's important to have the ability for everyone to be able to see the projects being worked on. It was important to pick a platform that would help organize and review the code.
+A choice needed to be made to be able to manage and share code. It needed to be an online platform so that team members could work together in real time from anywhere in the country as well as allow access to external developers all around the world. Since the agency's AI Lab takes an open source approach, it means it's important to have the ability for everyone to be able to see the projects being worked on. It was important to pick a platform that would help organize and review the code.
 
 ## Decision
-In light of the open source mindset of the agency, GitHub clearly stood out from the rest of the options available for a couple reasons :
+In light of the open source mindset of the AI Lab, GitHub clearly stood out from the rest of the options available for a couple reasons :
 
 * Community and Open-Source Focus
     * GitHub has a more prominent community of developers and is better suited for open-source code development and open-source projects. It's a platform where programmers from around the world collaborate on projects, often with varying levels of knowledge and commitment.
@@ -62,7 +62,7 @@ Cons:
 
 ### Alternative 2: Azure DevOps
 Pros:
-* Azure DevOps includs Azure Boards a project management tool which allows to track work items, such as user stories, tasks, bugs, and features. This feature is especially useful for those following agile methods
+* Azure DevOps includes Azure Boards a project management tool which allows to track work items, such as user stories, tasks, bugs, and features. This feature is especially useful for those following agile methods
 
 * Azure Test Plans is a testing tool that allows you to plan, execute, and track  manual and automated tests.
 
