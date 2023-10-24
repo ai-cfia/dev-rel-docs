@@ -30,7 +30,11 @@ When deploying, we need to be able to:
 To address the context and requirements, the following approach is proposed:
 
 - Incorporate semantic versioning information into schema names to maintain
-  version control.
+  version control. Semantic Versioning helps developers and users understand the
+  nature of the changes in a new version of a software package, making it easier
+  to manage dependencies and assess compatibility. It usually is in this format
+  : x.x.x (MAJOR.MINOR.PATCH) with each x being a number. In our case, we use
+  louis_vxxx.
 - Clone the current schema to create a new schema focusing on changes.
 - Implement changes within the new schema, including columns, indexes, foreign
   keys, constraints, and functions.
