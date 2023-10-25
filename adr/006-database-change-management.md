@@ -2,9 +2,10 @@
 
 ## Executive Summary
 
-This Architecture Decision Record (ADR) details our thought process regarding our database management system
-and highlights the factors influencing this choice. We considered a few solutions
-before coming to a combination of different options.
+This Architecture Decision Record (ADR) details our thought process regarding
+our database management system and highlights the factors influencing this
+choice. We considered a few solutions before coming to a combination of
+different options.
 
 Our solution is to incorporate semantic versioning information into schema names
 to maintain version control as well as to clone the current schema to migrate
@@ -12,7 +13,7 @@ and transform data in a new schema implementing changes. This ensure data
 integrity as well as good change management.
 
 ## Context
-CFIA projects Finesse and Louis Chat depend heavily on the PostgreSQL database.
+CFIA products Finesse and Louis Chat depend heavily on the PostgreSQL database.
 Changes to the database schema need to follow changes to the code as we
 introduce new features. 
 
@@ -36,7 +37,8 @@ To address the context and requirements, the following approach is adopted:
   : x.x.x (MAJOR.MINOR.PATCH) with each x being a number. In our case, we use
   louis_x.x.x - a MAJOR release would break the database, it includes modifying
   existing tables. MINOR release would not break anything major but will add
-  tables for example. PATCH is just minor modifications that shouldn't be noticed.
+  tables for example. PATCH is just minor modifications that shouldn't be
+  noticed.
 - Clone the current schema to create a new schema focusing on changes.
 - Implement changes within the new schema, including columns, indexes, foreign
   keys, constraints, and functions.
