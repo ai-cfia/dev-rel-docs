@@ -27,7 +27,7 @@ When deploying, we need to be able to:
 
 ## Decision
 
-To address the context and requirements, the following approach is proposed:
+To address the context and requirements, the following approach is adopted:
 
 - Incorporate semantic versioning information into schema names to maintain
   version control. Semantic Versioning helps developers and users understand the
