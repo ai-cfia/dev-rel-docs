@@ -4,7 +4,7 @@
 This ADR documents the decision to select GitHub as the primary platform for hosting, managing, and sharing code within the CFIA's (Canadian Food Inspection Agency) AI (Artificial Intelligence) Lab.
 
 ## Context
-The team needs a plateform to be able to manage and share code which needed to be an online plateform so that team members could work together in real time from anywhere in the country as well as allow access to external contributors all around the world. Since the agency needs to follow the Government of Canada Digital Standard and use an open source approach, it's important to pick the right platform that would help organize and review the code.
+The team needs a platform to be able to manage and share code which needed to be an online platform so that team members could work together in real time from anywhere in the country as well as allow access to external contributors all around the world. Since the agency needs to follow the Government of Canada Digital Standard and use an open source approach, it's important to pick the right platform that would help organize and review the code.
 
 ## Decision
 GitHub clearly stood out from the rest of the options available for a couple reasons :
@@ -13,7 +13,7 @@ GitHub clearly stood out from the rest of the options available for a couple rea
     * GitHub has a more prominent community of developers and is better suited for open-source code development and open-source projects. It's a platform where programmers from around the world collaborate on projects, often with varying levels of knowledge and commitment.
 
 * Version Control
-    * GitHub’s continued innovation helped the plateform to stay relevant for many years (created in 2008).
+    * GitHub’s continued innovation helped the platform to stay relevant for many years (created in 2008).
 
 * Pipeline Automation with GitHub Actions
     * Reusable Workflows: The GitHub Marketplace provides a platform for developers to share and reuse workflows, reducing the need to recreate common workflow configurations. This is especially useful for common tasks and standard processes across projects.
@@ -23,23 +23,25 @@ GitHub clearly stood out from the rest of the options available for a couple rea
     * Community-Driven: The marketplace is community-driven, meaning developers can contribute their own actions and workflows, making it a rich ecosystem of tools and automation processes. This is particularly beneficial for open-source projects, as it fosters collaboration and sharing of resources.
 
 * Alignment with Microsoft:
-    * As a Microsoft product, GitHub integration aligns with existing service agreements.
+    * Because GitHub is owned by Microsoft, which will help the lab stay in line with the Cloud First policy requirement of the Government of Canada. This makes sure that the contracts and operations are consistent.
 
-    * Microsoft is a major contributor to GitHub.
+    * Microsoft's major contributions to GitHub have made the platform more useful.
 
-    * The platform’s extensive user base includes 4 million organizations and 330 million repositories, with adoption by 90% of Fortune 100 companies which is a list of the top 100 companies in the United States based on their reported revenues for their fiscal year .
+    * GitHub has a huge community of users, with 4 million organizations, 330 million repositories used by 90% of the Fortune 100 companies which shows how reliable it is and how widely accepted GitHub is in the industry. This shows that GitHub is widely known, tested and very stable.
+
+
 
 
 ## Alternatives Considered
 
 ### Alternative 1: GitLab
 Pros:
-* Iron Mountain plateform with GitLab ultimate :
+* Iron Mountain platform with GitLab ultimate :
     * $150k in approximate cost savings per year.
 
-    * 20 hrs saved in onboarding time per project.
+    * 20 hours saved in onboarding time per project.
 
-* Integraded AI software.
+* Integrated AI software.
 
 * User data not used to train AI.
 
@@ -49,22 +51,22 @@ Pros:
 
 * 30m + registered users.
 
-* Used by 50%+ of fortune 100.
+* Used by 50%+ of Fortune 100.
 
 Cons:
 * Interface Navigation can be challenging, especially for new users.
 
 * Issue Tracking Customization is limited for some users.
 
-* Certain reviews point out lack of documentation.
+* Certain reviews point out a lack of documentation.
 
 * CI/Automation integration.
 
 ### Alternative 2: Azure DevOps
 Pros:
-* Azure DevOps includes Azure Boards a project management tool which allows to track work items, such as user stories, tasks, bugs, and features. This feature is especially useful for those following agile methods.
+* Azure DevOps includes Azure Boards, a project management tool which allows tracking of work items, such as user stories, tasks, bugs, and features. This feature is handy for those following agile methods.
 
-* Azure Test Plans is a testing tool that allows you to plan, execute, and track  manual and automated tests.
+* Azure Test Plans is a testing tool that allows you to plan, execute, and track manual and automated tests.
 
 * Integrates easily with other Azure services and Microsoft products like Visual Studio, Office 365, Azure, etc.
 
@@ -96,7 +98,7 @@ Cons:
 
 ## Consequences
 
-The decision to use GitHub will help the agency's reach, it will get more people to look at the products and support the open source goals. It will also make DevOps a lot easier with its large community marketplace for workflow. It will also help developers be more productive and improve their work. That being said, the agency has two computer science teams and one team works with GitHub and the other with Azure DevOps, which could lead to some complications.
+The decision to use GitHub will help the CFIA's AI Lab reach, it will get more people to look at the products and support the open source goals. It will also make DevOps a lot easier with its large community marketplace for workflow. It will also help developers be more productive and improve their work. That being said, the CFIA's AI Lab has a software development team and a data science team with one team using GitHub and the other one using Azure DevOps, which could lead to some complications.
 
 ## References
 [GetApp * GitLab Reviews](https://www.getapp.com/it-management-software/a/gitlab/reviews/#:~:text=Pros.%20Its%20intuitive%20interface%20and%20robust%20feature%20set,challenging%20for%20new%20users%20to%20get%20started.%20IR)
