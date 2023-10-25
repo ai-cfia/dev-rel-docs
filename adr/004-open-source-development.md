@@ -52,7 +52,7 @@ Every software product undertaken by the AI Lab will be released publicly,
 embracing the ethos of open source development at its core. This means every
 aspect of our development – from core functionalities to ancillary tools – will
 be made available to the public, allowing for community contributions, feedback,
-and collaboration right from the inception of any project.
+and collaboration right from the inception of any product.
 
 By committing to full open source development, the AI Lab is not just adopting a
 development approach but embracing a philosophy. We believe in the power of
