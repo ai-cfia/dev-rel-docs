@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This ADR details our thought process regarding our database system's choice and
+This Architecture Decision Record (ADR) details our thought process regarding our database system's choice and
 highlights the factors influencing this choice. We considered MySQL, Microsoft
 SQL Server, and PostgreSQL, ultimately opting for PostgreSQL because of its
 robust features, scalability, and suitability for our specific needs thanks to
@@ -17,7 +17,7 @@ scalability, support data analysis, facilitate collaboration between teams, and
 reduce operational costs.
 
 ## Decision
-We decided to adopt PostgreSQL as our DBMS due to its open source nature and the
+The AI Lab decided to adopt PostgreSQL as our DBMS due to its open source nature and the
 presence of a large and active community. This guarantees regular updates, bug
 fixes, and a rich array of extensions and plugins such as pgvector and PostGIS,
 making it exceptionally well-suited for handling diverse data, including vector
