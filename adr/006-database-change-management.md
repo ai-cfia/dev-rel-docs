@@ -34,7 +34,7 @@ To address the context and requirements, the following approach is proposed:
   nature of the changes in a new version of a software package, making it easier
   to manage dependencies and assess compatibility. It usually is in this format
   : x.x.x (MAJOR.MINOR.PATCH) with each x being a number. In our case, we use
-  louis_x.x.x - a MAJOR release would break the database, it includes modifiying
+  louis_x.x.x - a MAJOR release would break the database, it includes modifying
   existing tables. MINOR release would not break anything major but will add
   tables for example. PATCH is just minor modifications that shouldn't be noticed.
 - Clone the current schema to create a new schema focusing on changes.
@@ -107,30 +107,30 @@ Blue-Green Deployment, and the concept of Database Views and Abstraction Layers.
 #### Pros: 
 - Provides backward compatibility.
 - Eases schema changes for applications.
-#### Cons*:
+#### Cons:
 - May not suit all use cases.
 - Additional complexity in database design.
 
 ### Alternative 8 : Data Virtualization
-#### Pros*: 
+#### Pros: 
 - Presents a consistent virtual schema.
 - Allows physical schema changes.
-#### Cons*: 
+#### Cons: 
 - Additional layer of complexity.
 - Potential performance overhead.
 
 ### Alternative 9 : Continuous Integration/Continuous Deployment (CI/CD)
-#### Pros*: 
+#### Pros: 
 - Automated changes within CI/CD pipeline.
 - Data integrity testing.
-#### Cons*: 
+#### Cons: 
 - Requires careful testing.
 - Potential for data integrity issues if not managed correctly.
 
 ### Alternative 10 : Cloud Database Services
-#### Pros*: 
+#### Pros: 
 - Automated schema management, scaling, and backups.
-#### Cons*: 
+#### Cons: 
 - Vendor lock-in.
 - Limited control over infrastructure.
 
