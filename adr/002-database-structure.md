@@ -10,7 +10,7 @@ This ADR discusses our choices for the ailab-db database structure. We want to e
 Our previous ailab-db architecture required maintenance of several databases, notably "louis-db" and "nachet-db." Although this approach initially provides clarity, it ultimately results in redundancy, less flexibility, and collaboration issues, which may cause data conflicts. We have a better way to maintain databases with this approach, which uses a Consolidated Database Approach and only uses one database.
 
 ## Decision
-We have decided to transition to a Consolidated Database Approach for AiLab-db. This decision is rooted in our evaluation criteria, which emphasize flexibility, maintainability, efficiency, and collaborative potential.
+We have decided to transition to a Consolidated Database Approach for ailab-db. This decision is rooted in our evaluation criteria, which emphasize flexibility, maintainability, efficiency, and collaborative potential.
 
 
 ## Alternatives Considered
