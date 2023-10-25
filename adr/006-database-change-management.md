@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This ADR details our thought process regarding our database management system
+This Architecture Decision Record (ADR) details our thought process regarding our database management system
 and highlights the factors influencing this choice. We considered a few solutions
 before coming to a combination of different options.
 
