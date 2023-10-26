@@ -26,24 +26,27 @@ Open source development offers numerous advantages including:
 * Peer-reviewed security enhancements.
 * Cost-effectiveness and avoiding vendor lock-ins.
 
-Furthermore, this type of development aligns with the [Government of Canada's
-Digital
-Standards](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html):
+Moreover, Microsoft, who was opposed to the open source paradigm considering it a threat to its business, changed its stance significantly around 2010 when it began to embrace it. The company recognizes that "[building on the effort of others allows [them] to create meaningful value for [their] customers and engage with new ecosystems and user-bases in a natural way.](#ref2)"
+
+Furthermore, this type of development aligns with the 
+[Government of Canada's Digital Standards](#ref1) :
 * Work in the open by default
 * Use open standards and solutions
 * Collaborate widely
 
-On the flip side, potential concerns include:
+On the flip side, open source development does present some potential concerns:
 
 * Exposing vulnerabilities, especially when sensitive information is involved.
 * Overhead of managing community contributions.
 * Potential quality control issues without the necessary expertise.
 * Political ramifications and criticism from stakeholders.
 
-Furthermore, our current technological landscape is heavily interwoven with open
-source tools. The Government of Canada has also shown a commitment towards
+Additionally, our current technological landscape is heavily interwoven with open source tools. The Government of Canada has also shown a commitment towards
 experimentation and open development, as reflected in platforms like
-alpha.canada.ca and the Digital Standards.
+alpha.canada.ca and the [Digital Standards](#ref1).
+
+Finally, it's important to understand that "open source" doesn't solely refer to source code access, software must comply with the [Open Source Initiative's criteria](#ref3) to be **truly** open source. To put it simply, according to the Free Software Foundation, the users "[must have the freedom to run, edit, contribute to, and share the software.](#ref4)"
+
 
 ## Decision
 We have chosen to adopt the Full Open Source Development approach.
@@ -114,7 +117,7 @@ it will dictate how other uses can use, modify, and distribute our work.
 **Enhanced Transparency and Trust**: With a full open source approach, every
 stakeholder, including the general public, will have direct insight into our
 development process. This will foster a greater degree of trust and transparency
-between the lab and its audience.
+between the lab and its audience. 
 
 **Increased Collaborative Potential**: By making all projects open source, we
 will tap into the collective intelligence of the developer and expert community.
@@ -141,5 +144,15 @@ guidelines, will be instituted to mitigate these risks.
 
 
 ## References
-* [Government of Canada Digital Standards:
-  Playbook](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
+
+* [Government of Canada Digital Standards. Canada.ca. (2021, August 13)](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
+<a id="ref1"></a>
+
+* [Microsoft’s Open Source Program. Microsoft Open Source. (n.d.)](https://opensource.microsoft.com/program/#program-using)
+<a id="ref2"></a>
+
+* [The Open Source Definition. Open Source Initiative. (2023, February 22)](https://opensource.org/osd/)
+<a id="ref3"></a>
+
+* [Homepage. Free Software Foundation. (n.d.)](https://www.fsf.org/)
+<a id="ref4"></a>
