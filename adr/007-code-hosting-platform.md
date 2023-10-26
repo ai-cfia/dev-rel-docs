@@ -1,7 +1,7 @@
 # ADR-007: Selecting GitHub as Code Hosting Platform
 
 ## Executive Summary
-This ADR documents the decision to select GitHub as the primary platform for hosting, managing, and sharing code within the CFIA's (Canadian Food Inspection Agency) AI (Artificial Intelligence) Lab.
+This ADR documents the decision to select GitHub as the primary platform for hosting, managing, and sharing code within the CFIA's (Canadian Food Inspection Agency) AI Lab (Artificial Intelligence Laboratory).
 
 ## Context
 The team needs a platform to be able to manage and share code which needed to be an online platform so that team members could work together in real time from anywhere in the country as well as allow access to external contributors all around the world. Since the agency needs to follow the Government of Canada Digital Standard and use an open source approach, it's important to pick the right platform that would help organize and review the code.
@@ -29,17 +29,16 @@ GitHub clearly stood out from the rest of the options available for a couple rea
 
     * GitHub has a huge community of users, with 4 million organizations, 330 million repositories used by 90% of the Fortune 100 companies which shows how reliable it is and how widely accepted GitHub is in the industry. This shows that GitHub is widely known, tested and very stable.
 
-
-
-
 ## Alternatives Considered
 
 ### Alternative 1: GitLab
 Pros:
-* Iron Mountain platform with GitLab ultimate :
-    * $150k in approximate cost savings per year.
+* GitLab ultimate :
+    * Built-in security testing
 
-    * 20 hours saved in onboarding time per project.
+    * Compliance and preventive security for cloud-native applications
+
+    * Iron Mountain testimonial says that GitLab ultimate saves about 150k in cost per year as well as saving 20 hours in onboarding time per project.
 
 * Integrated AI software.
 
@@ -61,6 +60,8 @@ Cons:
 * Certain reviews point out a lack of documentation.
 
 * CI/Automation integration.
+
+* GitLab ultimate which offers the most efficient performances has an extra cost.
 
 ### Alternative 2: Azure DevOps
 Pros:
@@ -98,7 +99,7 @@ Cons:
 
 ## Consequences
 
-The decision to use GitHub will help the CFIA's AI Lab reach, it will get more people to look at the products and support the open source goals. It will also make DevOps a lot easier with its large community marketplace for workflow. It will also help developers be more productive and improve their work. That being said, the CFIA's AI Lab has a software development team and a data science team with one team using GitHub and the other one using Azure DevOps, which could lead to some complications.
+The decision to use GitHub will help the CFIA's AI Lab reach, it will get more people to look at the products and support the open source goals. GitHub will also make DevOps a lot easier with its large community marketplace for workflow which will also help developers be more productive and improve their work. That being said, the CFIA's AI Lab has a software development team and a data science team with one team using GitHub and the other one using Azure DevOps, which could lead to some complications.
 
 ## References
 [GetApp * GitLab Reviews](https://www.getapp.com/it-management-software/a/gitlab/reviews/#:~:text=Pros.%20Its%20intuitive%20interface%20and%20robust%20feature%20set,challenging%20for%20new%20users%20to%20get%20started.%20IR)
