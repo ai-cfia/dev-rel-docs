@@ -245,17 +245,20 @@ Inconvénients :
 
 ## Références
 
-- [Architecture decision record
-  (ADR)](https://github.com/joelparkerhenderson/architecture-decision-record) -
-  Joel Parker Henderson
-- [Record architecture
-  decisions](https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/) - Code With Engineering Playbook
-- [Communicating and documenting architectural
-  decisions](https://www.youtube.com/watch?v=rwfXkSjFhzc) - David Ayers
-- [A Structured RFC
-  Process](https://philcalcado.com/2018/11/19/a_structured_rfc_process.html) -
-  Phil Calçado
-- [DACI: decision
-  documentation](https://www.atlassian.com/software/confluence/templates/decision) - Atlassian Confluence
-- [How to use a project decision log for optimal
-  results](https://monday.com/blog/project-management/decision-log/) - Monday.com
+* [Architecture Decision Record (ADR). Joel Parker Henderson. (n.d.)](https://github.com/joelparkerhenderson/architecture-decision-record)
+<a id="ref1"></a>
+
+* [Record Architecture Decisions. Code With Engineering Playbook. (2020, March 20)](https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/)
+<a id="ref2"></a>
+
+* [Communicating and Documenting Architectural Decisions. David Ayers. (n.d.)](https://www.youtube.com/watch?v=rwfXkSjFhzc)
+<a id="ref3"></a>
+
+* [A Structured RFC Process. Phil Calçado. (2018, November 19)](https://philcalcado.com/2018/11/19/a_structured_rfc_process.html)
+<a id="ref4"></a>
+
+* [DACI: Decision Documentation. Atlassian Confluence. (n.d.)](https://www.atlassian.com/software/confluence/templates/decision)
+<a id="ref5"></a>
+
+* [How to Use a Project Decision Log for Optimal Results. Monday.com. (n.d.)](https://monday.com/blog/project-management/decision-log/)
+<a id="ref6"></a>
