@@ -140,6 +140,10 @@ significatifs, mais pas des décisions triviales.
   revue et une validation par le manager de l'équipe.
 - Désaccords : Si de fortes objections se manifestent, le processus est en
   suspens jusqu'à ce qu'un accord soit trouvé.
+- Communication : Pour encourager une collaboration plus large et éventuellement
+  offrir des perspectives utiles, nous invitons la haute direction et les
+  équipes adjacentes à participer au processus ADR en partageant nos décisions
+  avec elles.
 
 #### Exemple : Remplacer un ADR
 

@@ -133,6 +133,9 @@ significant architectural choices, not trivial decisions.
   approval from the team's manager.
 - Disagreements: Any strong objections will pause the process until a
   consensus is reached.
+- Communication: To foster wider collaboration and possibly offer useful
+  insights, we invite upper management and other adjacent teams to participate
+  in the ADR process by sharing our decisions with them.
 
 #### Example: Superseding an ADR
 
