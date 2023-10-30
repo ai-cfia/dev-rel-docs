@@ -1,0 +1,12 @@
+name: Translate ADR to french
+
+on:
+    push:
+        paths:
+            - 'adr/**.md'
+        branches:
+        - translation-workflow-testing
+
+jobs:
+    translate-adr:
+        uses: ai-cfia/github-workflows/.github/workflows/workflow-file-translation.yml@issue-18-implement-file-translation-workflow
