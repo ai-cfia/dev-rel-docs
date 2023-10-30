@@ -129,6 +129,8 @@ significant architectural choices, not trivial decisions.
   ADRs or changes via GitHub issues and pull requests.
 - Approval: All members of the ai-cfia GitHub organization must approve pull
   requests before merging.
+- Manager Approval: The final step in the approval process is a review and
+  approval from the team's manager.
 - Disagreements: Any strong objections will pause the process until a
   consensus is reached.
 

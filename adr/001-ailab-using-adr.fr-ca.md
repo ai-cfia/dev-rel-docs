@@ -136,6 +136,8 @@ significatifs, mais pas des décisions triviales.
   pull requests GitHub.
 - Approbation : Avant de fusionner, il faut l'aval de tous les membres de
   l'organisation GitHub ai-cfia.
+- Approbation du Manager : La dernière étape du processus d'approbation est une
+  revue et une validation par le manager de l'équipe.
 - Désaccords : Si de fortes objections se manifestent, le processus est en
   suspens jusqu'à ce qu'un accord soit trouvé.
 
