@@ -37,7 +37,7 @@ To address the context and requirements, the following approach is adopted:
   : x.x.x (MAJOR.MINOR.PATCH) with each x being a number. In our case, we use
   louis_x.x.x - a MAJOR release would break the database, it includes modifying
   existing tables. MINOR release would not break anything major but will add
-  tables for example. PATCH is just minor modifications that shouldn't be be
+  tables for example. PATCH is just minor modifications that shouldn't be
   noticeable to users of the database.
 - Clone the current schema to create a new schema focusing on changes.
 - Implement changes within the new schema, including columns, indexes, foreign
@@ -143,26 +143,28 @@ several considerations and challenges:
 
 - The incorporation of semantic versioning into schema names, while aiding
   version identification, may introduce complexity in schema naming conventions,
-  which can be prone to errors. To prevent this, we can implement clear and
-  standardized naming conventions and provide documentation to ensure team
-  members understand and follow the conventions consistently.
+  which can be prone to errors. 
+  - Mitigation: To prevent this, we can implement clear and standardized naming
+    conventions and provide documentation to ensure team members understand and
+    follow the conventions consistently.
 
 - Cloning the current schema for implementing changes increases storage
-  requirements and can lead to redundancy in data storage. Keeping an eye on
-  storage use and tidy up data to reduce duplication and control data growth
-  should resolve this issue.
+  requirements and can lead to redundancy in data storage. 
+  - Mitigation: Keeping an eye on storage use and tidy up data to reduce
+    duplication and control data growth should resolve this issue.
 
 - The use of multiple solutions, while providing flexibility, requires a higher
   level of expertise and introduces complexity in the database management
   process. It necessitates that the team be well-versed in various methods,
-  which can lead to increased training and onboarding efforts. We will provide
-  training and onboarding for the team to make sure they can use different
-  methods effectively. Create clear best practices and guidelines for choosing
-  solutions.
+  which can lead to increased training and onboarding efforts. 
+  - Mitigation: We will provide training and onboarding for the team to make
+    sure they can use different methods effectively. Create clear best practices
+    and guidelines for choosing solutions.
 
 - The comprehensive approach can also lead to decision fatigue when choosing the
   most suitable method for a given situation, potentially slowing down the
-  decision-making process. We created ADRs for this specific reason.
+  decision-making process. 
+  - Mitigation: We created ADRs for this specific reason.
 
 This approach is selected to balance version control, data integrity, and
 flexibility. However, it's important to be mindful of the associated
