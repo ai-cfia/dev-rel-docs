@@ -1,4 +1,4 @@
-# ADR 6: How we manage changes in databases
+# ADR-006: How we manage changes in databases
 
 ## Executive Summary
 
