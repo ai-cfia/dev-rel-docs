@@ -2,11 +2,11 @@
 
 ## Executive Summary
 
-This Architecture Decision Record (ADR) details our thought process regarding our database system's choice and
-highlights the factors influencing this choice. We considered MySQL, Microsoft
-SQL Server, and PostgreSQL, ultimately opting for PostgreSQL because of its
-robust features, scalability, and suitability for our specific needs thanks to
-its pgvector extension.
+This Architecture Decision Record (ADR) details our thought process regarding
+our database system's choice and highlights the factors influencing this choice.
+We considered MySQL, Microsoft SQL Server, and PostgreSQL, ultimately opting for
+PostgreSQL because of its robust features, scalability, and suitability for our
+specific needs thanks to its pgvector extension.
 
 ## Context
 Today, effective data management is crucial to Canadian Food Inspection Agency's
@@ -17,14 +17,19 @@ scalability, support data analysis, facilitate collaboration between teams, and
 reduce operational costs.
 
 ## Decision
-The AI Lab decided to adopt PostgreSQL as our DBMS due to its open source nature and the
-presence of a large and active community. This guarantees regular updates, bug
-fixes, and a rich array of extensions and plugins such as pgvector and PostGIS,
-making it exceptionally well-suited for handling diverse data, including vector
-and geographic data. This attribute is particularly significant for AI
-applications which is what the AI Lab does. Furthermore, the availability of
-PostgreSQL as a Database-as-a-Service in Azure enhances flexibility and
+The AI Lab decided to adopt PostgreSQL as our DBMS due to its open source nature
+and the presence of a large and active community. This guarantees regular
+updates, bug fixes, and a rich array of extensions and plugins such as pgvector
+and PostGIS, making it exceptionally well-suited for handling diverse data,
+including vector and geographic data. This attribute is particularly significant
+for AI applications which is what the AI Lab does. Furthermore, the availability
+of PostgreSQL as a Database-as-a-Service in Azure enhances flexibility and
 scalability, offering a substantial advantage for our applications.
+
+Through other commercial versions such as [Citus](https://www.citusdata.com/)
+(now owned by Microsoft) or [Timescale](https://www.timescale.com/), Postgresql
+is the top database for big data. We use Azure Flexible Postgresql which comes
+with better integration with Azure cloud.
 
 While PostgreSQL has several advantages, it's important to consider the cons as
 well, especially the complexity of configuration and the steeper learning curve
@@ -98,22 +103,23 @@ PostgreSQL for our projects.
 
 ## References
 
-- [Postgres pgvector Extension - Vector Database with PostgreSQL / Langchain
-  Integration](https://youtu.be/FDBnyJu_Ndg?si=sBfBluS3G2TlW6RN) - BugBytes
-- [PostgreSQL: The World's Most Advanced Open Source Relational
-  Database](https://www.postgresql.org/) - postgresql.org
-- [What is PostgreSQL and why do banking software developers love
-  it?](https://ubuntu.com/blog/what-is-postgresql) - Kris Sharma
-- [Why more and more enterprises are choosing PostgreSQL as their go-to
-database!](https://www.enterprisedb.com/postgres-tutorials/why-more-and-more-enterprises-are-choosing-postgresql-their-go-database)
-- Thom Brown
-- [pgsql-announce](https://www.postgresql.org/list/pgsql-announce/) -
-  postgresql.org
-- [pgsql-hackers](https://www.postgresql.org/list/pgsql-hackers/) -
-  postgresql.org
-- [pgsql-general](https://www.postgresql.org/list/pgsql-general) -
-  postgresql.org
-- [Architecting petabyte-scale analytics by scaling out Postgres on Azure with
-  the Citus
-  extension](https://techcommunity.microsoft.com/t5/azure-database-for-postgresql/architecting-petabyte-scale-analytics-by-scaling-out-postgres-on/ba-p/969685)
-  - Claire Giordano
+- Architecting petabyte-scale analytics by scaling out postgres on Azure with
+  the CITUS extension. TECHCOMMUNITY.MICROSOFT.COM. (2023, January 31).
+  https://techcommunity.microsoft.com/t5/azure-database-for-postgresql/architecting-petabyte-scale-analytics-by-scaling-out-postgres-on/ba-p/969685 
+- Brown, T. (2023, January 19). Why more and more enterprises are choosing
+  postgresql as their go-to database!. EDB.
+  https://www.enterprisedb.com/postgres-tutorials/why-more-and-more-enterprises-are-choosing-postgresql-their-go-database 
+- Bytes, B. (2023, July 27). Postgres pgvector extension - vector database with
+  PostgreSQL / Langchain Integration. YouTube.
+  https://youtu.be/FDBnyJu_Ndg?si=sBfBluS3G2TlW6RN 
+- Group, P. G. D. (2023, October 31). PostgreSQL. https://www.postgresql.org/ 
+- Pgsql-announce. PostgreSQL. (n.d.-a).
+  https://www.postgresql.org/list/pgsql-announce/ 
+- Pgsql-general. PostgreSQL. (n.d.-b).
+  https://www.postgresql.org/list/pgsql-general 
+- Pgsql-hackers. PostgreSQL. (n.d.-c).
+  https://www.postgresql.org/list/pgsql-hackers/ 
+- Stack overflow developer survey 2023. Stack Overflow. (n.d.).
+  https://survey.stackoverflow.co/2023/#most-popular-technologies-database 
+- What is postgresql?. PostgreSQL Tutorial. (n.d.).
+  https://www.postgresqltutorial.com/postgresql-getting-started/what-is-postgresql/ 
