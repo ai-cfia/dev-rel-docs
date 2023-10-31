@@ -1,4 +1,4 @@
-# ADR 4: Open Source Development
+# ADR-004: Open Source Development
 
 ## Executive Summary
 The Canadian Food Inspection Food Agency (CFIA) Artificial Intelligence
