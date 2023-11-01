@@ -11,6 +11,7 @@
   * [Values and Ethics Code for the Public Sector](https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=25049)
   * [Government of Canada Digital Standards](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
   * Review OpenSource code on our Github [https://github.com/ai-cfia](https://github.com/ai-cfia)
+    * Pay close attention to the [ADR (Architecture Decision Records) - under development](https://github.com/ai-cfia/dev-rel-docs/pulls) 
   * Linux
     * [Linux command line and the Shell](https://learn.microsoft.com/en-gb/training/paths/shell/) (~25 minutes)
     * [Bash programming cheatsheet](https://devhints.io/bash)
