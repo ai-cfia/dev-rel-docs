@@ -4,6 +4,8 @@ Welcome to the Developer Related Docs repository! This repository serves as a kn
 
 ---
 
+**[Architecture Decision Records](./adr/index.md)** - A list of all our ADRs.
+
 **[Development Environment Setup Guide](./Development-Environment-Setup-Guide/DEV-ENV-SETUP.md)** - A guide to setting up a development environment with Dev Containers.
 
 **[TypeScript React Setup Guide](./TypeScript-React-Setup-Guide/REACTSETUP.md)** - A comprehensive guide to setting up a TypeScript React project with ESLint and Prettier.
