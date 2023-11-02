@@ -34,7 +34,9 @@ To address the context and requirements, the following approach is adopted:
   version control. Semantic Versioning helps developers and users understand the
   nature of the changes in a new version of a software package, making it easier
   to manage dependencies and assess compatibility. It usually is in this format
-  : x.x.x (MAJOR.MINOR.PATCH) with each x being a number. In our case, we use
+  : x.x.x (MAJOR.MINOR.PATCH) with each x being a number. 
+  
+  In our case, we use
   louis_x.x.x - a MAJOR release would break the database, it includes modifying
   existing tables. MINOR release would not break anything major but will add
   tables for example. PATCH is just minor modifications that shouldn't be
@@ -46,6 +48,10 @@ To address the context and requirements, the following approach is adopted:
 - Utilize the new schema either by renaming the current schema to the version
   name and renaming the new schema as the current schema, or by adjusting the
   search path to access the new schema and public schema.
+
+If we need to revert changes, we can simply point towards the older version of
+the schema thanks to the semantic versionning. We are currently thinking about
+using a tool to automate this process.
 
 Our decision to adopt this approach was influenced by a combination of multiple
 solutions considered, including : Manual SQL Scripts, Database Migration Tools,
