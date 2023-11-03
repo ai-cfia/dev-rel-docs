@@ -2,12 +2,12 @@
 
 ## Executive Summary
 The Canadian Food Inspection Agency (CFIA) Artificial Intelligence Laboratory
-(AI Lab) has chosen [Docusaurus](https://docusaurus.io/) for the development of
-its new website. This framework addresses our core needs for rapid content
-publishing, stringent accessibility compliance, and robust internationalization
-support. This strategic choice aligns with the [Government of Canada's Digital
-Standards](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html),
-reflecting our commitment to openness, continuous improvement, and inclusivity.
+(AI Lab) has chosen [Docusaurus](#ref1) for the development of its new website.
+This framework addresses our core needs for rapid content publishing, stringent
+accessibility compliance, and robust internationalization support. This
+strategic choice aligns with the [Government of Canada's Digital
+Standards](#ref2), reflecting our commitment to openness, continuous
+improvement, and inclusivity.
 
 ## Context
 The CFIA AI Lab is at a strategic juncture in its development, recognizing the
@@ -33,15 +33,14 @@ Furthermore, our operations' global footprint necessitates the integration of
 internationalization capabilities in our platform, enabling content creation in
 multiple languages and making our insights accessible to a worldwide audience.
 
-Guiding our strategic approach are the [Digital
-Standards](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
-set forth by the Government of Canada. These principles emphasize the adoption
-of 'open standards and solutions', advocate for 'working in the open by
-default', and demand a continuous commitment to 'iterate and improve
-frequently'. Central to these standards is the foundational mandate to 'build in
-accessibility from the start'. These tenets shape our operational philosophy and
-inform our technical decisions, reinforcing our dedication to transparency,
-inclusivity, and ongoing improvement.
+Guiding our strategic approach are the [Digital Standards](#ref2) set forth by
+the Government of Canada. These principles emphasize the adoption of 'open
+standards and solutions', advocate for 'working in the open by default', and
+demand a continuous commitment to 'iterate and improve frequently'. Central to
+these standards is the foundational mandate to 'build in accessibility from the
+start'. These tenets shape our operational philosophy and inform our technical
+decisions, reinforcing our dedication to transparency, inclusivity, and ongoing
+improvement.
 
 In light of these requirements and guiding principles, we have ventured into
 assessing various technical solutions. Our focus has been on identifying a
@@ -52,9 +51,8 @@ source development framework conducive to continuous evolution and refinement.
 ## Decision
 After a comprehensive evaluation of various platforms and considering our
 specific needs for accessibility, rapid content updates, and
-internationalization, we have decided to adopt
-[Docusaurus](https://docusaurus.io/) as the development framework for the CFIA
-AI Lab's new website.
+internationalization, we have decided to adopt [Docusaurus](#ref1) as the
+development framework for the CFIA AI Lab's new website.
 
 Pros:
 * **Rapid Content Publishing**: Docusaurus supports Markdown, making content
@@ -66,8 +64,8 @@ Pros:
   adjustments and customizations, ensuring our content is universally
   accessible.
 * **Built-in Internationalization**: Docusaurus comes with out-of-the-box
-  support for content internationalization, a critical feature given our need to
-  have our content in both official languages.
+  support for [content internationalization](#ref3) ([i18n](#ref4)), a critical
+  feature given our need to have our content in both official languages.
 * **Seamless Integration with Version Control Systems**: Docusaurus's
   compatibility with GitHub will streamline our development process, making it
   easier to manage contributions, track changes, and maintain a high level of
@@ -81,6 +79,25 @@ Pros:
   open solutions and working in transparency. This platform also allows for
   continuous improvement, enabling us to iterate effectively, based on user
   feedback and evolving requirements.
+* **Effortless Conversion of Jupyter Notebooks**: Given the data science team's
+  objective to create and share tutorials through Jupyter Notebooks, the ability
+  to easily convert these notebooks to markdown documents with a single click is
+  invaluable. This feature streamlines the process of sharing educational
+  content on our platform, making Docusaurus an even more suitable choice. It's
+  a case of hitting two birds with one stone – we facilitate the easy creation
+  and publication of educational content while adhering to our rapid content
+  publishing goal.
+* **Math Equations**: [Mathematical equations](#ref5) can be rendered using
+  KaTeX.
+* **Rich Data Visualization Integration**: Docusaurus supports the embedding of
+  interactive data visualizations (based on ipynb).
+* **Extensibility and Plugin Ecosystem**: The extensibility of Docusaurus
+  through its [plugin ecosystem](#ref6) is a notable advantage
+* **Responsive Design**: The responsive design ensures that content, including
+  data visualizations and interactive elements, is accessible and usable across
+  a variety of devices and screen sizes.
+* **Search engine optimization (SEO)**:Docusaurus supports [search engine
+  optimization](#ref7) in a variety of ways.
 
 
 However, Docusaurus does have negative aspects that we must keep in mind going
@@ -98,7 +115,7 @@ Cons:
 
 ## Alternatives Considered
 
-### [Jekyll](https://jekyllrb.com/)
+### [Jekyll](#ref8)
 Pros:
 * Robust and reliable for static site generation.
 * Supports a wide array of themes and templates for various content types.
@@ -110,7 +127,7 @@ Cons:
 * Steep learning curve for contributors, particularly those without technical
   expertise.
 
-### [Hugo](https://gohugo.io/)
+### [Hugo](#ref9)
 Pros:
 * Fast content rendering and efficient performance.
 * Simplified content management due to its organized content structure.
@@ -121,7 +138,7 @@ Cons:
 * Insufficient built-in accessibility, requiring extensive manual modifications.
 * Customization demands technical depth, slowing deployment and updates.
 
-### [Gatsby](https://www.gatsbyjs.com/)
+### [Gatsby](#ref10)
 Pros:
 * Feature-rich platform offering extensive capabilities.
 * Seamless integration with various data sources and third-party systems.
@@ -133,7 +150,7 @@ Cons:
 * Consistent accessibility adherence is resource-intensive, complicating
   maintenance.
 
-### [Wordpress](https://wordpress.com/)
+### [Wordpress](#ref11)
 Pros:
 * Popular platform with user-friendly content management interfaces.
 * Extensive community support and abundant resources for troubleshooting.
@@ -155,10 +172,35 @@ openness, inclusivity, and continual growth, positioning the CFIA AI Lab as a
 globally recognized, credible, and accessible source of AI knowledge.
 
 ## References
-* [Docusaurus](https://docusaurus.io/)
-* [Jekyll](https://jekyllrb.com/)
-* [Hugo](https://gohugo.io/)
-* [Gatsby](https://www.gatsbyjs.com/)
-* [Wordpress](https://wordpress.com/)
-* [Government of Canada Digital Standards:
-  Playbook](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
+* [Homepage. (n.d.). Docusaurus.](https://docusaurus.io/) <a id="ref1"></a>
+
+* [Secretariat, T. B. O. C. (2021, August 13). Government of Canada Digital
+  Standards.
+  Canada.ca.](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
+  <a id="ref2"></a>
+
+* [i18n - Introduction. (2023, October 31).
+Docusaurus.](https://docusaurus.io/docs/i18n/introduction) <a id="ref3"></a>
+
+* [Internationalization and localization. (n.d.).
+Wikipedia.](https://en.wikipedia.org/wiki/Internationalization_and_localization)
+<a id="ref4"></a>
+
+* [Math Equations. (2023, October 31).
+Docusaurus.](https://docusaurus.io/docs/markdown-features/math-equations) <a
+id="ref5"></a>
+
+* [Plugins. (2023, October 31).
+Docusaurus.](https://docusaurus.io/docs/advanced/plugins) <a id="ref6"></a>
+
+* [Search engine optimization (SEO). (2023, October 31).
+Docusaurus.](https://docusaurus.io/docs/seo) <a id="ref7"></a>
+
+* [Homepage. (n.d.). Jekyll.](https://jekyllrb.com/) <a id="ref8"></a>
+
+* [Homepage. (n.d.). Hugo](https://gohugo.io/) <a id="ref9"></a>
+
+* [Homepage. (n.d.). Gatsby](https://www.gatsbyjs.com/) <a id="ref10"></a>
+
+* [Homepage. (n.d.). Wordpress](https://wordpress.com/) <a id="ref11"></a>
+
