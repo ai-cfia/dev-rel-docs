@@ -1,7 +1,7 @@
 name: Translate ADR to french
 
 on:
-    issue_comment:
+    pull_request_review_comment:
         types: [created]
 
 jobs:
