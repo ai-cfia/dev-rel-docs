@@ -6,6 +6,8 @@ on:
             - 'adr/**.md'
         branches:
         - translation-workflow-testing
+    issue_comment:
+        types: [ created ]
 
 jobs:
     translate-adr:
