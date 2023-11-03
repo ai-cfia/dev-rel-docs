@@ -2,44 +2,49 @@
 
 ## Résumé Exécutif
 
-Ce Registre de Décisions Architecturales (ADR) officialise l'utilisation des
-ADR au sein du Laboratoire d'Intelligence Artificielle (AI-Lab) de l'Agence
-Canadienne d'Inspection des Aliments (ACIA). Un ADR est conçu pour consigner
-les décisions qui traversent plusieurs projets et produits, et qui sont
-suffisamment significatives pour nécessiter une conformité uniforme de toutes
-les équipes. Nous avons opté pour les ADR pour leur format clair, versionné et
-accessible, permettant de résoudre des problèmes tels que les discussions
-répétées, les approches incohérentes et les difficultés d'intégration. Ce
-document établit les normes pour la création, le stockage et la modification
-des ADR.
+Ce Registre de Décisions Architecturales (ADR) officialise l'utilisation des ADR
+au sein du Laboratoire d'Intelligence Artificielle (AI-Lab) de l'Agence
+Canadienne d'Inspection des Aliments (ACIA). Un ADR est conçu pour consigner les
+décisions qui traversent plusieurs projets et produits et qui sont suffisamment
+significatives pour nécessiter une conformité uniforme de toutes les équipes
+impliquées ([Ayers, 2019](#ref-ayers); [Henderson, s.d.](#ref-henderson)). Nous
+avons opté pour les ADR en raison de leur format versionné, clair et accessible,
+abordant des problèmes tels que les discussions répétées, les approches
+incohérentes et les difficultés d'intégration des nouveaux membres de l'équipe.
+Ce document définit les normes de création, de stockage et de modification des
+ADR, et intègre le processus de Demande de Commentaires (RFC) pour permettre une
+délibération collective et la prise de décision.
 
 ## Définitions
 
-- Contrôle de version : Un système qui enregistre les modifications apportées
-  à un fichier ou un ensemble de fichiers au fil du temps, comme GitHub.
+- Contrôle de version : Un système qui enregistre les modifications apportées à
+  un fichier ou un ensemble de fichiers au fil du temps, comme GitHub.
 - Dépôt : Un emplacement central où sont stockées et gérées les données
   contrôlées par version.
 - Issue GitHub : Une section sur GitHub où sont suivis les problèmes, les
   améliorations, les tâches et d'autres types de questions.
-- Pull Request GitHub : Une méthode pour soumettre des contributions à un
-  projet de développement ouvert hébergé sur GitHub.
+- Pull Request GitHub : Une méthode pour soumettre des contributions à un projet
+  de développement ouvert hébergé sur GitHub.
 - Wiki : Une plateforme collaborative qui permet la modification de pages Web
-  interconnectées, souvent utilisée pour la documentation.
+  interconnectées, souvent utilisée pour la documentation ([Lebar,
+  2022](#ref-lebar)).
 - Demande de Commentaires (RFC) : Une méthode permettant des discussions
   collectives sur un problème ou une fonctionnalité proposée, souvent formalisée
-  et contrôlée par version.
-- Confluence : Un logiciel de collaboration développé par Atlassian, servant
-  de wiki d'entreprise et d'outil de gestion de projet.
+  et contrôlée par version ([Calçado, 2018](#ref-calcado)).
+- Confluence : Un logiciel de collaboration développé par Atlassian, servant de
+  wiki d'entreprise et d'outil de gestion de projet ([Atlassian,
+  s.d.](#ref-atlassian)).
 - Journal de Décisions : Une méthode simple d'archivage qui consigne les
-  décisions clés prises au cours d'un projet, généralement sans contrôle de version.
+  décisions clés prises au cours d'un projet, généralement sans contrôle de
+  version ([Monday.com, s.d.](#ref-monday)).
 
 ## Contexte
 
 L'AI-Lab, composé de développeurs de logiciels et de scientifiques de données,
 est dédié à l'exploitation des technologies d'intelligence artificielle pour
 relever divers défis, tant au sein de l'organisation que dans des engagements
-externes. À mesure que l'équipe et ses projets se sont développés, des défis
-ont surgi pour maintenir un historique clair et compréhensible des décisions
+externes. À mesure que l'équipe et ses projets se sont développés, des défis ont
+surgi pour maintenir un historique clair et compréhensible des décisions
 architecturales. Ces défis comprennent :
 
 - Discussions répétées sur des décisions déjà prises : L'absence d'un processus
@@ -54,11 +59,11 @@ architecturales. Ces défis comprennent :
 
 ## Décision
 
-Après avoir évalué diverses options, nous avons choisi de mettre en place
-des ADR pour maintenir un enregistrement versionné et facilement accessible
-des décisions architecturales importantes. Chaque ADR détaillera le
-raisonnement, le contexte et les conséquences de choix architecturaux
-significatifs, mais pas des décisions triviales.
+Après avoir évalué diverses options, nous avons choisi de mettre en place des
+ADR pour maintenir un enregistrement versionné et facilement accessible des
+décisions architecturales importantes. Chaque ADR détaillera le raisonnement, le
+contexte et les conséquences de choix architecturaux significatifs, mais pas des
+décisions triviales.
 
 #### Exemples de décisions qui pourraient être abordées par un ADR
 
@@ -69,8 +74,8 @@ significatifs, mais pas des décisions triviales.
 - Quelle approche prendrons-nous pour la mise en cache ?
 - Quel fournisseur de cloud devrions-nous utiliser ?
 - Quelles solutions de journalisation et de surveillance seront adoptées ?
-- Devrions-nous utiliser des conteneurs pour le déploiement et si oui,
-  quel outil d'orchestration ?
+- Devrions-nous utiliser des conteneurs pour le déploiement et si oui, quel
+  outil d'orchestration ?
 - Quel courtier de messages utiliser pour les opérations asynchrones ?
 - Quelle est notre stratégie pour la sauvegarde et la récupération des données ?
 
@@ -90,9 +95,10 @@ significatifs, mais pas des décisions triviales.
 - Langue : Les ADR seront rédigés en anglais pour maintenir une cohérence et
   toucher un public élargi. Une version française sera fournie par la suite.
 - Clarté : L'objectif est d'utiliser un langage clair et simple dans les ADR.
-- Relecture : Chaque ADR sera relu pour détecter des erreurs linguistiques ou 
-  grammaticales avant sa finalisation. Des outils comme Antidote peuvent être 
+- Relecture : Chaque ADR sera relu pour détecter des erreurs linguistiques ou
+  grammaticales avant sa finalisation. Des outils comme Antidote peuvent être
   utiles.
+<<<<<<< HEAD
 - Nom des fichiers : Les fichiers ADR seront nommés en suivant le format
   XXX-tag.code-langue.md, où :
   - XXX représente un numéro à trois chiffres pour le classement.
@@ -103,14 +109,22 @@ significatifs, mais pas des décisions triviales.
   Exemples :
   - 001-ailab-using-adr.en-ca.md pour la version en anglais (Canada).
   - 001-ailab-using-adr.fr-ca.md pour la version en français (Canada).
-- Annexes : Les diagrammes et autres documents annexes porteront le préfixe 
-  de l'ADR original. Par exemple, 001-ailab-using-adr-template.md.
-- Format du titre : Les titres commenceront par "ADR-XXX : ", suivi d'une 
-  brève description. Les numéros doivent correspondre entre le nom du fichier 
-  et le titre.
-- Sections : Un ADR comprendra un résumé exécutif, le contexte, la décision, 
-  les alternatives envisagées, les conséquences et les références. Voir le 
-  [Modèle ADR](./001-ailab-using-adr-template.fr-ca.md) pour plus de détails.
+- Annexes : Les diagrammes et autres documents annexes porteront le préfixe de
+  l'ADR original. Par exemple, 001-ailab-using-adr-template.md.
+- Format du titre : Les titres commenceront par "ADR-XXX : ", suivi d'une brève
+  description. Les numéros doivent correspondre entre le nom du fichier et le
+  titre.
+- Sections : Un ADR comprendra un résumé exécutif, le contexte, la décision, les
+  alternatives envisagées, les conséquences et les références ([Microsoft,
+  2020](#ref-microsoft)). Voir le [Modèle
+  ADR](./001-ailab-using-adr-template.fr-ca.md) pour plus de détails.
+- Format de Référencement : Utiliser le style APA pour la mise en forme des
+  références ([American Psychological Association, n.d.](#ref-apa-examples)).
+  Les citations dans le texte doivent être reliées aux références listées dans
+  la section Références.
+    - Exemple de référence : `<a id="ref-henderson"></a>Henderson, J. P. (s.d.).
+      Enregistrement de Décision d'Architecture (ADR)...`
+    - Exemple de citation : `([Henderson, s.d.](#ref-henderson))`
 
 ### Statuts Implicites
 
@@ -128,15 +142,15 @@ significatifs, mais pas des décisions triviales.
 
 ### Stockage
 
-- Les ADR et leurs pièces jointes seront stockés dans un répertoire dédié de
-  ce [dépôt](https://github.com/ai-acia/dev-rel-docs), sous le dossier adr/.
+- Les ADR et leurs pièces jointes seront stockés dans un répertoire dédié de ce
+  [dépôt](https://github.com/ai-acia/dev-rel-docs), sous le dossier adr/.
 - Les ADR obsolètes et remplacés ainsi que leurs pièces jointes seront déplacés
   vers adr/archives/.
 
 ### Responsabilités et Processus de Création et de Mise à Jour
 
-- Propositions : N'importe quel membre de l'organisation GitHub ai-cfia peut 
-  démarrer un nouvel ADR ou apporter des changements en utilisant les issues et 
+- Propositions : N'importe quel membre de l'organisation GitHub ai-cfia peut
+  démarrer un nouvel ADR ou apporter des changements en utilisant les issues et
   pull requests GitHub.
 - Approbation : Avant de fusionner, il faut l'aval de tous les membres de
   l'organisation GitHub ai-cfia.
@@ -157,8 +171,8 @@ significatifs, mais pas des décisions triviales.
    - Dans cette nouvelle branche, créez un nouveau ADR avec un nouveau numéro
      mais gardez l'étiquette originale. Ce nouveau ADR doit faire référence à
      l'ancien.
-   - Mettez à jour l'ancien ADR pour faire référence au nouveau et préparez-le
-     à être déplacé vers adr/archives/.
+   - Mettez à jour l'ancien ADR pour faire référence au nouveau et préparez-le à
+     être déplacé vers adr/archives/.
    - Mettez à jour l'[index](./index.md).
    - Soumettez ces changements sous forme de pull request depuis la nouvelle
      branche, en la liant à l'issue GitHub originale pour le contexte.
@@ -166,27 +180,27 @@ significatifs, mais pas des décisions triviales.
 
 ## Alternatives Étudiées
 
-### ADR
+### [ADR](#ref-henderson)
 
 Avantages :
 
-- Offre un historique des décisions sous contrôle de version, correspondant
-  bien aux besoins de traçabilité de l'équipe.
+- Offre un historique des décisions sous contrôle de version, correspondant bien
+  aux besoins de traçabilité de l'équipe.
 - Facilite le processus d'intégration rapide en offrant une seule source de
   vérité pour les décisions architecturales.
-- Favorise la cohérence entre les projets en documentant les décisions et
-  leurs justifications.
+- Favorise la cohérence entre les projets en documentant les décisions et leurs
+  justifications.
 
 Inconvénients :
 
 - Soulève le défi de veiller à ce que tous les membres de l'équipe contribuent
   activement et lisent les ADR.
-- Le temps supplémentaire nécessaire pour rédiger, réviser et maintenir les
-  ADR peut ralentir les phases initiales des projets.
+- Le temps supplémentaire nécessaire pour rédiger, réviser et maintenir les ADR
+  peut ralentir les phases initiales des projets.
 - Nécessite une discipline continue pour maintenir et mettre à jour les
   enregistrements.
 
-### Continuer avec une Documentation basée sur Wiki
+### [Continuer avec une Documentation basée sur Wiki](#ref-lebar)
 
 Avantages :
 
@@ -199,7 +213,7 @@ Inconvénients :
 - Risque de devenir obsolète.
 - Inadéquat pour suivre l'historique des décisions.
 
-### Demande de Commentaires (RFC)
+### [Demande de Commentaires (RFC)](#ref-calcado)
 
 Avantages :
 
@@ -212,7 +226,7 @@ Inconvénients :
 - Le processus formel peut dissuader les contributions de membres moins
   expérimentés de l'équipe.
 
-### Confluence
+### [Confluence](#ref-atlassian)
 
 Avantages :
 
@@ -225,7 +239,7 @@ Inconvénients :
 - Coût supplémentaire pour les licences.
 - La complexité peut entraîner un désordre.
 
-### Journal de Décisions
+### [Journal de Décisions](#ref-monday)
 
 Avantages :
 
@@ -235,8 +249,7 @@ Avantages :
 
 Inconvénients :
 
-- Peut manquer de contexte et de justification détaillés derrière les
-  décisions.
+- Peut manquer de contexte et de justification détaillés derrière les décisions.
 - Pas intrinsèquement sous contrôle de version.
 - Risque de désorganisation si il est mal entretenu.
 
@@ -244,32 +257,40 @@ Inconvénients :
 
 - Toutes les décisions architecturales significatives seront documentées,
   facilitant la compréhension de l'historique et de l'état actuel du système.
-- Les nouveaux membres de l'équipe pourront se mettre à niveau en examinant
-  les ADR en fonction de leurs étiquettes de sujet et en consultant l'historique
-  des versions pour le contexte.
+- Les nouveaux membres de l'équipe pourront se mettre à niveau en examinant les
+  ADR en fonction de leurs étiquettes de sujet et en consultant l'historique des
+  versions pour le contexte.
 - Les ADR serviront de point de référence pour les futures décisions
   architecturales, réduisant le besoin de discussions répétées.
 - Ce ADR sera revu périodiquement pour évaluer ses résultats.
 
 ## Références
 
-* [Architecture Decision Record (ADR). Joel Parker Henderson. (n.d.)](https://github.com/joelparkerhenderson/architecture-decision-record)
-<a id="ref1"></a>
+<a id="ref-ayers"></a>Ayers, D. (10 mai 2019). Communicating and Documenting
+Architectural Decisions. https://www.youtube.com/watch?v=rwfXkSjFhzc
 
-* [Record Architecture Decisions. Code With Engineering Playbook. (2020, March 20)](https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/)
-<a id="ref2"></a>
+<a id="ref-atlassian"></a>Atlassian. (s. d.). DACI: Decision Documentation.
+https://www.atlassian.com/software/confluence/templates/decision
 
-* [Communicating and Documenting Architectural Decisions. David Ayers. (n.d.)](https://www.youtube.com/watch?v=rwfXkSjFhzc)
-<a id="ref3"></a>
+<a id="ref-calcado"></a>Calçado, P. (19 novembre 2018). A Structured RFC
+Process. https://philcalcado.com/2018/11/19/a_structured_rfc_process.html
 
-* [A Structured RFC Process. Phil Calçado. (2018, November 19)](https://philcalcado.com/2018/11/19/a_structured_rfc_process.html)
-<a id="ref4"></a>
+<a id="ref-henderson"></a>Henderson, J. P. (s. d.). Architecture Decision Record
+(ADR). https://github.com/joelparkerhenderson/architecture-decision-record
 
-* [DACI: Decision Documentation. Atlassian Confluence. (n.d.)](https://www.atlassian.com/software/confluence/templates/decision)
-<a id="ref5"></a>
+<a id="ref-lebar"></a>LeBar, Z. (5 mars 2022). What Are Wikis, and Why Should
+You Use Them?
+https://business.tutsplus.com/tutorials/what-are-wikis-and-why-should-you-use-them--cms-19540
 
-* [How to Use a Project Decision Log for Optimal Results. Monday.com. (n.d.)](https://monday.com/blog/project-management/decision-log/)
-<a id="ref6"></a>
+<a id="ref-microsoft"></a>Microsoft. (20 mars 2020). Record Architecture
+Decisions. Code With Engineering Playbook.
+https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/
 
-* [ISO 639-1 Language Codes. Library of Congress. (2017, December 21)](https://www.loc.gov/standards/iso639-2/php/code_list.php)
-<a id="ref7"></a>
+<a id="ref-monday"></a>Monday.com. (s. d.). How to Use a Project Decision Log
+for Optimal Results. https://monday.com/blog/project-management/decision-log/
+
+<a id="ref-apa-examples"></a>American Psychological Association. (s. d.).
+Reference Examples.
+https://apastyle.apa.org/style-grammar-guidelines/references/examples
+
+<a id="ref-library"></a>Library of Congress. (2017, December 21). Codes for the Representation of Names of Languages. https://www.loc.gov/standards/iso639-2/php/code_list.php
