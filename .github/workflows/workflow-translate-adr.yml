@@ -1,11 +1,8 @@
 name: Translate ADR to french
 
 on:
-    push:
-        paths:
-            - 'adr/**.md'
-        branches:
-        - translation-workflow-testing
+    pull_request:
+        types: [opened]
 
 jobs:
     translate-adr:
