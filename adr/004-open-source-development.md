@@ -32,12 +32,6 @@ began to embrace it. The company recognizes that "[building on the effort of
 others allows [them] to create meaningful value for [their] customers and engage
 with new ecosystems and user-bases in a natural way.](#ref1)"
 
-Furthermore, this type of development aligns with the [Government of Canada's
-Digital Standards](#ref2) :
-* Work in the open by default
-* Use open standards and solutions
-* Collaborate widely
-
 On the flip side, open source development does present some potential concerns:
 
 * Exposing vulnerabilities, especially when sensitive information is involved.
@@ -45,17 +39,52 @@ On the flip side, open source development does present some potential concerns:
 * Potential quality control issues without the necessary expertise.
 * Political ramifications and criticism from stakeholders.
 
-Additionally, our current technological landscape is heavily interwoven with
-open source tools. The Government of Canada has also shown a commitment towards
-experimentation and open development, as reflected in platforms like
-alpha.canada.ca and the [Digital Standards](#ref2).
-
 Finally, it's important to understand that "open source" doesn't solely refer to
 source code access, software must comply with the [Open Source Initiative's
-criteria](#ref3) to be **truly** open source. To put it simply, according to the
+criteria](#ref2) to be **truly** open source. To put it simply, according to the
 Free Software Foundation, the users "[must have the freedom to run, edit,
-contribute to, and share the software.](#ref4)"
+contribute to, and share the software.](#ref3)"
 
+### Specifics to our situation
+#### Dependancy to Open Source
+We already depend heavily on open source tools with open development and
+user-contributed work, whether it is [Visual Studio Code](#ref4), [Bicep
+configuration files](#ref5), [Jupyter notebooks](#ref6), [OpenSSL](#ref7), or
+[Git](#ref8).
+
+#### Tooling
+Github, the open source platform of choice, is owned by Microsoft, our
+technology partner, and is the premier platform for open source development.
+
+#### Alpha Deployment: [alpha.canada.ca](#ref9)
+As part of the Government of Canada’s commitment to experimentation, this web
+domain hosts experimental and prototype websites and services. These websites
+and services are continually evolving “alpha” products that are still in
+development and are not ready for full public use. This domain collects ongoing
+experiments in one place, to make it easier for the government to collaborate
+and share its experiments. They are publicly available in the spirit of working
+in the open.
+
+To be deployed on [alpha.canada.ca](#ref9), a web application or service needs
+to meet the following criteria:
+
+* hosted on public cloud infrastructure
+* open source on a publicly-visible repository
+* automatically deployable via git operations
+* use HTTPS
+* actively developed within the past four months
+
+#### Complying with Government of Canada Digital Standards
+[Digital Standards](#ref10) require us to do development in the open.
+
+* "Share evidence, research and decision making openly. Make all non-sensitive
+  data, information, and new code developed in delivery of services open to the
+  outside world for sharing and reuse under an open licence."
+
+* "Collaborating widely allows us to learn lessons from others to minimize
+  mistakes and reduce rework by identifying and sharing existing solutions. The
+  problems that government solves are often unique, though they are not unique
+  among governments."
 
 ## Decision
 We have chosen to adopt the Full Open Source Development approach.
@@ -154,16 +183,45 @@ guidelines, will be instituted to mitigate these risks.
 
 ## References
 
-* [Microsoft’s Open Source Program. Microsoft Open Source.
-(n.d.)](https://opensource.microsoft.com/program/#program-using) <a
-id="ref1"></a>
+* [Microsoft’s Open Source Program. Microsoft Open Source. (n.d.).
+https://opensource.microsoft.com/program/#program-using](https://opensource.microsoft.com/program/#program-using)
+<a id="ref1"></a>
 
-* [Government of Canada Digital Standards. Canada.ca. (2021, August
-13)](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
-<a id="ref2"></a>
+* [The Open Source Definition. Open Source Initiative. (2023, February 22).
+https://opensource.org/osd/](https://opensource.org/osd/) <a id="ref2"></a>
 
-* [The Open Source Definition. Open Source Initiative. (2023, February
-22)](https://opensource.org/osd/) <a id="ref3"></a>
+* [Homepage. Free Software Foundation. (n.d.).
+https://www.fsf.org/](https://www.fsf.org/) <a id="ref3"></a>
 
-* [Homepage. Free Software Foundation. (n.d.)](https://www.fsf.org/) <a
+* [microsoft/vscode. (n.d.). GitHub.
+https://github.com/microsoft/vscode](https://github.com/microsoft/vscode) <a
 id="ref4"></a>
+
+* [Azure. (n.d.). GitHub.
+https://github.com/Azure/bicep](https://github.com/Azure/bicep) <a
+id="ref5"></a>
+
+* [Project Jupyter. (n.d.). GitHub.
+https://github.com/jupyter](https://github.com/jupyter) <a id="ref6"></a>
+
+* [Openssl. (n.d.). GitHub.
+https://github.com/openssl/openssl](https://github.com/openssl/openssl) <a
+id="ref7"></a>
+
+* [Git. (n.d.). GitHub. https://github.com/git/git](https://github.com/git/git)
+<a id="ref8"></a>
+
+
+* [Alpha canada.ca - Canada.ca. (n.d.).
+https://alpha.canada.ca/en/index.html](https://alpha.canada.ca/en/index.html) <a
+id="ref9"></a>
+
+* [Secretariat, T. B. O. C. (2021, August 13). Government of Canada Digital
+Standards. Canada.ca.
+https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
+<a id="ref10"></a>
+
+
+
+
+
