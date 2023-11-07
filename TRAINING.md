@@ -21,7 +21,7 @@
   * Github
     * DO NOT INSTALL GITHUB DESKTOP (we use built-in facilities in Visual Studio Code)
     * [Best practices for projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/best-practices-for-projects) (~5 minutes)
-    * [About issues](https://docs.github.com/en/issues/  tracking-your-work-with-issues/about-issues) (~5 minutes)
+    * [About issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues) (~5 minutes)
     * [About pull reviews](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews) (~5 minutes)
     * [Github repository creation](https://github.com/ai-cfia/devops/blob/main/github-repository-creation-guide.md) (~5 minutes)
   * Docker
