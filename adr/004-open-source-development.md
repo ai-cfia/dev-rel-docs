@@ -30,7 +30,7 @@ Moreover, Microsoft, who was opposed to the open source paradigm considering it
 a threat to its business, changed its stance significantly around 2010 when it
 began to embrace it. The company recognizes that "[building on the effort of
 others allows [them] to create meaningful value for [their] customers and engage
-with new ecosystems and user-bases in a natural way.](#ref1)"
+with new ecosystems and user-bases in a natural way.](#ref1)" (Microsoft. n.d.)
 
 On the flip side, open source development does present some potential concerns:
 
@@ -43,10 +43,10 @@ Finally, it's important to understand that "open source" doesn't solely refer to
 source code access, software must comply with the [Open Source Initiative's
 criteria](#ref2) to be **truly** open source. To put it simply, according to the
 Free Software Foundation, the users "[must have the freedom to run, edit,
-contribute to, and share the software.](#ref3)"
+contribute to, and share the software.](#ref3)" (Free Software Foundation. n.d.)
 
 ### Specifics to our situation
-#### Dependancy to Open Source
+#### Dependency to Open Source
 We already depend heavily on open source tools with open development and
 user-contributed work, whether it is [Visual Studio Code](#ref4), [Bicep
 configuration files](#ref5), [Jupyter notebooks](#ref6), [OpenSSL](#ref7), or
@@ -183,42 +183,41 @@ guidelines, will be instituted to mitigate these risks.
 
 ## References
 
-* [Microsoft’s Open Source Program. Microsoft Open Source. (n.d.).
-https://opensource.microsoft.com/program/#program-using](https://opensource.microsoft.com/program/#program-using)
+* Microsoft’s Open Source Program. Microsoft Open Source. (n.d.).
+[https://opensource.microsoft.com/program/#program-using](https://opensource.microsoft.com/program/#program-using)
 <a id="ref1"></a>
 
-* [The Open Source Definition. Open Source Initiative. (2023, February 22).
-https://opensource.org/osd/](https://opensource.org/osd/) <a id="ref2"></a>
+* The Open Source Definition. Open Source Initiative. (2023, February 22).
+[https://opensource.org/osd/](https://opensource.org/osd/) <a id="ref2"></a>
 
-* [Homepage. Free Software Foundation. (n.d.).
-https://www.fsf.org/](https://www.fsf.org/) <a id="ref3"></a>
+* Homepage. Free Software Foundation. (n.d.).
+[https://www.fsf.org/](https://www.fsf.org/) <a id="ref3"></a>
 
-* [microsoft/vscode. (n.d.). GitHub.
-https://github.com/microsoft/vscode](https://github.com/microsoft/vscode) <a
+* microsoft/vscode. (n.d.). GitHub.
+[https://github.com/microsoft/vscode](https://github.com/microsoft/vscode) <a
 id="ref4"></a>
 
-* [Azure. (n.d.). GitHub.
-https://github.com/Azure/bicep](https://github.com/Azure/bicep) <a
+* Azure. (n.d.). GitHub.
+[https://github.com/Azure/bicep](https://github.com/Azure/bicep) <a
 id="ref5"></a>
 
-* [Project Jupyter. (n.d.). GitHub.
-https://github.com/jupyter](https://github.com/jupyter) <a id="ref6"></a>
+* Project Jupyter. (n.d.). GitHub.
+[https://github.com/jupyter](https://github.com/jupyter) <a id="ref6"></a>
 
-* [Openssl. (n.d.). GitHub.
-https://github.com/openssl/openssl](https://github.com/openssl/openssl) <a
+* Openssl. (n.d.). GitHub.
+[https://github.com/openssl/openssl](https://github.com/openssl/openssl) <a
 id="ref7"></a>
 
-* [Git. (n.d.). GitHub. https://github.com/git/git](https://github.com/git/git)
+* Git. (n.d.). GitHub. [https://github.com/git/git](https://github.com/git/git)
 <a id="ref8"></a>
 
+* Alpha canada.ca - Canada.ca. (n.d.).
+[https://alpha.canada.ca/en/index.html](https://alpha.canada.ca/en/index.html)
+<a id="ref9"></a>
 
-* [Alpha canada.ca - Canada.ca. (n.d.).
-https://alpha.canada.ca/en/index.html](https://alpha.canada.ca/en/index.html) <a
-id="ref9"></a>
-
-* [Secretariat, T. B. O. C. (2021, August 13). Government of Canada Digital
+* Secretariat, T. B. O. C. (2021, August 13). Government of Canada Digital
 Standards. Canada.ca.
-https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
+[https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
 <a id="ref10"></a>
 
 
