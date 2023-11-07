@@ -87,14 +87,18 @@ significant architectural choices, not trivial decisions.
 - Clarity: Aim for straightforward and simple language in the ADRs.
 - Proofreading: Review each ADR for linguistic and grammatical errors before
   finalizing. Tools like Antidote can be useful.
-- File Naming: ADRs will follow the naming convention XXX-tag.md, for example,
-  001-ailab-using-adr.md.
-  - XXX: A three-digit number to ensure ADRs are listed in numerical order.
-  - tag: A descriptive tag of the decision.
-- French Versions: French translations will carry the same name prefix as the
-  original ADR, followed by '.fr-ca'. For example, 001-ailab-using-adr.fr-ca.md.
-- Attachments: Diagrams and other attachments will carry the original ADR's
-  name prefix. For example, 001-ailab-using-adr-template.md.
+- File Naming: ADR files will be named using the format
+  XXX-tag.language-code.md, where:
+  - XXX is a three-digit number for ordering.
+  - tag is a short, descriptive tag of the decision.
+  - language-code follows the ISO 639-1 standard for language codes ([Library of
+    Congress, 2017](#ref7)). 
+  
+  Examples:
+  - 001-ailab-using-adr.en-ca.md for the English (Canada) version.
+  - 001-ailab-using-adr.fr-ca.md for the French (Canada) version.
+- Attachments: Diagrams and other attachments will carry the original ADR's name
+  prefix. For example, 001-ailab-using-adr-template.md.
 - Title Format: Titles should start with "ADR-XXX: ", followed by a brief
   description. Numbers should match between the file name and title.
 - Sections: An ADR will include Executive Summary, Context, Decision,
@@ -252,3 +256,7 @@ Cons:
 
 * [How to Use a Project Decision Log for Optimal Results. Monday.com. (n.d.)](https://monday.com/blog/project-management/decision-log/)
 <a id="ref6"></a>
+
+* [ISO 639-1 Language Codes. Library of Congress. (2017, December 21)](https://www.loc.gov/standards/iso639-2/php/code_list.php)
+<a id="ref7"></a>
+
