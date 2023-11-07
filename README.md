@@ -4,19 +4,23 @@ Welcome to the Developer Related Docs repository! This repository serves as a kn
 
 ---
 
-**[Architecture Decision Records](./adr/index.md)** - A list of all our ADRs.
+* [Training for new developers](TRAINING.md) - a curriculum to train new team members on the basics
 
-**[Development Environment Setup Guide](./Development-Environment-Setup-Guide/DEV-ENV-SETUP.md)** - A guide to setting up a development environment with Dev Containers.
+* [Architecture Decision Records](./adr/index.md)** - A list of all our ADRs.
 
-**[TypeScript React Setup Guide](./TypeScript-React-Setup-Guide/REACTSETUP.md)** - A comprehensive guide to setting up a TypeScript React project with ESLint and Prettier.
+* [Development Environment Setup Guide](./Development-Environment-Setup-Guide/DEV-ENV-SETUP.md)** - A guide to setting up a development environment with Dev Containers.
 
-**[TypeScript App Versioning Guide](./TypeScript-AppVersion/APPVERSION-SETUP.md)** - Guide to Setting Up Application Versioning in a TypeScript React Project.
+* [Development Environment Setup Guide](./Development-Environment-Setup-Guide/DEV-ENV-SETUP.md)** - A guide to setting up a development environment with Dev Containers.
 
-**[Minimal Python Backend Setup Guide](./Minimal-Backend-Setup-Guides/PYTHON-BACKEND-SETUP.md)** - A guide to quickly spinning up a minimal python backend using Flask, including dev containers configurations.
+* [TypeScript React Setup Guide](./TypeScript-React-Setup-Guide/REACTSETUP.md)** - A comprehensive guide to setting up a TypeScript React project with ESLint and Prettier.
 
-**[Naming things](./Naming-Conventions/NAMING-RESOURCES.md)** - A document outlining standard naming conventions for resources.
+* [TypeScript App Versioning Guide](./TypeScript-AppVersion/APPVERSION-SETUP.md)** - Guide to Setting Up Application Versioning in a TypeScript React Project.
 
-**[TypeScript Environment Variables Setup Guide](./TypeScript-EnvironmentVariables/ENVIRONMENT-VARIABLES-SETUP.md)** - Documentation that provides step-by-step instructions on how to set up and effectively manage environment variables in a TypeScript project. The guide emphasizes best practices, security considerations, and offers a structured approach to seamlessly integrate environment variables into your development workflow.
+* [Minimal Python Backend Setup Guide](./Minimal-Backend-Setup-Guides/PYTHON-BACKEND-SETUP.md)** - A guide to quickly spinning up a minimal python backend using Flask, including dev containers configurations.
+
+* [Naming things](./Naming-Conventions/NAMING-RESOURCES.md)** - A document outlining standard naming conventions for resources.
+
+* [TypeScript Environment Variables Setup Guide](./TypeScript-EnvironmentVariables/ENVIRONMENT-VARIABLES-SETUP.md)** - Documentation that provides step-by-step instructions on how to set up and effectively manage environment variables in a TypeScript project. The guide emphasizes best practices, security considerations, and offers a structured approach to seamlessly integrate environment variables into your development workflow.
 
 ---
 
