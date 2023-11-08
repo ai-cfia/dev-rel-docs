@@ -1,6 +1,6 @@
 # ADR 002: ADR on our choices of database structure
 
-## Optional Illustration
+## CFIA AI Lab Database Organization
 ![AiLab-db](./002-database-structure-diagram.png)
 
 ## Executive Summary
