@@ -3,34 +3,38 @@
 ## Executive Summary
 
 This Architecture Decision Record (ADR) establishes the use of ADRs within the
-Artificial Intelligence Laboratory (AI-Lab) at Canadian Food Inspection
-Agency (CFIA) for documenting key architectural decisions. An ADR is a document
+Artificial Intelligence Laboratory (AI-Lab) at Canadian Food Inspection Agency
+(CFIA) for documenting key architectural decisions. An ADR is a document
 designed to capture decisions across multiple projects and products and are of
-such significance that they require uniform compliance from all teams involved.
-We chose ADRs for their version-controlled, clear, and accessible format,
-addressing issues such as repeated discussions, inconsistent approaches, and
-difficulties in onboarding. The document sets the standards for ADR creation,
-storage, and modification.
+such significance that they require uniform compliance from all teams involved
+([Ayers, 2019](#ref-ayers); [Henderson, n.d.](#ref-henderson)). We chose ADRs
+for their version-controlled, clear, and accessible format, addressing issues
+such as repeated discussions, inconsistent approaches, and difficulties in
+onboarding new team members. The document sets the standards for ADR creation,
+storage, and modification, and incorporates the Request for Comment (RFC)
+process to enable collective deliberation and decision-making.
 
 ## Definitions
 
-- Version control: A system that records changes to a file or set of files over
-  time so that specific versions can be recalled later, like GitHub.
-- Repository: A central location in which version-controlled data is stored and
-  managed.
-- GitHub Issue: A section on GitHub where project issues, enhancements, tasks,
-  and other kinds of questions are tracked.
-- GitHub Pull Request: A method of submitting contributions to an open
+- Version Control: A system that records changes to a file or set of files over
+  time so that specific versions can be recalled later, such as Git.
+- Repository: A central location in which data, often version-controlled, is
+  stored and managed.
+- GitHub Issue: A feature on GitHub where project issues, enhancements, tasks,
+  and other discussions are tracked.
+- GitHub Pull Request: A mechanism for submitting contributions to an open
   development project hosted on GitHub.
-- Wiki: A collaborative platform that allows for the editing of interlinked
-  web pages, commonly used for documentation.
-- Request for Comment (RFC): A method that enables collective deliberation
-  on a particular issue or proposed feature, often formalized and version-
-  controlled.
+- Wiki: A collaborative platform that allows for the editing of interlinked web
+  pages, commonly used for documentation ([Lebar, 2022](#ref-lebar)).
+- Request for Comment (RFC): A process that enables collective deliberation on a
+  particular issue or proposed feature, often formalized and version-controlled
+  ([Calçado, 2018](#ref-calcado)).
 - Confluence: A collaboration software program developed by Atlassian that
-  serves as an enterprise wiki and project management tool.
-- Decision Log: A simple record-keeping method that logs key decisions made
-  throughout the course of a project, usually lacking version control.
+  functions as an enterprise wiki and project management tool ([Atlassian,
+  n.d.](#ref-atlassian)).
+- Decision Log: A record-keeping method that logs key decisions made throughout
+  the course of a project, typically without version control ([Monday.com,
+  n.d.](#ref-monday)).
 
 ## Context
 
@@ -82,24 +86,35 @@ significant architectural choices, not trivial decisions.
 
 ### Format
 
-- Language: ADRs should be written in English for uniformity and broader reach. 
+- Language: ADRs should be written in English for uniformity and broader reach.
   French versions should be provided eventually.
 - Clarity: Aim for straightforward and simple language in the ADRs.
 - Proofreading: Review each ADR for linguistic and grammatical errors before
   finalizing. Tools like Antidote can be useful.
-- File Naming: ADRs will follow the naming convention XXX-tag.md, for example,
-  001-ailab-using-adr.md.
-  - XXX: A three-digit number to ensure ADRs are listed in numerical order.
-  - tag: A descriptive tag of the decision.
-- French Versions: French translations will carry the same name prefix as the
-  original ADR, followed by '.fr-ca'. For example, 001-ailab-using-adr.fr-ca.md.
-- Attachments: Diagrams and other attachments will carry the original ADR's
-  name prefix. For example, 001-ailab-using-adr-template.md.
+- File Naming: ADR files will be named using the format
+  XXX-tag.language-code.md, where:
+  - XXX is a three-digit number for ordering.
+  - tag is a short, descriptive tag of the decision.
+  - language-code follows the ISO 639-1 standard for language codes ([Library of
+    Congress, 2017](#ref-library)). 
+  
+  Examples:
+  - 001-ailab-using-adr.en-ca.md for the English (Canada) version.
+  - 001-ailab-using-adr.fr-ca.md for the French (Canada) version.
+- Attachments: Diagrams and other attachments will carry the original ADR's name
+  prefix. For example, 001-ailab-using-adr-template.md.
 - Title Format: Titles should start with "ADR-XXX: ", followed by a brief
   description. Numbers should match between the file name and title.
 - Sections: An ADR will include Executive Summary, Context, Decision,
-  Alternatives Considered, Consequences, and References. See [ADR
-  Template](./001-ailab-using-adr-template.md) for more details.
+  Alternatives Considered, Consequences, and References ([Microsoft,
+  2020](#ref-microsoft)). See [ADR Template](./001-ailab-using-adr-template.md)
+  for more details.
+- Referencing Format: Use APA style for formatting references ([American
+  Psychological Association, n.d.](#ref-apa-examples)). In-text citations should
+  be linked to the detailed citations in the References section.
+    - Reference example: `<a id="ref-henderson"></a>Henderson, J. P. (n.d.).
+      Architecture Decision Record (ADR)...`
+    - Citation example: `([Henderson, n.d.](#ref-henderson))`
 
 ### Implicit Statuses
 
@@ -108,8 +123,8 @@ significant architectural choices, not trivial decisions.
 - ACCEPTED: ADRs merged in the main branch.
 - REJECTED: GitHub pull requests that have been rejected or GitHub issues that
   led to a decision not to proceed.
-- DEPRECATED: ADRs moved to the adr/archives/ folder, indicating the decision
-  is void.
+- DEPRECATED: ADRs moved to the adr/archives/ folder, indicating the decision is
+  void.
 - SUPERSEDED: ADRs replaced by a new one and moved to adr/archives/, retaining
   their original tag but assigned a new number.
 - MODIFIED: Minor changes to an existing ADR, retaining its original number and
@@ -125,14 +140,14 @@ significant architectural choices, not trivial decisions.
 
 ### Responsibilities, Creation and Update Process
 
-- Proposals: Any member of the ai-cfia GitHub organization may initiate new
-  ADRs or changes via GitHub issues and pull requests.
+- Proposals: Any member of the ai-cfia GitHub organization may initiate new ADRs
+  or changes via GitHub issues and pull requests.
 - Approval: All members of the ai-cfia GitHub organization must approve pull
   requests before merging.
 - Manager Approval: The final step in the approval process is a review and
   approval from the team's manager.
-- Disagreements: Any strong objections will pause the process until a
-  consensus is reached.
+- Disagreements: Any strong objections will pause the process until a consensus
+  is reached.
 - Communication: To foster wider collaboration and possibly offer useful
   insights, we invite upper management and other adjacent teams to participate
   in the ADR process by sharing our decisions with them.
@@ -153,7 +168,7 @@ significant architectural choices, not trivial decisions.
 
 ## Alternatives Considered
 
-### ADR
+### [ADR](#ref-henderson)
 
 Pros:
 
@@ -172,7 +187,7 @@ Cons:
   initial phases of projects.
 - Requires ongoing discipline to maintain and update records.
 
-### Continuing with Wiki-based Documentation
+### [Continuing with Wiki-based Documentation](#ref-lebar)
 
 Pros:
 
@@ -185,7 +200,7 @@ Cons:
 - Prone to becoming outdated.
 - Inadequate for tracking decision history.
 
-### Request for Comments (RFC)
+### [Request for Comments (RFC)](#ref-calcado)
 
 Pros:
 
@@ -197,7 +212,7 @@ Cons:
 - Consumes significant time for discussion and approval.
 - Formal process may deter contributions from less experienced team members.
 
-### Confluence
+### [Confluence](#ref-atlassian)
 
 Pros:
 
@@ -209,7 +224,7 @@ Cons:
 - Additional cost for licenses.
 - Complexity can lead to disorganization.
 
-### Decision Log
+### [Decision Log](#ref-monday)
 
 Pros:
 
@@ -235,20 +250,22 @@ Cons:
 
 ## References
 
-* [Architecture Decision Record (ADR). Joel Parker Henderson. (n.d.)](https://github.com/joelparkerhenderson/architecture-decision-record)
-<a id="ref1"></a>
+<a id="ref-ayers"></a>Ayers, D. (10 mai 2019). Communicating and Documenting Architectural Decisions. Retrieved from https://www.youtube.com/watch?v=rwfXkSjFhzc
 
-* [Record Architecture Decisions. Code With Engineering Playbook. (2020, March 20)](https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/)
-<a id="ref2"></a>
+<a id="ref-atlassian"></a>Atlassian. (n. d.). DACI: Decision Documentation. Retrieved from https://www.atlassian.com/software/confluence/templates/decision
 
-* [Communicating and Documenting Architectural Decisions. David Ayers. (n.d.)](https://www.youtube.com/watch?v=rwfXkSjFhzc)
-<a id="ref3"></a>
+<a id="ref-calcado"></a>Calçado, P. (19 novembre 2018). A Structured RFC Process. Retrieved from https://philcalcado.com/2018/11/19/a_structured_rfc_process.html
 
-* [A Structured RFC Process. Phil Calçado. (2018, November 19)](https://philcalcado.com/2018/11/19/a_structured_rfc_process.html)
-<a id="ref4"></a>
+<a id="ref-henderson"></a>Henderson, J. P. (n. d.). Architecture Decision Record (ADR). Retrieved from https://github.com/joelparkerhenderson/architecture-decision-record
 
-* [DACI: Decision Documentation. Atlassian Confluence. (n.d.)](https://www.atlassian.com/software/confluence/templates/decision)
-<a id="ref5"></a>
+<a id="ref-lebar"></a>LeBar, Z. (5 mars 2022). What Are Wikis, and Why Should You Use Them? Retrieved from https://business.tutsplus.com/tutorials/what-are-wikis-and-why-should-you-use-them--cms-19540
 
-* [How to Use a Project Decision Log for Optimal Results. Monday.com. (n.d.)](https://monday.com/blog/project-management/decision-log/)
-<a id="ref6"></a>
+<a id="ref-microsoft"></a>Microsoft. (20 mars 2020). Record Architecture Decisions. Code With Engineering Playbook. Retrieved from https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/
+
+<a id="ref-monday"></a>Monday.com. (n. d.). How to Use a Project Decision Log for Optimal Results. Retrieved from https://monday.com/blog/project-management/decision-log/
+
+<a id="ref-apa-examples"></a>American Psychological Association. (n. d.). Reference Examples. Retrieved from https://apastyle.apa.org/style-grammar-guidelines/references/examples
+
+<a id="ref-library"></a>Library of Congress. (2017, December 21). Codes for the Representation of Names of Languages. Retrieved from https://www.loc.gov/standards/iso639-2/php/code_list.php
+
+
