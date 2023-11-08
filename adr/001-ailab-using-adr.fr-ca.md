@@ -93,12 +93,16 @@ significatifs, mais pas des décisions triviales.
 - Relecture : Chaque ADR sera relu pour détecter des erreurs linguistiques ou 
   grammaticales avant sa finalisation. Des outils comme Antidote peuvent être 
   utiles.
-- Nom des fichiers : Le nommage suivra la convention XXX-étiquette.md, tel que 
-  001-ailab-using-adr.md.
-  - XXX : Un numéro à trois chiffres pour une liste numérique ordonnée.
-  - Étiquette : Un descriptif de la décision.
-- Versions en français : Les traductions françaises auront le même préfixe que 
-  l'ADR original, suivi de '.fr-ca'. Par exemple, 001-ailab-using-adr.fr-ca.md.
+- Nom des fichiers : Les fichiers ADR seront nommés en suivant le format
+  XXX-tag.code-langue.md, où :
+  - XXX représente un numéro à trois chiffres pour le classement.
+  - tag est une étiquette courte et descriptive de la décision.
+  - code-langue est conforme à la norme ISO 639-1 pour les codes de langues
+    ([Library of Congress, 2017](#ref7)).
+
+  Exemples :
+  - 001-ailab-using-adr.en-ca.md pour la version en anglais (Canada).
+  - 001-ailab-using-adr.fr-ca.md pour la version en français (Canada).
 - Annexes : Les diagrammes et autres documents annexes porteront le préfixe 
   de l'ADR original. Par exemple, 001-ailab-using-adr-template.md.
 - Format du titre : Les titres commenceront par "ADR-XXX : ", suivi d'une 
@@ -266,3 +270,6 @@ Inconvénients :
 
 * [How to Use a Project Decision Log for Optimal Results. Monday.com. (n.d.)](https://monday.com/blog/project-management/decision-log/)
 <a id="ref6"></a>
+
+* [ISO 639-1 Language Codes. Library of Congress. (2017, December 21)](https://www.loc.gov/standards/iso639-2/php/code_list.php)
+<a id="ref7"></a>

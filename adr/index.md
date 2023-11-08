@@ -7,3 +7,4 @@
 * [ADR-005: Selecting a Web Development Framework for the AI Lab
 Website](./adr/005-choosing-web-development-framework.md) - Why we decided to
 use Docusaurus to develop the AI Lab website.
+
