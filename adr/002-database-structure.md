@@ -10,8 +10,7 @@ This Architecture Decision Record (ADR) describes our plan to promote sharing da
 Our previous ailab-db architecture required maintenance of several databases, notably "louis-db" and "nachet-db." Although this approach initially provides clarity, it ultimately results in redundancy, less flexibility, and collaboration issues, which may cause data conflicts. We have a better way to maintain databases with this approach, which uses a Consolidated Database Approach and only uses one database.
 
 ## Decision
-We have decided to transition to a Consolidated Database Approach for ailab-db. This decision is rooted in our evaluation criteria, which emphasize flexibility, maintainability, efficiency, and collaborative potential.
-
+We've decided to use a Consolidated Database Approach, which means we'll combine all our individual product databases into one central database server. This approach streamlines data management, reduces duplication, and makes it easier for teams to collaborate and share data efficiently. It's a choice that simplifies our database structure and enhances our overall data handling.
 
 ## Alternatives Considered
 
