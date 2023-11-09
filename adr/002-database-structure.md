@@ -4,7 +4,11 @@
 ![AiLab-db](./002-database-structure-diagram.png)
 
 ## Executive Summary
-This Architecture Decision Record (ADR) describes our plan to promote sharing data between software products created by the Canadian Food Inspection Agency (CFIA) Artificial Intelligence (AI) Lab. At the same time, we aim to make things more flexible and easier to maintain by bringing all our product databases together in a single database server.
+This Architecture Decision Record (ADR) describes our plan to promote sharing
+data between software products created by the Canadian Food Inspection Agency
+(CFIA) Artificial Intelligence (AI) Lab. At the same time, we aim to make things
+more flexible and easier to maintain by bringing all our product databases
+together in a single database server.
 
 ## Context
 Our previous ailab-db architecture required maintenance of several databases, notably "louis-db" and "nachet-db." Although this approach initially provides clarity, it ultimately results in redundancy, less flexibility, and collaboration issues, which may cause data conflicts. We have a better way to maintain databases with this approach, which uses a Consolidated Database Approach and only uses one database.
