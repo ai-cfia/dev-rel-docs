@@ -1,4 +1,4 @@
-# ADR 002: ADR on our choices of database structure
+# ADR-002: database structure design
 
 ## CFIA AI Lab Database Organization
 ![AiLab-db](./002-database-structure-diagram.png)
@@ -67,3 +67,16 @@ Cons:
 
 - Renaming and moving files will necessitate a significant initial effort.
 - Adapting to the new structure may temporarily complicate the development process.
+
+### References
+
+Any documentation, research, or data that support the decision can be cited here. This can include academic papers, blog posts, or internal documents.
+
+- <a id="ref-matillion"></a>What is Data Consolidation? (2020, December 16). Matillion.
+  https://www.matillion.com/blog/what-is-data-consolidation
+
+- <a id="ref-budibase"></a>How to Integrate Multiple Databases. (2022, May 22). Budibase.
+  https://budibase.com/blog/data/how-to-integrate-multiple-databases/
+
+- <a id="ref-toptal"></a>Database Design Bad Practices: Are You Making These Mistakes? (2022, May 22). Toptal.
+  https://www.toptal.com/database/database-design-bad-practices
