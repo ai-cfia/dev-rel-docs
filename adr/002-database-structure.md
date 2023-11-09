@@ -20,7 +20,7 @@ We've decided to use a Consolidated Database Approach, which means we'll combine
 
 This section presents the different options or solutions considered before
 arriving at the final decision. Each alternative is usually discussed in a
-subsection.
+subsection. You can have more details in the "References" section.
 
 ### Separate Databases (Old Setup)
 
