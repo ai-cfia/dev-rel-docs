@@ -1,6 +1,7 @@
 # ADR-002: database structure design
 
-## CFIA AI Lab Database Organization
+## CFIA AI Lab Database Diagram
+![AiLab-db](./002-database-structure-diagram-organization.png)
 ![AiLab-db](./002-database-structure-diagram.png)
 
 ## Executive Summary
