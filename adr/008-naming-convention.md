@@ -57,7 +57,7 @@ researchers, developers.
   description of the script.
 - **Example**: `2023-09-24-description-of-script.sql`
 
-### Databaser Server / Cluster 
+### Database Server / Cluster 
 - **Convention**: Start with `cfia-` followed by the name in lowercase,
   separating words with dashes.
 - **Example**: `cfia-name`
@@ -70,6 +70,7 @@ researchers, developers.
 - **Convention**: Start with `name_v` where name is the Schema name, followed by
   the current version numbers.
 - **Example**: `name_v1.0.0`
+- **Reference**: [CFIA, 2023](#ref-adr-006)
 
  ### Database Table and View
 - **Convention**: Use lowercase and separate words with underscore.
@@ -128,3 +129,8 @@ This naming convention will help create a standardized and organized structure
 within the AI Lab, making it easier for researchers, developers, and other to
 understand and work with the various components and resources. It promotes
 consistency and clarity in communication and documentation.
+
+## References
+  - <a id="ref-adr-006"></a> ADR-006: How we manage changes in databases. (2023, November 6). CFIA.
+  https://github.com/ai-cfia/dev-rel-docs/blob/main/adr/006-database-change-management.md
+
