@@ -1,9 +1,9 @@
-# ADR-008 : Naming Convention for AI Lab
+# ADR-008 : Naming Conventions for AI Lab
 
 ## Executive Summary
 
-The decision to establish a Naming Convention for the Artificial Intelligence
-(AI) Lab aims to bring clarity and consistency to the lab's internal structure.
+The decision to establish a naming convention for the Artificial Intelligence
+(AI) of the CFIA Laboratory (lab) aims to bring clarity and consistency to the lab's internal structure.
 The convention covers components, software applications, hardware equipment,
 datasets, research projects, environments, and containers. By adopting this
 standardized approach, the AI Lab intends to enhance communication,
@@ -53,7 +53,7 @@ researchers, developers.
   use `nachet-storage-account`.
 
 ### SQL Files
-- **Convention**: Use prefix with date format YYYY-mm-dd followed by a
+- **Convention**: Use prefix with date format yyyy-mm-dd followed by a
   description of the script.
 - **Example**: `2023-09-24-description-of-script.sql`
 
@@ -73,10 +73,13 @@ researchers, developers.
 - **Reference**: [CFIA, 2023](#ref-adr-006)
 
  ### Database Table and View
-- **Convention**: Use lowercase and separate words with underscore.
+- **Convention**: Use lowercase and separate words with underscore. For naming use plural.
+- **Why**: SQL reserved word are singular, so by using plural you're less likely to have a collision.
 - **Example**: `my_table_name`
 - **Example**: `my_view_name`
-
+- **Concrete example**: `html_contents`
+- **Concrete example**: `users`
+- 
 ## Notes
 - These naming conventions should be followed for all new resources that can be
   accessed or manipulated via CLI.
@@ -126,7 +129,7 @@ Cons:
 ## Consequences
 
 This naming convention will help create a standardized and organized structure
-within the AI Lab, making it easier for researchers, developers, and other to
+within the AI Lab, making it easier for researchers, developers, and others to
 understand and work with the various components and resources. It promotes
 consistency and clarity in communication and documentation.
 
