@@ -38,7 +38,7 @@ Cons:
 
 - **Collaboration challenges:** Collaboration between different teams or products may be challenging with separate databases. It can be harder to share and access data seamlessly, leading to potential communication and coordination issues.
 
-- **Potential data conflicts:** Separate databases may result in data conflicts, especially when different teams or products need to update the same data simultaneously. These conflicts can lead to data inconsistencies and errors. (Source: [Toptal - Database Design Bad Practices](https://www.toptal.com/database/database-design-bad-practices))
+- **Potential data conflicts:** Separate databases may result in data conflicts, especially when different teams or products need to update the same data simultaneously. These conflicts can lead to data inconsistencies and errors. [Toptal - Database Design Bad Practices](#ref-toptal)
 
 In summary, while the "Separate Databases (Current Setup)" option provides initial clarity, it has serious disadvantages, such as redundancy, decreased flexibility, difficulties with collaboration, and the possibility of data conflicts. 
 
@@ -46,9 +46,9 @@ In summary, while the "Separate Databases (Current Setup)" option provides initi
 
 Pros:
 
-- **Enhanced teamwork:** By using a single consolidated database, teams can collaborate more effectively. By having only one database, sharing and accessing data becomes simpler, which can lead to improved cross-functional cooperation. (Source: [Budibase - How to Integrate Multiple Databases](https://budibase.com/blog/data/how-to-integrate-multiple-databases))
+- **Enhanced teamwork:** By using a single consolidated database, teams can collaborate more effectively. By having only one database, sharing and accessing data becomes simpler, which can lead to improved cross-functional cooperation. [Budibase - How to Integrate Multiple Databases](#ref-budibase)
 
-- **Elimination of repeated data:** This approach eliminates the need for redundant data. All information is stored in one place, reducing data duplication and ensuring data consistency. If I create a file in one database, I can access it in another without the need to recreate it. (Source: [Matillion - What is Data Consolidation?](https://www.matillion.com/blog/what-is-data-consolidation))
+- **Elimination of repeated data:** This approach eliminates the need for redundant data. All information is stored in one place, reducing data duplication and ensuring data consistency. If I create a file in one database, I can access it in another without the need to recreate it. [Matillion - What is Data Consolidation?](#ref-matillon)
 
 - **Greater flexibility in product management:** A consolidated database provides greater flexibility in managing different products. It allows for efficient data sharing and integration between various teams or products, making it easier to adapt to changing requirements. By using a system of Python modules, we can just add what we need, and when we need it.
 
@@ -74,6 +74,10 @@ Cons:
 
 Any documentation, research, or data that support the decision can be cited here. This can include academic papers, blog posts, or internal documents.
 
-- [Toptal - Database Design Bad Practices: Are You Making These Mistakes?](https://www.toptal.com/database/database-design-bad-practices)
-- [Budibase - How to Integrate Multiple Databases](https://budibase.com/blog/data/how-to-integrate-multiple-databases)
-- [Matillion - What is Data Consolidation?](https://www.matillion.com/blog/what-is-data-consolidation)
+<a id="ref-toptal"></a>Toptal, J. P. (n.d.)
+
+* Blog. (n.d.). Toptal. [Database Design Bad Practices, https://www.toptal.com/](https://www.toptal.com/database/database-design-bad-practices) <a id="ref-toptal"></a>
+
+* Blog. (2022, Mai 22). Budibase. [How to Integrate Multiple Databases, https://budibase.com/](https://budibase.com/blog/data/how-to-integrate-multiple-databases) <a id="ref-budibase"></a>
+
+* Blog. (2020, Décembre 16). Matillion. [What is Data Consolidation?, https://www.matillion.com/](https://www.matillion.com/blog/what-is-data-consolidation) <a id="ref-matillon"></a>
