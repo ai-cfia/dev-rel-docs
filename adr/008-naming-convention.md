@@ -3,18 +3,17 @@
 ## Executive Summary
 
 The decision to establish a naming convention for the Artificial Intelligence
-(AI) of the CFIA Laboratory (lab) aims to bring clarity and consistency to the lab's internal structure.
+(AI) of the Canadian Food Inspection Agency (CFIA) Laboratory aims to bring clarity and consistency to the lab's internal structure.
 The convention covers components, software applications, hardware equipment,
 datasets, research projects, environments, and containers. By adopting this
 standardized approach, the AI Lab intends to enhance communication,
 documentation, and overall organization, facilitating seamless collaboration
 among researchers, developers, and stakeholders. This decision aligns with the
-lab's commitment to efficient and structured practices in artificial
-intelligence research and development.
+lab's commitment to efficient and structured practices in the field of applied AI.
 
 ## Context
 
-The establishment of a Naming Convention for the Artificial Intelligence (AI)
+The establishment of a Naming Convention for the Artificial Intelligence
 Lab is prompted by the imperative to introduce coherence and uniformity in the
 lab's internal organizational framework. This initiative is undertaken to foster
 clarity and efficiency in communication, documentation, and the overall
@@ -69,7 +68,7 @@ researchers, developers.
 ### Database Schema
 - **Convention**: Start with `name_v` where name is the Schema name, followed by
   the current version numbers.
-- **Example**: `name_v1.0.0`
+- **Example**: `name_1.0.0`
 - **Reference**: [CFIA, 2023](#ref-adr-006)
 
  ### Database Table and View
@@ -134,6 +133,5 @@ understand and work with the various components and resources. It promotes
 consistency and clarity in communication and documentation.
 
 ## References
-  - <a id="ref-adr-006"></a> ADR-006: How we manage changes in databases. (2023, November 6). CFIA.
-  https://github.com/ai-cfia/dev-rel-docs/blob/main/adr/006-database-change-management.md
+  * ADR-006: How we manage changes in databases. (2023, November 6). CFIA. [github.com/ai-cfia/dev-rel-docs/](https://github.com/ai-cfia/dev-rel-docs/blob/main/adr/006-database-change-management.md) <a id="ref-adr-006"></a>
 
