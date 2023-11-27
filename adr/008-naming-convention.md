@@ -26,6 +26,10 @@ researchers, developers.
 ### GitHub repositories
 - **Convention**: Use lowercase and separate words with dashes.
 - **Example**: `my-repo-name`
+- **Reference**:
+  - [Tilburg. Best Practices for Naming Git Branches.](#ref-tilburg) 
+  - [Branching. Digitaljhelms.](#ref-digitaljhelms) 
+
 
 ### Files
 - **Convention**: Use lowercase and separate words with dashes.
@@ -41,9 +45,12 @@ researchers, developers.
 - **Example**: `PROJECT_NAME_MY_ENV_VAR`
 
 ### Azure resource groups
-- **Convention**: Start with `rg-` followed by the name in lowercase, separating
+- **Convention**: End with `-rg` followed by the name in lowercase, separating
   words with dashes.
-- **Example**: `rg-resource-group`
+- **Example**: `resource-group-rg`
+   **Reference**:
+  - [Microsoft. Azure Naming Best Practices](#ref-microsoft-1)
+  - [Microsoft. Azure Resource Abbreviations](#ref-microsoft-2)
 
 ### Azure resources
 - **Convention**: Use lowercase and separate words with dashes. Include the
@@ -59,17 +66,22 @@ researchers, developers.
 ### Database Server / Cluster 
 - **Convention**: Start with `cfia-` followed by the name in lowercase,
   separating words with dashes.
-- **Example**: `cfia-name`
+- **Example**: `project-service-environment`
+- **Example**: `nachet-postgresql-dev`
 
 ### Database
 - **Convention**: Use in lowercase, don't use space.
 - **Example**: `databasefullname`
 
 ### Database Schema
-- **Convention**: Start with `name_v` where name is the Schema name, followed by
-  the current version numbers.
+- **Convention**: Start with `name_v` where name is the Schema name, followed by the current version numbers.
 - **Example**: `name_1.0.0`
-- **Reference**: [CFIA, 2023](#ref-adr-006)
+- **Reference**:
+  - [CFIA, ADR-006](#ref-adr-006)
+  - [Ovid. Database Naming Standards](#ref-ovid)
+  - [Rootsoft. Database Naming Convention](#ref-rootsoft)
+  - [Vertabelo. Worst Database Naming Conventions](#ref-vertabelo)
+
 
  ### Database Table and View
 - **Convention**: Use lowercase and separate words with underscore. For naming use plural.
@@ -133,5 +145,11 @@ understand and work with the various components and resources. It promotes
 consistency and clarity in communication and documentation.
 
 ## References
-  * ADR-006: How we manage changes in databases. (2023, November 6). CFIA. [github.com/ai-cfia/dev-rel-docs/](https://github.com/ai-cfia/dev-rel-docs/blob/main/adr/006-database-change-management.md) <a id="ref-adr-006"></a>
-
+* How we manage changes in databases. (2023, November 6). CFIA AI-Lab. [github.com/ai-cfia/dev-rel-docs/](https://github.com/ai-cfia/dev-rel-docs/blob/main/adr/006-database-change-management.md)<a id="ref-adr-006"></a>
+* Database Naming Standards. (2022, March 21). Ovid. [https://dev.to/ovid/database-naming-standards](https://dev.to/ovid/database-naming-standards-2061)<a id="ref-ovid"></a>
+* Database Naming Convention. (2017, June 15). RootSoft. [https://github.com/RootSoft/Database-Naming-Convention](https://github.com/RootSoft/Database-Naming-Convention)<a id="ref-rootsoft"></a>
+* Worst Database Naming Conventions. (2021, August 31). Vertabelo [https://vertabelo.com/blog/database-naming-convention](https://vertabelo.com/blog/database-naming-convention)<a id="ref-vertabelo"></a>
+* Best Practices for Naming Git Branches. (n.d.). Tilburg Science Hub. [https://tilburgsciencehub.com/](https://tilburgsciencehub.com/building-blocks/collaborate-and-share-your-work/use-github/naming-git-branches/)<a id="ref-tilburg"></a>
+* Branching. (n.d.). Digitaljhelms. [https://gist.github.com/digitaljhelms/4287848](https://gist.github.com/digitaljhelms/4287848)<a id="ref-digitaljhelms"></a>
+* Azure Naming Best Practices. (2023, March, 26). Microsoft. [https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)<a id="ref-microsoft-1"></a>
+* Azure Resource Abbreviations. (2023, April 17). Microsoft. [https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations)<a id="ref-microsoft-2"></a>
