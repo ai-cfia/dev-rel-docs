@@ -1,4 +1,4 @@
-# ADR-009: How we manage different development environments
+# ADR-009: Development environments
 
 ## 1. The beginning
 This Architectural Decision Record (ADR) describes how we plan to handle various development environments for testing, prototyping and releasing the different products
