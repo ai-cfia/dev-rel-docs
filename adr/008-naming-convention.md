@@ -3,19 +3,20 @@
 ## Executive Summary
 
 The decision to establish a naming convention for the Artificial Intelligence
-(AI) of the Canadian Food Inspection Agency (CFIA) Laboratory aims to bring clarity and consistency to the lab's internal structure.
-The convention covers components, software applications, hardware equipment,
-datasets, research projects, environments, and containers. By adopting this
-standardized approach, the AI Lab intends to enhance communication,
-documentation, and overall organization, facilitating seamless collaboration
-among researchers, developers, and stakeholders. This decision aligns with the
-lab's commitment to efficient and structured practices in the field of applied AI.
+(AI) of the Canadian Food Inspection Agency (CFIA) Laboratory aims to bring
+clarity and consistency to the lab's internal structure. The convention covers
+components, software applications, hardware equipment, datasets, research
+projects, environments, and containers. By adopting this standardized approach,
+the AI Lab intends to enhance communication, documentation, and overall
+organization, facilitating seamless collaboration among researchers, developers,
+and stakeholders. This decision aligns with the lab's commitment to efficient
+and structured practices in the field of applied AI.
 
 ## Context
 
-The establishment of a Naming Convention for the Artificial Intelligence
-Lab is prompted by the imperative to introduce coherence and uniformity in the
-lab's internal organizational framework. This initiative is undertaken to foster
+The establishment of a Naming Convention for the Artificial Intelligence Lab is
+prompted by the imperative to introduce coherence and uniformity in the lab's
+internal organizational framework. This initiative is undertaken to foster
 clarity and efficiency in communication, documentation, and the overall
 structuring of resources within the AI Lab. The context sets the stage for the
 need to streamline nomenclature, facilitating seamless collaboration among
@@ -47,8 +48,7 @@ researchers, developers.
 ### Azure resource groups
 - **Convention**: End with `-rg` followed by the name in lowercase, separating
   words with dashes.
-- **Example**: `resource-group-rg`
-   **Reference**:
+- **Example**: `resource-group-rg` **Reference**:
   - [Microsoft. Azure Naming Best Practices](#ref-microsoft-1)
   - [Microsoft. Azure Resource Abbreviations](#ref-microsoft-2)
 
@@ -74,7 +74,8 @@ researchers, developers.
 - **Example**: `databasefullname`
 
 ### Database Schema
-- **Convention**: Start with `name_v` where name is the Schema name, followed by the current version numbers.
+- **Convention**: Start with `name_` where name is the Schema name, followed by
+  the current version numbers.
 - **Example**: `name_1.0.0`
 - **Reference**:
   - [CFIA, ADR-006](#ref-adr-006)
@@ -84,13 +85,22 @@ researchers, developers.
 
 
  ### Database Table and View
-- **Convention**: Use lowercase and separate words with underscore. For naming use plural.
-- **Why**: SQL reserved word are singular, so by using plural you're less likely to have a collision.
+- **Convention**: Use lowercase and separate words with underscore. For naming
+  use plural.
+- **Why**: SQL reserved word are singular, so by using plural you're less likely
+  to have a collision.
 - **Example**: `my_table_name`
 - **Example**: `my_view_name`
 - **Concrete example**: `html_contents`
 - **Concrete example**: `users`
-- 
+
+### Abbreviation for Environment
+- `dev`: development environment (typically ongoing development branches
+  deployed for developer testing)
+- `uat`: user-acceptance testing: new version that is shared to product
+  management and champion users for testing before deployment to production
+- `prd`: production: production version of the system
+
 ## Notes
 - These naming conventions should be followed for all new resources that can be
   accessed or manipulated via CLI.
@@ -145,11 +155,27 @@ understand and work with the various components and resources. It promotes
 consistency and clarity in communication and documentation.
 
 ## References
-* How we manage changes in databases. (2023, November 6). CFIA AI-Lab. [github.com/ai-cfia/dev-rel-docs/](https://github.com/ai-cfia/dev-rel-docs/blob/main/adr/006-database-change-management.md)<a id="ref-adr-006"></a>
-* Database Naming Standards. (2022, March 21). Ovid. [https://dev.to/ovid/database-naming-standards](https://dev.to/ovid/database-naming-standards-2061)<a id="ref-ovid"></a>
-* Database Naming Convention. (2017, June 15). RootSoft. [https://github.com/RootSoft/Database-Naming-Convention](https://github.com/RootSoft/Database-Naming-Convention)<a id="ref-rootsoft"></a>
-* Worst Database Naming Conventions. (2021, August 31). Vertabelo [https://vertabelo.com/blog/database-naming-convention](https://vertabelo.com/blog/database-naming-convention)<a id="ref-vertabelo"></a>
-* Best Practices for Naming Git Branches. (n.d.). Tilburg Science Hub. [https://tilburgsciencehub.com/](https://tilburgsciencehub.com/building-blocks/collaborate-and-share-your-work/use-github/naming-git-branches/)<a id="ref-tilburg"></a>
-* Branching. (n.d.). Digitaljhelms. [https://gist.github.com/digitaljhelms/4287848](https://gist.github.com/digitaljhelms/4287848)<a id="ref-digitaljhelms"></a>
-* Azure Naming Best Practices. (2023, March, 26). Microsoft. [https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)<a id="ref-microsoft-1"></a>
-* Azure Resource Abbreviations. (2023, April 17). Microsoft. [https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations)<a id="ref-microsoft-2"></a>
+* How we manage changes in databases. (2023, November 6). CFIA AI-Lab.
+  [github.com/ai-cfia/dev-rel-docs/](https://github.com/ai-cfia/dev-rel-docs/blob/main/adr/006-database-change-management.md)<a
+  id="ref-adr-006"></a>
+* Database Naming Standards. (2022, March 21). Ovid.
+  [https://dev.to/ovid/database-naming-standards](https://dev.to/ovid/database-naming-standards-2061)<a
+  id="ref-ovid"></a>
+* Database Naming Convention. (2017, June 15). RootSoft.
+  [https://github.com/RootSoft/Database-Naming-Convention](https://github.com/RootSoft/Database-Naming-Convention)<a
+  id="ref-rootsoft"></a>
+* Worst Database Naming Conventions. (2021, August 31). Vertabelo
+  [https://vertabelo.com/blog/database-naming-convention](https://vertabelo.com/blog/database-naming-convention)<a
+  id="ref-vertabelo"></a>
+* Best Practices for Naming Git Branches. (n.d.). Tilburg Science Hub.
+  [https://tilburgsciencehub.com/](https://tilburgsciencehub.com/building-blocks/collaborate-and-share-your-work/use-github/naming-git-branches/)<a
+  id="ref-tilburg"></a>
+* Branching. (n.d.). Digitaljhelms.
+  [https://gist.github.com/digitaljhelms/4287848](https://gist.github.com/digitaljhelms/4287848)<a
+  id="ref-digitaljhelms"></a>
+* Azure Naming Best Practices. (2023, March, 26). Microsoft.
+  [https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)<a
+  id="ref-microsoft-1"></a>
+* Azure Resource Abbreviations. (2023, April 17). Microsoft.
+  [https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations)<a
+  id="ref-microsoft-2"></a>
