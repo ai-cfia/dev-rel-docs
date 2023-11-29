@@ -64,10 +64,10 @@ researchers, developers.
 - **Example**: `2023-09-24-description-of-script.sql`
 
 ### Database Server / Cluster 
-- **Convention**: Start with `cfia-` followed by the name in lowercase,
-  separating words with dashes.
-- **Example**: `project-service-environment`
+- **Convention**: The name should follow this pattern:
+  `project-service-environment` all in lowercase, separating words with dashes.
 - **Example**: `nachet-postgresql-dev`
+- **Example**: `finesse-postgresql-prd`
 
 ### Database
 - **Convention**: Use in lowercase, don't use space.
@@ -77,7 +77,11 @@ researchers, developers.
 - **Convention**: Start with `name_` where name is the Schema name, followed by
   the current version numbers.
 - **Example**: `name_1.0.0`
+- **Why**: We're using this format because we aim to parse the version using the
+  `semver` library on PyPI.
 - **Reference**:
+  - [Semver.org, Semantic Versioning 2.0.0](#ref-semver)
+  - [Pypi.org, semver](#ref-pypi)
   - [CFIA, ADR-006](#ref-adr-006)
   - [Ovid. Database Naming Standards](#ref-ovid)
   - [Rootsoft. Database Naming Convention](#ref-rootsoft)
@@ -179,3 +183,8 @@ consistency and clarity in communication and documentation.
 * Azure Resource Abbreviations. (2023, April 17). Microsoft.
   [https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations)<a
   id="ref-microsoft-2"></a>
+* Semantic Versioning 2.0.0 (n.d.). Semver.org.
+  [https://semver.org/](https://semver.org/)<a id="ref-semver"></a>
+* Semver 3.0.2 (2023, October 9). Pypi.org.
+  [https://pypi.org/project/semver/](https://pypi.org/project/semver/)<a
+  id="ref-pypi"></a>
