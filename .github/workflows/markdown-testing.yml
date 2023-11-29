@@ -1,0 +1,8 @@
+name: Markdown file validation
+
+on:
+  push:
+
+jobs:
+  markdown-check:
+    uses: ai-cfia/github-workflows/.github/workflows/workflow-markdown-check.yml@43-create-workflow-to-test-line-80-wrapping
