@@ -62,6 +62,16 @@ collaboration issues, which may cause data conflicts. We have a better way to
 maintain databases with this approach, which uses a Consolidated Database
 Approach and only uses one database.
 
+## Terminology
+**Database**:
+A collection of organized electronic information.
+
+**Database Server**:
+A specialized server managing access to databases.
+
+**Schema**:
+The blueprint that defines how data is structured within a database.
+
 ## Decision
 We've decided to use a Consolidated Database Approach, which means we'll combine
 all our individual product databases into one central database server. This
