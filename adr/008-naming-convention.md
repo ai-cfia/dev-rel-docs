@@ -45,9 +45,13 @@ researchers, developers.
   actual variable name, separating words with underscores.
 - **Example**: `PROJECT_NAME_MY_ENV_VAR`
 
+### Project name
+- **Standard Practice**: Our usual approach involves selecting a well-known
+  figure associated with the project's theme.
+
 ### Azure resource groups
 - **Convention**: End with `-rg` followed by the name in lowercase, separating
-  words with dashes.
+  words with dashes. `-rg` stand for `ressource group`.
 - **Example**: `resource-group-rg` **Reference**:
   - [Microsoft. Azure Naming Best Practices](#ref-microsoft-1)
   - [Microsoft. Azure Resource Abbreviations](#ref-microsoft-2)
@@ -77,8 +81,10 @@ researchers, developers.
 - **Convention**: Start with `name_` where name is the Schema name, followed by
   the current version numbers.
 - **Example**: `name_1.0.0`
-- **Why**: We're using this format because we aim to parse the version using the
-  `semver` library on PyPI.
+- **Why**: We're adopting this format to adhere to the `semver` standard,
+  enabling us to utilize tools across different languages for parsing versions
+  effectively. For more information, you can check the ADR-006 about How we
+  manage changes in databases.
 - **Reference**:
   - [Semver.org, Semantic Versioning 2.0.0](#ref-semver)
   - [Pypi.org, semver](#ref-pypi)
@@ -93,10 +99,8 @@ researchers, developers.
   use plural.
 - **Why**: SQL reserved word are singular, so by using plural you're less likely
   to have a collision.
-- **Example**: `my_table_name`
-- **Example**: `my_view_name`
-- **Concrete example**: `html_contents`
-- **Concrete example**: `users`
+- **Example**: `my_table_name`, `my_view_name`
+- **Concrete example**: `html_contents`, `users`
 
 ### Abbreviation for Environment
 - `dev`: development environment (typically ongoing development branches
