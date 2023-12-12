@@ -1,6 +1,7 @@
 # ADR-004: Open Source Development
 
 ## Executive Summary
+
 The Canadian Food Inspection Food Agency (CFIA) Artificial Intelligence
 Laboratory (AI Lab) is adopting Full Open Source Development, releasing all
 software publicly to encourage transparent collaboration per the Government of
@@ -10,6 +11,7 @@ to harness collective expertise for enhanced innovation and trust in the digital
 public sector.
 
 ## Context
+
 The CFIA AI Lab is dedicated to advancing the practical applications of AI to
 support the agency's specific needs and objectives. By creating accessible
 AI-driven tools, we enhance CFIA employees' work, directly contributing to the
@@ -46,17 +48,21 @@ Free Software Foundation, the users "[must have the freedom to run, edit,
 contribute to, and share the software.](#ref3)" (Free Software Foundation. n.d.)
 
 ### Specifics to our situation
+
 #### Dependency to Open Source
+
 We already depend heavily on open source tools with open development and
 user-contributed work, whether it is [Visual Studio Code](#ref4), [Bicep
 configuration files](#ref5), [Jupyter notebooks](#ref6), [OpenSSL](#ref7), or
 [Git](#ref8).
 
 #### Tooling
+
 Github, the open source platform of choice, is owned by Microsoft, our
 technology partner, and is the premier platform for open source development.
 
 #### Alpha Deployment: [alpha.canada.ca](#ref9)
+
 As part of the Government of Canada’s commitment to experimentation, this web
 domain hosts experimental and prototype websites and services. These websites
 and services are continually evolving “alpha” products that are still in
@@ -75,6 +81,7 @@ to meet the following criteria:
 * actively developed within the past four months
 
 #### Complying with Government of Canada Digital Standards
+
 [Digital Standards](#ref10) require us to do development in the open.
 
 * "Share evidence, research and decision making openly. Make all non-sensitive
@@ -87,6 +94,7 @@ to meet the following criteria:
   among governments."
 
 ## Decision
+
 We have chosen to adopt the Full Open Source Development approach.
 
 Every software product undertaken by the AI Lab will be released publicly,
@@ -105,14 +113,16 @@ permitting free usage and distribution of our work without cumbersome
 restrictions, thereby encouraging wider adoption and collaboration.
 
 ### Handling of Sensitive Data
+
 In our approach, we balance public development with private deployment. All
 coding and development are conducted openly, to encourage collaboration, while
 sensitive data and documents remain secured, only existing in our private,
 controlled environments to ensure confidentiality and integrity.
 
-
 ## Solutions Considered
+
 ### Development
+
 * **Full Open Source Development**: Release all projects, without exception, to
   the public, encouraging community contribution and collaboration.
 
@@ -123,8 +133,9 @@ controlled environments to ensure confidentiality and integrity.
   and products after thorough vetting and quality assurance.
 
 ### Licenses
+
 As we are doing open source development, the choice of license is critical, as
-it will dictate how other uses can use, modify, and distribute our work. 
+it will dictate how other uses can use, modify, and distribute our work.
 
 * **MIT License**: Known for its brevity and flexibility, the MIT license allows
   users to do almost anything they want with the products we develop, like
@@ -149,13 +160,12 @@ it will dictate how other uses can use, modify, and distribute our work.
   material as long as appropriate credit is given, a link to the license is
   provided, and any changes made are indicated.
 
-
 ## Consequences
 
 **Enhanced Transparency and Trust**: With a full open source approach, every
 stakeholder, including the general public, will have direct insight into our
 development process. This will foster a greater degree of trust and transparency
-between the lab and its audience. 
+between the lab and its audience.
 
 **Increased Collaborative Potential**: By making all projects open source, we
 will tap into the collective intelligence of the developer and expert community.
@@ -179,7 +189,6 @@ insights and suggestions.
 security risks associated with sensitive data. Proactive measures, including
 data anonymization, regular security audits, and stringent contribution
 guidelines, will be instituted to mitigate these risks.
-
 
 ## References
 
@@ -219,8 +228,3 @@ id="ref7"></a>
 Standards. Canada.ca.
 [https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
 <a id="ref10"></a>
-
-
-
-
-

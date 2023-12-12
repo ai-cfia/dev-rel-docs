@@ -9,6 +9,7 @@ opting for PostgreSQL because of its robust features, scalability, and
 suitability for our specific needs thanks to its pgvector extension.
 
 ## Context
+
 Today, effective data management is crucial to Canadian Food Inspection Agency's
 (CFIA) Artificial Intelligence Laboratory (AI Lab) as we manage enormous amounts
 of information, requiring a database management system (DBMS). This choice is
@@ -17,6 +18,7 @@ scalability, support data analysis, facilitate collaboration between teams, and
 reduce operational costs.
 
 ## Decision
+
 The AI Lab decided to adopt PostgreSQL ([PostgreSQL Tutorial,
 n.d.](#ref-tutorial) and [P. G. D. Group, 2023](#ref-postgres)) as our DBMS due
 to its open source nature and the presence of a large and active community. This
@@ -40,8 +42,11 @@ administrators or the availability of managed PostgreSQL services that handle
 many administrative tasks.
 
 ## Alternatives Considered
-### PostgreSQL 
+
+### PostgreSQL
+
 #### Pros
+
 PostgreSQL stands out as a great DBMS solution that offers traditional database
 benefits with an emphasis on reliability and maturity ([T. Brown,
 2023](#ref-database)). Notably, it's also available as a Database-as-a-Service
@@ -52,7 +57,7 @@ in Azure. Here are some key advantages of PostgreSQL:
   and plugins. There are more than a dozen mailing lists available as well as
   associated archives. For example, you can find monthly reviews of third party
   software's update. ([PostgreSQL announce, n.d.](#ref-announce), [PostgreSQL
-  general, n.d.](#ref-general), and [PostgreSQL hackers, n.d.](#ref-hackers)) 
+  general, n.d.](#ref-general), and [PostgreSQL hackers, n.d.](#ref-hackers))
 - Security Features: Role-based access control, SSL/TLS support, and data
   encryption.
 - Reliability: Highly reliable and has a proven track record for handling
@@ -68,6 +73,7 @@ in Azure. Here are some key advantages of PostgreSQL:
   for spatial and geographic data through PostGIS.
 
 #### Cons
+
 - Complex Configuration: Complex to configure and optimize, especially for users
   with limited database administration experience.
 - Performance Tuning: Default configuration might not be ideal for all use
@@ -76,24 +82,32 @@ in Azure. Here are some key advantages of PostgreSQL:
   database systems due to its feature-rich and extensible nature.
 
 ### Microsoft SQL Server
+
 #### Pros
+
 - Integrated Environment: Comprehensive tools and services for maintenance,
   business intelligence, and analytics.
 - Performance: High performance and robustness for complex, large-scale
-applications. 
+applications.
 - Security Features: Advanced security features for data protection.
+
 #### Cons
+
 - Cost: High licensing costs.
 - Community Support: Less community support compared to open-source options.
 
 ### CosmosDB
+
 #### Pros
+
 - Tunable consistency model: Simplifies many challenges in distributed systems
-  engineering. 
+  engineering.
 - Performance: Provide high speed and low latency, well-suited for
   performance-intensive situations ([K. Velusamy &amp; S. Goyal,
   2023](#ref-compare2)).
+
 #### Cons
+
 - Detailed information: While it provides auto-indexing functionality, it can
   sometimes be a little mysterious and may require intentional thought
   ([TrustRadius, n.d.](#ref-compare1)).
@@ -102,22 +116,26 @@ applications.
 - No local emulator: To test code, deployment to Azure is required. Can quickly
   become time consuming.
 - Expensive: Licensing costs. Also gets expensive if it’s used for scenarios
-  that could be handled by regular Azure Table Storage or Blob Storage. 
-
+  that could be handled by regular Azure Table Storage or Blob Storage.
 
 ### MySQL
+
 #### Pros
+
 - User-Friendly: Easier to set up and manage, especially for users with basic
   database administration skills.
 - Performance: High-performance with read-heavy workloads.
 - Community Support: Active open-source community.
+
 #### Cons
+
 - Scalability: Limited scalability for handling complex queries and large
   datasets.
 - Data Integrity: Less strict data integrity enforcement.
 - Customization: Limited customization and extensibility.
 
 ## Consequences
+
 The adoption of PostgreSQL will facilitate data integrity, elevate reliability,
 offer the flexibility to adapt to evolving needs, and accommodate future growth.
 It also grants us access to an active community. However, it will require some
@@ -126,35 +144,31 @@ PostgreSQL for our projects.
 
 ## References
 
-- <a id="ref-architecture"></a>Architecting petabyte-scale analytics by scaling
-  out postgres on Azure with the CITUS extension. TECHCOMMUNITY.MICROSOFT.COM.
-  (2023, January 31).
-  https://techcommunity.microsoft.com/t5/azure-database-for-postgresql/architecting-petabyte-scale-analytics-by-scaling-out-postgres-on/ba-p/969685 
 - <a id="ref-database"></a>Brown, T. (2023, January 19). Why more and more
   enterprises are choosing postgresql as their go-to database!. EDB.
-  https://www.enterprisedb.com/postgres-tutorials/why-more-and-more-enterprises-are-choosing-postgresql-their-go-database 
+  <https://www.enterprisedb.com/postgres-tutorials/why-more-and-more-enterprises-are-choosing-postgresql-their-go-database>
 - <a id="ref-pgvector"></a>Bytes, B. (2023, July 27). Postgres pgvector
   extension - vector database with PostgreSQL / Langchain Integration. YouTube.
-  https://youtu.be/FDBnyJu_Ndg?si=sBfBluS3G2TlW6RN 
+  <https://youtu.be/FDBnyJu_Ndg?si=sBfBluS3G2TlW6RN>
 - <a id="ref-postgres"></a>Group, P. G. D. (2023, October 31). PostgreSQL.
-  https://www.postgresql.org/ 
+  <https://www.postgresql.org/>
 - <a id="ref-announce"></a>Pgsql-announce. PostgreSQL. (n.d.-a).
-  https://www.postgresql.org/list/pgsql-announce/ 
+  <https://www.postgresql.org/list/pgsql-announce/>
 - <a id="ref-general"></a>Pgsql-general. PostgreSQL. (n.d.-b).
-  https://www.postgresql.org/list/pgsql-general 
+  <https://www.postgresql.org/list/pgsql-general>
 - <a id="ref-hackers"></a>Pgsql-hackers. PostgreSQL. (n.d.-c).
-  https://www.postgresql.org/list/pgsql-hackers/ 
+  <https://www.postgresql.org/list/pgsql-hackers/>
 - <a id="ref-survey"></a>Stack overflow developer survey 2023. Stack Overflow.
   (n.d.).
-  https://survey.stackoverflow.co/2023/#most-popular-technologies-database 
+  <https://survey.stackoverflow.co/2023/#most-popular-technologies-database>
 - <a id="ref-tutorial"></a>What is postgresql?. PostgreSQL Tutorial. (n.d.).
-  https://www.postgresqltutorial.com/postgresql-getting-started/what-is-postgresql/ 
+  <https://www.postgresqltutorial.com/postgresql-getting-started/what-is-postgresql/>
 - <a id="ref-compare1"></a>Azure cosmos DB vs PostgreSQL. TrustRadius. (n.d.).
-  https://www.trustradius.com/compare-products/azure-cosmos-db-vs-postgresql#community-pulse 
+  <https://www.trustradius.com/compare-products/azure-cosmos-db-vs-postgresql#community-pulse>
 - <a id="ref-compare2"></a>Velusamy, K., &amp; Goyal, S. (2023, July 7). Azure
   cosmos DB vs PostgreSQL : Compare differences. Whizlabs Blog.
-  https://www.whizlabs.com/blog/azure-cosmos-db-vs-postgresql/ 
+  <https://www.whizlabs.com/blog/azure-cosmos-db-vs-postgresql/>
 - <a id="ref-cosmos"></a>Arciola, R. (2022, April 20). Azure cosmos DB: Fast,
   Globally Distributed, NoSQL Cloud Database for your internet of anything.
   LinkedIn.
-  https://www.linkedin.com/pulse/azure-cosmos-db-fast-globally-distributed-nosql-cloud-renaldo-arciola/ 
+  <https://www.linkedin.com/pulse/azure-cosmos-db-fast-globally-distributed-nosql-cloud-renaldo-arciola/>

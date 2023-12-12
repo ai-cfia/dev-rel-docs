@@ -98,7 +98,7 @@ décisions triviales.
 - Relecture : Chaque ADR sera relu pour détecter des erreurs linguistiques ou
   grammaticales avant sa finalisation. Des outils comme Antidote peuvent être
   utiles.
-<<<<<<< HEAD
+
 - Nom des fichiers : Les fichiers ADR seront nommés en suivant le format
   XXX-tag.code-langue.md, où :
   - XXX représente un numéro à trois chiffres pour le classement.
@@ -122,9 +122,9 @@ décisions triviales.
   références ([American Psychological Association, n.d.](#ref-apa-examples)).
   Les citations dans le texte doivent être reliées aux références listées dans
   la section Références.
-    - Exemple de référence : `<a id="ref-henderson"></a>Henderson, J. P. (s.d.).
+  - Exemple de référence : `<a id="ref-henderson"></a>Henderson, J. P. (s.d.).
       Enregistrement de Décision d'Architecture (ADR)...`
-    - Exemple de citation : `([Henderson, s.d.](#ref-henderson))`
+  - Exemple de citation : `([Henderson, s.d.](#ref-henderson))`
 
 ### Statuts Implicites
 
@@ -143,7 +143,7 @@ décisions triviales.
 ### Stockage
 
 - Les ADR et leurs pièces jointes seront stockés dans un répertoire dédié de ce
-  [dépôt](https://github.com/ai-acia/dev-rel-docs), sous le dossier adr/.
+  [dépôt](https://github.com/ai-cfia/dev-rel-docs), sous le dossier adr/.
 - Les ADR obsolètes et remplacés ainsi que leurs pièces jointes seront déplacés
   vers adr/archives/.
 
@@ -267,30 +267,30 @@ Inconvénients :
 ## Références
 
 <a id="ref-ayers"></a>Ayers, D. (10 mai 2019). Communicating and Documenting
-Architectural Decisions. https://www.youtube.com/watch?v=rwfXkSjFhzc
+Architectural Decisions. <https://www.youtube.com/watch?v=rwfXkSjFhzc>
 
 <a id="ref-atlassian"></a>Atlassian. (s. d.). DACI: Decision Documentation.
-https://www.atlassian.com/software/confluence/templates/decision
+<https://www.atlassian.com/software/confluence/templates/decision>
 
 <a id="ref-calcado"></a>Calçado, P. (19 novembre 2018). A Structured RFC
-Process. https://philcalcado.com/2018/11/19/a_structured_rfc_process.html
+Process. <https://philcalcado.com/2018/11/19/a_structured_rfc_process.html>
 
 <a id="ref-henderson"></a>Henderson, J. P. (s. d.). Architecture Decision Record
-(ADR). https://github.com/joelparkerhenderson/architecture-decision-record
+(ADR). <https://github.com/joelparkerhenderson/architecture-decision-record>
 
 <a id="ref-lebar"></a>LeBar, Z. (5 mars 2022). What Are Wikis, and Why Should
 You Use Them?
-https://business.tutsplus.com/tutorials/what-are-wikis-and-why-should-you-use-them--cms-19540
+<https://business.tutsplus.com/tutorials/what-are-wikis-and-why-should-you-use-them--cms-19540>
 
 <a id="ref-microsoft"></a>Microsoft. (20 mars 2020). Record Architecture
 Decisions. Code With Engineering Playbook.
-https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/
+<https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/>
 
 <a id="ref-monday"></a>Monday.com. (s. d.). How to Use a Project Decision Log
-for Optimal Results. https://monday.com/blog/project-management/decision-log/
+for Optimal Results. <https://monday.com/blog/project-management/decision-log/>
 
 <a id="ref-apa-examples"></a>American Psychological Association. (s. d.).
 Reference Examples.
-https://apastyle.apa.org/style-grammar-guidelines/references/examples
+<https://apastyle.apa.org/style-grammar-guidelines/references/examples>
 
-<a id="ref-library"></a>Library of Congress. (2017, December 21). Codes for the Representation of Names of Languages. https://www.loc.gov/standards/iso639-2/php/code_list.php
+<a id="ref-library"></a>Library of Congress. (2017, December 21). Codes for the Representation of Names of Languages. <https://www.loc.gov/standards/iso639-2/php/code_list.php>

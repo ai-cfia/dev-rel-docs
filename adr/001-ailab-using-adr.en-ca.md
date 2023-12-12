@@ -96,8 +96,8 @@ significant architectural choices, not trivial decisions.
   - XXX is a three-digit number for ordering.
   - tag is a short, descriptive tag of the decision.
   - language-code follows the ISO 639-1 standard for language codes ([Library of
-    Congress, 2017](#ref-library)). 
-  
+    Congress, 2017](#ref-library)).
+
   Examples:
   - 001-ailab-using-adr.en-ca.md for the English (Canada) version.
   - 001-ailab-using-adr.fr-ca.md for the French (Canada) version.
@@ -107,7 +107,7 @@ significant architectural choices, not trivial decisions.
   description. Numbers should match between the file name and title.
 - Sections: An ADR will include Executive Summary, Context, Decision,
   Alternatives Considered, Consequences, and References ([Microsoft,
-  2020](#ref-microsoft)). See [ADR Template](./001-ailab-using-adr-template.md)
+  2020](#ref-microsoft)). See [ADR Template](./001-ailab-using-adr-template.en-ca.md)
   for more details.
 - Referencing Format: Use APA style for formatting references ([American
   Psychological Association, n.d.](#ref-apa-examples)). In-text citations should
@@ -267,5 +267,3 @@ Cons:
 <a id="ref-apa-examples"></a>American Psychological Association. (n. d.). Reference Examples. Retrieved from https://apastyle.apa.org/style-grammar-guidelines/references/examples
 
 <a id="ref-library"></a>Library of Congress. (2017, December 21). Codes for the Representation of Names of Languages. Retrieved from https://www.loc.gov/standards/iso639-2/php/code_list.php
-
-

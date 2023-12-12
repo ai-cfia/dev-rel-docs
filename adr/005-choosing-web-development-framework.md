@@ -1,6 +1,7 @@
 # ADR-005: Selecting a Web Development Framework for the CFIA AI Lab Website
 
 ## Executive Summary
+
 The Canadian Food Inspection Agency (CFIA) Artificial Intelligence Laboratory
 (AI Lab) has chosen [Docusaurus](#ref1) for the development of its new website.
 This framework addresses our core needs for rapid content publishing, stringent
@@ -10,6 +11,7 @@ Standards](#ref2), reflecting our commitment to openness, continuous
 improvement, and inclusivity.
 
 ## Context
+
 The CFIA AI Lab is at a strategic juncture in its development, recognizing the
 imperative to establish a dedicated publishing platform. This platform will act
 as a channel for spreading information about our specialized endeavors within
@@ -49,12 +51,14 @@ internationalization, meets strict accessibility norms, and fits within an open
 source development framework conducive to continuous evolution and refinement.
 
 ## Decision
+
 After a comprehensive evaluation of various platforms and considering our
 specific needs for accessibility, rapid content updates, and
 internationalization, we have decided to adopt [Docusaurus](#ref1) as the
 development framework for the CFIA AI Lab's new website.
 
 Pros:
+
 * **Rapid Content Publishing**: Docusaurus supports Markdown, making content
   creation fast and efficient for our team. It allows our content creators,
   including those without deep technical expertise, to focus on what they do
@@ -99,11 +103,10 @@ Pros:
 * **Search engine optimization (SEO)**:Docusaurus supports [search engine
   optimization](#ref7) in a variety of ways.
 
-
 However, Docusaurus does have negative aspects that we must keep in mind going
-forward: 
+forward:
 
-Cons: 
+Cons:
 
 * **Learning Curve**: Some team members may need time to familiarize themselves
   with Docusaurus's specific functionalities.
@@ -116,11 +119,14 @@ Cons:
 ## Alternatives Considered
 
 ### [Jekyll](#ref8)
+
 Pros:
+
 * Robust and reliable for static site generation.
 * Supports a wide array of themes and templates for various content types.
 
 Cons:
+
 * Requires multiple plugins, increasing security risks and system instability.
 * Limited native accessibility features, necessitating manual,
   resource-intensive enhancements.
@@ -128,22 +134,28 @@ Cons:
   expertise.
 
 ### [Hugo](#ref9)
+
 Pros:
+
 * Fast content rendering and efficient performance.
 * Simplified content management due to its organized content structure.
 
 Cons:
+
 * Limited internationalization support complicates multi-language content
   management.
 * Insufficient built-in accessibility, requiring extensive manual modifications.
 * Customization demands technical depth, slowing deployment and updates.
 
 ### [Gatsby](#ref10)
+
 Pros:
+
 * Feature-rich platform offering extensive capabilities.
 * Seamless integration with various data sources and third-party systems.
 
 Cons:
+
 * Excessive complexity for straightforward content sites.
 * Potential performance issues with large content volumes, impacting site
   availability.
@@ -151,17 +163,20 @@ Cons:
   maintenance.
 
 ### [Wordpress](#ref11)
+
 Pros:
+
 * Popular platform with user-friendly content management interfaces.
 * Extensive community support and abundant resources for troubleshooting.
 
 Cons:
+
 * Plugin reliance introduces notable security vulnerabilities.
 * Varying plugin code quality can lead to performance inconsistencies.
 * Achieving rigorous accessibility compliance is complex and uncertain.
 
-
 ## Consequences
+
 The decision to use Docusaurus will set the stage for the development of a
 robust, user-centric, and inclusive publishing platform. It will facilitate the
 swift sharing of knowledge, foster greater community engagement, and ensure our
@@ -172,6 +187,7 @@ openness, inclusivity, and continual growth, positioning the CFIA AI Lab as a
 globally recognized, credible, and accessible source of AI knowledge.
 
 ## References
+
 * Homepage. (n.d.). Docusaurus. [https://docusaurus.io/](https://docusaurus.io/) <a id="ref1"></a>
 
 * Secretariat, T. B. O. C. (2021, August 13). Government of Canada Digital
@@ -187,23 +203,22 @@ Wikipedia. [https://en.wikipedia.org/wiki/Internationalization_and_localization]
 <a id="ref4"></a>
 
 * Math Equations. (2023, October 31).
-Docusaurus. [https://docusaurus.io/docs/markdown-features/math-equations](https://docusaurus.io/docs/markdown-features/math-equations) 
+Docusaurus. [https://docusaurus.io/docs/markdown-features/math-equations](https://docusaurus.io/docs/markdown-features/math-equations)
 <a id="ref5"></a>
 
 * Plugins. (2023, October 31).
 Docusaurus. [https://docusaurus.io/docs/advanced/plugins](https://docusaurus.io/docs/advanced/plugins) <a id="ref6"></a>
 
 * Search engine optimization (SEO). (2023, October 31).
-Docusaurus. [https://docusaurus.io/docs/seo](https://docusaurus.io/docs/seo) 
+Docusaurus. [https://docusaurus.io/docs/seo](https://docusaurus.io/docs/seo)
 <a id="ref7"></a>
 
-* Homepage. (n.d.). Jekyll. [https://jekyllrb.com/](https://jekyllrb.com/) 
+* Homepage. (n.d.). Jekyll. [https://jekyllrb.com/](https://jekyllrb.com/)
 <a id="ref8"></a>
 
-* Homepage. (n.d.). Hugo. [https://gohugo.io/](https://gohugo.io/) 
+* Homepage. (n.d.). Hugo. [https://gohugo.io/](https://gohugo.io/)
 <a id="ref9"></a>
 
 * Homepage. (n.d.). Gatsby. [https://www.gatsbyjs.com/](https://www.gatsbyjs.com/) <a id="ref10"></a>
 
 * Homepage. (n.d.). Wordpress. [https://wordpress.com/](https://wordpress.com/) <a id="ref11"></a>
-
