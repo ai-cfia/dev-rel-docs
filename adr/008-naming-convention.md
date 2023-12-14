@@ -44,6 +44,9 @@ researchers, developers.
 - **Convention**: Start with the uppercase repository name, followed by the
   actual variable name, separating words with underscores.
 - **Example**: `PROJECT_NAME_MY_ENV_VAR`
+- **Exception**: In React project, the environment variables have to be prefixed
+  with `REACT_APP`, so in this case we need to have this prefix
+- **Example**: `REACT_APP_PROJECT_NAME_ENV_VAR`
 
 ### Project name
 - **Standard Practice**: Our usual approach involves selecting a well-known
@@ -51,7 +54,7 @@ researchers, developers.
 
 ### Azure resource groups
 - **Convention**: End with `-rg` followed by the name in lowercase, separating
-  words with dashes. `-rg` stand for `ressource group`.
+  words with dashes. `-rg` stand for `resource group`.
 - **Example**: `resource-group-rg` **Reference**:
   - [Microsoft. Azure Naming Best Practices](#ref-microsoft-1)
   - [Microsoft. Azure Resource Abbreviations](#ref-microsoft-2)
