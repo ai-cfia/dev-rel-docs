@@ -117,6 +117,8 @@ researchers, developers.
   accessed or manipulated via CLI.
 - Existing resources that do not conform to these conventions should be
   refactored to match them.
+- Ensure that the names chosen align with the intended purpose or usage of the
+  resource.
 
 ## Alternatives Considered
 
