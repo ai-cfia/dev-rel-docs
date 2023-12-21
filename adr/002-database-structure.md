@@ -55,22 +55,25 @@ more flexible and easier to maintain by bringing all our product databases
 together in a single database server.
 
 ## Context
-Our previous ailab-db architecture required maintenance of several databases,
-notably "louis-db" and "nachet-db." Although this approach initially provides
-clarity, it ultimately results in redundancy, less flexibility, and
-collaboration issues, which may cause data conflicts. We have a better way to
-maintain databases with this approach, which uses a Consolidated Database
-Approach and only uses one database.
+The database was originally created for Louis, our conversational agent. Over
+time, it expanded to include our public website's knowledge base and became
+essential for products like Finesse (search). However, the name "ailab-db" no
+longer accurately represents its broader scope.
+
+Upon reflection, it's apparent that our database naming doesn't match its actual
+functions. While maintaining separate Python packages per application from a
+unified codebase has advantages, associating a schema with each app might not
+effectively communicate the entities organized within.
 
 ## Terminology
-**Database**:
-A collection of organized electronic information.
+**Database**: Database refers to a named collection of local SQL objects.
 
-**Database Server**:
-A specialized server managing access to databases.
+**Database Server**: A specialized server managing access to databases.
 
-**Schema**:
-The blueprint that defines how data is structured within a database.
+**Schema**: Serves as a namespace for SQL objects within a database, with each
+object residing in one schema. More broadly, "schema" refers to all data
+descriptions (table definitions, constraints, comments, etc.) for a database or
+its subset.
 
 ## Decision
 We've decided to use a Consolidated Database Approach, which means we'll combine
