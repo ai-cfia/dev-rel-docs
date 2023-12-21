@@ -10,11 +10,10 @@ This guide walks you through the steps to set up a React app using Vite with Typ
 - [Step 1: Setting Up the Project with Vite and SWC](#step-1-setting-up-the-project-with-vite-and-swc)
   - [Why Vite and SWC?](#why-vite-and-swc)
 - [Step 2: Steps to Integrate ESLint and Prettier](#step-2-steps-to-integrate-eslint-and-prettier)
-- [Step 3: In the .eslintrc.json file, replace the existing content with the following configuration](#step-3-in-the-eslintrcjson-file-replace-the-existing-content-with-the-following-configuration)
-- [Step 4: Create a file in the root directory called ‘.prettierrc’. Copy and paste this code in there](#step-4-create-a-file-in-the-root-directory-called-prettierrc-copy-and-paste-this-code-in-there)
-- [Step 5: In the package.json file, add the following two lines inside the "scripts" section](#step-5-in-the-packagejson-file-add-the-following-two-lines-inside-the-scripts-section)
-- [Step 6: To format all the code in the project run](#step-6-to-format-all-the-code-in-the-project-run)
-- [Step 7: To run ESLint run](#step-7-to-run-eslint-run)
+- [Step 3: In the .eslintrc.cjs file, replace the existing content with the following configuration](#step-3-in-the-eslintrccjs-file-replace-the-existing-content-with-the-following-configuration)
+- [Step 4: In the package.json file, add the following two lines inside the "scripts" section](#step-4-in-the-packagejson-file-add-the-following-two-lines-inside-the-scripts-section)
+- [Step 5: To format all the code in the project run](#step-5-to-format-all-the-code-in-the-project-run)
+- [Step 6: To run ESLint run](#step-6-to-run-eslint-run)
 
 
 ## Getting Started
@@ -64,66 +63,44 @@ To set up the project on your local machine:
 
 `npm install prettier eslint-config-prettier eslint-plugin-prettier --save-dev`
 
-## Step 3: In the .eslintrc.json file, replace the existing content with the following configuration
+## Step 3: In the .eslintrc.cjs file, replace the existing content with the following configuration
 
-```json
-{
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "jest": true
-  },
-  "extends": [
-    "react-app",
-    "react-app/jest",
-    "standard-with-typescript",
-    "plugin:react/recommended",
-    "plugin:import/typescript",
-    "plugin:prettier/recommended"
+```
+module.exports = {
+  root: true,
+  env: { browser: true, es2020: true },
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
   ],
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module",
-    "project": "./tsconfig.json"
-  },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
-  "rules": {
+  ignorePatterns: ["dist", ".eslintrc.cjs"],
+  parser: "@typescript-eslint/parser",
+  plugins: ["react-refresh", "@typescript-eslint", "prettier"],
+  rules: {
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "prettier/prettier": [
       "error",
       {
-        "endOfLine": "auto"
-      }
-    ]
-  }
-}
+        endOfLine: "auto",
+      },
+    ],
+  },
+};
 ```
 
-## Step 4: Create a file in the root directory called ‘.prettierrc’. Copy and paste this code in there
-
-```json
-{
-  "tabWidth": 2,
-  "useTabs": false,
-  "semi": true,
-  "singleQuote": false,
-  "trailingComma": "all",
-  "printWidth": 80
-}
-```
-
-## Step 5: In the package.json file, add the following two lines inside the "scripts" section
+## Step 4: In the package.json file, add the following two lines inside the "scripts" section
 
 ```json
 "lint": "eslint .",
 "lint:fix": "eslint --fix ."
 ```
 
-## Step 6: To format all the code in the project run
+## Step 5: To format all the code in the project run
 
 `npx prettier --write .`
 
-## Step 7: To run ESLint run
+## Step 6: To run ESLint run
 
 `npm run lint`
