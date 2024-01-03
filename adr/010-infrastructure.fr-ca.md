@@ -42,8 +42,6 @@ Voici quelle que cas d'utilisations qui on été discuter qu'on voudrait gérer:
 
 ## Décision
 
-**DRAFT**
-
 Notre solution consistera à déployer des clusters Kubernetes sur différents fournisseurs de cloud. Voici les composants qui seront déployés pour gérer divers cas d'utilisation
 
 - Gestion des secrets: HashiCorp Vault. Cependant, nous prévoyons d'explorer d'autres solutions avant de nous engager pleinement avec Vault  ;
@@ -68,7 +66,7 @@ Cette section présente les différentes options ou solutions considérées avan
 d'arriver à la décision finale. Chaque alternative est généralement discutée
 dans une sous-section.
 
-### Alternative 1
+### Mozilla SOPS
 
 Avantages :
 
@@ -78,7 +76,7 @@ Inconvénients :
 
 - Aspects négatifs de cette alternative.
 
-### Alternative 2
+### Contour
 
 Avantages :
 
@@ -88,7 +86,95 @@ Inconvénients :
 
 - Aspects négatifs de cette alternative.
 
-Ajoutez autant d'alternatives que nécessaire.
+### Kong
+
+Avantages :
+
+- Aspects positifs de cette alternative.
+
+Inconvénients :
+
+- Aspects négatifs de cette alternative.
+
+### Traefik
+
+Avantages :
+
+- Aspects positifs de cette alternative.
+
+Inconvénients :
+
+- Aspects négatifs de cette alternative.
+
+### HAProxy Ingress
+
+Avantages :
+
+- Aspects positifs de cette alternative.
+
+Inconvénients :
+
+- Aspects négatifs de cette alternative.
+
+### Istio Ingress
+
+Avantages :
+
+- Aspects positifs de cette alternative.
+
+Inconvénients :
+
+- Aspects négatifs de cette alternative.
+
+### Flux
+
+Avantages :
+
+- Aspects positifs de cette alternative.
+
+Inconvénients :
+
+- Aspects négatifs de cette alternative.
+
+### Carvel ytt
+
+Avantages :
+
+- Aspects positifs de cette alternative.
+
+Inconvénients :
+
+- Aspects négatifs de cette alternative.
+
+### cdk8s
+
+Avantages :
+
+- Aspects positifs de cette alternative.
+
+Inconvénients :
+
+- Aspects négatifs de cette alternative.
+
+### Carvel ytt
+
+Avantages :
+
+- Aspects positifs de cette alternative.
+
+Inconvénients :
+
+- Aspects négatifs de cette alternative.
+
+### kapp-controller
+
+Avantages :
+
+- Aspects positifs de cette alternative.
+
+Inconvénients :
+
+- Aspects négatifs de cette alternative.
 
 ## Conséquences
 
