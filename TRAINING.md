@@ -77,7 +77,7 @@
     (~5 minutes)
 * Backend
   * [Build an AI web app by using Python and
-    Flask](https://learn.microsoft.com/en-us/training/modules/python-flask-build-ai-web-app/)
+    Flask](https://learn.microsoft.com/en-us/training/modules/python-flask-build-ai-web-app/) (~45 minutes)
   * [Getting started with Psycopg
     3](https://www.psycopg.org/psycopg3/docs/basic/index.html)
   * [Python Functional
