@@ -10,9 +10,9 @@
 ## For Everyone: Common training
 
 * [Values and Ethics Code for the Public
-  Sector](https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=25049)
+  Sector](https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=25049) (~15 minutes)
 * [Government of Canada Digital
-  Standards](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
+  Standards](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html) (~30 minutes)
 * Review OpenSource code on our Github
   [https://github.com/ai-cfia](https://github.com/ai-cfia)
   * Pay close attention to the [ADR (Architecture Decision Records) - under
@@ -77,7 +77,8 @@
     (~5 minutes)
 * Backend
   * [Build an AI web app by using Python and
-    Flask](https://learn.microsoft.com/en-us/training/modules/python-flask-build-ai-web-app/) (~45 minutes)
+    Flask](https://learn.microsoft.com/en-us/training/modules/python-flask-build-ai-web-app/)
+    (~45 minutes)
   * [Getting started with Psycopg
     3](https://www.psycopg.org/psycopg3/docs/basic/index.html) (~50 minutes)
   * [Python Functional
