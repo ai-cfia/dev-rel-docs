@@ -79,11 +79,11 @@
   * [Build an AI web app by using Python and
     Flask](https://learn.microsoft.com/en-us/training/modules/python-flask-build-ai-web-app/) (~45 minutes)
   * [Getting started with Psycopg
-    3](https://www.psycopg.org/psycopg3/docs/basic/index.html)
+    3](https://www.psycopg.org/psycopg3/docs/basic/index.html) (~50 minutes)
   * [Python Functional
-    Programming](https://docs.python.org/3/howto/functional.html)
+    Programming](https://docs.python.org/3/howto/functional.html) (~35 minutes)
   * [Python
-    anti-patterns](https://docs.quantifiedcode.com/python-anti-patterns/index.html)
+    anti-patterns](https://docs.quantifiedcode.com/python-anti-patterns/index.html) (~1 h 30)
 * Frontend
   * [Create React App is officially
     dead](https://dev.to/ag2byte/create-react-app-is-officially-dead-h7o)
