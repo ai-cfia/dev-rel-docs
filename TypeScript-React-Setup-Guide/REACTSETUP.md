@@ -1,119 +1,107 @@
-## Creating a TypeScript React App with ESLint and Prettier
+## Creating a TypeScript + SWC React App with Vite, ESLint, and Prettier
 
-This guide walks you through the steps to set up a TypeScript-based React app with ESLint for code linting and Prettier for code formatting. Following these steps will help you maintain a clean and consistent codebase.
+This guide walks you through the steps to set up a React app using Vite with TypeScript and SWC, and further enhancing it with ESLint for code linting and Prettier for code formatting. Following these steps will help you maintain a clean, consistent, and efficient codebase.
 
-### Step 1: Create a TypeScript React App
+# Table of Contents
 
-In the terminal, use Create React App to set up a new TypeScript-based React application:
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Step 1: Setting Up the Project with Vite and SWC](#step-1-setting-up-the-project-with-vite-and-swc)
+  - [Why Vite and SWC?](#why-vite-and-swc)
+- [Step 2: Steps to Integrate ESLint and Prettier](#step-2-steps-to-integrate-eslint-and-prettier)
+- [Step 3: In the .eslintrc.cjs file, replace the existing content with the following configuration](#step-3-in-the-eslintrccjs-file-replace-the-existing-content-with-the-following-configuration)
+- [Step 4: In the package.json file, add the following two lines inside the "scripts" section](#step-4-in-the-packagejson-file-add-the-following-two-lines-inside-the-scripts-section)
+- [Step 5: To format all the code in the project run](#step-5-to-format-all-the-code-in-the-project-run)
+- [Step 6: To run ESLint run](#step-6-to-run-eslint-run)
 
-`npx create-react-app --template=typescript YOUR-PROJECT-NAME-HERE`
 
-### Step 2: Initialize ESLint Configuration
+## Getting Started
 
-`npm init @eslint/config`
+These instructions will get your copy of the project up and running on your local machine for development and testing purposes.
 
-### Step 3: When prompted, select the following option
+### Prerequisites
 
-- "How would you like to use ESLint?" - Choose `To Check syntax, find problems, and enforce code style.`
+Before you begin, ensure you have Node.js installed on your system. This project uses Node.js for package management and script execution.
 
-### Step 4: When prompted, select the following option
+### Installation
 
-- "What type of module does your project use?" - Choose `JavaScript modules (import/export).`
+To set up the project on your local machine:
 
-### Step 5: When prompted, select the following option
+1. Clone the repository to your local machine.
+2. Change into the project directory.
+3. Install the required dependencies.
 
-- "Which framework does your project use?" - Choose `react.`
+## Step 1: Setting Up the Project with Vite and SWC
 
-### Step 6: When prompted, select the following option
+1. Open your terminal.
+2. Navigate to the desired directory.
+3. Run the command to create a new Vite project. You will need to enter the project name and select options for the framework and variant:
+   - Command: `npm create vite@latest`
+   - Project name: Enter your project name.
+   - Select framework: React
+   - Select variant: TypeScript + SWC
+4. After scaffolding is complete, navigate to your project directory.
+5. Install the required dependencies.
+6. Start the development server. Your application will be available at a local server URL.
 
-- "Does your project use TypeScript?" - Choose `Yes.`
+### Why Vite and SWC?
 
-### Step 7: When prompted, select the following option
+#### Advantages of Vite over npx create-react-app:
 
-- "Where does your code run?" - Choose `Browser.`
+- Faster Build Time: Vite significantly improves build time with an ESM-based dev server.
+- Out-of-the-Box Features: Vite includes Hot Module Replacement (HMR) and TypeScript support.
+- Simplified Configuration: Vite requires minimal configuration compared to create-react-app.
+- CRA Deprecation: create-react-app was deprecated in early 2023, further favoring the adoption of more modern tools like Vite.
 
-### Step 8: When prompted, select the following option
+#### Benefits of Using SWC:
 
-- "How would you like to define a style for your project?" - Choose `Use a popular style guide.`
+- Performance: SWC offers faster compilation of TypeScript/JavaScript than traditional compilers like Babel.
+- Efficient Bundling: SWC includes bundling and minification for enhanced production performance.
+- Lower Configuration Overhead: SWC simplifies the configuration process for TypeScript and modern JavaScript.
 
-### Step 9: When prompted, select the following option
-
-- "Which style guide do you want to follow?" - Choose `Standard.`
-
-### Step 10: When prompted, select the following option
-
-- "What format do you want your config file to be in?" - Choose `JSON.`
-
-### Step 11: When prompted, select the following option
-
-- "Would you like to install them now with npm?" - Choose `Yes.`
-
-All necessary ESLint packages will be installed for your project.
-
-### Step 12: In the terminal, install Prettier and ESLint related packages
+## Step 2: Steps to Integrate ESLint and Prettier
 
 `npm install prettier eslint-config-prettier eslint-plugin-prettier --save-dev`
 
-### Step 13: In the .eslintrc.json file, replace the existing content with the following configuration
+## Step 3: In the .eslintrc.cjs file, replace the existing content with the following configuration
 
-```json
-{
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "jest": true
-  },
-  "extends": [
-    "react-app",
-    "react-app/jest",
-    "standard-with-typescript",
-    "plugin:react/recommended",
-    "plugin:import/typescript",
-    "plugin:prettier/recommended"
+```
+module.exports = {
+  root: true,
+  env: { browser: true, es2020: true },
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
   ],
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module",
-    "project": "./tsconfig.json"
-  },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
-  "rules": {
+  ignorePatterns: ["dist", ".eslintrc.cjs"],
+  parser: "@typescript-eslint/parser",
+  plugins: ["react-refresh", "@typescript-eslint", "prettier"],
+  rules: {
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "prettier/prettier": [
       "error",
       {
-        "endOfLine": "auto"
-      }
-    ]
-  }
-}
+        endOfLine: "auto",
+      },
+    ],
+  },
+};
 ```
 
-### Step 14: Create a file in the root directory called ‘.prettierrc’. Copy and paste this code in there
-
-```json
-{
-  "tabWidth": 2,
-  "useTabs": false,
-  "semi": true,
-  "singleQuote": false,
-  "trailingComma": "all",
-  "printWidth": 80
-}
-```
-
-### Step 15: In the package.json file, add the following two lines inside the "scripts" section
+## Step 4: In the package.json file, add the following two lines inside the "scripts" section
 
 ```json
 "lint": "eslint .",
 "lint:fix": "eslint --fix ."
 ```
 
-### Step 16: To format all the code in the project run
+## Step 5: To format all the code in the project run
 
 `npx prettier --write .`
 
-### Step 17: To run ESLint run
+## Step 6: To run ESLint run
 
 `npm run lint`
