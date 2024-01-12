@@ -52,6 +52,7 @@ To set up the project on your local machine:
 - Faster Build Time: Vite significantly improves build time with an ESM-based dev server.
 - Out-of-the-Box Features: Vite includes Hot Module Replacement (HMR) and TypeScript support.
 - Simplified Configuration: Vite requires minimal configuration compared to create-react-app.
+- CRA Deprecation: create-react-app was deprecated in early 2023, further favoring the adoption of more modern tools like Vite.
 
 #### Benefits of Using SWC:
 
