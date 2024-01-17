@@ -91,7 +91,7 @@
     anti-patterns](https://docs.quantifiedcode.com/python-anti-patterns/index.html)
     (~1 h 30)
   * [PostgreML
-  Tutorials](https://postgresml.org/dashboard?tab=Notebook&id=1)
+  Tutorials](https://postgresml.org)
   * [Create a search
   index in the Azure portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal)
   * [Use Azure Storage Explorer
