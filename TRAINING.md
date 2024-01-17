@@ -90,9 +90,9 @@
   * [Python
     anti-patterns](https://docs.quantifiedcode.com/python-anti-patterns/index.html)
     (~1 h 30)
-  * [PostgreML 
+  * [PostgreML
   Tutorials](https://postgresml.org/dashboard?tab=Notebook&id=1)
-  * [Create a search 
+  * [Create a search
   index in the Azure portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal)
   * [Use Azure Storage Explorer
   to create a blob](https://learn.microsoft.com/en-us/azure/storage/blobs/quickstart-storage-explorer)
