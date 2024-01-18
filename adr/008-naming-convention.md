@@ -181,7 +181,7 @@ consistency and clarity in communication and documentation.
   [https://vertabelo.com/blog/database-naming-convention](https://vertabelo.com/blog/database-naming-convention)<a
   id="ref-vertabelo"></a>
 * Best Practices for Naming Git Branches. (n.d.). Tilburg Science Hub.
-  [https://tilburgsciencehub.com/](https://tilburgsciencehub.com/building-blocks/collaborate-and-share-your-work/use-github/naming-git-branches/)<a
+  [https://tilburgsciencehub.com/](https://tilburgsciencehub.com/topics/automation/version-control/advanced-git/naming-git-branches/)<a
   id="ref-tilburg"></a>
 * Branching. (n.d.). Digitaljhelms.
   [https://gist.github.com/digitaljhelms/4287848](https://gist.github.com/digitaljhelms/4287848)<a
