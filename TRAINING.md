@@ -93,10 +93,9 @@
   * [PostgreML
   Tutorials](https://postgresml.org)
   * [Create a search
-  index in the Azure portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal)
+    index in the Azure portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal)
   * [Use Azure Storage Explorer
-  to create a blob](https://learn.microsoft.com/en-us/azure/storage/blobs/quickstart-storage-explorer)
-  *
+    to create a blob](https://learn.microsoft.com/en-us/azure/storage/blobs/quickstart-storage-explorer)
 * Frontend
   * [Create React App is officially
     dead](https://dev.to/ag2byte/create-react-app-is-officially-dead-h7o)
