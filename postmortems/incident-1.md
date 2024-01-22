@@ -131,8 +131,12 @@ team lead.
 
 ## Lessons Learned
 
-Avant de regarder pour la solution parfaites a l'erreur. Y aller etapes
-par etapes.
+Before searching for the perfect solution to the error, proceed step by step.
+That being said, testing the product locally and attempting to replicate the
+issue would have helped us narrow down the scope of the problem more quickly.
+For instance, this approach would have enabled us to identify the specific
+failing component, such as disk, network, CPU, or memory failure. In this
+case, it was just an invalid API Key.
 
 ### What went well
 
