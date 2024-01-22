@@ -51,6 +51,9 @@
   * [Intro to docker
     containers](https://learn.microsoft.com/en-us/training/modules/intro-to-docker-containers/)
     (~30 minutes)
+  * [Container
+    security](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html)
+    (~10 minutes)
 * [The Twelve-Factor App](https://12factor.net/) (~45 minutes)
 * [The Joel Test: 12 Steps to Better
   Code](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/)
@@ -71,12 +74,18 @@
   * [Databases for developers](https://elenie.ca/databases-for-developers.html)
 * DevSecOps
   * [What is DevOps?](https://resources.github.com/devops/) (~25 minutes)
+  * [Secure
+    Devops](https://learn.microsoft.com/en-us/training/modules/introduction-to-secure-devops/)
+    (~10 minutes)
   * [Github Actions](https://docs.github.com/en/actions) (~1 heure)
   * [Azure Command-Line Interface (CLI)
     documentation](https://learn.microsoft.com/en-ca/cli/azure/) (~20 minutes)
   * [DevOps
     Engineer](https://learn.microsoft.com/en-us/certifications/devops-engineer/)
     (~5 minutes)
+  * [DevSecOps
+    Guidelines](https://owasp.org/www-project-devsecops-guideline/latest/00a-Overview)
+    (~30 minutes)
 * Backend
   * [Build an AI web app by using Python and
     Flask](https://learn.microsoft.com/en-us/training/modules/python-flask-build-ai-web-app/)
