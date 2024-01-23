@@ -1,113 +1,103 @@
 # Nachet backend classification not working (incident #1)
 
-### Date
-
-19/01/2024
-
-### Authors
+### Owner
 
 Jonathan Lopez (@SonOfLope) and Thomas Cardin (@ThomasCardin)
 
 ### Status
 
-Solved
+Final
 
-### Summary
+### Incident date
+
+17/01/2024 at 15:53
+
+### Published
+
+19/01/2024 at 9:00
+
+## Executive summary
 
 https://nachet.ninebasetwo.xyz/ -> Capture (the button next to Video Feed) ->
 Load (Load an image from the sample) -> Classify
 
-Returned a 500 internal server error with the following stack trace
-```bash
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.12/urllib/request.py", line 1344, in do_open
-    h.request(req.get_method(), req.selector, req.data, headers,
-  File "/usr/local/lib/python3.12/http/client.py", line 1327, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "/usr/local/lib/python3.12/http/client.py", line 1373, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "/usr/local/lib/python3.12/http/client.py", line 1322, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "/usr/local/lib/python3.12/http/client.py", line 1120, in _send_output
-    self.send(chunk)
-  File "/usr/local/lib/python3.12/http/client.py", line 1045, in send
-    self.sock.sendall(data)
-  File "/usr/local/lib/python3.12/ssl.py", line 1212, in sendall
-    v = self.send(byte_view[count:])
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/ssl.py", line 1181, in send
-    return self._sslobj.write(data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2406)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.12/site-packages/quart/app.py", line 1376,
-  in handle_request
-    return await self.full_dispatch_request(request_context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/quart/app.py", line 1414,
-  in full_dispatch_request
-    result = await self.handle_user_exception(error)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/quart/app.py", line 1007,
-  in handle_user_exception
-    raise error
-  File "/usr/local/lib/python3.12/site-packages/quart/app.py", line 1412,
-  in full_dispatch_request
-    result = await self.dispatch_request(request_context)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/quart/app.py", line 1506,
-  in dispatch_request
-    return await self.ensure_async(handler)(**request_.view_args)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app.py", line 188, in inference_request
-    response = urllib.request.urlopen(req)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/urllib/request.py", line 215, in urlopen
-    return opener.open(url, data, timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/urllib/request.py", line 515, in open
-    response = self._open(req, data)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/urllib/request.py", line 532, in _open
-    result = self._call_chain(self.handle_open, protocol, protocol +
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/urllib/request.py", line 492, in _call_chain
-    result = func(*args)
-             ^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/urllib/request.py", line 1392, in https_open
-    return self.do_open(http.client.HTTPSConnection, req,
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/urllib/request.py", line 1347, in do_open
-    raise URLError(err)
-urllib.error.URLError: <urlopen error EOF occurred in violation of protocol
-(_ssl.c:2406)>
-```
+Returned a 500 internal server error with the following
+[stack trace](https://bit.ly/3ScnqCk)
 
 ### Impact
 
-We couldn't classify any images using the Azure AI Model.
+We couldn't load and classify any images using the Azure AI Model.
 
 ### Root Causes
 
+The API Key of the Azure AI Model was regenerated. So, the current one used in
+production wasn't valid. Therefore, any request made to the model was returning
+a 401 Unauthorized.
+
+## Problem summary
+
+### Product(s) affected
+
+Nachet
+
+### % of product affected
+
+Global - all traffic served to nachet
+
+### Revenue impact
+
+Around 200$ lost
+
+### Trigger / Detection
+
+The detection was found by nachet team (including frontend and backend) and our
+team lead.
+
+1. Load button: Uploading a image bigger than 1Mo (default value)
+
+2. Classify button following the load button click: Regenerating the API Key
+of the Azure AI Model used inside nachet.
+
+### Impact
+
+User impact
+
+- We couldn't load and classify any images using the Azure AI Model.
+
+DevSecOps Impact
+
+- It was necessary to resolve the issue, so all other tasks had to be halted
+for us.
+
+Nachet Team Impact
+
+- We had to take our time to explain the various components of the Nachet system,
+including the AI models deployed on Azure.
+
+Revenue Impact
+
+- The time of developers and DevSecOps personnel.
+
+
+### Root Causes
+
+1. To test the classification, it was necessary to upload an image by clicking
+on the "load" button. This resulted in a 413 Request Entity Too Large error.
+Therefore, a modification was made to the Nginx ingress to increase the upload
+size. This resolved the issue.
+
+2. After clicking the "classify" button, a 500 error appeared.
 The API Key of the Azure AI Model was regenerated. So, the current one used
 in production wasn't valid. Therefore, any request made to the model was
 returning a 401 Unauthorized.
 
-### Trigger
-
-Regenerating the API Key of the Azure AI Model used inside nachet.
+In conclusion, the API Key used in production should only be accessible by
+the DevSecOps team to prevent its regeneration/modification.
 
 ### Resolution
 
-Changed the API Key inside our Vault with the new value.
-
-### Detection
-
-The detection was found by nachet team (including frontend and backend) and our
-team lead.
+Changing the API Key inside our Vault with the new value and increasing the
+maximum upload limite to the nachet backend.
 
 ## Action Items
 
@@ -136,7 +126,7 @@ That being said, testing the product locally and attempting to replicate the
 issue would have helped us narrow down the scope of the problem more quickly.
 For instance, this approach would have enabled us to identify the specific
 failing component, such as disk, network, CPU, or memory failure. In this
-case, it was just an invalid API Key.
+case, it was just an invalid API Key and a misconfiguration of the ingress.
 
 ### What went well
 
@@ -154,6 +144,12 @@ issue related to the TLS/SSL layer.
 Reproducing the error locally made the identification of the error quick.
 
 ## Timeline
+
+**2023-01-10 (14:00):** A request has been made for the application to
+be deployed by 2023-01-15 (8:00).
+
+**2023-01-12 (14:00):** The application has been deployed. The frontend can
+communicate with the backend.
 
 **2023-01-17 (15:00):** One of our clients claims that the classification
 is not working.
@@ -194,6 +190,14 @@ of the model and the one in production.
 **2023-01-18 (12:00):** The API Key of the model in production is modified.
 
 **2023-01-18 (13:05):** Problem resolved.
+
+## Glossary
+
+nachet
+
+- nachet-backend: https://github.com/ai-cfia/nachet-backend
+
+- nachet-frontend: https://github.com/ai-cfia/nachet-frontend
 
 ## Supporting information
 
