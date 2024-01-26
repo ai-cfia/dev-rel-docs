@@ -86,6 +86,16 @@
   * [DevSecOps
     Guidelines](https://owasp.org/www-project-devsecops-guideline/latest/00a-Overview)
     (~30 minutes)
+  * [GoC Devops
+    course](https://catalogue.csps-efpc.gc.ca/product?catalog=DDN112&cm_locale=en)
+    (~38 minutes)
+  * [30 days Cloud
+    Guardrails](https://github.com/cana`da-ca/cloud-guardrails) (~20 minutes)
+  * [Guidance on cloud security assessment and
+    authorization](https://www.cyber.gc.ca/en/guidance/guidance-cloud-security-assessment-and-authorization-itsp50105)
+    (~30 minutes)
+  * [The art of SLOs](https://docs.google.com/document/d/11qMVVdn95tyGvYiVA5HwjlIV750-gYiT-dJCNS0ZPE0/edit)
+    (~10 minutes)
 * Backend
   * [Build an AI web app by using Python and
     Flask](https://learn.microsoft.com/en-us/training/modules/python-flask-build-ai-web-app/)
