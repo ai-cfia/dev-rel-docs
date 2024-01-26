@@ -90,7 +90,7 @@
     course](https://catalogue.csps-efpc.gc.ca/product?catalog=DDN112&cm_locale=en)
     (~38 minutes)
   * [30 days Cloud
-    Guardrails](https://github.com/cana`da-ca/cloud-guardrails) (~20 minutes)
+    Guardrails](https://github.com/canada-ca/cloud-guardrails) (~20 minutes)
   * [Guidance on cloud security assessment and
     authorization](https://www.cyber.gc.ca/en/guidance/guidance-cloud-security-assessment-and-authorization-itsp50105)
     (~30 minutes)
