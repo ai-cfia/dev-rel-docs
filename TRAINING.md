@@ -51,6 +51,9 @@
   * [Intro to docker
     containers](https://learn.microsoft.com/en-us/training/modules/intro-to-docker-containers/)
     (~30 minutes)
+  * [Container
+    security](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html)
+    (~10 minutes)
 * [The Twelve-Factor App](https://12factor.net/) (~45 minutes)
 * [The Joel Test: 12 Steps to Better
   Code](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/)
@@ -71,12 +74,28 @@
   * [Databases for developers](https://elenie.ca/databases-for-developers.html)
 * DevSecOps
   * [What is DevOps?](https://resources.github.com/devops/) (~25 minutes)
+  * [Secure
+    Devops](https://learn.microsoft.com/en-us/training/modules/introduction-to-secure-devops/)
+    (~10 minutes)
   * [Github Actions](https://docs.github.com/en/actions) (~1 heure)
   * [Azure Command-Line Interface (CLI)
     documentation](https://learn.microsoft.com/en-ca/cli/azure/) (~20 minutes)
   * [DevOps
     Engineer](https://learn.microsoft.com/en-us/certifications/devops-engineer/)
     (~5 minutes)
+  * [DevSecOps
+    Guidelines](https://owasp.org/www-project-devsecops-guideline/latest/00a-Overview)
+    (~30 minutes)
+  * [30 days Cloud
+    Guardrails](https://github.com/canada-ca/cloud-guardrails) (~20 minutes)
+  * [Guidance on cloud security assessment and
+    authorization](https://www.cyber.gc.ca/en/guidance/guidance-cloud-security-assessment-and-authorization-itsp50105)
+    (~30 minutes)
+  * [The art of SLOs](https://docs.google.com/document/d/11qMVVdn95tyGvYiVA5HwjlIV750-gYiT-dJCNS0ZPE0/edit)
+    (~10 minutes)
+  * [GoC IT security risk management
+    ITSG-33](https://www.cyber.gc.ca/en/guidance/it-security-risk-management-lifecycle-approach-itsg-33)
+    (~15 min)
 * Backend
   * [Build an AI web app by using Python and
     Flask](https://learn.microsoft.com/en-us/training/modules/python-flask-build-ai-web-app/)
