@@ -111,10 +111,6 @@
     (~1 h 30)
   * [PostgreML
   Tutorials](https://postgresml.org)
-  * [Create a search
-    index in the Azure portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal)
-  * [Use Azure Storage Explorer
-    to create a blob](https://learn.microsoft.com/en-us/azure/storage/blobs/quickstart-storage-explorer)
 * Frontend
   * [Create React App is officially
     dead](https://dev.to/ag2byte/create-react-app-is-officially-dead-h7o)
@@ -128,7 +124,12 @@
 * Nachet
   * [Introduction to blob
     store](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction)
+  * [Use Azure Storage Explorer
+    to create a blob](https://learn.microsoft.com/en-us/azure/storage/blobs/quickstart-storage-explorer)
 
+* Finessse
+  * [Create a search
+    index in the Azure portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal)
 ## Additional resources
 
 * [AI CFIA Youtube
