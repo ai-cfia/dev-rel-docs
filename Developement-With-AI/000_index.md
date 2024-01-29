@@ -11,5 +11,5 @@ AI amplifies our system's capabilities by:
 ## Documents
 
 ### Testing with AI
-- **001_generate_qna_for_search_test_challenges**
-- **001_generate_qna_for_search_test_implementation**
+- **[001_generate_qna_for_search_test_challenges](https://github.com/ai-cfia/ailab-db/issues/9)**
+- **[001_generate_qna_for_search_test_implementation](https://github.com/ai-cfia/ailab-db/blob/issue%239-search-function-test-jt/bin/generate-qna.py)**
