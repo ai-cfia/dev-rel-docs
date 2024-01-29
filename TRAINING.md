@@ -19,6 +19,7 @@
   [https://github.com/ai-cfia](https://github.com/ai-cfia)
   * Pay close attention to the [ADR (Architecture Decision Records) - under
     development](https://github.com/ai-cfia/dev-rel-docs/blob/main/adr/index.md)
+  * Read up on Open Source development with the [Open Source Guide](https://opensource.guide/)
 * Linux
   * [Linux command line and the
     Shell](https://learn.microsoft.com/en-gb/training/paths/shell/) (~25
