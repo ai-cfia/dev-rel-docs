@@ -3,6 +3,35 @@
 * Create pull request against this training file
   * offer additional (better) resources alternatives
   * track time to completion for each item
+  * Open an [issue](https://github.com/ai-cfia/dev-rel-docs/issues)
+    1. Name the issue "onboarding process of *your name*"
+    1. Use this template:
+
+    1. ```markdown
+        Your Name onboarding process
+
+        Tasks:
+
+        * [ ] Update time descriptions.
+        * [ ] other task you want to add.
+
+        Acceptance Criteria:
+
+        The training should equip the developer with the skills necessary to
+        work within the AI LAB's framework.
+        The training should provide accurate time estimates for each module.
+        ```
+    1. Click edit button on training.md
+    1. Edit the document (example add the time it took you to read value and
+      ethics)
+    1. Commit changes
+    1. create a branch with this format: issue_number-onboarding-process-your-name
+      (example 42-onboarding-process-happy-gilmor)
+    1. Click on _propose change_
+    1.  On the **Open a pull request** page:
+        * Add a title
+        * Select draft pull request instead of create pull request
+
 * [Microsoft Learn](https://learn.microsoft.com/):
   * Some good training material on Microsoft Learn that we use throughout
   * Sign in to Microsoft learn, create account and track XP to measure progress
