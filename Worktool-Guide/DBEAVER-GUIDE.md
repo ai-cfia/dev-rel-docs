@@ -4,9 +4,7 @@
 Download from https://dbeaver.io/download/ Install using the default options.
 
 # Usage of DBeaver on localhost
-Once installed, open DBeaver and create a new connection as shown here after you
-launched the different scripts as shown on [this
-page](https://dev.azure.com/CFIA-DevOps-ACIA/AI-Lab/_wiki/wikis/AI-Lab.wiki/1039/Procedure-to-set-up-the-database):
+Once installed, open DBeaver and create a new connection as shown here:
 
 ![choose.PNG](/./Worktool-Guide/DBeaver-1.png)
 
