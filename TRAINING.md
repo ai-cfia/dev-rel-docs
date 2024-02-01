@@ -70,10 +70,11 @@
     PostgreSQL](https://learn.microsoft.com/en-us/training/paths/introduction-to-azure-postgres/)
     (~40 minutes)
   * [Psycopg3
-    transactions](https://www.psycopg.org/psycopg3/docs/basic/transactions.html)(~30 minutes)
-  * [Databases for developers](https://elenie.ca/databases-for-developers.html)(~20 minutes)
-  * [PostgreML
-  Tutorials](https://postgresml.org)(~1h)
+    transactions](https://www.psycopg.org/psycopg3/docs/basic/transactions.html)(~30
+    minutes)
+  * [Databases for
+    developers](https://elenie.ca/databases-for-developers.html)(~20 minutes)
+  * [PostgreML Tutorials](https://postgresml.org)(~1h)
 * DevSecOps
   * [What is DevOps?](https://resources.github.com/devops/) (~25 minutes)
   * [Secure
