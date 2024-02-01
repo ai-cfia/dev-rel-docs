@@ -59,7 +59,7 @@
   Code](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/)
   (~30 minutes)
 * [Python Unit Testing](https://docs.python.org/3/library/unittest.html) (~1
-  heures)
+  heure)
 
 ## Role-specific
 
@@ -70,8 +70,10 @@
     PostgreSQL](https://learn.microsoft.com/en-us/training/paths/introduction-to-azure-postgres/)
     (~40 minutes)
   * [Psycopg3
-    transactions](https://www.psycopg.org/psycopg3/docs/basic/transactions.html)
-  * [Databases for developers](https://elenie.ca/databases-for-developers.html)
+    transactions](https://www.psycopg.org/psycopg3/docs/basic/transactions.html)(~30 minutes)
+  * [Databases for developers](https://elenie.ca/databases-for-developers.html)(~20 minutes)
+  * [PostgreML
+  Tutorials](https://postgresml.org)(~1h)
 * DevSecOps
   * [What is DevOps?](https://resources.github.com/devops/) (~25 minutes)
   * [Secure
