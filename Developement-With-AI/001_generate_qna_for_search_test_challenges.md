@@ -23,8 +23,8 @@ To address these issues, a multi-step solution approach was devised:
   differentiating between tables and navigation pages to improve search
   accuracy.
 - **Methodological Tweaks:** Employed various methods to differentiate between
-  page types, such as counting <tr> tags for tables and <a> tags for navigation
-  pages.
+  page types, such as counting `<tr>` tags for tables and `<a>` tags for
+  navigation pages.
 
 ### Progress and Challenges
 While solutions were proposed and implemented, challenges persisted in
