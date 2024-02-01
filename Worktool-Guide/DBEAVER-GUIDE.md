@@ -1,3 +1,5 @@
+## DBeaver Guide
+
 # Installation
 Download from https://dbeaver.io/download/ Install using the default options.
 
