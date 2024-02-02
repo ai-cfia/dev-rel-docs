@@ -39,9 +39,20 @@ developers closely associated with our projects.
   approach to seamlessly integrate environment variables into your development
   workflow.
 
----
+* [Tools and guide for developers](./Tooling/Tooling.md) - List of documentation
+  and guides for utilizing applications in accordance with the AI Lab standards.
+
+* [Why Open Source
+  development](./Technology-and-the-government-of-Canada/Why-Open-Source-development.md)
+\- A document explaining why AI Lab uses open-source technology.
+
+* [Using Generative AI: High-Level
+  Guidance](./Technology-and-the-government-of-Canada/Generative-AI-Guidance.md)
+\- A document guiding the use of generative AI in government operations.
+
+  ---
 
 We hope you find the Developer Relative Documentation helpful and engaging. If
-you have any questions or need assistance, please reach out to the Ai-CFIA team.
+you have any questions or need assistance, please reach out to the AI-CFIA team.
 
 Happy developing!
