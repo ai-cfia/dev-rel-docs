@@ -3,11 +3,7 @@
 Overview document providing information on various tools and their usage within
 the AI Lab.
 
-## Documents
-
-### Apps
-
----
+## Apps
 
 - **GitHub**
   - [GitHub-Copilot](./Apps/GitHub/GitHub-Copilot.md): Information about GitHub
@@ -32,16 +28,12 @@ the AI Lab.
   - [Unit-Tests](./Apps/Visual-Studio-Code/Unit-Tests.md): Documentation on
     unit tests in Visual Studio Code.
 
-### Core-concepts
-
----
+## Core-concepts
 
 - [Environment-variables](./Core-concepts/Environment-variables.md): Explanation
   of environment variables and their role.
 
-### Diagrams
-
----
+## Diagrams
 
 - [Canva](./Diagrams/Canva.md): Instructions for using Canva to create diagrams.
 - [Creating-diagrams](./Diagrams/Creating-diagrams.md): General guidelines for
@@ -52,8 +44,6 @@ the AI Lab.
   PlantUML.
 - [StarUML](./Diagrams/StarUML.md): Instructions for using StarUML.
 
-### Images repositories
-
----
+## Images repositories
 
 Various images related to GitHub usage (e.g., logos, icons).
