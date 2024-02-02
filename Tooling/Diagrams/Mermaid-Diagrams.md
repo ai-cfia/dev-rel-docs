@@ -13,7 +13,7 @@ development." (Mermaid Doc, 2024)
 In short, mermaid help developer create diagram to document their work. Mermaid
 is also integrated into Azure DevOps and GitHub. Using Mermaid can help
 developer to document their issues easily without having to create a diagram on
-another platform first. Mermaid support a wide variety of diagram such as:
+another platform first. Mermaid supports a wide variety of diagram such as:
 
 * sequence diagram
 * flowchart
@@ -23,7 +23,7 @@ another platform first. Mermaid support a wide variety of diagram such as:
 
 ## How to use Mermaid
 
-In VS code (or codespace) you will need to install these extensions:
+In VS Code (or Codespace) you will need to install these extensions:
 
 * Mermaid Preview
 * Markdown Preview Mermaid Support
@@ -64,7 +64,7 @@ From top to bottom
      graph TD;
      A[Top]-->B[Down]
 :::
-Even if display is similar, GitHub support another syntaxe.
+Even if display is similar, GitHub support another syntax.
 
 ```markdwon
   mermaid
@@ -72,9 +72,9 @@ Even if display is similar, GitHub support another syntaxe.
     Top --> Down
 ```
 
-_the mermaid code need to be encapsulate in _**```**_ cotation._
+_The mermaid code need to be encapsulated in _**```**_ citation._
 
-### sequence diagram
+### Sequence diagram
 
 ```markdown
    :::mermaid
@@ -92,7 +92,7 @@ _the mermaid code need to be encapsulate in _**```**_ cotation._
          Christie->>Josh: See you later!
 :::
 
-Again this syntaxe will result in a similar display on GitHub :
+Again this syntax will result in a similar display on GitHub :
 
 ```markdwon
 mermaid
@@ -102,6 +102,6 @@ mermaid
         Alice-)John: See you later!
 ```
 
-the mermaid code need to be encapsulate in _**```**_ cotation.
+The mermaid code need to be encapsulated in _**```**_ citation.
 
 For more features on mermaid, visit the doc. [:point_up:](#mermaid-diagrams)

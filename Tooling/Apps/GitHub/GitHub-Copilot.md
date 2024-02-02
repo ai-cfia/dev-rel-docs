@@ -2,7 +2,7 @@
 
 ## Full-time employees - Requesting GitHub Copilot Access
 
-Send an email to <ricky.ng-adam@inspection.gc.ca> to get a license.
+Email <ricky.ng-adam@inspection.gc.ca> to get a license.
 
 ## Interns - Requesting GitHub Copilot Access
 
@@ -18,7 +18,7 @@ have it. Get student benefits as Individuals.
 ![alt text](images/developer.png)
 ![alt text](images/individuals.png)
 1. Fill out the request form with the required information. Make sure to use
-your student email address and have a valid document or a picture of you student
+your student email address and have a valid document or a picture of your student
 card to send in the verification section.
 ![alt text](images/proof.png)
 
@@ -33,7 +33,7 @@ card to send in the verification section.
 Once you get the confirmation that your request has been approved, follow these
 steps :
 
-1. Open VS Code on your computer or a codespace in GitHub.
+1. Open VS Code on your computer or a Codespace in GitHub.
 
 1. Go to the "Extensions". Shortcut is `Ctrl+Shift+X`.
 
@@ -55,7 +55,7 @@ generate code suggestions as you type. Use suggestions by pressing `Tab` to
 accept them. If a suggestion is not accurate, you can modify it before
 accepting.
 
-There is also a chat section that is similar to chatGPT.
+There is also a chat section that is similar to ChatGPT.
 
 ![alt text](images/chat.png)
 

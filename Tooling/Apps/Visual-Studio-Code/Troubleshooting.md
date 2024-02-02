@@ -34,10 +34,13 @@ Once the downloads are complete, run the following command: `code .`
 This will open up new VS code window
 
 Then find Command Palette (or Ctrl+Shift+p)
+
 ![alt text](images/command.png)
 
 Then find this is the search bar
+
 ![alt text](images/bar.png)
 
 Finally confirm this is shown in the bottom left corner of VS code
+
 ![alt text](images/dev.png)

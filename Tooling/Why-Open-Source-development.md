@@ -1,4 +1,4 @@
-# Why OpenSource development at the CFIA AI Lab
+# Why Open Source development at the CFIA AI Lab
 
 ## Summary
 
@@ -70,9 +70,9 @@ development while mitigating any potential risks.
 
 ## Specifics to our situation
 
-### Dependency to OpenSource
+### Dependency to Open Source
 
-We already depend heavily on opensource tools with open development and
+We already depend heavily on open source tools with open development and
 user-contributed work, whether it is [Visual Studio
 Code](https://github.com/microsoft/vscode), [Bicep configuration
 files](https://github.com/Azure/bicep), [Jupyter
@@ -82,8 +82,8 @@ notebooks](https://github.com/jupyter),
 
 ### Tooling
 
-Github, the OpenSource platform of choice, is owned by Microsoft, our technology
-partner and is the premier platform for opensource development.
+GitHub, the Open Source platform of choice, is owned by Microsoft, our technology
+partner and is the premier platform for open source development.
 
 ### Alpha deployment: [alpha.canada.ca](https://alpha.canada.ca/en/index.html)
 
@@ -95,8 +95,8 @@ experiments in one place, to make it easier for the government to collaborate
 and share its experiments. They are publicly available in the spirit of working
 in the open.
 
-To be deployed on alpha.canada.ca, a web application or service needs to meet
-the following criteria:
+To be deployed on [alpha.canada.ca](https://alpha.canada.ca/en/index.html), a
+web application or service needs to meet the following criteria:
 
 * hosted on public cloud infrastructure
 * open source on a publicly-visible repository
@@ -110,9 +110,9 @@ the following criteria:
 Standards](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
 require us to do development in the open.
 
-* "Share evidence, research and decision making openly. Make all non-sensitive
+* "Share evidence, research and decision-making openly. Make all non-sensitive
   data, information, and new code developed in delivery of services open to the
-  outside world for sharing and reuse under an open licence."
+  outside world for sharing and reuse under an open license."
 * "Collaborating widely allows us to learn lessons from others to minimize
   mistakes and reduce rework by identifying and sharing existing solutions. The
   problems that government solves are often unique, though they are not unique

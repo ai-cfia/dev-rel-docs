@@ -22,8 +22,6 @@
 
 ## VS Code Settings
 
-see
-
 If you're working on an existing project, its [Dev
 Container](https://containers.dev/) should already have configured within the
 rest of the necessary extensions. Look inside the `devcontainer.json` file in

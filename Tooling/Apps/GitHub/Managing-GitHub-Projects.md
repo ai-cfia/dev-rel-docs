@@ -23,8 +23,8 @@ A project should include all related issues from connected repositories.
 Ideally, it should not track PRs.
 
 - The default view should be a table sorted by priority, showing issues marked
-  as 'Todo' or 'In Progress' (filter: `status:Todo,"In Progress"` ). It should
-  show relevant issues that give an good idea of project's status.
+  as 'Todo' or 'In Progress' (filter: `status:Todo,"In Progress"`). It should
+  show relevant issues that give a good idea of project's status.
 - A second table view serves as our backlog, filtering out tasks marked as
   'Todo', 'In Progress', or 'Done' (filter: `-status:Todo,"In Progress",Done`).
 - We also maintain at least one board view for status tracking and a Roadmap

@@ -23,8 +23,8 @@ that can:
   generative AI. Issues range from biased or inaccurate outputs to breaches of
   privacy and security protocols.
 * Vigilance against potential misuse by threat actors is necessary to safeguard
-  institutional integrity, with adherence to the Canadian Centre for Cyber
-  Security’s guidelines.
+  institutional integrity, with adherence to the Canadian Center for
+  Cybersecurity’s guidelines.
 * Generative AI must be used in compliance with strict privacy, security,
   intellectual property, and human rights regulations.
 * Overreliance on AI can impede critical human judgment and skills, alongside

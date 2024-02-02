@@ -3,9 +3,9 @@
 ## Why Write Unit Tests?
 
 - **Ensure Code Quality:** Unit tests help maintain code quality by verifying
-  that each units of code function correctly.
+  that each unit of code function correctly.
 
-- **Detect Bugs Early:** Writing tests allows to catch and fix bugs early in the
+- **Detect Bugs Early:** Writing tests allows catching and fixing bugs early in the
   development process, reducing issues in the future.
 
 - **Facilitate Refactoring:** When changes are made to code, unit tests act as a
@@ -32,6 +32,7 @@ resolution of issues specific to each functionality.
 
 To get started on testing your project in Visual Studio Code, click on the
 following icon on the left:
+
 ![alt text](images/icon.png)
 
 Then, click on "Configure Python Tests", select unittest and the test folder of
@@ -39,6 +40,6 @@ your project. It is usually named "tests".
 
 ![alt text](images/testing.png)
 
-If your tests require to connect to a database or an api, you should include the
+If your tests require connecting to a database or an API, you should include the
 `SetUp(self)` and `TearDown(self)` functions as they will be called before and
 after each test.

@@ -26,8 +26,8 @@ PGOPTIONS=--search_path=schema_name psql -U username -d database_name -a -f 2023
 ```
 
 This command sets the search path to a specific schema and executes an SQL file.
-Replace `schema_name` with the name of your schema, `username` with your user
-name, `database_name` with the name of your database, and replace
+Replace `schema_name` with the name of your schema, `username` with your
+username, `database_name` with the name of your database, and replace
 `2023-11-28-create-histogram.sql` with your SQL file name.
 
 ### Execute SQL file and output to CSV
@@ -40,7 +40,7 @@ psql -U username -d database_name \
 ```
 
 This command executes an SQL file and outputs the result to a CSV file. Replace
-`username` with your user name, `database_name` with the name of your database,
+`username` with your username, `database_name` with the name of your database,
 `2023-11-30-select-chunk-score.sql` with your SQL file name, and `result.html`
 with the name of the output file.
 

@@ -12,7 +12,7 @@ between development, testing, and production environments.
 ## Accessing and Setting Environment Variables
 
 * **In Code**: Programming languages provide mechanisms to access environment
-variables. For example, in Python, the os module is commonly used:
+variables. For example, in Python, the OS module is commonly used:
 
 ```python
 import os
