@@ -6,8 +6,7 @@ Each diagram should display the following information:
 
 * Title
 * Date of creation
-* Agency
-  [Logo](https://merlin.cfia-acia.inspection.gc.ca/a-propos-de-nous/compendium/politiques-et-directives-en-communication/pcim-de-l-acia/fra/1490906680552/1490906680553)
+* Agency Logo
 * Author's agency email: <name.surname@inspection.gc.ca>
 * AI Lab email: <cfia.ai-ia.acia@inspection.gc.ca>
 

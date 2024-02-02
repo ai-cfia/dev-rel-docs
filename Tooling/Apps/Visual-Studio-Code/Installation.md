@@ -2,11 +2,11 @@
 
 ## IDE and basics installs
 
-* [Github
-  Codespaces](/AI-Lab-Wiki-HomePage/Tooling/Work-tools-\(apps\)/Github/Github-Codespaces):
+* [GitHub
+  Codespaces](../GitHub/Github-Codespaces.md):
   Visual Studio Code in your browser - recommended
-* [Visual Studio Code local
-  install](/AI-Lab-Wiki-HomePage/Tooling/Work-tools-\(apps\)/Visual-Studio-Code-\(VSC\)/VSC-Windows-Installation)
+* Visual Studio Code local
+  install: Deprecated ⚠️
 
 ## VS Code Extensions to install
 
@@ -41,4 +41,4 @@ and more.
 
 see example
 [settings.json](https://github.com/ai-cfia/.github/blob/main/.vscode/settings.json)
-on our Github organization
+on our GitHub organization
