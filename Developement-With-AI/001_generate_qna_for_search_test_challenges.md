@@ -30,7 +30,7 @@ To address these issues, a multi-step solution approach was devised:
 While solutions were proposed and implemented, challenges persisted in
 accurately scoring pages due to diverse webpage structures and complexities in
 precisely identifying specific page types. For instance, the proportional
-approach to scoring based on <tr> tags encountered practical limitations due to
+approach to scoring based on `<tr>` tags encountered practical limitations due to
 varying webpage sizes.
 
 #### Iterative Testing and Refinement

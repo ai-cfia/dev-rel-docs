@@ -36,7 +36,7 @@ generated Q&A pairs.
   to varying webpage sizes and complexities in identifying specific page types.
   And the way the scoring is currently made in the database.
 
-## Next Steps for Amelioration
+## Next Steps for Improvements
 - Continue refining the scoring mechanism for didactic and guidance pages.
 - Make the unit tests for the search Q&A generation function working.
 
