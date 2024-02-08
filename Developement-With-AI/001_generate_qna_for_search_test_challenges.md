@@ -2,7 +2,7 @@
 
 ## Chunk Quality and Missing Scores
 During development, one significant challenge revolved around chunk quality
-ratings, each assigned a score ranging from 0.0 to 1.0. However, issues emerged
+ratings, each assigned a score, ranging from 0.0 to 1.0. However, issues emerged
 due to missing scores, specifically in identifying tables within chunks and
 excluding them from searches. Additionally, discrepancies arose in database
 relationships, affecting the accuracy of stored scores.
@@ -37,16 +37,12 @@ varying webpage sizes.
 - **Unit Testing:** Efforts were made to implement unit tests to validate the
   search Q&A generation function, aiming to refine and enhance the scoring
   mechanism.
-- **Experimentation and Analysis:** Various test scenarios were explored,
-  including generating histograms to visualize score distributions and test
-  tables to assess solution effectiveness.
+- **Experimentation and Analysis:** Various test scenarios were explored, which included generating histograms to visualize score distributions and testing tables to assess the effectiveness of the solution.
 
 ### Ongoing Efforts and Conclusion
 The journey involved continuous testing, analysis, and collaboration to overcome
 challenges in scoring accuracy, specifically in distinguishing table pages and
-navigation pages. Although progress has been made, further iterations and
-refinements are underway to achieve more precise and reliable scoring
-mechanisms.
+navigation pages. While progress has been made, ongoing efforts aim to achieve more precise and reliable scoring mechanisms.
 
 The coding journey involved a combination of schema enhancements, methodological
 adjustments, and iterative testing, striving to improve the accuracy and

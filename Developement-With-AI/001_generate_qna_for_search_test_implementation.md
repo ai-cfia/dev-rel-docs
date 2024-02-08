@@ -1,7 +1,7 @@
 # Content Analysis and Scoring System for QA Using OpenAI and Azure
 
 ## Objective
-The goal is to create a system that get web page chunks withing the database,
+The goal is to create a system that get web page chunks within the database,
 utilizes OpenAI API via Azure to generate questions and answers, and then
 applies a verification to score the accuracy of the results based on the
 generated Q&A pairs.
@@ -32,13 +32,11 @@ generated Q&A pairs.
   limit. To manage this, alternative chunks are considered if text exceeds a
   specific length. This is not supposed to happen, but we added a protection
   just in case.
-- **Scoring Challenges:** Difficulties persist in accurately scoring pages due
-  to varying webpage sizes and complexities in identifying specific page types.
-  And the way the scoring is currently made in the database.
+- **Scoring Challenges:** Difficulties persist in accurately scoring pages due to varying webpage sizes, complexities in identifying specific page types, and the current method of scoring in the database.
 
 ## Next Steps for Improvements
 - Continue refining the scoring mechanism for didactic and guidance pages.
-- Make the unit tests for the search Q&A generation function working.
+- Ensure that the unit tests for the search Q&A generation function are functioning correctly.
 
 The system aims to provide valuable Q&A pairs and ensure search result accuracy,
 addressing challenges in chunk quality and scoring accuracy along the way.
