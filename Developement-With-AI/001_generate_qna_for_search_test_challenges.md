@@ -30,19 +30,22 @@ To address these issues, a multi-step solution approach was devised:
 While solutions were proposed and implemented, challenges persisted in
 accurately scoring pages due to diverse webpage structures and complexities in
 precisely identifying specific page types. For instance, the proportional
-approach to scoring based on `<tr>` tags encountered practical limitations due to
-varying webpage sizes.
+approach to scoring based on `<tr>` tags encountered practical limitations due
+to varying webpage sizes.
 
 #### Iterative Testing and Refinement
 - **Unit Testing:** Efforts were made to implement unit tests to validate the
   search Q&A generation function, aiming to refine and enhance the scoring
   mechanism.
-- **Experimentation and Analysis:** Various test scenarios were explored, which included generating histograms to visualize score distributions and testing tables to assess the effectiveness of the solution.
+- **Experimentation and Analysis:** Various test scenarios were explored, which
+  included generating histograms to visualize score distributions and testing
+  tables to assess the effectiveness of the solution.
 
 ### Ongoing Efforts and Conclusion
 The journey involved continuous testing, analysis, and collaboration to overcome
 challenges in scoring accuracy, specifically in distinguishing table pages and
-navigation pages. While progress has been made, ongoing efforts aim to achieve more precise and reliable scoring mechanisms.
+navigation pages. While progress has been made, ongoing efforts aim to achieve
+more precise and reliable scoring mechanisms.
 
 The coding journey involved a combination of schema enhancements, methodological
 adjustments, and iterative testing, striving to improve the accuracy and

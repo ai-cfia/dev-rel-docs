@@ -24,19 +24,22 @@ generated Q&A pairs.
 - **Database Structure Enhancement:** A new schema called louis_0.0.6 and a new
   table named chunk_scored were introduced to store scores for non-table pages
   (didactic).
-- **Identifying Tables:** The presence of `<tr>` tags on pages is used to identify
-  tables, aiming to penalize chunks containing them.
+- **Identifying Tables:** The presence of `<tr>` tags on pages is used to
+  identify tables, aiming to penalize chunks containing them.
 
 ## Issues Encountered
 - **Token Limitation:** The script crashes if the chunk content exceeds a token
   limit. To manage this, alternative chunks are considered if text exceeds a
   specific length. This is not supposed to happen, but we added a protection
   just in case.
-- **Scoring Challenges:** Difficulties persist in accurately scoring pages due to varying webpage sizes, complexities in identifying specific page types, and the current method of scoring in the database.
+- **Scoring Challenges:** Difficulties persist in accurately scoring pages due
+  to varying webpage sizes, complexities in identifying specific page types, and
+  the current method of scoring in the database.
 
 ## Next Steps for Improvements
 - Continue refining the scoring mechanism for didactic and guidance pages.
-- Ensure that the unit tests for the search Q&A generation function are functioning correctly.
+- Ensure that the unit tests for the search Q&A generation function are
+  functioning correctly.
 
 The system aims to provide valuable Q&A pairs and ensure search result accuracy,
 addressing challenges in chunk quality and scoring accuracy along the way.
