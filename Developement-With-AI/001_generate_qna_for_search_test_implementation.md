@@ -24,7 +24,7 @@ generated Q&A pairs.
 - **Database Structure Enhancement:** A new schema called louis_0.0.6 and a new
   table named chunk_scored were introduced to store scores for non-table pages
   (didactic).
-- **Identifying Tables:** The presence of <tr> tags on pages is used to identify
+- **Identifying Tables:** The presence of `<tr>` tags on pages is used to identify
   tables, aiming to penalize chunks containing them.
 
 ## Issues Encountered
