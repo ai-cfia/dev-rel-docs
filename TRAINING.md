@@ -21,14 +21,15 @@
         work within the AI LAB's framework.
         The training should provide accurate time estimates for each module.
         ```
+
     1. Click edit button on training.md
     1. Edit the document (example add the time it took you to read value and
       ethics)
     1. Commit changes
     1. create a branch with this format: issue_number-onboarding-process-your-name
       (example 42-onboarding-process-happy-gilmor)
-    1. Click on _propose change_
-    1.  On the **Open a pull request** page:
+    1. Click on *propose change*
+    1. On the **Open a pull request** page:
         * Add a title
         * Select draft pull request instead of create pull request
 
@@ -159,6 +160,7 @@
 * Finessse
   * [Create a search
     index in the Azure portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal)
+
 ## Additional resources
 
 * [AI CFIA Youtube
