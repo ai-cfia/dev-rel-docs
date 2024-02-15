@@ -145,55 +145,55 @@ Reproducing the error locally made the identification of the error quick.
 
 ## Timeline (EST)
 
-**2023-01-10 (14:00):** A request has been made for the application to
-be deployed by 2023-01-15 (8:00).
+**2024-01-10 (14:00):** A request has been made for the application to
+be deployed by 2024-01-15 (8:00).
 
-**2023-01-12 (14:00):** The application has been deployed. The frontend can
+**2024-01-12 (14:00):** The application has been deployed. The frontend can
 communicate with the backend.
 
 **2024-01-17 (13:21):** Th link to the deployed system
 https://nachet.ninebasetwo.xyz/ is provided to the analysts by
 the frontend developer through internal Teams for review
 
-**2023-01-17 (15:00):** One of our clients claims that the classification
+**2024-01-17 (15:00):** One of our clients claims that the classification
 is not working.
 
-**2023-01-17 (15:10):** A DevSecOps confirms a 500 Internal Server Error for
+**2024-01-17 (15:10):** A DevSecOps confirms a 500 Internal Server Error for
 Capture -> Load (with sample image) -> Classify.
 
-**2023-01-17 (15:15):** An issue is opened with the DevSecOps Team
+**2024-01-17 (15:15):** An issue is opened with the DevSecOps Team
 regarding the problem.
 
-**2023-01-17 (15:30):** The DevSecOps team is now working on the problem.
+**2024-01-17 (15:30):** The DevSecOps team is now working on the problem.
 
-**2023-01-17 (16:00):** The team tries to find a solution to the problem,
+**2024-01-17 (16:00):** The team tries to find a solution to the problem,
 but the solutions provided do not resolve the root cause.
 
-**2023-01-18 (8:00):** The upload limit is increased on the backend Ingress.
+**2024-01-18 (8:00):** The upload limit is increased on the backend Ingress.
 
-**2023-01-18 (8:30):** Increasing the upload limit solves part of the problem,
+**2024-01-18 (8:30):** Increasing the upload limit solves part of the problem,
 but not the 500 Internal Server Error.
 
-**2023-01-18 (9:15):** Replication of the problem locally.
+**2024-01-18 (9:15):** Replication of the problem locally.
 
-**2023-01-18 (10:00):** Discussions are exchanged with the backend team to
+**2024-01-18 (10:00):** Discussions are exchanged with the backend team to
 better understand the software structure.
 
-**2023-01-18 (10:45):** A hypothesis is put forward by the backend team and
+**2024-01-18 (10:45):** A hypothesis is put forward by the backend team and
 the team lead that the AI model may have undergone changes.
 
-**2023-01-18 (11:30):** Tests are performed locally, and an error still occurs,
+**2024-01-18 (11:30):** Tests are performed locally, and an error still occurs,
 but this time it's a 401.
 
-**2023-01-18 (11:40):** A comparison between the API Key of the model and the one
+**2024-01-18 (11:40):** A comparison between the API Key of the model and the one
 in production is done.
 
-**2023-01-18 (11:45):** There is confirmation of a divergence between the API
+**2024-01-18 (11:45):** There is confirmation of a divergence between the API
 of the model and the one in production.
 
-**2023-01-18 (12:00):** The API Key of the model in production is modified.
+**2024-01-18 (12:00):** The API Key of the model in production is modified.
 
-**2023-01-18 (13:05):** Problem resolved.
+**2024-01-18 (13:05):** Problem resolved.
 
 ## Glossary
 
