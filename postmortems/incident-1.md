@@ -131,7 +131,7 @@ case, it was just an invalid API Key and a misconfiguration of the ingress.
 ### What went well
 
 Once the error was identified, resolving the problem
-did not take much time.
+did not take much time (~10 minutes to test and patch the fix)
 
 ### What went wrong
 
