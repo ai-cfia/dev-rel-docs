@@ -44,9 +44,9 @@ Nachet
 
 Global - all traffic served to nachet
 
-### Revenue impact
+### Revenue impact details
 
-Around 200$ lost
+Around 400$ lost
 
 ### Trigger / Detection
 
@@ -77,7 +77,7 @@ including the AI models deployed on Azure.
 Revenue Impact
 
 - The time of developers and DevSecOps personnel.
-
+- The time of the tech lead.
 
 ### Root Causes
 
@@ -143,13 +143,17 @@ issue related to the TLS/SSL layer.
 
 Reproducing the error locally made the identification of the error quick.
 
-## Timeline
+## Timeline (EST)
 
 **2023-01-10 (14:00):** A request has been made for the application to
 be deployed by 2023-01-15 (8:00).
 
 **2023-01-12 (14:00):** The application has been deployed. The frontend can
 communicate with the backend.
+
+**2024-01-17 (13:21):** Th link to the deployed system
+https://nachet.ninebasetwo.xyz/ is provided to the analysts by
+the frontend developer through internal Teams for review
 
 **2023-01-17 (15:00):** One of our clients claims that the classification
 is not working.
