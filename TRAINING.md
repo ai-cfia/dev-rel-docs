@@ -157,7 +157,7 @@
   * [Use Azure Storage Explorer
     to create a blob](https://learn.microsoft.com/en-us/azure/storage/blobs/quickstart-storage-explorer)
 
-* Finessse
+* Finesse
   * [Create a search
     index in the Azure portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal)
 
