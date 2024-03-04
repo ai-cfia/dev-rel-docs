@@ -187,16 +187,6 @@ Inconvénients :
 
 - Aspects négatifs de cette alternative.
 
-### Carvel ytt
-
-Avantages :
-
-- Aspects positifs de cette alternative.
-
-Inconvénients :
-
-- Aspects négatifs de cette alternative.
-
 ### kapp-controller
 
 Avantages :
