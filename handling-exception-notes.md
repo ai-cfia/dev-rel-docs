@@ -2,23 +2,25 @@
 
 ## Before starting
 
-🚧
-This files is not intended to be push to the main branch of dev-rel-docs. It's just to give a chance for everyone to review the note I took
-🚧
-
+🚧 This files is not intended to be push to the main branch of dev-rel-docs.
+It's just to give a chance for everyone to review the note I took 🚧
 
 - [Version Française](#avant-de-commencer) :small_blue_diamond:
-- This training is aimed at the backend developer, but everybody is welcome to read it.
+- This training is aimed at the backend developer, but everybody is welcome to
+  read it.
 
-|:wave: To know more|
-|:--|
-|[Pozo Ramos, L. (2023,19 juin). *Python's raise: Effectively Raising Exceptions in Your Code*. Real Python](https://realpython.com/python-raise-exception/#chaining-exceptions-with-the-from-clause)|
+|:wave: To know more| |:--| |[Pozo Ramos, L. (2023,19 juin). *Python's raise:
+Effectively Raising Exceptions in Your Code*. Real
+Python](https://realpython.com/python-raise-exception/#chaining-exceptions-with-the-from-clause)|
 
 ### Handling Exceptional Situations in Python
 
-> Not all exceptions in Python are errors. Example: The built-in [StopIteration](https://docs.python.org/3/library/exceptions.html#StopIteration)
+> Not all exceptions in Python are errors. Example: The built-in
+> [StopIteration](https://docs.python.org/3/library/exceptions.html#StopIteration)
 
-Python errors have the `Error` suffix. The language also has a class for warning; `Warning` to raise a flag on a condition that doesn't need to terminate the program.
+Python errors have the `Error` suffix. The language also has a class for
+warning; `Warning` to raise a flag on a condition that doesn't need to terminate
+the program.
 
 ```python
 # Always use Exception for your code
@@ -43,7 +45,8 @@ class MyWarning(UserWarning):
 |--|--|--|
 |[Warning](https://docs.python.org/3/library/warnings.html#warning-categories)|[Error](https://docs.python.org/3/library/exceptions.html#concrete-exceptions)|[Exception](https://docs.python.org/3/library/exceptions.html#Exception)|
 
-Every exception have a [traceback](https://realpython.com/python-traceback/) attribute, also name:
+Every exception have a [traceback](https://realpython.com/python-traceback/)
+attribute, also name:
 
 - Stack trace,
 - Stack traceback
@@ -64,13 +67,15 @@ except: IndexError:
 
 ##### Steps to handle exceptions
 
-1. Predict what exceptions can happen, sometimes you might want to fail the program to discover what exceptions are raised.
+1. Predict what exceptions can happen, sometimes you might want to fail the
+   program to discover what exceptions are raised.
 1. If custom exception, use the raise keyword
 1. Determine where the exception needs to be handled in your code
 
 ### Raising Exceptions in Python: The `raise` Statement
 
-> In Python, exceptions are raised, while in other languages like Java and C++, exceptions are thrown.
+> In Python, exceptions are raised, while in other languages like Java and C++,
+> exceptions are thrown.
 
 ```python
 # ...
@@ -81,7 +86,8 @@ raise [expression [from another_expression]]
 |:warning:| A `raise` keyword with no argument and no exception raised beforehand will lead to a RuntimeError exception since no exceptions are raised or reraised.|
 |:--:|:--|
 
-> The `raise` keyword can take any expression that returns an exception class or instance.
+> The `raise` keyword can take any expression that returns an exception class or
+> instance.
 
 ```python
 
@@ -98,7 +104,8 @@ class MyException(Exception)
 raise MyException("an error occurred")
 ```
 
-> The `from` clause is optional. It allows the developers to chain exceptions together.
+> The `from` clause is optional. It allows the developers to chain exceptions
+> together.
 
 |:warning:| Raising `Exception` instance is not considered best practice.|
 |--|:--|
@@ -115,7 +122,9 @@ Maintaining this pattern will help ensure consistency in the codebase.
 
 #### Exception arguments
 
-Typically, a developer will instantiate an `Exception` class with only one argument, but on certain occasions (for example, to provide more context to the error), the `Exception` can take more than one argument.
+Typically, a developer will instantiate an `Exception` class with only one
+argument, but on certain occasions (for example, to provide more context to the
+error), the `Exception` can take more than one argument.
 
 ```python
 # The usual case
@@ -125,7 +134,8 @@ raise Exception("an error occurred")
 raise Exception("an error occurred", "unexpected value", 42)
 ```
 
-If the `Exception` constructor receives more than one argument, it will store them in a tuple that can be accessed through the args variable.
+If the `Exception` constructor receives more than one argument, it will store
+them in a tuple that can be accessed through the args variable.
 
 ```python
 >>> error = Exception("an error occurred", "unexpected value", 42)
@@ -144,7 +154,8 @@ Exception classes also have two methods:
 
 > These functions help provide more context to the other developer
 
-Exceptions also have lots of dunder attributes. The useful ones are `.__traceback__` and `.__cause__`.
+Exceptions also have lots of dunder attributes. The useful ones are
+`.__traceback__` and `.__cause__`.
 
 |dunder attribute | actions|
 |--|--|
@@ -156,10 +167,13 @@ Exceptions also have lots of dunder attributes. The useful ones are `.__tracebac
 
 #### Two kinds of exceptions
 
-- Built-in exceptions: Those exceptions are built into the language. Importation is not needed for their usage.
-- User-defined exceptions: Custom exceptions defined by the developers. They are typically in a module for a specific project.
+- Built-in exceptions: Those exceptions are built into the language. Importation
+  is not needed for their usage.
+- User-defined exceptions: Custom exceptions defined by the developers. They are
+  typically in a module for a specific project.
 
-> You can find the built-in exception hierarchy [here](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
+> You can find the built-in exception hierarchy
+> [here](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
 
 #### Raising built-in error
 
@@ -184,7 +198,9 @@ TypeError: list or tuple expected, got 'set'
 
 #### Coding and Raising Custom Exception
 
-Python has more than sixty built-in exceptions. If none of them suit the developer's needs, then the developer can define a custom one. The next example is a use case for a grade book.
+Python has more than sixty built-in exceptions. If none of them suit the
+developer's needs, then the developer can define a custom one. The next example
+is a use case for a grade book.
 
 ```python
 # grades.py
@@ -207,14 +223,17 @@ def calculate_average_grade(grades):
     return round (total / count, 2)
 ```
 
-> In Python, it is common practice to create a placeholder class for exceptions with the keyword `pass` as the most important feature of the class is its name.
+> In Python, it is common practice to create a placeholder class for exceptions
+> with the keyword `pass` as the most important feature of the class is its
+> name.
 
 |:warning:| In Python, a custom exception name needs to communicate the underlying issue|
 |--|:--|
 |:x:| GenericException(Exception)|
 |:white_check_mark:| SpecificToProjectException(Exception)|
 
-> For example, GradeValueError is better at explaining what is the error than the built-in ValueError.
+> For example, GradeValueError is better at explaining what is the error than
+> the built-in ValueError.
 
 |:warning:| Convention to follow while creating custom exception|
 |:--|--|
@@ -230,9 +249,12 @@ def calculate_average_grade(grades):
 You should raise an exception to:
 
 - **Signal errors and exceptional situations**
-- **Reraise exception after doing some additional processing**: For example, when you need to log the error before raising the exception
+- **Reraise exception after doing some additional processing**: For example,
+  when you need to log the error before raising the exception
 
-Python encourages its developers to use exceptions when dealing with errors and exceptional situations. The way to do it is with a `try ... except` construct. You can find a lot of examples in the standard library and the language itself.
+Python encourages its developers to use exceptions when dealing with errors and
+exceptional situations. The way to do it is with a `try ... except` construct.
+You can find a lot of examples in the standard library and the language itself.
 
 ```python
 def some_func(arg):
@@ -244,15 +266,20 @@ def some_func(arg):
     # Here raise will reraise the Exception that was raised by doing something
 ```
 
-> **Look before you lead (LBYL)** is an approach that encourages developers to use error codes and conditionals
-**Easier to ask forgiveness than permission (EAFP)** is the approach that encourages developers to raise and handle exceptions.
+> **Look before you lead (LBYL)** is an approach that encourages developers to
+use error codes and conditionals **Easier to ask forgiveness than permission
+(EAFP)** is the approach that encourages developers to raise and handle
+exceptions.
 
 |:bookmark_tabs:| It's up to the developer to decide when to handle the exception.|
 |:--|:--|
 
 ### Raising Exception Conditionally
 
-Raising exceptions when meeting a given condition is related to possible errors and exceptional situations. Example: you write a function to validate if a number is a prime number. The number the function accepts needs to be bigger than two and an integer.
+Raising exceptions when meeting a given condition is related to possible errors
+and exceptional situations. Example: you write a function to validate if a
+number is a prime number. The number the function accepts needs to be bigger
+than two and an integer.
 
 ```python
 >>> from math import sqrt
@@ -299,9 +326,11 @@ ZeroDivisionError: division by zero
 |:warning:| Catching generic `Exception` is considered bad practice. Doing so could result in critical error not being found|
 |--|:--|
 
-Another use case is when you want to wrap one exception in another or intercept and translate the exception into a different one.
+Another use case is when you want to wrap one exception in another or intercept
+and translate the exception into a different one.
 
-Example: building a math library and catching math errors to wrap them in a MathLibraryError class.
+Example: building a math library and catching math errors to wrap them in a
+MathLibraryError class.
 
 ```python
 >>> class MathLibraryError(Exception):
@@ -328,22 +357,32 @@ Traceback (most recent call last):
 MathLibraryError: division by zero
 ```
 
-In this example, we catch the `ZeroDivisionError` and wrap it in the `MathLibraryError`. It is useful in situations like:
+In this example, we catch the `ZeroDivisionError` and wrap it in the
+`MathLibraryError`. It is useful in situations like:
 
-- **Abstracting away external exceptions**: Useful when writing a library and the developer doesn't want their user to handle the external exceptions. In this example, a user of the `MathLibrary` will only need to be aware of MathLibraryError instead of all the math errors that can happen.
-- **Unifying handling actions**: Useful to handle different exceptions that would be handled the same way. Useful to simplify error-handling logic.
-- **Augmenting the context of a caught exception**: When the error or exception lacks context, you can add it and then reraise the exception.
+- **Abstracting away external exceptions**: Useful when writing a library and
+  the developer doesn't want their user to handle the external exceptions. In
+  this example, a user of the `MathLibrary` will only need to be aware of
+  MathLibraryError instead of all the math errors that can happen.
+- **Unifying handling actions**: Useful to handle different exceptions that
+  would be handled the same way. Useful to simplify error-handling logic.
+- **Augmenting the context of a caught exception**: When the error or exception
+  lacks context, you can add it and then reraise the exception.
 
 |:exclamation:| Even if the above can greatly improve your code, the `from` syntax often offers better alternatives.|
 |--|:--|
 
 ### Chaining Exceptions With the `from` Clause
 
-The optional clause `from` allows the developer to chain another exception to the active one.
+The optional clause `from` allows the developer to chain another exception to
+the active one.
 
-If the argument to `from` is an instance of an exception, it will directly attach itself to the dunder `.__cause__`, if it's an exception class, Python will instantiate it before attaching it to `.__cause__`.
+If the argument to `from` is an instance of an exception, it will directly
+attach itself to the dunder `.__cause__`, if it's an exception class, Python
+will instantiate it before attaching it to `.__cause__`.
 
-When using `from`, you can expect to have both exception tracebacks on the screen.
+When using `from`, you can expect to have both exception tracebacks on the
+screen.
 
 ```python
 >>> try:
@@ -362,7 +401,10 @@ Traceback (most recent call last):
 ValueError: operation not allowed
 ```
 
-In this example, Python will directly indicate that the first error (`ZeroDivisionError`) is the reason for the second error (`ValueError`). It is very useful when writing code that can raise multiple types of exceptions. For example:
+In this example, Python will directly indicate that the first error
+(`ZeroDivisionError`) is the reason for the second error (`ValueError`). It is
+very useful when writing code that can raise multiple types of exceptions. For
+example:
 
 ```python
 >>> def divide(x, y):
@@ -377,7 +419,8 @@ In this example, Python will directly indicate that the first error (`ZeroDivisi
 ...
 ```
 
-The divide function here raises different types of error: `TypeError` and `ValueError`. Here's how it will behave with the `from` clause for `raise`:
+The divide function here raises different types of error: `TypeError` and
+`ValueError`. Here's how it will behave with the `from` clause for `raise`:
 
 ```python
 >>> try:
@@ -413,7 +456,8 @@ Traceback (most recent call last):
 ValueError: invalid argument
 ```
 
-> If your note using from the message will be different. Without `from`, the traceback indicates a direct link between the two errors.
+> If your note using from the message will be different. Without `from`, the
+> traceback indicates a direct link between the two errors.
 
 |With `from` | Without `from`|
 |:--|:--|
@@ -421,7 +465,11 @@ ValueError: invalid argument
 
 #### Using `from` with `None`
 
-You want to use the argument `None` with `from` when you want to suppress built-in traceback from custom error or when the original traceback is not necessary or informative. A use case is a package to consume an external REST API where you don't want to expose the `requests` library (or `urllib3` library) exception.
+You want to use the argument `None` with `from` when you want to suppress
+built-in traceback from custom error or when the original traceback is not
+necessary or informative. A use case is a package to consume an external REST
+API where you don't want to expose the `requests` library (or `urllib3` library)
+exception.
 
 ```python
 >>> import requests
@@ -460,7 +508,8 @@ __main__.APIError: 404 Client Error: Not Found for url:
 >>> # An error happened
 ```
 
-With this example, you can see that the original exception (`requests.RequestException`) was absent from the traceback.
+With this example, you can see that the original exception
+(`requests.RequestException`) was absent from the traceback.
 
 ### Following Best Practices When Raising Exceptions
 
@@ -483,18 +532,23 @@ With this example, you can see that the original exception (`requests.RequestExc
 
 #### Document :exclamation:
 
-It is considered best practice to list and document all the exceptions your code can raise with a brief description and how the users can handle them.
+It is considered best practice to list and document all the exceptions your code
+can raise with a brief description and how the users can handle them.
 
 ### Raising Exceptions and the `assert` Statement
 
-The `assert` statement can also raise exceptions. Only, unlike raise, the only exception it can raise is the `AssertionError` type. It is mostly a debugging and testing tool.
+The `assert` statement can also raise exceptions. Only, unlike raise, the only
+exception it can raise is the `AssertionError` type. It is mostly a debugging
+and testing tool.
 
 ### Raising Exception Groups
 
 |:exclamation:| New since Python 3.11|
 |--|--|
 
-Raising Exception Groups can be useful when dealing with asynchronous programs that process multiple concurrent tasks that may fail at the same time. In general, it is not often used by developers.
+Raising Exception Groups can be useful when dealing with asynchronous programs
+that process multiple concurrent tasks that may fail at the same time. In
+general, it is not often used by developers.
 
 #### Raising an ExceptionGroup
 
@@ -519,7 +573,9 @@ Raising Exception Groups can be useful when dealing with asynchronous programs t
     +------------------------------------
 ```
 
-`ExceptionGroup` is raised the same as any other exception. However, since the group contains multiple exceptions, the traceback will be different as shown by the previous example. You can then catch them as portraits in the example below.
+`ExceptionGroup` is raised the same as any other exception. However, since the
+group contains multiple exceptions, the traceback will be different as shown by
+the previous example. You can then catch them as portraits in the example below.
 
 ```python
 >>> try:
@@ -543,7 +599,11 @@ Handling TypeError
 Handling KeyError
 ```
 
-> Note that this syntax does not behave the same way as catching different exceptions, this will catch all of the exceptions that were raised. If you don't include the `*`, it will lead to no exception being caught. But you still can catch the `ExceptionGroup` as a whole since it's a subclass of `Exception`.
+> Note that this syntax does not behave the same way as catching different
+> exceptions, this will catch all of the exceptions that were raised. If you
+> don't include the `*`, it will lead to no exception being caught. But you
+> still can catch the `ExceptionGroup` as a whole since it's a subclass of
+> `Exception`.
 
 ```python
 >>> try:
@@ -561,24 +621,27 @@ Handling KeyError
 Got an exception group!
 ```
 
-In this context, Python will catch the `ExceptionGroup` as any other `Exception` and run the handling code.
+In this context, Python will catch the `ExceptionGroup` as any other `Exception`
+and run the handling code.
 
 ### Conclusion
 
-|More on Exception|
-|--|
-|[Take the test](https://realpython.com/quizzes/python-raise-exception/)|
-|[How to Catch Multiple Exceptions in Python](https://realpython.com/python-catch-multiple-exceptions/)|
-|[Ever Better Error Messages](https://realpython.com/python312-error-messages/)|
-|[LBYL vs EAFP: Preventing or Handling Errors in Python](https://realpython.com/python-lbyl-vs-eafp/)|
+|More on Exception| |--| |[Take the
+test](https://realpython.com/quizzes/python-raise-exception/)| |[How to Catch
+Multiple Exceptions in
+Python](https://realpython.com/python-catch-multiple-exceptions/)| |[Ever Better
+Error Messages](https://realpython.com/python312-error-messages/)| |[LBYL vs
+EAFP: Preventing or Handling Errors in
+Python](https://realpython.com/python-lbyl-vs-eafp/)|
 
 ---
 
 ## Avant de commencer
 
 - [English version](#before-starting) :small_orange_diamond:
-- Cet entraînement est pour les développeurs backend, mais tous sont les bienvenues.
+- Cet entraînement est pour les développeurs backend, mais tous sont les
+  bienvenues.
 
-|:wave: Pour en savoir plus (anglais seulement)|
-|:--|
-|[Pozo Ramos, L. (2023,19 juin). *Python's raise: Effectively Raising Exceptions in Your Code*. Real Python](https://realpython.com/python-raise-exception/#chaining-exceptions-with-the-from-clause)|
+|:wave: Pour en savoir plus (anglais seulement)| |:--| |[Pozo Ramos, L. (2023,19
+juin). *Python's raise: Effectively Raising Exceptions in Your Code*. Real
+Python](https://realpython.com/python-raise-exception/#chaining-exceptions-with-the-from-clause)|
