@@ -16,7 +16,7 @@ developers closely associated with our projects.
   setting up a development environment with Dev Containers.
 
 * [TypeScript React Setup Guide](./TypeScript-React-Setup-Guide/REACTSETUP.md)**
-  * A comprehensive guide to setting up a TypeScript React project with ESLint
+  \-A comprehensive guide to setting up a TypeScript React project with ESLint
   and Prettier.
 
 * [TypeScript App Versioning
@@ -38,6 +38,12 @@ developers closely associated with our projects.
   emphasizes best practices, security considerations, and offers a structured
   approach to seamlessly integrate environment variables into your development
   workflow.
+
+* [CONTRIBUTING.md](https://github.com/ai-cfia/.github/blob/main/profile/CONTRIBUTING.md)**
+  \- This document provides detailed guidelines for contributing to all
+  repositories in the AI Lab GitHub. It includes information on best practices,
+  code submission processes, and how to propose changes or improvements. We
+  encourage all contributors to read it before beginning to contribute.
 
 ---
 
