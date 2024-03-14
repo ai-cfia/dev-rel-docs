@@ -13,6 +13,7 @@
 |[How to Catch Multiple Exceptions in Python](https://realpython.com/python-catch-multiple-exceptions/)|
 |[Ever Better Error Messages](https://realpython.com/python312-error-messages/)|
 |[LBYL vs EAFP: Preventing or Handling Errors in Python](https://realpython.com/python-lbyl-vs-eafp/)|
+|[Following Best Practices When Raising Exceptions](https://realpython.com/python-raise-exception/#following-best-practices-when-raising-exceptions)|
 |[Take the test](https://realpython.com/quizzes/python-raise-exception/)|
 
 ## Summary
@@ -23,14 +24,14 @@
 |[Different ways of handling an Exception](#different-ways-of-handling-an-exception)| [Différentes façon de gérer une Exception](#différentes-façon-de-gérer-une-exception)|
 |[Different ways of raising an Exception](#different-ways-of-raising-an-exception)| [Différentes façon de lever une Exception](#différentes-façon-de-lever-une-exception)|
 |[Good practice when handling / raising Exceptions](#good-practice-when-handling--raising-exceptions)|[Les bonnes pratiques lorsqu'on lève / gère des Exceptions](#les-bonnes-pratiques-lorsquon-lève--gère-des-exceptions)|
-|[Others: GroupException, AssertException and more](#others-groupexception-assertexception-and-more)| [Autres : GroupException, AssertException et plus](#autres--groupexception-assertexception-et-plus) |
+
 
 ### What is an Exception
 
 An Exception in Python indicate that something went wrong in your code. It can took
-the form of either an error (classic case), a warning or an Exceptional situation..
+the form of either an error (classic case), a warning or an exceptional situation..
 
-> :grey_exclamation: Note that not all exception in Python are errors. The best
+> :grey_exclamation: Note that not all exceptions in Python are errors. The best
 example is the
 [`StopIteration`](https://docs.python.org/3/library/exceptions.html#StopIteration)
 object which is a subclass of `Exception`
@@ -42,6 +43,14 @@ When an `Exception` represent an error, it is common standard to add the
 
 When the exception is suppose to be a `Warning`, Python offer the class `Warning`
 to raise flag on conditions that doesn't need to terminate the program.
+
+There is two kinds of exceptions in Python:
+
+- Built-in exceptions: Those exceptiosn are built into the language.
+- User-defined exceptions: Custom exceptions defined by the developers. They are
+tipically in a module for a specific projet
+
+> You can find the built-in exception hierarchy [here](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
 
 #### Creating a custom Exception example
 
@@ -61,19 +70,40 @@ class MyWarning(UserWarning):
     pass
 ```
 
+> In Python, it is common practice to create a placeholder class for exceptions
+with the keyword pass as the most important feature of the class is its name.
+
+|:warning:| In Python, a good custom exception name communicate the underlying issue|
+|--|:--|
+|:x:| GenericException(Exception)|
+|:white_check_mark:| SpecificToProjectException(Exception)|
+
 Here a list of the principal exception's attributes:
 
 |Attributes|Type|Actions|
 |--|--|--|
+|`args` or `str`|tuple|Contain all the value pass at the class at instanciation|
 |`__traceback__`|dunder attribute|hold the traceback object of the exception|
 |`__cause__`|dunder attribute|store the expression passed to the `from` keyword when chaining exceptions|
 |`.with_traceback()`|methods|allows the developer to give a new traceback to the exceptions. Return the updated exception object|
 |`.add_notes()`|methods|allows the developer to add notes to the exception traceback. Those note can be access with the `__note__` attribute|
 
+When you instantiate an `Exception`, you can give it a message (string) or a tuple
+of message (tuple of string)
+
+```python
+# The usual case
+raise Exception("an error occurred")
+
+# With multiple argument
+raise Exception("an error occurred", "unexpected value", 42)
+```
+
+`.__tracback__` contain a `traceback object`
+
 > A [traceback](https://realpython.com/python-traceback/) object is also call a Stack
   trace, Stack traceback and backtrace
 > Exceptions have more than sixty dunder attribute.
-
 
 #### Link to documentation for different exception types
 
@@ -83,13 +113,449 @@ Here a list of the principal exception's attributes:
 
 ### Different ways of handling an Exception
 
-#### Handling Exceptional Situations in Python
+#### 3 Steps to handle exception
+
+1. **Predict what exceptions can happen**. You can even fail the program voluntarily
+to discover what exception are raised.
+1. If **custom exception**, use the raise keyword.
+1. **Determine where the exception needs to be handled in your code.**
+
+#### Handling Exception Example
+
+Basic handling of error.
+
+```python
+colors = ["red", "blue", "green"]
+
+try:
+    colors[10]
+except IndexError:
+    print("your list doesn't have that index :-(")
+```
+
+You can also handle multiple error in the same except statement.
+
+```python
+colors = ["red", "blue", "green"]
+
+try:
+  colors[10]
+except (ValueError, IndexError) as error:
+  if isinstance(ValueError, error):
+    print("this error is a value error")
+
+  if isinstance(IndexError, error):
+    print("this is an index error")
+```
+
+When handling you might want to do extra computing before raising the error.
+
+```python
+>>> import logging
+>>> try:
+...     result = 42 / 0
+... except Exception as error:
+...     logging.error(error)
+...     raise
+
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module> # will only appear if 'raise error' was called
+  File "<stdin>", line 2, in <module>
+ZeroDivisionError: division by zero
+```
+
+#### ExceptionGroup
+
+A ExceptionGroup is a subclass of Exception that use the `except*` syntaxe. The
+traceback will have a different syntax.
+
+```python
+>>> raise ExceptionGroup(
+...  "several errors",
+...  [
+...    ValueError("invalide value"),
+...    TypeError("invalide type"),
+...    KeyError("missing key")
+...  ]
+... )
+...
+  + Exception Group Traceback (most recent call last):
+  |   File "<stdin>", line 1, in <module>
+  | ExceptionGroup: several errors (3 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | ValueError: invalid value
+    +---------------- 2 ----------------
+    | TypeError: invalid type
+    +---------------- 3 ----------------
+    | KeyError: 'missing key'
+    +------------------------------------
+```
+
+When catching ExceptionGroup, you can use the `except*` syntaxe...
+
+```python
+>>> try:
+...     raise ExceptionGroup(
+...         "several errors",
+...         [
+...             ValueError("invalid value"),
+...             TypeError("invalid type"),
+...             KeyError("missing key"),
+...         ]
+...     )
+... except* ValueError:
+...     print("Handling ValueError")
+... except* TypeError:
+...     print("Handling TypeError")
+... except* KeyError:
+...     print("Handling KeyError")
+...
+Handling ValueError
+Handling TypeError
+Handling KeyError
+```
+
+... or catch them like any other exception.
+
+```python
+>>> try:
+...     raise ExceptionGroup(
+...         "several errors",
+...         [
+...             ValueError("invalid value"),
+...             TypeError("invalid type"),
+...             KeyError("missing key"),
+...         ]
+...     )
+... except ExceptionGroup:
+...     print("Got an exception group!")
+...
+Got an exception group!
+```
 
 ### Different ways of raising an Exception
 
+#### The `raise` keyword
+
+> In Python, exceptions are raised, while other languages like Java and C++,
+exceptions are thrown
+
+```python
+# ...
+raise [expression [from another_expression]]
+# ...
+```
+
+> The `from` clause is optional.
+
+|:warning:|A `raise` keyword with no argument and no exception raised beforehand will lead to a RuntimeError exception since no exceptions are raised or reraised|
+|--|:--|
+
+The `raise` keyword can take any expression that returns an exception class or instance
+
+```python
+# From a function returnaning an exception
+def exception_factory(exception, message):
+  return exception(message)
+
+raise exception_factory(ValueErrpr, "invalid value")
+
+# From a class instantiation
+class MyException(Exception)
+  pass
+
+raise MyException("an eror occurred")
+```
+
+|:warning:|Raising direct instance of `Exception` is not considered best practice|
+|--|--|
+|:white_check_mark:|Always raise custom or built-in exceptions|
+
+#### Raising Custom Exception Example
+
+```python
+# grades .py
+
+# Creating our custom exception
+class GradeValueError(Exception):
+  pass
+
+def calculate_avergae_grade(grades):
+  total = 0
+  count = 0
+  for grade in grades:
+    if grade < 0 or grade > 100:
+      # Raise our custom exception
+      raise GradeValueError(
+        "grade values must be between 0 and 100 inclusive"
+      )
+    total += grade
+    count += 1
+  return round(total / count, 2)
+```
+
+> We could have use ValueError, but GradeValueError is more specific and best describe
+the error.
+
+You should raise an exception to:
+
+- Signal errors and exceptional situations
+- Reraise exception after doing some additional processing (Example: logging)
+
+> Python encourage the **Easier to ask forgivness than permission (EAFP)** over
+**Look before you lead (LBYL)**.
+
+|:bookmark_tabs:| It's up to the developer to decide when to handle the exception.|
+|:--|:--|
+
+#### Different `raise` keyword situation
+
+##### Alone
+
+```python
+def some_func(arg):
+    try:
+        do_something(arg)
+    except Exception as error:
+        logging.error(error)
+        raise
+    # Here raise will reraise the Exception that was raised by do_something
+```
+
+##### Conditionally
+
+```python
+>>> from math import sqrt
+
+>>> def is_prime(number):
+...     if not isinstance(number, int):
+...         raise TypeError(
+...             f"integer number expected, got {type(number).__name__}"
+...         )
+...     if number < 2:
+...         raise ValueError(f"integer above 1 expected, got {number}")
+...     for candidate in range(2, int(sqrt(number)) + 1):
+...         if number % candidate == 0:
+...             return False
+...     return True
+...
+```
+
+|:white_check_mark:|Raising exceptions early, before doing any computation, is considered best practice.|
+|--|:--|
+
+##### Wrap Exception into another one
+
+```python
+>>> class MathLibraryError(Exception):
+...     pass
+...
+
+>>> def divide(a, b):
+...     try:
+...         return a / b
+...     except ZeroDivisionError as error:
+...         raise MathLibraryError(error)
+...
+
+>>> divide(1, 0)
+Traceback (most recent call last):
+  File "<stdin>", line 3, in divide
+ZeroDivisionError: division by zero
+
+During the handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 5, in divide
+MathLibraryError: division by zero
+```
+
+|:exclamation:| Even if the above can greatly improve your code, the `from` syntax often offers better alternatives.|
+|--|:--|
+
+#### Using the `from` clause
+
+The optional clause `from` allows the developers to chain another exception
+to the active one.
+
+If the argument pass to `from` is an instance of an exception, it will directly attach
+itself to the dunder attribute `.__cause__`, if it's an exception class, Python will
+instantiate it before attaching it to `.__cause__`.
+
+When using `from`, you can expect to have both exception tracebacks on the screen.
+
+```python
+>>> try:
+...     result = 42 / 0
+... except Exception as error:
+...     raise ValueError("operation not allowed") from error
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+ZeroDivisionError: division by zero
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+ValueError: operation not allowed
+```
+
+In this example, Python will directly indicate that the first error
+(`ZeroDivisionError`) is the reason for the second error (`ValueError`). It is
+very useful when writing code that can raise multiple types of exceptions. For
+example:
+
+```python
+>>> def divide(x, y):
+...     for arg in (x, y):
+...         if not isinstance(arg, int | float):
+...             raise TypeError(
+...                 f"number expected, got {type(arg).__name__}"
+...             )
+...     if y == 0:
+...         raise ValueError("denominator can't be zero")
+...     return x / y
+...
+```
+
+The divide function here raises different types of error: `TypeError` and
+`ValueError`. Here's how it will behave with the `from` clause for `raise`:
+
+```python
+>>> try:
+...     divide(42, 0)
+... except Exception as error:
+...     raise ValueError("invalid argument") from error
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+  File "<stdin>", line 6, in divide
+ValueError: denominator can't be zero
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+ValueError: invalid argument
+
+>>> try:
+...     divide("One", 42)
+... except Exception as error:
+...     raise ValueError("invalid argument") from error
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+  File "<stdin>", line 4, in divide
+TypeError: number expected, got str
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+ValueError: invalid argument
+```
+
+> Without `from`, the traceback will not indicates a direct link between the errors.
+
+|With `from` | Without `from`|
+|:--|:--|
+|The above exception was the direct cause of the following exception | During handling of the above exception, another exception occurred|
+
+##### With None
+
+You want to use the argument `None` with `from` when you want to suppress
+built-in traceback from custom error or when the original traceback is not
+necessary or informative. A use case is a package to consume an external REST
+API where you don't want to expose the `requests` library (or `urllib3` library)
+exception.
+
+```python
+>>> import requests
+
+>>> class APIError(Exception):
+...     pass
+...
+
+>>> def call_external_api(url):
+...     try:
+...         response = requests.get(url)
+...         response.raise_for_status()
+...         data = response.json()
+...     except requests.RequestException as error:
+...         raise APIError(f"{error}") from None
+...     return data
+...
+
+>>> call_external_api("https://api.github.com/events")
+[
+    {
+        'id': '29376567903',
+        'type': 'PushEvent',
+    ...
+]
+
+>>> # No error happened
+
+>>> call_external_api("https://api.github.com/event")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 7, in call_external_api
+__main__.APIError: 404 Client Error: Not Found for url:
+  https://api.github.com/event
+
+>>> # An error happened
+```
+
+With this example, you can see that the original exception
+(`requests.RequestException`) was absent from the traceback.
+
 ### Good practice when handling / raising Exceptions
 
-### Others: GroupException, AssertException and more
+|:warning:| Catching generic `Exception` is considered bad practice.|
+|--:|:--|
+|:exclamation:|Doing so could result in critical error not being found.|
+
+- **Favor specific exceptions over generic ones**
+- **Provide informative error messages and avoid exceptions with no message**
+- **Favor built-in exceptions over custom exceptions**
+- **Avoid raising the `AssertionError` Exception**
+- **Raise Exception as soon as possible**
+- **Explain the raised exceptions in your code's documentation**
+
+> `AssertionError` are raise in test, that's why they should be raise manually in
+your code.
+
+#### Error message writing convention
+
+When writing error message follow these rules:
+
+- Message start with lowercase letter and don't end with a period
+- Error message should clearly and concisely describe what is the issue that caused
+the exception to be raised.
+- Remember that the message needs to be specific enough to help the developer in
+in the debugging process
+
+|:warning:|Error Message|
+|--|:--|
+|:x:|"Invalid age."|
+|:white_check_mark:|"age must not be negative"|
+
+#### Creating Costum Exception Convention
+
+|:warning:| Convention to follow while creating custom exception|
+|:--|--|
+|:point_right:| naming convention for class ([CapWords convention](https://peps.python.org/pep-0008/#class-names))|
+|:point_right:| Add the suffix `Error` when representing an error|
+|:point_right:| Don't add suffix for non-error exceptions|
+|:point_right:| Add the `Warning` suffix when defining custom warning|
+
+#### Document
+
+It is considered best practice to list and document all the exceptions your code
+can raise with a brief description and how the users can handle them.
 
 ## Python: Gérer et soulever des erreurs
 
@@ -101,65 +567,451 @@ Here a list of the principal exception's attributes:
 
 ### Qu'est-ce qu'une Exception
 
-Une `Exception` en Python indique qu'un événement s'est mal exécuté dans votre code.
-La cause peut prendre la forme d'une erreur (le cas classique), d'un avertissement
-(`Warning`) ou encore d'une situation exceptionnelle.
+Une exception en Python indique qu’il y a eu un problème dans votre code. Elle
+peut prendre la forme d’une erreur (cas classique), d’un avertissement ou d’une
+situation exceptionnelle.
 
-> :grey_exclamation: Veuillez noter que toutes les exceptions en Python ne sont
-pas des erreurs. Le meilleur exemple est l'objet
-[`StopIteration`](https://docs.python.org/3/library/exceptions.html#StopIteration)
-qui est une sousclasse d'`Exception.`
+> :grey_exclamation: Notez que toutes les exceptions en Python ne sont pas des erreurs. Le meilleur exemple est l’objet [`StopIteration`](https://docs.python.org/3/library/exceptions.html#StopIteration), qui est une sous-classe de `Exception`
 
-Quand une `Exception` représente une erreur, il est standard de lui ajouter le
-suffixe `Error` à son nom. Exemple :
+Lorsqu'une `Exception` représente une erreur, il est courant d'ajouter le suffixe
+`Error` à son nom. Exemple :
 
 - `ValueError`, `DivisionByZeroError`, etc.
 
-Quand l'exception doit être un avertissement, Python offre la classe `Warning` pour
-lever des alertes sur des conditions qui ne nécessite pas de fermer le programme.
+Lorsqu'une `Exception` représente un avertissement, Python propose la classe `Warning`
+pour signaler des conditions qui ne nécessitent pas l'arrêt du programme.
 
-#### Créer une Exception exemple
+Il existe deux types d'exceptions en Python :
+
+- Exceptions intégrées : Ces exceptions sont intégrées dans le langage.
+- Exceptions définies par l'utilisateur : Des exceptions personnalisées définies
+par les développeurs. Elles se trouvent généralement dans un module spécifique
+pour un projet donné.
+
+> Vous pouvez trouver la hiérarchie des exceptions intégrées [ici](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
+
+#### Création d'exception définie par l'utilisateur exemple
 
 ```python
-# Toujours Exception pour votre code
-# N'utiliser pas BaseException
+# Toujours utilisé la classe Exception
+# Ne pas utiliser la classe BaseException
 class MyException(Exception):
     pass
 
-# Pour des exemples, suivez le lien des erreurs
+# Pour des exemples, voir les liens des exceptions
 class MyExceptionError(Exception):
     pass
 
-# UserWarning est pour les avertissements générés par le code du développeur
-# Warning est la classe de base pour les avertissements
+# UserWarnong est la classe pour générer des avertissements
+# Warning est la classe de base pour tous les avertissements
 class MyWarning(UserWarning):
     pass
 ```
 
-Voici une liste des attributs principaux d'une exception :
+> En Python, il est courant de créer une classe fictive pour les exceptions en utilisant
+le mot-clé `pass`, car le nom de la classe est l’élément le plus important.
+
+|:warning:| En Python, un bon nom d’exception personnalisée communique le problème sous-jacent|
+|--|:--|
+|:x:| GenericException(Exception)|
+|:white_check_mark:| SpecificToProjectException(Exception)|
+
+Voici une liste des attributs principaux des exceptions :
 
 |Attributs|Type|Actions|
 |--|--|--|
-|`__traceback__`|dunder attribute|hold the traceback object of the exception|
-|`__cause__`|dunder attribute|store the expression passed to the `from` keyword when chaining exceptions|
-|`.with_traceback()`|methods|allows the developer to give a new traceback to the exceptions. Return the updated exception object|
-|`.add_notes()`|methods|allows the developer to add notes to the exception traceback. Those note can be access with the `__note__` attribute|
+|`args`|tuple or string|Contient toutes les valeurs passé en argument à la classe durant l'instanciation|
+|`__traceback__`|dunder attribute|Contient l'object traceback de l'exception|
+|`__cause__`|dunder attribute|Contient l'expression passé au mot-clé `from` lorsqu'on lie  des exceptions ensembles|
+|`.with_traceback()`|methodes|Permet au développeur de donner un nouveau traceback à l'exception. Retourne l'object mis à jour.|
+|`.add_notes()`|methodes|Permet au développeur d'ajouter des notes à l'objet traceback. Ces notes sont accessibles via l'attribut `__note__`|
 
-> Un object [traceback](https://realpython.com/python-traceback/) est aussi appelé
-un Stack trace, un Stack traceback ou encore un backtrace
-> Les exceptions possèdent plus de soixante dunder attribute.
+Quand vous instanciez une exception, vous pouvez lui donner un ou plusieurs attributs.
 
+```python
+# L'instanciation habituel
+raise Exception("an error occurred")
 
-#### Link to documentation for different exception types
+# Avec plusieurs arguments
+raise Exception("an error occurred", "unexpected value", 42)
+```
+
+> Un objet [traceback](https://realpython.com/python-traceback/) est aussi appelé un Stack
+  trace, un Stack traceback et un backtrace
+> Les exceptions compte plus de 60 attributs.
+
+#### Lien vers la documentation des différents types d'exception
 
 |:warning:|:boom:|:interrobang:|
 |--|--|--|
-|[Warning](https://docs.python.org/3/library/warnings.html#warning-categories)|[Erreur](https://docs.python.org/3/library/exceptions.html#concrete-exceptions)|[Exception](https://docs.python.org/3/library/exceptions.html#Exception)|
+|[Warning](https://docs.python.org/3/library/warnings.html#warning-categories)|[Error](https://docs.python.org/3/library/exceptions.html#concrete-exceptions)|[Exception](https://docs.python.org/3/library/exceptions.html#Exception)|
 
 ### Différentes façon de gérer une Exception
 
+#### 3 étape pour gérer les exceptions
+
+1. **Prédisez quelles exceptions peuvent se produire**. Vous pouvez même provoquer
+volontairement l'échec du programme pour découvrir quelles exceptions sont levées.
+1. Si vous utilisez une **exception personnalisée**, utilisez le mot-clé `raise`.
+1. **Déterminez où l'exception doit être gérée dans votre code**.
+
+#### Gérer les exceptions exemple
+
+Gestion générique des exceptions.
+
+```python
+couleurs = ["rouge", "bleu", "vert"]
+
+try:
+    couleurs[10]
+except IndexError:
+    print("votre liste ne possède pas cet index :-(")
+```
+
+Vous pouvez aussi gérer plusieurs erreur dans la même déclaration.
+
+```python
+couleurs = ["rouge", "bleu", "vert"]
+
+try:
+  couleurs[10]
+except (ValueError, IndexError) as erreur:
+  if isinstance(ValueError, erreur):
+    print("cette erreur est une erreur de valeur")
+
+  if isinstance(IndexError, error):
+    print("cette erreur est une erreur d'index")
+```
+
+Lors de la gestion d'exception, vous voudrez peut-être effectuer des actions supplémentaires
+avant de lever l’erreur.
+
+```python
+>>> import logging
+>>> try:
+...     result = 42 / 0
+... except Exception as erreur:
+...     logging.error(erreur)
+...     raise
+
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module> # will only appear if 'raise error' was called
+  File "<stdin>", line 2, in <module>
+ZeroDivisionError: division by zero
+```
+
+#### Les Exceptions de groupes
+
+Une exception de group ou `ExceptionGroup` est une sous classe d'`Exception` qui
+utilise la syntaxe `except*`. L'objet traceback sera alors différent.
+
+```python
+>>> raise ExceptionGroup(
+...  "plusieurs erreurs",
+...  [
+...    ValueError("valeur invalide"),
+...    TypeError("type invalide"),
+...    KeyError("clé manquante")
+...  ]
+... )
+...
+  + Exception Group Traceback (most recent call last):
+  |   File "<stdin>", line 1, in <module>
+  | ExceptionGroup: several errors (3 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | ValueError: invalid value
+    +---------------- 2 ----------------
+    | TypeError: invalid type
+    +---------------- 3 ----------------
+    | KeyError: 'missing key'
+    +------------------------------------
+```
+
+Lorsque vous attrapé des `ExceptionGroup`, vous pouvez utilisé la syntaxe `except*`...
+
+```python
+>>> raise ExceptionGroup(
+...  "plusieurs erreurs",
+...  [
+...    ValueError("valeur invalide"),
+...    TypeError("type invalide"),
+...    KeyError("clé manquante")
+...  ]
+... )
+...
+... except* ValueError:
+...     print("Handling ValueError")
+... except* TypeError:
+...     print("Handling TypeError")
+... except* KeyError:
+...     print("Handling KeyError")
+...
+Handling ValueError
+Handling TypeError
+Handling KeyError
+```
+
+... ou l'attrapé comme une autre exception.
+
+```python
+>>> try:
+...     raise ExceptionGroup(
+...         "several errors",
+...         [
+...             ValueError("invalid value"),
+...             TypeError("invalid type"),
+...             KeyError("missing key"),
+...         ]
+...     )
+... except ExceptionGroup:
+...     print("Got an exception group!")
+...
+Got an exception group!
+```
+
 ### Différentes façon de lever une Exception
+
+```python
+# grades.py
+
+# Creer son exception personnalisé
+class GradeValueError(Exception):
+  pass
+
+def calculate_avergae_grade(grades):
+  total = 0
+  count = 0
+  for grade in grades:
+    if grade < 0 or grade > 100:
+      # Lever l'exception personnalisé
+      raise GradeValueError(
+        "grade values must be between 0 and 100 inclusive"
+      )
+    total += grade
+    count += 1
+  return round(total / count, 2)
+```
+
+> Ici on aurait pu utiliser ValueError, mais GradeValueError est plus spécifique
+et décrit mieux l'erreur qu'on veut lancer.
+
+Vous devriez lever une exception lorsque :
+
+- Vous sginalez des erreurs ou une situation exceptionnelle
+- Vous soulevez de nouveau une exception après avoir fait d'autres opération (par
+exemple: du logging)
+
+> Python encourage l'approche **Easier to ask forgivness than permission (EAFP)**
+plutôt que l'approche **Look before you lead (LBYL)**.
+
+|:bookmark_tabs:| C'est au développeur de décider du bon moment pour gérer une exception.|
+|:--|:--|
+
+#### Utilisation du mot clé `raise`
+
+##### Seul
+
+```python
+def some_func(arg):
+    try:
+        do_something(arg)
+    except Exception as error:
+        logging.error(error)
+        raise
+    # Ici on le mot clé "raise" soulève de nouveau l'Exception qui a été soulevé
+    # par do_something
+```
+
+##### Conditionnelle
+
+```python
+>>> from math import sqrt
+
+>>> def is_prime(number):
+...     if not isinstance(number, int):
+...         raise TypeError(
+...             f"s'attend a un integer, reçoit {type(number).__name__}"
+...         )
+...     if number < 2:
+...         raise ValueError(f"s'attend à un integer au-dessus de 1, reçoit {number}")
+...     for candidate in range(2, int(sqrt(number)) + 1):
+...         if number % candidate == 0:
+...             return False
+...     return True
+...
+```
+
+|:white_check_mark:|Lever des exceptions rapidement, avant d'effectuer des opérations importantes constituent une bonne pratique.|
+|--|:--|
+
+##### Envolepper des exceptions ensemble
+
+```python
+>>> class MathLibraryError(Exception):
+...     pass
+...
+
+>>> def divide(a, b):
+...     try:
+...         return a / b
+...     except ZeroDivisionError as error:
+...         raise MathLibraryError(error)
+...
+
+>>> divide(1, 0)
+Traceback (most recent call last):
+  File "<stdin>", line 3, in divide
+ZeroDivisionError: division by zero
+
+During the handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 5, in divide
+MathLibraryError: division by zero
+```
+
+|:exclamation:| Même si l'exemple peut vraiment améliorer votre code, la clause `from ` offre de meilleure alternative.|
+|--|:--|
+
+#### Utilisation de la clause `from`
+
+The optional clause `from` allows the developers to chain another exception
+to the active one.
+
+If the argument pass to `from` is an instance of an exception, it will directly attach
+itself to the dunder attribute `.__cause__`, if it's an exception class, Python will
+instantiate it before attaching it to `.__cause__`.
+
+When using `from`, you can expect to have both exception tracebacks on the screen.
+
+```python
+>>> try:
+...     result = 42 / 0
+... except Exception as error:
+...     raise ValueError("operation not allowed") from error
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+ZeroDivisionError: division by zero
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+ValueError: operation not allowed
+```
+
+In this example, Python will directly indicate that the first error
+(`ZeroDivisionError`) is the reason for the second error (`ValueError`). It is
+very useful when writing code that can raise multiple types of exceptions. For
+example:
+
+```python
+>>> def divide(x, y):
+...     for arg in (x, y):
+...         if not isinstance(arg, int | float):
+...             raise TypeError(
+...                 f"number expected, got {type(arg).__name__}"
+...             )
+...     if y == 0:
+...         raise ValueError("denominator can't be zero")
+...     return x / y
+...
+```
+
+The divide function here raises different types of error: `TypeError` and
+`ValueError`. Here's how it will behave with the `from` clause for `raise`:
+
+```python
+>>> try:
+...     divide(42, 0)
+... except Exception as error:
+...     raise ValueError("invalid argument") from error
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+  File "<stdin>", line 6, in divide
+ValueError: denominator can't be zero
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+ValueError: invalid argument
+
+>>> try:
+...     divide("One", 42)
+... except Exception as error:
+...     raise ValueError("invalid argument") from error
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+  File "<stdin>", line 4, in divide
+TypeError: number expected, got str
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+ValueError: invalid argument
+```
+
+> Without `from`, the traceback will not indicates a direct link between the errors.
+
+|With `from` | Without `from`|
+|:--|:--|
+|The above exception was the direct cause of the following exception | During handling of the above exception, another exception occurred|
+
+##### With None
+
+You want to use the argument `None` with `from` when you want to suppress
+built-in traceback from custom error or when the original traceback is not
+necessary or informative. A use case is a package to consume an external REST
+API where you don't want to expose the `requests` library (or `urllib3` library)
+exception.
+
+```python
+>>> import requests
+
+>>> class APIError(Exception):
+...     pass
+...
+
+>>> def call_external_api(url):
+...     try:
+...         response = requests.get(url)
+...         response.raise_for_status()
+...         data = response.json()
+...     except requests.RequestException as error:
+...         raise APIError(f"{error}") from None
+...     return data
+...
+
+>>> call_external_api("https://api.github.com/events")
+[
+    {
+        'id': '29376567903',
+        'type': 'PushEvent',
+    ...
+]
+
+>>> # No error happened
+
+>>> call_external_api("https://api.github.com/event")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 7, in call_external_api
+__main__.APIError: 404 Client Error: Not Found for url:
+  https://api.github.com/event
+
+>>> # An error happened
+```
+
+With this example, you can see that the original exception
+(`requests.RequestException`) was absent from the traceback.
 
 ### Les bonnes pratiques lorsqu'on lève / gère des Exceptions
 
-### Autres : GroupException, AssertException et plus
+[Revenir en haut](#python-gérer-et-soulever-des-erreurs)
