@@ -83,8 +83,8 @@ raise [expression [from another_expression]]
 #...
 ```
 
-|:warning:| A `raise` keyword with no argument and no exception raised beforehand will lead to a RuntimeError exception since no exceptions are raised or reraised.|
-|:--:|:--|
+:warning: A `raise` keyword with no argument and no exception raised beforehand
+will lead to a RuntimeError exception since no exceptions are raised or reraised.
 
 > The `raise` keyword can take any expression that returns an exception class or
 > instance.
@@ -113,7 +113,7 @@ raise MyException("an error occurred")
 
 #### Error message writing convention
 
-|:warning:| In Python, it is considered common practice that error messages start with a lowercase letter and don't end with a period|
+|:warning:|Error messages start with a lowercase letter and don't end with a period|
 |--|:--|
 |:x:| "An error occurred here."|
 |:white_check_mark:| "an error occurred here"|
@@ -149,8 +149,8 @@ Exception classes also have two methods:
 
 |methods | actions|
 |--|--|
-|exception.with_traceback() | allows the developer to give a new trackback to the exception. Return the updated exception object|
-|exception.add_notes() | allows the developer to add notes to the exception traceback. Those note can be access with the `.__notes__` dunder (or specials) attribute|
+|exception.with_traceback() | Update the exception's traceback object|
+|exception.add_notes() | Add notes to the exception traceback. (`__note__`)|
 
 > These functions help provide more context to the other developer
 
@@ -161,7 +161,6 @@ Exceptions also have lots of dunder attributes. The useful ones are
 |--|--|
 |`.__traceback__` | hold the traceback object of the exception|
 |`.__cause__` | store the expression passed to the `from` class when chaining exceptions|
-
 
 ### Choosing the Exception to Raise: built-in vs Custom
 
@@ -227,7 +226,7 @@ def calculate_average_grade(grades):
 > with the keyword `pass` as the most important feature of the class is its
 > name.
 
-|:warning:| In Python, a custom exception name needs to communicate the underlying issue|
+|:warning:| A custom exception name needs to communicate the underlying issue|
 |--|:--|
 |:x:| GenericException(Exception)|
 |:white_check_mark:| SpecificToProjectException(Exception)|
@@ -298,8 +297,8 @@ than two and an integer.
 ...
 ```
 
-|:white_check_mark:| Raising exceptions early, like in this example where errors are raised before doing any computation, is considered best practice.|
-|--|:--|
+:white_check_mark: Raising exceptions early, like in this example where errors are
+raised before doing any computation, is considered best practice.
 
 ### Reraising a Previous Exception
 
@@ -323,8 +322,9 @@ Traceback (most recent call last):
 ZeroDivisionError: division by zero
 ```
 
-|:warning:| Catching generic `Exception` is considered bad practice. Doing so could result in critical error not being found|
+|:warning:| Catching generic `Exception` is considered bad practice.|
 |--|:--|
+|:exclamation:|Doing so could result in critical error not being found|
 
 Another use case is when you want to wrap one exception in another or intercept
 and translate the exception into a different one.
@@ -369,8 +369,8 @@ In this example, we catch the `ZeroDivisionError` and wrap it in the
 - **Augmenting the context of a caught exception**: When the error or exception
   lacks context, you can add it and then reraise the exception.
 
-|:exclamation:| Even if the above can greatly improve your code, the `from` syntax often offers better alternatives.|
-|--|:--|
+:exclamation: Even if the above can greatly improve your code, the `from` syntax
+often offers better alternatives.
 
 ### Chaining Exceptions With the `from` Clause
 
@@ -459,9 +459,10 @@ ValueError: invalid argument
 > If your note using from the message will be different. Without `from`, the
 > traceback indicates a direct link between the two errors.
 
-|With `from` | Without `from`|
-|:--|:--|
-|The above exception was the direct cause of the following exception | During handling of the above exception, another exception occurred|
+- With `from`:
+  - The above exception was the direct cause of the following exception
+- Without `from`:
+  - During handling of the above exception, another exception occurred
 
 #### Using `from` with `None`
 
@@ -525,7 +526,11 @@ With this example, you can see that the original exception
 
 #### Error Message
 
-|:warning:| Error message should clearly and concisely describe what is the issue that caused the exception to be raised. Remember that the message needs to be specific enough to help the developer in the debugging process.|
+Error message should clearly and concisely describe what is the issue that
+caused the exception to be raised. Remember that the message needs to be
+specific enough to help the developer in the debugging process.
+
+|:warning:| Error Message|
 |--|:--|
 |:x:|"invalid age"|
 |:white_check_mark:|"age must not be negative"|
