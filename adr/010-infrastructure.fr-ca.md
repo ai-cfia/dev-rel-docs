@@ -82,8 +82,7 @@ divers cas d'utilisation
 - Gestion des environnements de developpement: vcluster
 - Gestion des machine virtuelles, au besoin: KubeVirt
 - Gestion des environnements de développement: Coder
-- Gestion d'authentification des utilisateurs: Ori network (Ori Oathkeeper, Ori
-  Kratos)
+- Gestion d'authentification des utilisateurs: Vouch-proxy
 - Gestion de l'instrumentation des applications: OpenTelemetry et Clickhouse
 - Gestion du monitoring: Grafana et Prometheus pour collecter des métriques
   spécifiques aux applications déployées avec Helm
@@ -97,15 +96,55 @@ Cette section présente les différentes options ou solutions considérées avan
 d'arriver à la décision finale. Chaque alternative est généralement discutée
 dans une sous-section.
 
-### Mozilla SOPS
+### Ori network (Ori Oathkeeper, Ori Kratos)
 
 Avantages :
 
-- Aspects positifs de cette alternative.
+- Ori Oathkeeper est un proxy d'authentification et d'autorisation qui peut être
+  utilisé pour gérer l'authentification des utilisateurs et des services de
+  facons centralisée. Ori Kratos est un service d'identité et d'accès qui peut
+  être utilisé pour gérer les utilisateurs et les rôles de manière centralisée.
+  L'avantage de ces solutions est qu'elles peuvent être utilisées comme solution
+  complète pour gérer l'authentification et l'autorisation des utilisateurs et
+  des services.
 
 Inconvénients :
 
-- Aspects négatifs de cette alternative.
+- Ori Oathkeeper et Ori Kratos sont des solutions relativement nouvelles et se
+  sont avérées moins matures que d'autres solutions d'authentification. Nous
+  avons essayer un déploiement de Kratos et avons rencontré des problèmes de
+  configuration entre autres. La documentation est également moins complète que
+  celle de d'autres solutions.
+
+### Oauth2-Proxy
+
+Avantages :
+
+- Oauth2-Proxy est un proxy d'authentification qui peut être utilisé pour gérer
+  l'authentification des utilisateurs et peut être configuré avec le ingress
+  NGINX.
+
+Inconvénients :
+
+- Oauth2-Proxy est configurable pour gérer l'authentification 1 pour 1, mais
+  n'est pas conçu pour gérer l'authentification de manière centralisée pour
+  plusieurs services. Vouch-proxy est une alternative plus adaptée à nos besoins
+  de gestion d'authentification centralisée.
+
+### Mozilla SOPS'
+
+Avantages :
+
+- SOPS est un outil de gestion de secrets qui permet de chiffrer/déchiffrer le
+  contenu d'un fichier avec une clé dérivée d'AWS, KMS, GCP KMS, Azure Key Vault
+  ou PGP, garantissant que les secrets sont toujours chiffrés et peuvent être
+  facilement intégrés dans les systèmes de contrôle de version.
+
+Inconvénients :
+
+- SOPS n'est pas une solution de gestion de secrets qui remplit tous nos besoin
+  de facon autonome. Il ne gère pas le stockage de secret dans un endroit
+  centralisé, ni la rotation des secrets.
 
 ### Contour
 
@@ -131,11 +170,18 @@ Inconvénients :
 
 Avantages :
 
-- Aspects positifs de cette alternative.
+- Traefik simplifie la configuration automatique et la reconfiguration dynamique
+  de certificat SSL. il s'intègre bien avec Kubernetes en gèrant automatiquement
+  les certificats SSL/TLS via Let's Encrypt.
 
 Inconvénients :
 
-- Aspects négatifs de cette alternative.
+- Étant donné que notre cluster Kubernetes est hébergé sur Azure (AKS), nous
+  avons favorisé NGINX Ingress Controller, qui est plus largement utilisé et
+  permet une meilleure intégration avec Azure. On a également préférré NGINX
+  Ingress Controller pour sa capacité à gérer l'authentification des
+  utilisateurs avec la possibilité de configurer des règles d'authentification
+  pour les services.
 
 ### HAProxy Ingress
 
