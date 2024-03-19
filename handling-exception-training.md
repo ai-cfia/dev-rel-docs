@@ -18,6 +18,7 @@
 |[Different ways of handling an Exception](#different-ways-of-handling-an-exception)| [Différentes façon de gérer une Exception](#différentes-façon-de-gérer-une-exception)|
 |[Different ways of raising an Exception](#different-ways-of-raising-an-exception)| [Différentes façon de lever une Exception](#différentes-façon-de-lever-une-exception)|
 |[Good practice when handling / raising Exceptions](#good-practice-when-handling--raising-exceptions)|[Les bonnes pratiques lorsqu'on lève / gère des Exceptions](#les-bonnes-pratiques-lorsquon-lève--gère-des-exceptions)|
+|[Annexe](#annexe-1)|[Annexe](#annexe-1)|
 
 ## Before starting
 
@@ -162,75 +163,6 @@ Traceback (most recent call last):
   File "<stdin>", line 5, in <module> # will only appear if 'raise error' was called
   File "<stdin>", line 2, in <module>
 ZeroDivisionError: division by zero
-```
-
-#### ExceptionGroup
-
-A ExceptionGroup is a subclass of Exception that use the `except*` syntaxe. The
-traceback will have a different syntax.
-
-```python
->>> raise ExceptionGroup(
-...  "several errors",
-...  [
-...    ValueError("invalide value"),
-...    TypeError("invalide type"),
-...    KeyError("missing key")
-...  ]
-... )
-...
-  + Exception Group Traceback (most recent call last):
-  |   File "<stdin>", line 1, in <module>
-  | ExceptionGroup: several errors (3 sub-exceptions)
-  +-+---------------- 1 ----------------
-    | ValueError: invalid value
-    +---------------- 2 ----------------
-    | TypeError: invalid type
-    +---------------- 3 ----------------
-    | KeyError: 'missing key'
-    +------------------------------------
-```
-
-When catching ExceptionGroup, you can use the `except*` syntaxe...
-
-```python
->>> try:
-...     raise ExceptionGroup(
-...         "several errors",
-...         [
-...             ValueError("invalid value"),
-...             TypeError("invalid type"),
-...             KeyError("missing key"),
-...         ]
-...     )
-... except* ValueError:
-...     print("Handling ValueError")
-... except* TypeError:
-...     print("Handling TypeError")
-... except* KeyError:
-...     print("Handling KeyError")
-...
-Handling ValueError
-Handling TypeError
-Handling KeyError
-```
-
-... or catch them like any other exception.
-
-```python
->>> try:
-...     raise ExceptionGroup(
-...         "several errors",
-...         [
-...             ValueError("invalid value"),
-...             TypeError("invalid type"),
-...             KeyError("missing key"),
-...         ]
-...     )
-... except ExceptionGroup:
-...     print("Got an exception group!")
-...
-Got an exception group!
 ```
 
 ### Different ways of raising an Exception
@@ -702,75 +634,6 @@ Traceback (most recent call last):
 ZeroDivisionError: division by zero
 ```
 
-#### Les Exceptions de groupes
-
-Une exception de group ou `ExceptionGroup` est une sous classe d'`Exception` qui
-utilise la syntaxe `except*`. L'objet traceback sera alors différent.
-
-```python
->>> raise ExceptionGroup(
-...  "plusieurs erreurs",
-...  [
-...    ValueError("valeur invalide"),
-...    TypeError("type invalide"),
-...    KeyError("clé manquante")
-...  ]
-... )
-...
-  + Exception Group Traceback (most recent call last):
-  |   File "<stdin>", line 1, in <module>
-  | ExceptionGroup: several errors (3 sub-exceptions)
-  +-+---------------- 1 ----------------
-    | ValueError: valeur invalide
-    +---------------- 2 ----------------
-    | TypeError: type invalide
-    +---------------- 3 ----------------
-    | KeyError: 'clé manquante'
-    +------------------------------------
-```
-
-Lorsque vous attrapé des `ExceptionGroup`, vous pouvez utilisé la syntaxe `except*`...
-
-```python
->>> raise ExceptionGroup(
-...  "plusieurs erreurs",
-...  [
-...    ValueError("valeur invalide"),
-...    TypeError("type invalide"),
-...    KeyError("clé manquante")
-...  ]
-... )
-...
-... except* ValueError:
-...     print("Handling ValueError")
-... except* TypeError:
-...     print("Handling TypeError")
-... except* KeyError:
-...     print("Handling KeyError")
-...
-Handling ValueError
-Handling TypeError
-Handling KeyError
-```
-
-... ou l'attraper comme une autre exception.
-
-```python
->>> try:
-...     raise ExceptionGroup(
-...         "several errors",
-...         [
-...             ValueError("invalid value"),
-...             TypeError("invalid type"),
-...             KeyError("missing key"),
-...         ]
-...     )
-... except ExceptionGroup:
-...     print("Got an exception group!")
-...
-Got an exception group!
-```
-
 ### Différentes façon de lever une Exception
 
 ```python
@@ -1062,3 +925,81 @@ les exceptions que votre code peut générer, avec une brève description et des
 indications sur la manière dont les utilisateurs peuvent les gérer.
 
 [Revenir en haut](#python-gérer-et-soulever-des-erreurs)
+
+## Annexe 1
+
+### ExceptionGroup
+
+A ExceptionGroup is a subclass of Exception that use the `except*` syntaxe. The
+traceback will have a different syntax.
+
+Une exception de group ou `ExceptionGroup` est une sous classe d'`Exception` qui
+utilise la syntaxe `except*`. L'objet traceback sera alors différent.
+
+```python
+>>> raise ExceptionGroup(
+...  "several errors",
+...  [
+...    ValueError("invalid value"),
+...    TypeError("invalid type"),
+...    KeyError("missing key")
+...  ]
+... )
+...
+  + Exception Group Traceback (most recent call last):
+  |   File "<stdin>", line 1, in <module>
+  | ExceptionGroup: several errors (3 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | ValueError: invalid value
+    +---------------- 2 ----------------
+    | TypeError: invalid type
+    +---------------- 3 ----------------
+    | KeyError: 'missing key'
+    +------------------------------------
+```
+
+When catching ExceptionGroup, you can use the `except*` syntaxe...
+
+Lorsque vous attrapé des `ExceptionGroup`, vous pouvez utilisé la syntaxe `except*`...
+
+```python
+>>> try:
+...     raise ExceptionGroup(
+...         "several errors",
+...         [
+...             ValueError("invalid value"),
+...             TypeError("invalid type"),
+...             KeyError("missing key"),
+...         ]
+...     )
+... except* ValueError:
+...     print("Handling ValueError")
+... except* TypeError:
+...     print("Handling TypeError")
+... except* KeyError:
+...     print("Handling KeyError")
+...
+Handling ValueError
+Handling TypeError
+Handling KeyError
+```
+
+... or catch them like any other exception.
+
+... ou l'attraper comme une autre exception.
+
+```python
+>>> try:
+...     raise ExceptionGroup(
+...         "several errors",
+...         [
+...             ValueError("invalid value"),
+...             TypeError("invalid type"),
+...             KeyError("missing key"),
+...         ]
+...     )
+... except ExceptionGroup:
+...     print("Got an exception group!")
+...
+Got an exception group!
+```
