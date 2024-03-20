@@ -9,37 +9,36 @@ developers closely associated with our projects.
 * [Training for new developers](TRAINING.md) - a curriculum to train new team
   members on the basics
 
-* [Architecture Decision Records](./adr/index.md)** - A list of all our ADRs.
+* [Architecture Decision Records](./adr/index.md) - A list of all our ADRs.
 
 * [Development Environment Setup
-  Guide](./Development-Environment-Setup-Guide/DEV-ENV-SETUP.md)** - A guide to
+  Guide](./Development-Environment-Setup-Guide/DEV-ENV-SETUP.md) - A guide to
   setting up a development environment with Dev Containers.
 
-* [TypeScript React Setup Guide](./TypeScript-React-Setup-Guide/REACTSETUP.md)**
-  \-A comprehensive guide to setting up a TypeScript React project with ESLint
+* [TypeScript React Setup Guide](./TypeScript-React-Setup-Guide/REACTSETUP.md)
+  \- A comprehensive guide to setting up a TypeScript React project with ESLint
   and Prettier.
 
-* [TypeScript App Versioning
-  Guide](./TypeScript-AppVersion/APPVERSION-SETUP.md)** - Guide to Setting Up
-  Application Versioning in a TypeScript React Project.
+* [TypeScript App Versioning Guide](./TypeScript-AppVersion/APPVERSION-SETUP.md)
+  \- Guide to Setting Up Application Versioning in a TypeScript React Project.
 
 * [Minimal Python Backend Setup
-  Guide](./Minimal-Backend-Setup-Guides/PYTHON-BACKEND-SETUP.md)** - A guide to
+  Guide](./Minimal-Backend-Setup-Guides/PYTHON-BACKEND-SETUP.md) - A guide to
   quickly spinning up a minimal python backend using Flask, including dev
   containers configurations.
 
-* [Naming things](./Naming-Conventions/NAMING-RESOURCES.md)** - A document
-  outlining standard naming conventions for resources.
+* [Naming things](./adr/008-naming-convention.md) - A document outlining
+  standard naming conventions for resources.
 
 * [TypeScript Environment Variables Setup
-  Guide](./TypeScript-EnvironmentVariables/ENVIRONMENT-VARIABLES-SETUP.md)** -
+  Guide](./TypeScript-EnvironmentVariables/ENVIRONMENT-VARIABLES-SETUP.md) -
   Documentation that provides step-by-step instructions on how to set up and
   effectively manage environment variables in a TypeScript project. The guide
   emphasizes best practices, security considerations, and offers a structured
   approach to seamlessly integrate environment variables into your development
   workflow.
 
-* [CONTRIBUTING.md](https://github.com/ai-cfia/.github/blob/main/profile/CONTRIBUTING.md)**
+* [CONTRIBUTING.md](https://github.com/ai-cfia/.github/blob/main/profile/CONTRIBUTING.md)
   \- This document provides detailed guidelines for contributing to all
   repositories in the AI Lab GitHub. It includes information on best practices,
   code submission processes, and how to propose changes or improvements. We
@@ -48,6 +47,6 @@ developers closely associated with our projects.
 ---
 
 We hope you find the Developer Relative Documentation helpful and engaging. If
-you have any questions or need assistance, please reach out to the Ai-CFIA team.
+you have any questions or need assistance, please reach out to the AI-Lab team.
 
 Happy developing!
