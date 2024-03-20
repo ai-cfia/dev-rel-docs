@@ -10,7 +10,7 @@ workflows, and other GitHub-related topics.
    patterns (e.g., lowercase, dash instead of underscore).
 1. Provide a meaningful description for your repository.
 1. Set the repository visibility to "Public".
-1. Chose as a repository template the repo-template.
+1. Chose as a repository template the [repo-template](https://github.com/ai-cfia/repo-template).
 1. After the repository is created, protect the main branch by following these
    steps:
     - Go to the repository's "Settings" tab.
@@ -22,7 +22,9 @@ workflows, and other GitHub-related topics.
         "Require approvals" and "Require review from Code Owners".
     - Click on "Collaborators and teams"
     - Add one of these teams depending on the nature of the project: "backend",
-      "data", "datascience" or "frontend".
+      "data", "datascience" or "frontend"
+    - Add write access to one of the teams if they are part of the code owners
+      file; otherwise, the file will be invalid.
 1. Follow the chapter ["Creating a Workflow"](#creating-a-workflow) to add
    GitHub actions to your repository.
 
