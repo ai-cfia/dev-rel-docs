@@ -10,7 +10,7 @@ workflows, and other GitHub-related topics.
    patterns (e.g., lowercase, dash instead of underscore).
 1. Provide a meaningful description for your repository.
 1. Set the repository visibility to "Public".
-1. Chose as a repository template the [repo-template](https://github.com/ai-cfia/repo-template).
+1. Choose as a repository template the [repo-template](https://github.com/ai-cfia/repo-template).
 1. After the repository is created, protect the main branch by following these
    steps:
     - Go to the repository's "Settings" tab.
