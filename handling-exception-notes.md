@@ -2,16 +2,16 @@
 
 ## Before starting
 
-🚧 This files is not intended to be push to the main branch of dev-rel-docs.
-It's just to give a chance for everyone to review the note I took 🚧
+🚧 This file is not intended to be pushed to the main branch of dev-rel-docs.
+It's just to give a chance for everyone to review the notes I took 🚧
 
 - [Version Française](#avant-de-commencer) :small_blue_diamond:
 - This training is aimed at the backend developer, but everybody is welcome to
   read it.
 
-|:wave: To know more| |:--| |[Pozo Ramos, L. (2023,19 juin). *Python's raise:
-Effectively Raising Exceptions in Your Code*. Real
-Python](https://realpython.com/python-raise-exception/#chaining-exceptions-with-the-from-clause)|
+:wave: To know more:
+
+- [Effectively Raising Exceptions in Your Code](https://realpython.com/python-raise-exception/#chaining-exceptions-with-the-from-clause)
 
 ### Handling Exceptional Situations in Python
 
@@ -45,8 +45,8 @@ class MyWarning(UserWarning):
 |--|--|--|
 |[Warning](https://docs.python.org/3/library/warnings.html#warning-categories)|[Error](https://docs.python.org/3/library/exceptions.html#concrete-exceptions)|[Exception](https://docs.python.org/3/library/exceptions.html#Exception)|
 
-Every exception have a [traceback](https://realpython.com/python-traceback/)
-attribute, also name:
+Every exception has a [traceback](https://realpython.com/python-traceback/)
+attribute, also named:
 
 - Stack trace,
 - Stack traceback
@@ -61,7 +61,7 @@ colors = ["red", "blue", "green"]
 
 try:
     colors[10]
-except: IndexError:
+except IndexError:
     print("Your list doesn't have that index :-(")
 ```
 
@@ -107,7 +107,7 @@ raise MyException("an error occurred")
 > The `from` clause is optional. It allows the developers to chain exceptions
 > together.
 
-|:warning:| Raising `Exception` instance is not considered best practice.|
+|:warning:| Raising an `Exception` instance is not considered best practice.|
 |--|:--|
 |:white_check_mark:| Always raise custom or built-in exceptions.|
 
@@ -456,7 +456,7 @@ Traceback (most recent call last):
 ValueError: invalid argument
 ```
 
-> If your note using from the message will be different. Without `from`, the
+> If you're not using from the message will be different. Without `from`, the
 > traceback indicates a direct link between the two errors.
 
 - With `from`:
