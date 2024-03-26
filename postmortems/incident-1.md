@@ -18,7 +18,7 @@ Final
 
 ## Executive summary
 
-https://nachet.ninebasetwo.xyz/ -> Capture (the button next to Video Feed) ->
+<https://nachet.ninebasetwo.xyz/> -> Capture (the button next to Video Feed) ->
 Load (Load an image from the sample) -> Classify
 
 Returned a 500 internal server error with the following [stack
