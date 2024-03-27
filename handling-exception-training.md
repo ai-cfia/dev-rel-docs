@@ -17,7 +17,7 @@
 |[What is an Exception](#what-is-an-exception)| [Qu'est-ce qu'une Exception](#quest-ce-quune-exception)|
 |[Different ways of handling an Exception](#different-ways-of-handling-an-exception)| [Différentes façon de gérer une Exception](#différente-façon-de-gérer-une-exception)|
 |[Different ways of raising an Exception](#different-ways-of-raising-an-exception)| [Différentes façon de lever une Exception](#différente-façon-de-lever-une-exception)|
-|[Good practice when handling / raising Exceptions](#good-practice-when-handling--raising-exceptions)|[Les bonnes pratiques lorsqu'on lève / gère des Exceptions](#les-bonnes-pratiques-lorsquon-lève--gère-des-exceptions)|
+|[Good practice when handling/raising Exceptions](#good-practice-when-handlingraising-exceptions)|[Les bonnes pratiques lorsqu'on lève / gère des Exceptions](#les-bonnes-pratiques-lorsquon-lève--gère-des-exceptions)|
 |[Annexe](#annexe-1)|[Annexe](#annexe-1)|
 
 ## Before starting
@@ -28,27 +28,27 @@
 
 ### What is an Exception
 
-An Exception in Python indicate that something went wrong in your code. It can took
-the form of either an error (classic case), a warning or an exceptional situation..
+An Exception in Python indicates that something went wrong in your code. It can take
+the form of either an error (classic case), a warning, or an exceptional situation.
 
 > :grey_exclamation: Note that not all exceptions in Python are errors. The best
 example is the
 [`StopIteration`](https://docs.python.org/3/library/exceptions.html#StopIteration)
 object which is a subclass of `Exception`
 
-When an `Exception` represent an error, it is common standard to add the
+When an `Exception` represents an error, it is common standard to add the
 `Error` suffix to its name. Example:
 
 - `ValueError`, `DivisionByZeroError`, etc.
 
-When the exception is suppose to be a `Warning`, Python offer the class `Warning`
-to raise flag on conditions that doesn't need to terminate the program.
+When the exception is supposed to be a `Warning`, Python offers the class `Warning`
+to raise the flag on conditions that don't need to terminate the program.
 
-There is two kinds of exceptions in Python:
+There are two kinds of exceptions in Python:
 
-- Built-in exceptions: Those exceptiosn are built into the language.
+- Built-in exceptions: Those exceptions are built into the language.
 - User-defined exceptions: Custom exceptions defined by the developers. They are
-tipically in a module for a specific projet
+typically in a module for a specific project
 
 > You can find the built-in exception hierarchy [here](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
 
@@ -73,12 +73,12 @@ class MyWarning(UserWarning):
 > In Python, it is common practice to create a placeholder class for exceptions
 with the keyword pass as the most important feature of the class is its name.
 
-|:warning:| In Python, a good custom exception name communicate the underlying issue|
+|:warning:| In Python, a good custom exception name communicates the underlying issue|
 |--|:--|
 |:x:| GenericException(Exception)|
 |:white_check_mark:| SpecificToProjectException(Exception)|
 
-Here a list of the principal exception's attributes:
+Here is a list of the principal exception's attributes:
 
 |Attributes|Type|Actions|
 |--|--|--|
@@ -89,21 +89,21 @@ Here a list of the principal exception's attributes:
 |`.add_notes()`|methods|Add notes to the exception traceback. (`__note__`)|
 
 When you instantiate an `Exception`, you can give it a message (string) or a tuple
-of message (tuple of string)
+of messages (tuple of string)
 
 ```python
 # The usual case
 raise Exception("an error occurred")
 
-# With multiple argument
+# With multiple arguments
 raise Exception("an error occurred", "unexpected value", 42)
 ```
 
-`.__tracback__` contain a `traceback object`
+`.__tracback__` contains a `traceback object`
 
 > A [traceback](https://realpython.com/python-traceback/) object is also call a Stack
-  trace, Stack traceback and backtrace
-> Exceptions have more than sixty dunder attribute.
+  trace, Stack traceback, and backtrace
+> Exceptions have more than sixty dunder attributes.
 
 #### Link to documentation for different exception types
 
@@ -113,10 +113,10 @@ raise Exception("an error occurred", "unexpected value", 42)
 
 ### Different ways of handling an Exception
 
-#### 3 Steps to handle exception
+#### 3 Steps to Handle Exception
 
 1. **Predict what exceptions can happen**. You can even fail the program voluntarily
-to discover what exception are raised.
+to discover what exceptions are raised.
 1. If **custom exception**, use the raise keyword.
 1. **Determine where the exception needs to be handled in your code.**
 
@@ -133,7 +133,7 @@ except IndexError:
     print("your list doesn't have that index :-(")
 ```
 
-You can also handle multiple error in the same except statement.
+You can also handle multiple errors in the same except statement.
 
 ```python
 colors = ["red", "blue", "green"]
@@ -169,7 +169,7 @@ ZeroDivisionError: division by zero
 
 #### The `raise` keyword
 
-> In Python, exceptions are raised, while other languages like Java and C++,
+> In Python, exceptions are raised, while in other languages like Java and C++,
 exceptions are thrown
 
 ```python
@@ -180,7 +180,7 @@ raise [expression [from another_expression]]
 
 > The `from` clause is optional.
 
-:warning:A `raise` keyword with no argument and no exception raised beforehand will
+:warning: A `raise` keyword with no argument and no exception raised beforehand will
 lead to a RuntimeError exception since no exceptions are raised or reraised
 
 The `raise` keyword can take any expression that returns an exception class or instance
@@ -226,7 +226,7 @@ def calculate_avergae_grade(grades):
   return round(total / count, 2)
 ```
 
-> We could have use ValueError, but GradeValueError is more specific and best describe
+> We could have used ValueError, but GradeValueError is more specific and best describe
 the error.
 
 You should raise an exception to:
@@ -234,7 +234,7 @@ You should raise an exception to:
 - Signal errors and exceptional situations
 - Reraise exception after doing some additional processing (Example: logging)
 
-> Python encourage the **Easier to ask forgivness than permission (EAFP)** over
+> Python encourages the **Easier to ask forgiveness than permission (EAFP)** over
 **Look before you lead (LBYL)**.
 
 |:bookmark_tabs:| It's up to the developer to decide when to handle the exception.|
@@ -311,11 +311,11 @@ offers better alternatives.
 The optional clause `from` allows the developers to chain another exception
 to the active one.
 
-If the argument pass to `from` is an instance of an exception, it will directly attach
-itself to the dunder attribute `.__cause__`, if it's an exception class, Python will
-instantiate it before attaching it to `.__cause__`.
+If the argument passed to `from` is an instance of an exception, it will directly
+attach itself to the dunder attribute `.__cause__`, if it's an exception class,
+Python will instantiate it before attaching it to `.__cause__`.
 
-When using `from`, you can expect to have both exception tracebacks on the screen.
+When using `from`, you can expect both exception tracebacks on the screen.
 
 ```python
 >>> try:
@@ -334,7 +334,7 @@ Traceback (most recent call last):
 ValueError: operation not allowed
 ```
 
-In this example, Python indicate that the first error (`ZeroDivisionError`) is the
+In this example, Python indicates that the first error (`ZeroDivisionError`) is the
 reason for the second error (`ValueError`). It is very useful when writing code that
 can raise multiple types of exceptions. For example:
 
@@ -388,7 +388,7 @@ Traceback (most recent call last):
 ValueError: invalid argument
 ```
 
-> Without `from`, the traceback does not indicates a direct link between the errors.
+> Without `from`, the traceback does not indicate a direct link between the errors.
 
 - With `from`:
   - The above exception was the direct cause of the following exception
@@ -443,11 +443,11 @@ __main__.APIError: 404 Client Error: Not Found for url:
 With this example, you can see that the original exception
 (`requests.RequestException`) was absent from the traceback.
 
-### Good practice when handling / raising Exceptions
+### Good practice when handling/raising Exceptions
 
 |:warning:| Catching generic `Exception` is considered bad practice.|
 |--:|:--|
-|:exclamation:|Doing so could result in critical error not being found.|
+|:exclamation:|Doing so could result in critical errors not being found.|
 
 - **Favor specific exceptions over generic ones**
 - **Provide informative error messages and avoid exceptions with no message**
@@ -456,14 +456,14 @@ With this example, you can see that the original exception
 - **Raise Exception as soon as possible**
 - **Explain the raised exceptions in your code's documentation**
 
-> `AssertionError` are raise only in test, that's why they should not be raise manually
-in your code.
+> `AssertionError` are raised only in tests, that's why they should not be raised
+manually in your code.
 
 #### Error message writing convention
 
-When writing error message follow these rules:
+When writing an error message follow these rules:
 
-- Message start with lowercase letter and don't end with a period
+- Message start with a lowercase letter and don't end with a period
 - Error message should clearly and concisely describe what is the issue that caused
 the exception to be raised.
 - Remember that the message needs to be specific enough to help the developer in
@@ -474,7 +474,7 @@ in the debugging process.
 |:x:|"Invalid age."|
 |:white_check_mark:|"age must not be negative"|
 
-#### Creating Costum Exception Convention
+#### Creating Custom Exception Convention
 
 |:warning:| Convention to follow while creating custom exception|
 |:--|--|
@@ -486,7 +486,7 @@ in the debugging process.
 #### Document
 
 It is considered best practice to list and document all the exceptions your code
-can raise with a brief description and how the users can handle them.
+can raise with a brief description of how the users can handle them.
 
 ## Python: Gérer et soulever des exceptions
 
@@ -666,7 +666,7 @@ Vous devriez lever une exception lorsque :
 - Vous soulevez de nouveau une exception après avoir fait d'autres opérations (par
 exemple: du logging)
 
-> Python encourage l'approche **Easier to ask forgivness than permission (EAFP)**
+> Python encourage l'approche **Easier to ask forgiveness than permission (EAFP)**
 plutôt que l'approche **Look before you lead (LBYL)**.
 
 |:bookmark_tabs:|C'est au développeur de décider du bon moment pour gérer une exception.|
