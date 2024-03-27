@@ -15,8 +15,8 @@
 |Chapters|Chapitres|
 |--|--|
 |[What is an Exception](#what-is-an-exception)| [Qu'est-ce qu'une Exception](#quest-ce-quune-exception)|
-|[Different ways of handling an Exception](#different-ways-of-handling-an-exception)| [Différentes façon de gérer une Exception](#différentes-façon-de-gérer-une-exception)|
-|[Different ways of raising an Exception](#different-ways-of-raising-an-exception)| [Différentes façon de lever une Exception](#différentes-façon-de-lever-une-exception)|
+|[Different ways of handling an Exception](#different-ways-of-handling-an-exception)| [Différentes façon de gérer une Exception](#différente-façon-de-gérer-une-exception)|
+|[Different ways of raising an Exception](#different-ways-of-raising-an-exception)| [Différentes façon de lever une Exception](#différente-façon-de-lever-une-exception)|
 |[Good practice when handling / raising Exceptions](#good-practice-when-handling--raising-exceptions)|[Les bonnes pratiques lorsqu'on lève / gère des Exceptions](#les-bonnes-pratiques-lorsquon-lève--gère-des-exceptions)|
 |[Annexe](#annexe-1)|[Annexe](#annexe-1)|
 
@@ -488,7 +488,7 @@ in the debugging process.
 It is considered best practice to list and document all the exceptions your code
 can raise with a brief description and how the users can handle them.
 
-## Python: Gérer et soulever des erreurs
+## Python: Gérer et soulever des exceptions
 
 ### Avant de commencer
 
@@ -526,7 +526,7 @@ pour un projet donné.
 #### Création d'exception définie par l'utilisateur exemple
 
 ```python
-# Toujours utilisé la classe Exception
+# Toujours utiliser la classe Exception
 # Ne pas utiliser la classe BaseException
 class MyException(Exception):
     pass
@@ -553,16 +553,16 @@ Voici une liste des attributs principaux des exceptions :
 
 |Attributs|Type|Actions|
 |--|--|--|
-|`args`|tuple or string|Contient toutes les valeurs passé en argument à la classe|
-|`__traceback__`|dunder attribute|Contient l'object traceback de l'exception|
-|`__cause__`|dunder attribute|Contient l'expression passé au mot-clé `from`|
-|`.with_traceback()`|methodes|Met à jour l'objet traceback de l'exception.|
-|`.add_notes()`|methodes|Ajoute des notes à l'objet traceback. (`__note__`)|
+|`args`|tuple or string|Contiens toutes les valeurs passées en argument à la classe|
+|`__traceback__`|dunder attribute|Contiens l'object traceback de l'exception|
+|`__cause__`|dunder attribute|Contiens l'expression passée au mot-clé `from`|
+|`.with_traceback()`|methodes|Mets à jour l'objet traceback de l'exception|
+|`.add_notes()`|methodes|Ajoute des notes à l'objet traceback (`__note__`)|
 
 Quand vous instanciez une exception, vous pouvez lui donner un ou plusieurs attributs.
 
 ```python
-# L'instanciation habituel
+# L'instanciation habituelle
 raise Exception("an error occurred")
 
 # Avec plusieurs arguments
@@ -571,7 +571,7 @@ raise Exception("an error occurred", "unexpected value", 42)
 
 > Un objet [traceback](https://realpython.com/python-traceback/) est aussi appelé
  un Stack trace, un Stack traceback et un backtrace
-> Les exceptions compte plus de 60 attributs.
+> Les exceptions comptent plus de 60 attributs.
 
 #### Lien vers la documentation des différents types d'exception
 
@@ -579,9 +579,9 @@ raise Exception("an error occurred", "unexpected value", 42)
 |--|--|--|
 |[Warning](https://docs.python.org/3/library/warnings.html#warning-categories)|[Error](https://docs.python.org/3/library/exceptions.html#concrete-exceptions)|[Exception](https://docs.python.org/3/library/exceptions.html#Exception)|
 
-### Différentes façon de gérer une Exception
+### Différente façon de gérer une Exception
 
-#### 3 étape pour gérer les exceptions
+#### 3 étapes pour gérer les exceptions
 
 1. **Prédire quelles exceptions peuvent se produire**. Vous pouvez même provoquer
 volontairement l'échec du programme pour découvrir quelles exceptions sont levées.
@@ -601,7 +601,7 @@ except IndexError:
     print("votre liste ne possède pas cet index :-(")
 ```
 
-Vous pouvez aussi gérer plusieurs erreur dans la même déclaration.
+Vous pouvez aussi gérer plusieurs erreurs dans la même déclaration.
 
 ```python
 couleurs = ["rouge", "bleu", "vert"]
@@ -634,7 +634,7 @@ Traceback (most recent call last):
 ZeroDivisionError: division by zero
 ```
 
-### Différentes façon de lever une Exception
+### Différente façon de lever une Exception
 
 ```python
 # grades.py
@@ -662,14 +662,14 @@ et décrit mieux l'erreur qu'on veut lancer.
 
 Vous devriez lever une exception lorsque :
 
-- Vous sginalez des erreurs ou une situation exceptionnelle
+- Vous signalez des erreurs ou une situation exceptionnelle
 - Vous soulevez de nouveau une exception après avoir fait d'autres opérations (par
 exemple: du logging)
 
 > Python encourage l'approche **Easier to ask forgivness than permission (EAFP)**
 plutôt que l'approche **Look before you lead (LBYL)**.
 
-|:bookmark_tabs:| C'est au développeur de décider du bon moment pour gérer une exception.|
+|:bookmark_tabs:|C'est au développeur de décider du bon moment pour gérer une exception.|
 |:--|:--|
 
 #### Utilisation du mot clé `raise`
@@ -683,7 +683,7 @@ def some_func(arg):
     except Exception as error:
         logging.error(error)
         raise
-    # Ici on le mot clé "raise" soulève de nouveau l'Exception qui a été soulevé
+    # Ici on le mot clé "raise" soulève de nouveau l'Exception qui a été soulevée
     # par do_something
 ```
 
@@ -707,7 +707,7 @@ def some_func(arg):
 ```
 
 :white_check_mark: Lever des exceptions rapidement, avant d'effectuer des opérations
-importantes constituent une bonne pratique.
+importantes constitue une bonne pratique.
 
 ##### Envelopper des exceptions ensemble
 
@@ -737,18 +737,18 @@ MathLibraryError: division by zero
 ```
 
 :exclamation: Même si l'exemple ci-dessus peut vraiment améliorer votre code, la
-clause `from` offre de meilleure alternative.
+clause `from` offre de meilleures alternatives.
 
 #### Utilisation de la clause `from`
 
-La clause optionnelle `from` permet au développeur d'associer une exception à celle
+La clause optionnelle `from` permets au développeur d'associer une exception à celle
 qui est active.
 
 Si l'argument passé en paramètre à la clause `from` est une instance d'exception,
 celle-ci va s'attacher à l'attribut `__cause__`. S'il s'agit d'une classe d'exception,
 Python va l'instancier avant de l'attacher à l'attribut `__cause__`.
 
-Lorsque la clause `from` est utilisé, vous pouvez vous attendre à avoir le traceback
+Lorsque la clause `from` est utilisée, vous pouvez vous attendre à avoir le traceback
 des deux exceptions à la console.
 
 ```python
@@ -768,7 +768,7 @@ Traceback (most recent call last):
 ValueError: operation not allowed
 ```
 
-Dans cette exemple, Python indique la premiere erreur (`ZeroDivisionError`) est la
+Dans cet exemple, Python indique la première erreur (`ZeroDivisionError`) est la
 raison de la seconde erreur (`ValuError`). Il s'agit d'un outil très efficace pour
 écrire du code qui peut soulever plusieurs types d'exceptions. Par exemple :
 
@@ -834,7 +834,7 @@ deux erreurs.
 ##### Avec None
 
 Vous voulez utiliser l'argument `None` avec `from` quand vous ne voulez pas afficher
-le traceback `built-in` d'une erreur personnalisé ou encore lorsque le traceback
+le traceback `built-in` d'une erreur personnalisée ou encore lorsque le traceback
 original n'est pas nécessaire ou informatif. Un bon exemple, c'est un module qui
 utilise un REST API externe sans vouloir exposer les exceptions de la librairie
 `requests` (ou `urllib3`).
@@ -876,12 +876,12 @@ __main__.APIError: 404 Client Error: Not Found for url:
 >>> # Une erreur s'est produite
 ```
 
-Avec cette exemple, on remarque que l'exception d'origine (`requests.RequestException`)
-est absent du `traceback`.
+Avec cet exemple, on remarque que l'exception d'origine (`requests.RequestException`)
+est absente du `traceback`.
 
 ### Les bonnes pratiques lorsqu'on lève / gère des Exceptions
 
-|:warning:| Attraper une `Exception` générique est considéré comme une mauvaise pratique|
+|:warning:|Attraper une `Exception` générique est considéré comme une mauvaise pratique|
 |--:|:--|
 |:exclamation:|Ce comportement peut cacher des erreurs critiques.|
 
@@ -892,7 +892,7 @@ est absent du `traceback`.
 - **Levez l'exception dès que possible**
 - **Expliquez les exceptions levées dans la documentation de votre code**
 
-> Les `AssertionError` sont soulevé uniquement dans les tests, c'est pourquoi il
+> Les `AssertionError` sont soulevés uniquement dans les tests, c'est pourquoi il
 ne faut pas lever manuellement ce type d'erreur dans votre code.
 
 #### Convention d'écriture des messages d'erreur
@@ -906,17 +906,17 @@ dans le processus de débogage.
 
 |:warning:|Message d'erreur|
 |--|:--|
-|:x:|"Age invalide."|
+|:x:|"Âge invalide."|
 |:white_check_mark:|"l'âge ne peut pas être négatif"|
 
-#### Convention pour la création d'exception personnalisé
+#### Convention pour la création d'exception personnalisée
 
-|:warning:| Convention à suivre lors de la création d'exception personnalisé|
+|:warning:| Convention à suivre lors de la création d'exception personnalisée|
 |:--|--|
 |:point_right:|Convention de nommage pour les classes ([CapWords convention](https://peps.python.org/pep-0008/#class-names))|
-|:point_right:|Ajouter le suffixes `Error` quand vous représentez une erreur|
-|:point_right:|N'ajouter pas le suffixes lorsque l'exception n'est pas une erreur|
-|:point_right:|Ajouter le suffixes `Warning` lorsque vous déclarer des avertissements|
+|:point_right:|Ajouter le suffixe `Error` quand vous représentez une erreur|
+|:point_right:|Ne pas ajouter le suffixe lorsque l'exception n'est pas une erreur|
+|:point_right:|Ajouter le suffixe `Warning` lorsque vous déclarez des avertissements|
 
 #### Documenter
 
@@ -924,7 +924,7 @@ Il est considéré comme une bonne pratique de répertorier et de documenter tou
 les exceptions que votre code peut générer, avec une brève description et des
 indications sur la manière dont les utilisateurs peuvent les gérer.
 
-[Revenir en haut](#python-gérer-et-soulever-des-erreurs)
+[Revenir en haut](#python-gérer-et-soulever-des-exceptions)
 
 ## Annexe 1
 
@@ -933,7 +933,7 @@ indications sur la manière dont les utilisateurs peuvent les gérer.
 A ExceptionGroup is a subclass of Exception that use the `except*` syntaxe. The
 traceback will have a different syntax.
 
-Une exception de group ou `ExceptionGroup` est une sous classe d'`Exception` qui
+Une exception de group ou `ExceptionGroup` est une sous-classe d'`Exception` qui
 utilise la syntaxe `except*`. L'objet traceback sera alors différent.
 
 ```python
@@ -960,7 +960,7 @@ utilise la syntaxe `except*`. L'objet traceback sera alors différent.
 
 When catching ExceptionGroup, you can use the `except*` syntaxe...
 
-Lorsque vous attrapé des `ExceptionGroup`, vous pouvez utilisé la syntaxe `except*`...
+Lorsque vous attrapez des `ExceptionGroup`, vous pouvez utiliser la syntaxe `except*`...
 
 ```python
 >>> try:
