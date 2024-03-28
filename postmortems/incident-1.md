@@ -18,7 +18,7 @@ Final
 
 ## Executive summary
 
-<https://nachet.ninebasetwo.xyz/> -> Capture (the button next to Video Feed) ->
+`https://nachet.ninebasetwo.xyz/` -> Capture (the button next to Video Feed) ->
 Load (Load an image from the sample) -> Classify
 
 Returned a 500 internal server error with the following [stack
@@ -152,7 +152,7 @@ deployed by 2024-01-15 (8:00).
 communicate with the backend.
 
 **2024-01-17 (13:21):** Th link to the deployed system
-<https://nachet.ninebasetwo.xyz/> is provided to the analysts by the frontend
+`https://nachet.ninebasetwo.xyz/` is provided to the analysts by the frontend
 developer through internal Teams for review
 
 **2024-01-17 (15:00):** One of our clients claims that the classification is not
