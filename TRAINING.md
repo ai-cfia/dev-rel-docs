@@ -126,6 +126,8 @@
   * [GoC IT security risk management
     ITSG-33](https://www.cyber.gc.ca/en/guidance/it-security-risk-management-lifecycle-approach-itsg-33)
     (~15 min)
+  * [DevOps roadmap](https://roadmap.sh/devops)
+
 * Backend
   * [Build an AI web app by using Python and
     Flask](https://learn.microsoft.com/en-us/training/modules/python-flask-build-ai-web-app/)
