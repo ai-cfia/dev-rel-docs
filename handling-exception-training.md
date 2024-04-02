@@ -17,7 +17,7 @@
 |[What is an Exception](#what-is-an-exception)|
 |[Different ways of handling an Exception](#different-ways-of-handling-an-exception)|
 |[Different ways of raising an Exception](#different-ways-of-raising-an-exception)|
-|[Good practice when handling/raising Exceptions](#good-practice-when-handlingraising-exceptions)|(#les-bonnes-pratiques-lorsquon-lève--gère-des-exceptions)|
+|[Good practice when handling/raising Exceptions](#good-practice-when-handlingraising-exceptions)|
 |[Annexe](#annexe-1)|
 
 ## Before starting

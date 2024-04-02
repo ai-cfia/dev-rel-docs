@@ -15,8 +15,8 @@
 |Chapitres|
 |--|
 | [Qu'est-ce qu'une Exception](#quest-ce-quune-exception)|
-[Différentes façon de gérer une Exception](#différente-façon-de-gérer-une-exception)|
-[Différentes façon de lever une Exception](#différente-façon-de-lever-une-exception)|
+|[Différentes façon de gérer une Exception](#différente-façon-de-gérer-une-exception)|
+|[Différentes façon de lever une Exception](#différente-façon-de-lever-une-exception)|
 |[Les bonnes pratiques lorsqu'on lève / gère des Exceptions](#les-bonnes-pratiques-lorsquon-lève--gère-des-exceptions)|
 |[Annexe](#annexe-1)|
 
