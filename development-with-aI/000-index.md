@@ -15,6 +15,6 @@ AI amplifies our system's capabilities by:
 
 ### Testing with AI
 - [001 - Generate Q&A test
-  challenges](001-generate-qna-for-search-test-challenges)
+  challenges](001-generate-qna-for-search-test-challenges.md)
 - [001 - Generate Q&A test
-  implementation](001-generate-qna-for-search-test-challenges.md)
+  implementation](001-generate-qna-for-search-test-implementation.md)
