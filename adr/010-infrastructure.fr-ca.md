@@ -76,17 +76,15 @@ Notre solution consistera à déployer des clusters Kubernetes sur différents
 fournisseurs de cloud. Voici les composants qui seront déployés pour gérer
 divers cas d'utilisation
 
-- Gestion des secrets: HashiCorp Vault. Cependant, nous prévoyons d'explorer
-  d'autres solutions avant de nous engager pleinement avec Vault
-- Gestion des deployments: ArgoCD et Kustomize (nous envisageons également Flux)
-- Gestion des environnements de developpement: vcluster
-- Gestion des machine virtuelles, au besoin: KubeVirt
-- Gestion des environnements de développement: Coder
+- Gestion des secrets: HashiCorp Vault
+- Gestion des deployments: ArgoCD
+- Gestion des environnements de développement: AzureML
 - Gestion d'authentification des utilisateurs: Vouch-proxy
 - Gestion de l'instrumentation des applications: OpenTelemetry et Clickhouse
-- Gestion du monitoring: Grafana et Prometheus pour collecter des métriques
+- Gestion de l'observabilité: Grafana et Prometheus pour collecter des métriques
   spécifiques aux applications déployées avec Helm
 - Gestion du load balancing: Ingress NGINX
+- Gestion de la securité: Trivy et Falco
 
 D'autres composants seront ajoutés au besoin.
 
@@ -131,7 +129,7 @@ Inconvénients :
   plusieurs services. Vouch-proxy est une alternative plus adaptée à nos besoins
   de gestion d'authentification centralisée.
 
-### Mozilla SOPS'
+### Mozilla SOPS
 
 Avantages :
 
