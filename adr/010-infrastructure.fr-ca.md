@@ -17,11 +17,20 @@ Azure, nous nous retrouvons à basculer d'un compte à l'autre, entraînant
 d'importants temps d'arrêt pour nos applications.
 
 De plus, la création manuelle de tous les services sur les fournisseurs de cloud
-via le ClickOps s'est avérée fastidieuse. En ce qui concerne la sécurité, nous
-utilisons actuellement un [Key
-Vault](https://azure.microsoft.com/en-us/products/key-vault/) dans Azure pour
-récupérer manuellement les valeurs des variables d'environnement, mais cela ne
-constitue pas une solution optimale pour la gestion des secrets.
+via le ClickOps s'est avérée fastidieuse. Pour surmonter ce défi, , nous avons
+décidé d'adopter l'Infrastructure as Code (IaC) en utilisant Terraform. Cette
+approche nous permet de gérer et de provisionner nos infrastructures cloud via
+des fichiers de configuration codifiés, éliminant ainsi le besoin de ClickOps et
+réduisant significativement les erreurs humaines.
+
+
+En ce qui concerne la sécurité, nous avions initialement adopté [Azure Key
+Vault](https://azure.microsoft.com/en-us/products/key-vault/)  pour la
+récupération manuelle des valeurs des variables d'environnement. Cependant,
+reconnaissant la nécessité d'une solution plus robuste et polyvalente pour la
+gestion des secrets, nous avons évolué vers le maintien d'une instance de
+HashiCorp Vault. Cette transition permet une gestion centralisée des secrets et
+des identifiants à travers différents environnements et plateformes.
 
 La mise à l'echelle de nos applications n'est pas actuellement une priorité, car
 nous avons une visibilité fixe sur le nombre d'utilisateurs. Cependant, nous
@@ -48,22 +57,23 @@ résoudre rapidement le problème
 ## Cas d'utilisation
 
 - Gérer la base de données PostgreSQL (et bientôt PostgreSQL ML) sans recourir
-  au ClickOps
-- Accroître la redondance des données de manière plus efficace
+  au ClickOps.
+- Accroître la redondance des données de manière plus efficace.
 - Déployer, gérer, surveiller et instrumenter les applications au sein de
-  l'organisation
-- Améliorer la gestion des secrets
+  l'organisation.
+- Améliorer la gestion des secrets.
 - Éliminer les silos entre l'équipe de sécurité et l'équipe DevOps au sein de
   l'organisation
 - Mettre en place des déploiements sur tous les fournisseurs de cloud en cas de
   pannes. Cela inclue une persistences des données dans les différents
   fournisseurs d'infonuages.
 - Gérer une solution SSO centralisé pour authentifier les utilisateurs des
-  services hébergés
-
-- Automatisation de la mise à l'échelle (HPA) ;
-
-- Adopter une stratégie de sauvegarde et de reprise après sinistre
+  services hébergés.
+- Utiliser l'Infrastructure as Code pour automatiser la création, le
+  déploiement, et la gestion de l'infrastructure permettant la rapidité des
+  opérations d'infrastructure tout en réduisant les erreurs manuelles.
+- Automatisation de la mise à l'échelle (HPA).
+- Adopter une stratégie de sauvegarde et de reprise après sinistre.
 - Créer une documentation facile de lecture et d'adaption pour permettre une
   transition "shift-left" (Intégration anticipée et approfondie des tests, de la
   sécurité et de l'assurance qualité au début du cycle de développement
@@ -76,8 +86,9 @@ Notre solution consistera à déployer des clusters Kubernetes sur différents
 fournisseurs de cloud. Voici les composants qui seront déployés pour gérer
 divers cas d'utilisation
 
-- Gestion des secrets: HashiCorp Vault
-- Gestion des deployments: ArgoCD
+- [Gestion des secrets: HashiCorp Vault](012-secret-management.fr-ca.md)
+- [Gestion des deployments: ArgoCD](011-gitops.fr-ca.md)
+- [Gestion de l'Infrastructure as Code (IaC): Terraform](013-IaC-tool.fr-ca.md)
 - Gestion des environnements de développement: AzureML
 - Gestion d'authentification des utilisateurs: Vouch-proxy
 - Gestion de l'instrumentation des applications: OpenTelemetry et Clickhouse
