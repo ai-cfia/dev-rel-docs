@@ -140,21 +140,6 @@ Inconvénients :
   plusieurs services. Vouch-proxy est une alternative plus adaptée à nos besoins
   de gestion d'authentification centralisée.
 
-### Mozilla SOPS
-
-Avantages :
-
-- SOPS est un outil de gestion de secrets qui permet de chiffrer/déchiffrer le
-  contenu d'un fichier avec une clé dérivée d'AWS, KMS, GCP KMS, Azure Key Vault
-  ou PGP, garantissant que les secrets sont toujours chiffrés et peuvent être
-  facilement intégrés dans les systèmes de contrôle de version.
-
-Inconvénients :
-
-- SOPS n'est pas une solution de gestion de secrets qui remplit tous nos besoin
-  de facon autonome. Il ne gère pas le stockage de secret dans un endroit
-  centralisé, ni la rotation des secrets.
-
 ### Contour
 
 Avantages :

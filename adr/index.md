@@ -27,3 +27,8 @@
 
 * [ADR-007: Selecting GitHub as Code Hosting
   Platform](007-code-hosting-platform.md)
+
+* [ADR-010: Infrastructure](010-infrastructure.fr-ca.md)
+  * [ADR-011: Gitops](011-gitops.fr-ca.md)
+  * [ADR-012: Gestion de secrets](012-secret-management.fr-ca.md)
+  * [ADR-013: Gestion de l'Infrastructure as Code](013-IaC-tool.fr-ca.md)
