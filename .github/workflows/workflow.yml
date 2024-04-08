@@ -1,0 +1,13 @@
+---
+name: Dev-Rel-Docs integration workflow
+
+on:
+  pull_request:
+    types:
+      - opened
+      - closed
+      - synchronize
+
+jobs:
+  markdown-check:
+    uses: ai-cfia/github-workflows/.github/workflows/workflow-markdown-check.yml@main
