@@ -141,7 +141,7 @@
     (~1 h 30)
   * [PostgreML
   Tutorials](https://postgresml.org)
-  * [Python Exception](https://github.com/ai-cfia/dev-rel-docs/blob/113-handling-raising-exception-python/handling-exception-training.md)
+  * [Python Exception](https://github.com/ai-cfia/dev-rel-docs/blob/main/training/python/handling-exception-training.md)
 * Frontend
   * [Create React App is officially
     dead](https://dev.to/ag2byte/create-react-app-is-officially-dead-h7o)
