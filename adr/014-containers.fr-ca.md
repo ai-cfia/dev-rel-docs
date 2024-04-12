@@ -15,27 +15,27 @@ des ressources et réduit les coûts.
 
 ## Contexte
 
-Auparavant, nous gérions nos applications dans des répertoires avec des
-Dockerfiles. Cette approche, bien que fonctionnelle, présentait certaines
-limitations telles que le manque d'orchestration, car déployer et gérer
-manuellement les conteneurs était fastidieux et sujet à des erreurs. De plus,
-l'évolutivité était limitée, il était difficile de faire évoluer les
-applications au-delà d'un certain nombre de serveurs. Enfin, la surveillance
-et la journalisation des applications conteneurisées étaient difficiles et
-manquaient de centralisation.
+Auparavant, nous déployions manuellement chaque Dockerfile sur Google Cloud Run.
+Cette approche nous demandait un investissement de temps considérable,
+car chaque déploiement nécessitait une intervention manuelle pour la
+construction et la mise en ligne des conteneurs. Malgré la présence
+systématique de Dockerfiles dans nos répertoires, le processus de
+développement et de déploiement restait relativement peu automatisé.
 
 ## Décision
 
 Pour pallier ces limitations, nous avons décidé d'adopter Kubernetes pour
-l'orchestration des conteneurs. Cette décision s'est avérée judicieuse pour
-plusieurs raisons: Kubernetes offre une interface intuitive pour la gestion
-des conteneurs, ce qui simplifie son utilisation. Il permet également de faire
-évoluer les applications horizontalement en ajoutant ou en supprimant des nœuds
-au cluster, assurant ainsi une évolutivité optimale.  De plus, Kubernetes assure
-la haute disponibilité des applications en cas de défaillance d'un nœud,
-garantissant ainsi une meilleure résilience. Enfin, il offre des outils de
-surveillance et de journalisation intégrés, facilitant le suivi et la
-maintenance des applications.
+l'orchestration des conteneurs. Cette transition nous permet de bénéficier d'une
+gestion plus robuste et évolutive de nos applications. Cependant, le
+déploiement n'est pas entièrement automatisé ; les manifestes Kubernetes
+doivent être créés pour ensuite être déployés via ArgoCD, offrant ainsi un
+niveau supplémentaire de contrôle et de validation avant le déploiement final.
+
+En ce qui concerne les images Docker, nous avons mis en place un flux de travail
+GitHub qui automatise le processus de construction, de "tagging" et de mise en
+ligne. Cette automatisation nous permet de garantir la cohérence et la fiabilité
+de nos déploiements tout en réduisant la charge de travail manuelle
+et les risques d'erreurs.
 
 ## Alternatives Considérées
 
@@ -43,13 +43,59 @@ maintenance des applications.
 
 Avantages:
 
-Conséquences:
+- **Intégration native avec Docker:** Docker Swarm est étroitement intégré
+à Docker et utilise le Docker API, ce qui rend la mise en place et la gestion
+plus simple pour les équipes déjà habituées à Docker.
+
+- **Facilité de déploiement:** Docker Swarm est plus simple à configurer et à
+gérer par rapport à Kubernetes, ce qui peut être bénéfique pour les petites ou
+moyennes infrastructures sans besoins complexes.
+
+- **Performances:** Docker Swarm a souvent montré des performances meilleures en
+termes de temps de démarrage des conteneurs et d’utilisation des ressources.
+
+Inconvénients:
+
+- **Scalabilité limitée:** Docker Swarm est moins adapté pour les grands
+clusters que Kubernetes. Kubernetes excelle dans la gestion de clusters de
+grande taille et complexes.
+
+- **Fonctionnalités moins robustes:** Par rapport à Kubernetes, Docker Swarm
+offre moins de fonctionnalités avancées comme les stratégies de déploiement
+sophistiquées, la gestion avancée des volumes, et le support extensif pour
+les outils de CI/CD.
+
+- **Communauté plus petite:** La communauté autour de Docker Swarm est moins
+active que celle de Kubernetes, ce qui peut impacter le support et le
+développement de nouvelles fonctionnalités.
 
 ### Nomad
 
 Avantages:
 
-Conséquences:
+- **Simplicité et flexibilité:** Nomad est réputé pour sa simplicité et sa
+flexibilité. Cela rend l'orchestrateur idéal pour les applications non
+conteneurisées ainsi que pour les conteneurs.
+
+- **Ressources hétérogènes et multi-région:** Nomad peut gérer des charges de
+travail sur différents types de serveurs, y compris des environnements bare
+metal, VMs ou conteneurisés, et peut gérer des clusters multi-région facilement.
+
+- **Haute performance et efficacité:** Nomad est conçu pour être performant à
+grande échelle, offrant un démarrage rapide des tâches et une surcharge
+minimale.
+
+Inconvénients:
+
+- **Moins de fonctionnalités que certains concurrents:** Bien que Nomad soit
+apprécié pour sa simplicité, il peut manquer de certaines fonctionnalités
+avancées présentes dans d'autres orchestrateurs, comme Kubernetes.
+
+- **Écosystème plus restreint:** L'écosystème autour de Nomad est moins
+développé comparativement à celui de solutions plus mûres comme Kubernetes.
+Ceci peut se traduire par une offre plus limitée en termes d'outils tiers,
+de plugins ou d'intégrations, rendant certaines tâches plus complexes
+à mettre en œuvre et à maintenir.
 
 ## Conclusion
 
