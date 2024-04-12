@@ -2,9 +2,7 @@
 
 ## Résumé Exécutif
 
-Cette section fournit un bref résumé de la décision prise, en soulignant les
-points principaux afin que le lecteur puisse comprendre l'essentiel sans avoir à
-lire l'ensemble du document.
+todo
 
 ## Contexte
 
@@ -22,7 +20,6 @@ décidé d'adopter l'Infrastructure as Code (IaC) en utilisant Terraform. Cette
 approche nous permet de gérer et de provisionner nos infrastructures cloud via
 des fichiers de configuration codifiés, éliminant ainsi le besoin de ClickOps et
 réduisant significativement les erreurs humaines.
-
 
 En ce qui concerne la sécurité, nous avions initialement adopté [Azure Key
 Vault](https://azure.microsoft.com/en-us/products/key-vault/)  pour la
@@ -86,17 +83,18 @@ Notre solution consistera à déployer des clusters Kubernetes sur différents
 fournisseurs de cloud. Voici les composants qui seront déployés pour gérer
 divers cas d'utilisation
 
+- [Gestion des conteneurs et leur déploiement: Kubernetes](014-containers.fr-ca.md)
 - [Gestion des secrets: HashiCorp Vault](012-secret-management.fr-ca.md)
 - [Gestion des deployments: ArgoCD](011-gitops.fr-ca.md)
 - [Gestion de l'Infrastructure as Code (IaC): Terraform](013-IaC-tool.fr-ca.md)
 - Gestion des environnements de développement: AzureML
-- Gestion d'authentification des utilisateurs: Vouch-proxy
+- [Gestion d'authentification des utilisateurs: Vouch-proxy](015-authentication-management.fr-ca.md)
 - Gestion de l'instrumentation des applications: OpenTelemetry et Clickhouse
 - Gestion de l'observabilité: Grafana et Prometheus pour collecter des métriques
   spécifiques aux applications déployées avec Helm
 - Gestion du load balancing: Ingress NGINX
 - Gestion de la securité: Trivy et Falco
-
+c
 D'autres composants seront ajoutés au besoin.
 
 ## Alternatives Considérées
@@ -104,41 +102,6 @@ D'autres composants seront ajoutés au besoin.
 Cette section présente les différentes options ou solutions considérées avant
 d'arriver à la décision finale. Chaque alternative est généralement discutée
 dans une sous-section.
-
-### Ori network (Ori Oathkeeper, Ori Kratos)
-
-Avantages :
-
-- Ori Oathkeeper est un proxy d'authentification et d'autorisation qui peut être
-  utilisé pour gérer l'authentification des utilisateurs et des services de
-  facons centralisée. Ori Kratos est un service d'identité et d'accès qui peut
-  être utilisé pour gérer les utilisateurs et les rôles de manière centralisée.
-  L'avantage de ces solutions est qu'elles peuvent être utilisées comme solution
-  complète pour gérer l'authentification et l'autorisation des utilisateurs et
-  des services.
-
-Inconvénients :
-
-- Ori Oathkeeper et Ori Kratos sont des solutions relativement nouvelles et se
-  sont avérées moins matures que d'autres solutions d'authentification. Nous
-  avons essayer un déploiement de Kratos et avons rencontré des problèmes de
-  configuration entre autres. La documentation est également moins complète que
-  celle de d'autres solutions.
-
-### Oauth2-Proxy
-
-Avantages :
-
-- Oauth2-Proxy est un proxy d'authentification qui peut être utilisé pour gérer
-  l'authentification des utilisateurs et peut être configuré avec le ingress
-  NGINX.
-
-Inconvénients :
-
-- Oauth2-Proxy est configurable pour gérer l'authentification 1 pour 1, mais
-  n'est pas conçu pour gérer l'authentification de manière centralisée pour
-  plusieurs services. Vouch-proxy est une alternative plus adaptée à nos besoins
-  de gestion d'authentification centralisée.
 
 ### Contour
 
