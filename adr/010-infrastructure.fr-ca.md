@@ -83,18 +83,20 @@ Notre solution consistera à déployer des clusters Kubernetes sur différents
 fournisseurs de cloud. Voici les composants qui seront déployés pour gérer
 divers cas d'utilisation
 
-- [Gestion des conteneurs et leur déploiement: Kubernetes](014-containers.fr-ca.md)
+- [Gestion des conteneurs et leur déploiement:
+  Kubernetes](014-containers.fr-ca.md)
 - [Gestion des secrets: HashiCorp Vault](012-secret-management.fr-ca.md)
 - [Gestion des deployments: ArgoCD](011-gitops.fr-ca.md)
 - [Gestion de l'Infrastructure as Code (IaC): Terraform](013-IaC-tool.fr-ca.md)
 - Gestion des environnements de développement: AzureML
-- [Gestion d'authentification des utilisateurs: Vouch-proxy](015-authentication-management.fr-ca.md)
+- [Gestion d'authentification des utilisateurs:
+  Vouch-proxy](015-authentication-management.fr-ca.md)
 - Gestion de l'instrumentation des applications: OpenTelemetry et Clickhouse
 - Gestion de l'observabilité: Grafana et Prometheus pour collecter des métriques
   spécifiques aux applications déployées avec Helm
 - Gestion du load balancing: Ingress NGINX
 - Gestion de la securité: Trivy et Falco
-c
+
 D'autres composants seront ajoutés au besoin.
 
 ## Alternatives Considérées
