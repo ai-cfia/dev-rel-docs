@@ -28,8 +28,8 @@ researchers, developers.
 - **Convention**: Use lowercase and separate words with dashes.
 - **Example**: `my-repo-name`
 - **Reference**:
-  - [Tilburg. Best Practices for Naming Git Branches.](#ref-tilburg) 
-  - [Branching. Digitaljhelms.](#ref-digitaljhelms) 
+  - [Tilburg. Best Practices for Naming Git Branches.](#ref-tilburg)
+  - [Branching. Digitaljhelms.](#ref-digitaljhelms)
 
 
 ### Files
@@ -70,7 +70,7 @@ researchers, developers.
   description of the script.
 - **Example**: `2023-09-24-description-of-script.sql`
 
-### Database Server / Cluster 
+### Database Server / Cluster
 - **Convention**: The name should follow this pattern:
   `project-service-environment` all in lowercase, separating words with dashes.
 - **Example**: `nachet-postgresql-dev`
@@ -97,13 +97,13 @@ researchers, developers.
   - [Vertabelo. Worst Database Naming Conventions](#ref-vertabelo)
 
 
- ### Database Table and View
+ ### Database Table, Column and View
 - **Convention**: Use lowercase and separate words with underscore. For naming
   use plural.
 - **Why**: SQL reserved word are singular, so by using plural you're less likely
   to have a collision.
-- **Example**: `my_table_name`, `my_view_name`
-- **Concrete example**: `html_contents`, `users`
+- **Example**: `my_table_name`,`my_column_name` `my_view_name`
+- **Concrete example**: `html_contents`, `users`, `user_id`
 
 ### Abbreviation for Environment
 - `dev`: development environment (typically ongoing development branches
