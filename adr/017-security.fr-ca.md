@@ -32,8 +32,8 @@ leur déploiement.
 - **Falco :** effectue des scans dynamiques pour surveiller le comportement en
 temps réel des applications et détecter toute activité anormale ou suspecte.
 
-- **Mend Renovate :** automatise la mise à jour des versions de nos images Docker,
-des providers Terraform, et d'autres dépendances, assurant l'usage des
+- **Mend Renovate :** automatise la mise à jour des versions de nos images
+Docker, des providers Terraform, et d'autres dépendances, assurant l'usage des
 versions les plus récentes et sécurisées.
 
 Ces outils sont complémentés par des dashboards Grafana, permettant une
