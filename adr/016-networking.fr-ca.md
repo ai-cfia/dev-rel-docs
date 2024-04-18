@@ -17,7 +17,7 @@ Nous automatisons la création des enregistrements CNAME pour nos services
 via external-dns, ce qui facilite significativement la gestion des DNS.
 En outre, cert-manager est déployé pour la gestion automatique des certificats
 SSL, sécurisant ainsi les communications, tandis que vouch-proxy gère l'accès
-sécurisé aux applications. Notre domaine .inspection.alpha.canada.ca est géré
+sécurisé aux applications. Notre domaine `.inspection.alpha.canada.ca` est géré
 dans une zone DNS sur Azure, bénéficiant d'une intégration directe
 avec ces services.
 

@@ -103,3 +103,13 @@ L'adoption de Kubernetes s'est avérée être une décision judicieuse pour
 la gestion et le déploiement de nos applications conteneurisées.
 Cette approche a permis d'améliorer la portabilité, l'évolutivité,
 la fiabilité ainsi que l'efficacité de nos applications.
+
+## Références
+
+[Kubernetes](https://kubernetes.io/)
+
+[Docker](https://www.docker.com/)
+
+[Docker swarm](https://docs.docker.com/engine/swarm/)
+
+[Nomad](https://www.nomadproject.io/)
