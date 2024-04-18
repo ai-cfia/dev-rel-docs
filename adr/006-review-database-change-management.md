@@ -4,18 +4,19 @@
 
 This Architecture Decision Record (ADR) details our thought process regarding
 our database management system and highlights the factors influencing this
-revisited choice. We applied few solutions in the past, however they seem to not be the most effective and our choice is being revisited.
+revisited choice. We applied few solutions in the past, however they seem to not
+be the most effective and our choice is being revisited.
 
-**Our solution is to incorporate semantic versioning information into schema names
-to maintain version control as well as to clone the current schema to migrate
-and transform data in a new schema implementing changes. This ensure data
-integrity as well as good change management.**
+**Our solution is to incorporate semantic versioning information into schema
+names to maintain version control as well as to clone the current schema to
+migrate and transform data in a new schema implementing changes. This ensure
+data integrity as well as good change management.**
 
 ## Context
 
-CFIA products Finesse, Louis Chat, Nachet and Harvester depend heavily on the PostgreSQL database.
-Changes to the database schema need to follow changes to the code as we
-introduce new features.
+CFIA products Finesse, Louis Chat, Nachet and Harvester depend heavily on the
+PostgreSQL database. Changes to the database schema need to follow changes to
+the code as we introduce new features.
 
 When deploying, we need to be able to:
 
@@ -24,10 +25,13 @@ When deploying, we need to be able to:
 * Verify changes are correctly applied by running a test suite
 * Revert changes if necessary (or switch back to an older version of the
   database).
-* Have an approval change management process in place to control database changes.
-* Use a separate environment for testing and development. (It prevents errors, isolate changes that could impact production and helps resolves issues)
+* Have an approval change management process in place to control database
+  changes.
+* Use a separate environment for testing and development. (It prevents errors,
+  isolate changes that could impact production and helps resolves issues)
 
-We adopted a decision in the past to incorporate semantic versioning. This decision will still stand, however we are going to improve it.
+We adopted a decision in the past to incorporate semantic versioning. This
+decision will still stand, however we are going to improve it.
 
 ## Previous Decision
 
@@ -37,13 +41,13 @@ To address the context and requirements, the following approach is adopted:
   version control. Semantic Versioning helps developers and users understand the
   nature of the changes in a new version of a software package, making it easier
   to manage dependencies and assess compatibility. It usually is in this format
-  : x.x.x (MAJOR.MINOR.PATCH) with each x being a number. ([PostgreSQL wiki, n.d.](#ref-changes))
+  : x.x.x (MAJOR.MINOR.PATCH) with each x being a number. ([PostgreSQL wiki,
+  n.d.](#ref-changes))
 
-  In our case, we use
-  louis_x.x.x - a MAJOR release would break the database, it includes modifying
-  existing tables. MINOR release would not break anything major but will add
-  tables for example. PATCH is just minor modifications that shouldn't be
-  noticeable to users of the database.
+  In our case, we use louis_x.x.x - a MAJOR release would break the database, it
+  includes modifying existing tables. MINOR release would not break anything
+  major but will add tables for example. PATCH is just minor modifications that
+  shouldn't be noticeable to users of the database.
 
 * Clone the current schema to create a new schema focusing on changes.
 * Implement changes within the new schema, including columns, indexes, foreign
@@ -209,4 +213,6 @@ complexities and potential challenges.
 
 ## References
 
-* <a id="ref-changes"></a> Change management tools and techniques. Change management tools and techniques - PostgreSQL wiki. (n.d.). <https://wiki.postgresql.org/wiki/Change_management_tools_and_techniques>
+* <a id="ref-changes"></a> Change management tools and techniques. Change
+  management tools and techniques - PostgreSQL wiki. (n.d.).
+  <https://wiki.postgresql.org/wiki/Change_management_tools_and_techniques>
