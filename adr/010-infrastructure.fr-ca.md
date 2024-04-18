@@ -111,6 +111,7 @@ divers cas d'utilisation
   (À venir)
 - [Gestion du load balancing: Ingress NGINX](016-networking.fr-ca.md)
 - [Gestion de la securité: Trivy et Falco](017-security.fr-ca.md)
+- Gestion de la redondance: Istio / Cluster mesh (à venir)
 
 D'autres composants seront ajoutés au besoin.
 
