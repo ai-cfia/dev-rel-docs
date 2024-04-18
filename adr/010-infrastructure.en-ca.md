@@ -101,6 +101,7 @@ cases:
   (coming soon)
 - [Load balancing management: Ingress NGINX](016-networking.fr-ca.md)
 - [Security management: Trivy and Falco](017-security.fr-ca.md)
+- Managing redundancy: Itsio / Cluster mesh (coming soon)
 
 Additional components will be added as needed.
 
