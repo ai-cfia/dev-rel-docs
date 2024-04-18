@@ -2,7 +2,23 @@
 
 ## Résumé Exécutif
 
-todo
+Dans un effort d'optimisation et de sécurisation de nos opérations
+d'infrastructure, notre organisation a adopté une stratégie basée sur
+l'Infrastructure as Code (IaC) en utilisant Terraform, accompagnée par le
+déploiement d'un cluster Kubernetes sur Azure. Cette approche nous permet de
+surmonter les limitations associées aux méthodes traditionnelles telles que
+ClickOps et les déploiements manuels, qui étaient à la fois chronophages et
+susceptibles d'erreur. L'adoption de HashiCorp Vault pour la gestion centralisée
+des secrets et d'ArgoCD pour l'orchestration des déploiements renforce notre
+posture de sécurité et d'agilité. En intégrant des solutions de monitoring
+avancées et en envisageant l'utilisation de technologies comme OpenTelemetry
+pour une observabilité accrue, nous visons à maintenir une haute disponibilité
+et performance de nos services. Cette transformation permet une gestion plus
+robuste et automatisée de l'infrastructure, réduit les risques d'erreur humaine
+et offre une flexibilité et une portabilité accrues à travers différents
+environnements cloud. Notre initiative aligne la gestion des infrastructures
+avec nos objectifs opérationnels tout en assurant une évolutivité et une
+sécurité renforcées pour répondre aux besoins futurs.
 
 ## Contexte
 
@@ -88,128 +104,41 @@ divers cas d'utilisation
 - [Gestion des secrets: HashiCorp Vault](012-secret-management.fr-ca.md)
 - [Gestion des deployments: ArgoCD](011-gitops.fr-ca.md)
 - [Gestion de l'Infrastructure as Code (IaC): Terraform](013-IaC-tool.fr-ca.md)
-- Gestion des environnements de développement: AzureML
+- Gestion des environnements de développement: AzureML (à venir)
 - [Gestion d'authentification des utilisateurs:
   Vouch-proxy](015-authentication-management.fr-ca.md)
-- Gestion de l'instrumentation des applications: OpenTelemetry et Clickhouse
-- Gestion de l'observabilité: Grafana et Prometheus pour collecter des métriques
-  spécifiques aux applications déployées avec Helm
-- Gestion du load balancing: Ingress NGINX
-- Gestion de la securité: Trivy et Falco
+- Gestion de l'observabilité: Grafana, Prometheus, Open-Telemetry et OneUptime
+  (À venir)
+- [Gestion du load balancing: Ingress NGINX](016-networking.fr-ca.md)
+- [Gestion de la securité: Trivy et Falco](017-security.fr-ca.md)
 
 D'autres composants seront ajoutés au besoin.
 
-## Alternatives Considérées
-
-Cette section présente les différentes options ou solutions considérées avant
-d'arriver à la décision finale. Chaque alternative est généralement discutée
-dans une sous-section.
-
-### Contour
-
-Avantages :
-
-- Aspects positifs de cette alternative.
-
-Inconvénients :
-
-- Aspects négatifs de cette alternative.
-
-### Kong
-
-Avantages :
-
-- Aspects positifs de cette alternative.
-
-Inconvénients :
-
-- Aspects négatifs de cette alternative.
-
-### Traefik
-
-Avantages :
-
-- Traefik simplifie la configuration automatique et la reconfiguration dynamique
-  de certificat SSL. il s'intègre bien avec Kubernetes en gèrant automatiquement
-  les certificats SSL/TLS via Let's Encrypt.
-
-Inconvénients :
-
-- Étant donné que notre cluster Kubernetes est hébergé sur Azure (AKS), nous
-  avons favorisé NGINX Ingress Controller, qui est plus largement utilisé et
-  permet une meilleure intégration avec Azure. On a également préférré NGINX
-  Ingress Controller pour sa capacité à gérer l'authentification des
-  utilisateurs avec la possibilité de configurer des règles d'authentification
-  pour les services.
-
-### HAProxy Ingress
-
-Avantages :
-
-- Aspects positifs de cette alternative.
-
-Inconvénients :
-
-- Aspects négatifs de cette alternative.
-
-### Istio Ingress
-
-Avantages :
-
-- Aspects positifs de cette alternative.
-
-Inconvénients :
-
-- Aspects négatifs de cette alternative.
-
-### Flux
-
-Avantages :
-
-- Aspects positifs de cette alternative.
-
-Inconvénients :
-
-- Aspects négatifs de cette alternative.
-
-### Carvel ytt
-
-Avantages :
-
-- Aspects positifs de cette alternative.
-
-Inconvénients :
-
-- Aspects négatifs de cette alternative.
-
-### cdk8s
-
-Avantages :
-
-- Aspects positifs de cette alternative.
-
-Inconvénients :
-
-- Aspects négatifs de cette alternative.
-
-### kapp-controller
-
-Avantages :
-
-- Aspects positifs de cette alternative.
-
-Inconvénients :
-
-- Aspects négatifs de cette alternative.
-
 ## Conséquences
 
-Cette partie décrit les résultats attendus, positifs comme négatifs, de la
-décision. Cela peut inclure son impact sur différentes parties prenantes ou
-toute action qui doit être prise à la suite de la décision.
+La transition vers une gestion d'infrastructure basée sur Kubernetes et
+Terraform, combinée à l'utilisation de solutions robustes pour la gestion des
+secrets (HashiCorp Vault) et des déploiements (ArgoCD), marque un progrès
+significatif vers une automatisation complète et une sécurisation accrue de
+notre environnement cloud.
+
+Cette approche permet de minimiser les interventions manuelles et les risques
+d'erreur, tout en renforçant la sécurité à chaque étape du déploiement des
+applications. En utilisant des outils open source, nous favorisons une plus
+grande transparence, une adaptabilité aux environnements multiples et une
+intégration plus aisée avec divers écosystèmes. De plus, l'adoption de pratiques
+GitOps, notamment à travers Terraform et ArgoCD, améliore la traçabilité et la
+réversibilité des changements apportés à l'infrastructure, essentielles pour la
+gestion des configurations et la conformité sécuritaire. Ces changements
+soutiennent notre capacité à évoluer rapidement et de manière fiable, tout en
+maintenant un contrôle rigoureux sur la sécurité des données et
+l'authentification des utilisateurs à travers Vouch-proxy et l'intégration de
+solutions telles que NGINX Ingress pour la gestion de l'accès. Cependant, cette
+évolution nécessite une montée en compétence continue de nos équipes et une
+attention soutenue aux mises à jour et à l'entretien de ces technologies pour
+garantir leur efficacité et leur sécurité à long terme.
 
 ## Références
 
-Toute documentation, recherche ou données soutenant la décision peuvent être
-citées ici. Cela peut inclure des articles académiques, des articles de blog ou
-des documents internes.
+- [Repertoire Howard - Contient la configuration de notre infrastructure
+  accompagnée de documentation](https://github.com/ai-cfia/howard)

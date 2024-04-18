@@ -32,3 +32,7 @@
   * [ADR-011: Gitops](011-gitops.fr-ca.md)
   * [ADR-012: Gestion de secrets](012-secret-management.fr-ca.md)
   * [ADR-013: Gestion de l'Infrastructure as Code](013-IaC-tool.fr-ca.md)
+  * [ADR-014: Gestion des conteneurs et leur déploiement](014-containers.fr-ca.md)
+  * [ADR-015: Gestion d'authentification des utilisateurs](015-authentication-management.fr-ca.md)
+  * [ADR-016: Gestion du load balancing](016-networking.fr-ca.md)
+  * [ADR-017: Gestion de la securité](017-security.fr-ca.md)
