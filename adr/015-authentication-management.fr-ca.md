@@ -60,7 +60,7 @@ Inconvénients :
   sont avérées moins matures que d'autres solutions d'authentification. Nous
   avons essayer un déploiement de Kratos et avons rencontré des problèmes de
   configuration entre autres. La documentation est également moins complète que
-  celle de d'autres solutions.
+  celle d'autres solutions.
 
 ### Oauth2-Proxy
 
