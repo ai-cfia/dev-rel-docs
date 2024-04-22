@@ -109,7 +109,7 @@ Inconvénients :
 - Dépendance sur le Service Pulumi : Bien que Pulumi offre des options pour
   gérer l'état localement ou dans le nuage, la version gérée en nuage crée une
   dépendance sur les services de Pulumi, ce qui apporte des préoccupations
-  vis-à-vis la souveraineté des données ou les couts supplémentaires.
+ vis-à-vis la souveraineté des données ou les coûts supplémentaires.
 - Moins Mature que Terraform : Pulumi est plus récent sur le marché de l'IaC que
   Terraform, ce qui signifie qu'il pourrait avoir une communauté plus petite et
   moins de ressources disponibles pour le dépannage et l'apprentissage comparé à
