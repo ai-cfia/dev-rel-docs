@@ -68,7 +68,7 @@ Inconvénients :
   d'éléments nécessitent une intervention manuelle ou une logique supplémentaire
   pour gérer l'état de l'infrastructure.
 - Limité principalement à l'écosystème Azure, ce qui pose des défis pour les
-déploiements multiinfonuagiques.
+déploiements multi-infonuagiques.
 - La création de fournisseurs d'extensibilité personnalisés est encore en phase
   expérimentale.
 
