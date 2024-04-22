@@ -10,7 +10,7 @@ développement et le déploiement. L'évolutivité est également un point fort,
 car Kubernetes permet de faire évoluer facilement les applications en fonction
 de la demande. En termes de fiabilité, les conteneurs et Kubernetes offrent une
 meilleure résistance aux pannes et une haute disponibilité. Enfin, l'efficacité
-est améliorée grâce à l'utilisation de conteneurs qui optimise l'utilisation
+est améliorée grâce à l'utilisation de conteneurs qui optimisent l'utilisation
 des ressources et réduit les coûts.
 
 ## Contexte
