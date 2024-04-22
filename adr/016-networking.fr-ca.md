@@ -2,7 +2,7 @@
 
 ## Résumé exécutif
 
-Cette ADR vise à formaliser la stratégie de réseautique pour nos applications
+Cette décision d'architecture vise à formaliser la stratégie de réseautique pour nos applications
 déployées sur Kubernetes, en évaluant les composants actuels et futures d'accès
 réseau pour maximiser performance, sécurité et facilité de gestion.
 Nous utilisons Azure pour cette architecture, en intégrant ingress Nginx,
