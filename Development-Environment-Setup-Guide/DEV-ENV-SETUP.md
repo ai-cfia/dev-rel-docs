@@ -44,9 +44,9 @@ commands without `sudo`.
 3. Open terminal: `Terminal > New Terminal` or `` Ctrl+` ``.
 4. Create your project's folder in your working directory:
 
-  ```bash
-  mkdir <your-project-folder>
-  ```
+   ```bash
+   mkdir <your-project-folder>
+   ```
 
 5. In Command Palette, select `WSL: Open Folder in WSL...` and choose your
 project folder.
@@ -76,14 +76,14 @@ Make sure to include the following fields:
 
 - **name**: Container name for VS Code.
 - **image**: The Docker image to use. We recommended using the Dev Container
-base images provided by Microsoft: [Docker Hub]
-(https://hub.docker.com/_/microsoft-devcontainers?tab=description).
+base images provided by Microsoft: [Docker Hub](
+https://hub.docker.com/_/microsoft-devcontainers?tab=description).
 - **postCreateCommand**: Commands that will execute after the container's
 creation. This is useful for the installation of dependencies or initial
 setup tasks.
 
-For a comprehensive list of options, refer to the [official documentation]
-(https://containers.dev/implementors/json_reference/).
+For a comprehensive list of options, refer to the [official documentation](
+https://containers.dev/implementors/json_reference/).
 
 #### Default extensions
 

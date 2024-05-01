@@ -105,22 +105,22 @@ maximum upload limite to the nachet backend.
 
 |Action items|Type|Priority|Owner|Tracking bug|
 |--------|-------|-------|-------|-------|
-|Instrument the application|mitigate|P0|NBT|[issue 50](#ref-50)|
+|Instrument the application|mitigate|P0|NBT|[issue 50](#ref50)|
 
 ### Nachet frontend team (NFT):
 
 |Action items|Type|Priority|Owner|Tracking bug|
 |--------|-------|-------|-------|-------|
-|Instrument the application|mitigate|P0|NFT|[issue 88](#ref-88)|
+|Instrument the application|mitigate|P0|NFT|[issue 88](#ref88)|
 
 ### DevSecOps Team (DT):
 
 |Action items|Type|Priority|Owner|Tracking bug|
 |--------|-------|-------|-------|-------|
-|Monitor API Key regeneration|detect|P1|DT|[issue 22](#ref-22)|
-|Add 500 internal server error alerts|detect|P1|DT|[issue 23](#ref-23)|
-|Disallow API Key changes without approval|mitigate|P1|DT|[issue 21](#ref-21)|
-|Support instrumented applications|mitigate|P1|DT|[issue 13](#ref-13)|
+|Monitor API Key regeneration|detect|P1|DT|[issue 22](#ref22)|
+|Add 500 internal server error alerts|detect|P1|DT|[issue 23](#ref23)|
+|Disallow API Key changes without approval|mitigate|P1|DT|[issue 21](#ref21)|
+|Support instrumented applications|mitigate|P1|DT|[issue 13](#ref13)|
 
 ## Lessons Learned
 

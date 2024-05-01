@@ -6,6 +6,7 @@ multitude of pivotal roles:
 ## Enhancing Functionality
 
 AI amplifies our system's capabilities by:
+
 - **Automating Processes:** Streamlining complex tasks for increased efficiency.
 - **Enabling Smart Decision-Making:** Providing predictive insights from data
   analysis.

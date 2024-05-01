@@ -106,8 +106,7 @@ researchers, developers.
   - [Rootsoft. Database Naming Convention](#rootsoft)
   - [Vertabelo. Worst Database Naming Conventions](#vertabelo)
 
-
- ### Database Table, Column and View
+### Database Table, Column and View
 
 - **Convention**: Use lowercase and separate words with underscore. For naming
   use plural.

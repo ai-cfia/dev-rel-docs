@@ -2,12 +2,12 @@
 
 ## Résumé exécutif
 
-Cette décision d'architecture vise à formaliser la stratégie de réseautique pour nos applications
-déployées sur Kubernetes, en évaluant les composants actuels et futures d'accès
-réseau pour maximiser performance, sécurité et facilité de gestion.
-Nous utilisons Azure pour cette architecture, en intégrant ingress Nginx,
-cert-manager, vouch-proxy, ainsi qu'une gestion automatique des enregistrements
-DNS grâce à external-dns.
+Cette décision d'architecture vise à formaliser la stratégie de réseautique pour
+nos applications déployées sur Kubernetes, en évaluant les composants actuels et
+futures d'accès réseau pour maximiser performance, sécurité et facilité de
+gestion. Nous utilisons Azure pour cette architecture, en intégrant ingress
+Nginx, cert-manager, vouch-proxy, ainsi qu'une gestion automatique des
+enregistrements DNS grâce à external-dns.
 
 ## Contexte
 

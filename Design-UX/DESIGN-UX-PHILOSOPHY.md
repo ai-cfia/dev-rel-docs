@@ -1,4 +1,4 @@
-## Design Philosophy and UX Concept for CFIA Projects
+# Design Philosophy and UX Concept for CFIA Projects
 
 ### User-Centric Design
 

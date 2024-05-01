@@ -50,6 +50,7 @@ The system aims to provide valuable Q&A pairs and ensure search result accuracy,
 addressing challenges in chunk quality and scoring accuracy along the way.
 
 ## Related Links
+
 - [Pull Request #47](https://github.com/ai-cfia/ailab-db/pull/47)
 - [Issue #9](https://github.com/ai-cfia/ailab-db/issues/9)
 - [Related Issue #4](https://github.com/ai-cfia/finesse-data/issues/4)

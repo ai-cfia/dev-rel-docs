@@ -1,6 +1,7 @@
 # Coding Journey: Addressing Challenges and Finding Solutions
 
 ## Chunk Quality and Missing Scores
+
 During development, one significant challenge revolved around chunk quality
 ratings, each assigned a score, ranging from 0.0 to 1.0. However, issues emerged
 due to missing scores, specifically in identifying tables within chunks and
