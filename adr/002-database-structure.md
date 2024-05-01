@@ -47,7 +47,6 @@ name "Agence canadienne d'inspection des aliments", and the Canadian flag, which
 signifies the national scope and authority of the
 organization.](./002-database-structure-diagram.png)
 
-
 ## Executive Summary
 
 This Architecture Decision Record (ADR) describes our plan to promote sharing
@@ -120,7 +119,7 @@ Cons:
 - **Potential data conflicts:** Separate databases may result in data conflicts,
   especially when different teams or products need to update the same data
   simultaneously. These conflicts can lead to data inconsistencies and errors.
-  [Toptal - Database Design Bad Practices](#ref-toptal)
+  [Toptal - Database Design Bad Practices](#toptal)
 
 In summary, while the "Separate Databases (Current Setup)" option provides
 initial clarity, it has serious disadvantages, such as redundancy, decreased
@@ -134,13 +133,13 @@ Pros:
 - **Enhanced teamwork:** By using a single consolidated database, teams can
   collaborate more effectively. By having only one database, sharing and
   accessing data becomes simpler, which can lead to improved cross-functional
-  cooperation. [Budibase - How to Integrate Multiple Databases](#ref-budibase)
+  cooperation. [Budibase - How to Integrate Multiple Databases](#budibase)
 
 - **Elimination of repeated data:** This approach eliminates the need for
   redundant data. All information is stored in one place, reducing data
   duplication and ensuring data consistency. If I create a file in one database,
   I can access it in another without the need to recreate it. [Matillion - What
-  is Data Consolidation?](#ref-matillon)
+  is Data Consolidation?](#matillon)
 
 - **Greater flexibility in product management:** A consolidated database
   provides greater flexibility in managing different products. It allows for
@@ -161,16 +160,16 @@ Cons:
   leading to temporary challenges. This required the team to have a good
   planning or prototype about schema and clear relationships between databases.
 
-## Consequences:
+## Consequences
 
-### Positive Consequences:
+### Positive Consequences
 
 - Collaboration will be better because teams will operate more smoothly and
   promote stronger cross-functional cooperation.
 - By eliminating redundant data, the single database will produce information
   that is more accurate and dependable.
 
-### Negative Consequences:
+### Negative Consequences
 
 - Renaming and moving files will necessitate a significant initial effort.
 - Adapting to the new structure may temporarily complicate the development
@@ -181,16 +180,20 @@ Cons:
 Any documentation, research, or data that support the decision can be cited
 here. This can include academic papers, blog posts, or internal documents.
 
-<a id="ref-toptal"></a>Toptal, J. P. (n.d.)
+#### Toptal
 
-* Blog. (n.d.). Toptal. [Database Design Bad Practices,
-  https://www.toptal.com/](https://www.toptal.com/database/database-design-bad-practices)
-  <a id="ref-toptal"></a>
+Blog. (n.d.). Toptal. [Database Design Bad Practices,
+https://www.toptal.com/]
+(https://www.toptal.com/database/database-design-bad-practices)>
 
-* Blog. (2022, Mai 22). Budibase. [How to Integrate Multiple Databases,
-  https://budibase.com/](https://budibase.com/blog/data/how-to-integrate-multiple-databases)
-  <a id="ref-budibase"></a>
+#### Budibase
 
-* Blog. (2020, Décembre 16). Matillion. [What is Data Consolidation?,
-  https://www.matillion.com/](https://www.matillion.com/blog/what-is-data-consolidation)
-  <a id="ref-matillon"></a>
+Blog. (2022, Mai 22). Budibase. [How to Integrate Multiple Databases,
+https://budibase.com/]
+(https://budibase.com/blog/data/how-to-integrate-multiple-databases)
+
+#### Matillion
+
+Blog. (2020, Décembre 16). Matillion. [What is Data Consolidation?,
+https://www.matillion.com/]
+(https://www.matillion.com/blog/what-is-data-consolidation)

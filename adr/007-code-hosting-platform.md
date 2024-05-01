@@ -203,16 +203,23 @@ Features](https://comparecamp.com/bitbucket-review-pricing-pros-cons-features/)
 [Capterra * Bitbucket Reviews
 2023](https://www.capterra.com/p/166497/Bitbucket/reviews/)
 
-[https://about.gitlab.com/customers/iron-mountain/](https://about.gitlab.com/customers/iron-mountain/)<a
-id="ref3"></a>
-
-[The state of open source software](https://octoverse.github.com/)<a
-id="ref2"></a>
+### Ref1
 
 [Government of Canada Digital Standards:
-Playbook](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)<a
-id="ref1"></a>
+Playbook](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
+
+### Ref2
+
+[The state of open source software]
+(https://octoverse.github.com/)
+
+### Ref3
+
+[https://about.gitlab.com/customers/iron-mountain/]
+(https://about.gitlab.com/customers/iron-mountain/)
+
+### Ref4
 
 [GitHub
-TrustRadius](https://www.trustradius.com/products/github/reviews?qs=pros-and-cons#reviews)<a
-id="ref4"></a>
+TrustRadius]
+(https://www.trustradius.com/products/github/reviews?qs=pros-and-cons#reviews)

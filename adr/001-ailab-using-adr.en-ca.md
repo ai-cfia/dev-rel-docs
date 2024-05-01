@@ -28,7 +28,7 @@ process to enable collective deliberation and decision-making.
   pages, commonly used for documentation ([Lebar, 2022](#lebar)).
 - Request for Comment (RFC): A process that enables collective deliberation on a
   particular issue or proposed feature, often formalized and version-controlled
-  ([Calçado, 2018](#calcado)).
+  ([Calçado, 2018](#calçado)).
 - Confluence: A collaboration software program developed by Atlassian that
   functions as an enterprise wiki and project management tool ([Atlassian,
   n.d.](#atlassian)).
@@ -60,7 +60,7 @@ version-controlled and easily accessible record of important architectural
 decisions. Each ADR will detail the reasoning, background, and consequences of
 significant architectural choices, not trivial decisions.
 
-#### Example of decisions that could be addressed by ADR
+### Example of decisions that could be addressed by ADR
 
 - Which database engine should we use and why?
 - Should we move to a microservices architecture?
@@ -73,7 +73,7 @@ significant architectural choices, not trivial decisions.
 - Which message broker to use for asynchronous operations?
 - What is our strategy for data backup and recovery?
 
-#### Example of decisions that should not be addressed by ADR
+### Example of decisions that should not be addressed by ADR
 
 - What color should the login button be?
 - How do we implement a specific function in code?
@@ -201,7 +201,7 @@ Cons:
 - Prone to becoming outdated.
 - Inadequate for tracking decision history.
 
-### [Request for Comments (RFC)](#calcado)
+### [Request for Comments (RFC)](#calçado)
 
 Pros:
 
@@ -251,52 +251,52 @@ Cons:
 
 ## References
 
-#### Ayers
+### Ayers
 
 Ayers, D. (10 mai 2019). Communicating and Documenting Architectural Decisions.
-Retrieved from https://www.youtube.com/watch?v=rwfXkSjFhzc
+Retrieved from <https://www.youtube.com/watch?v=rwfXkSjFhzc>
 
-#### Atlassian
+### Atlassian
 
 Atlassian. (n. d.). DACI: Decision Documentation. Retrieved from
-https://www.atlassian.com/software/confluence/templates/decision
+<https://www.atlassian.com/software/confluence/templates/decision>
 
-#### Calçado
+### Calçado
 
 Calçado, P. (19 novembre 2018). A Structured RFC Process. Retrieved from
-https://philcalcado.com/2018/11/19/a_structured_rfc_process.html
+<https://philcalcado.com/2018/11/19/a_structured_rfc_process.html>
 
-#### Henderson
+### Henderson
 
 Henderson, J. P. (n. d.). Architecture Decision Record (ADR). Retrieved from
-https://github.com/joelparkerhenderson/architecture-decision-record
+<https://github.com/joelparkerhenderson/architecture-decision-record>
 
-#### LeBar
+### LeBar
 
 LeBar, Z. (5 mars 2022). What Are Wikis, and Why Should You Use Them?
 Retrieved from
-https://business.tutsplus.com/tutorials/what-are-wikis-and-why-should-you-use-them--cms-19540
+<https://business.tutsplus.com/tutorials/what-are-wikis-and-why-should-you-use-them--cms-19540>
 
-#### Microsoft
+### Microsoft
 
 Microsoft. (20 mars 2020). Record Architecture Decisions.
 Code With Engineering Playbook. Retrieved from
-https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/
+<https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/>
 
-#### Monday
+### Monday
 
 Monday.com. (n. d.). How to Use a Project Decision Log
 for Optimal Results.
-Retrieved from https://monday.com/blog/project-management/decision-log/
+Retrieved from <https://monday.com/blog/project-management/decision-log/>
 
-#### American Psychological Association
+### American Psychological Association
 
 American Psychological Association. (n. d.).
 Reference Examples. Retrieved from
-https://apastyle.apa.org/style-grammar-guidelines/references/examples
+<https://apastyle.apa.org/style-grammar-guidelines/references/examples>
 
-#### Library of Congress
+### Library of Congress
 
 Library of Congress. (2017, December 21). Codes for the
 Representation of Names of Languages. Retrieved from
-https://www.loc.gov/standards/iso639-2/php/code_list.php
+<https://www.loc.gov/standards/iso639-2/php/code_list.php>

@@ -30,7 +30,7 @@ délibération collective et la prise de décision.
   2022](#lebar)).
 - Demande de Commentaires (RFC) : Une méthode permettant des discussions
   collectives sur un problème ou une fonctionnalité proposée, souvent formalisée
-  et contrôlée par version ([Calçado, 2018](#calcado)).
+  et contrôlée par version ([Calçado, 2018](#calçado)).
 - Confluence : Un logiciel de collaboration développé par Atlassian, servant de
   wiki d'entreprise et d'outil de gestion de projet ([Atlassian,
   s.d.](#atlassian)).
@@ -65,7 +65,7 @@ décisions architecturales importantes. Chaque ADR détaillera le raisonnement, 
 contexte et les conséquences de choix architecturaux significatifs, mais pas des
 décisions triviales.
 
-#### Exemples de décisions qui pourraient être abordées par un ADR
+### Exemples de décisions qui pourraient être abordées par un ADR
 
 - Quel moteur de base de données devrions-nous utiliser et pourquoi ?
 - Devrions-nous passer à une architecture de microservices ?
@@ -79,7 +79,7 @@ décisions triviales.
 - Quel courtier de messages utiliser pour les opérations asynchrones ?
 - Quelle est notre stratégie pour la sauvegarde et la récupération des données ?
 
-#### Exemples de décisions qui ne devraient pas être abordées par un ADR
+### Exemples de décisions qui ne devraient pas être abordées par un ADR
 
 - De quelle couleur devrait être le bouton de connexion ?
 - Comment implémentons-nous une fonction spécifique dans le code ?
@@ -214,7 +214,7 @@ Inconvénients :
 - Risque de devenir obsolète.
 - Inadéquat pour suivre l'historique des décisions.
 
-### [Demande de Commentaires (RFC)](#calcado)
+### [Demande de Commentaires (RFC)](#calçado)
 
 Avantages :
 
@@ -267,52 +267,52 @@ Inconvénients :
 
 ## Références
 
-#### Ayers
+### Ayers
 
 Ayers, D. (10 mai 2019). Communicating and Documenting Architectural Decisions.
-Retrieved from https://www.youtube.com/watch?v=rwfXkSjFhzc
+Retrieved from <https://www.youtube.com/watch?v=rwfXkSjFhzc>
 
-#### Atlassian
+### Atlassian
 
 Atlassian. (n. d.). DACI: Decision Documentation. Retrieved from
-https://www.atlassian.com/software/confluence/templates/decision
+<https://www.atlassian.com/software/confluence/templates/decision>
 
-#### Calçado
+### Calçado
 
 Calçado, P. (19 novembre 2018). A Structured RFC Process. Retrieved from
-https://philcalcado.com/2018/11/19/a_structured_rfc_process.html
+<https://philcalcado.com/2018/11/19/a_structured_rfc_process.html>
 
-#### Henderson
+### Henderson
 
 Henderson, J. P. (n. d.). Architecture Decision Record (ADR). Retrieved from
-https://github.com/joelparkerhenderson/architecture-decision-record
+<https://github.com/joelparkerhenderson/architecture-decision-record>
 
-#### LeBar
+### LeBar
 
 LeBar, Z. (5 mars 2022). What Are Wikis, and Why Should You Use Them?
 Retrieved from
-https://business.tutsplus.com/tutorials/what-are-wikis-and-why-should-you-use-them--cms-19540
+<https://business.tutsplus.com/tutorials/what-are-wikis-and-why-should-you-use-them--cms-19540>
 
-#### Microsoft
+### Microsoft
 
 Microsoft. (20 mars 2020). Record Architecture Decisions.
 Code With Engineering Playbook. Retrieved from
-https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/
+<https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/>
 
-#### Monday
+### Monday
 
 Monday.com. (n. d.). How to Use a Project Decision Log
 for Optimal Results.
-Retrieved from https://monday.com/blog/project-management/decision-log/
+Retrieved from <https://monday.com/blog/project-management/decision-log/>
 
-#### American Psychological Association
+### American Psychological Association
 
 American Psychological Association. (n. d.).
 Reference Examples. Retrieved from
-https://apastyle.apa.org/style-grammar-guidelines/references/examples
+<https://apastyle.apa.org/style-grammar-guidelines/references/examples>
 
-#### Library of Congress
+### Library of Congress
 
 Library of Congress. (2017, December 21). Codes for the
 Representation of Names of Languages. Retrieved from
-https://www.loc.gov/standards/iso639-2/php/code_list.php
+<https://www.loc.gov/standards/iso639-2/php/code_list.php>

@@ -192,39 +192,53 @@ guidelines, will be instituted to mitigate these risks.
 
 ## References
 
-* Microsoft’s Open Source Program. Microsoft Open Source. (n.d.).
-[https://opensource.microsoft.com/program/#program-using](https://opensource.microsoft.com/program/#program-using)
-<a id="ref1"></a>
+### Ref1
 
-* The Open Source Definition. Open Source Initiative. (2023, February 22).
-[https://opensource.org/osd/](https://opensource.org/osd/) <a id="ref2"></a>
+Microsoft’s Open Source Program. Microsoft Open Source. (n.d.).
+[https://opensource.microsoft.com/program/#program-using]
+(https://opensource.microsoft.com/program/#program-using)
 
-* Homepage. Free Software Foundation. (n.d.).
-[https://www.fsf.org/](https://www.fsf.org/) <a id="ref3"></a>
+### Ref2
 
-* microsoft/vscode. (n.d.). GitHub.
-[https://github.com/microsoft/vscode](https://github.com/microsoft/vscode) <a
-id="ref4"></a>
+The Open Source Definition. Open Source Initiative. (2023, February 22).
+[https://opensource.org/osd/](https://opensource.org/osd/)
 
-* Azure. (n.d.). GitHub.
-[https://github.com/Azure/bicep](https://github.com/Azure/bicep) <a
-id="ref5"></a>
+### Ref3
 
-* Project Jupyter. (n.d.). GitHub.
-[https://github.com/jupyter](https://github.com/jupyter) <a id="ref6"></a>
+Homepage. Free Software Foundation. (n.d.).
+[https://www.fsf.org/](https://www.fsf.org/)
 
-* Openssl. (n.d.). GitHub.
-[https://github.com/openssl/openssl](https://github.com/openssl/openssl) <a
-id="ref7"></a>
+### Ref4
 
-* Git. (n.d.). GitHub. [https://github.com/git/git](https://github.com/git/git)
-<a id="ref8"></a>
+microsoft/vscode. (n.d.). GitHub.
+[https://github.com/microsoft/vscode](https://github.com/microsoft/vscode)
 
-* Alpha canada.ca - Canada.ca. (n.d.).
+### Ref5
+
+Azure. (n.d.). GitHub.
+[https://github.com/Azure/bicep](https://github.com/Azure/bicep)
+
+### Ref6
+
+Project Jupyter. (n.d.). GitHub.
+[https://github.com/jupyter](https://github.com/jupyter)
+
+### Ref7
+
+Openssl. (n.d.). GitHub.
+[https://github.com/openssl/openssl](https://github.com/openssl/openssl)
+
+### Ref8
+
+Git. (n.d.). GitHub. [https://github.com/git/git](https://github.com/git/git)
+
+### Ref9
+
+Alpha canada.ca - Canada.ca. (n.d.).
 [https://alpha.canada.ca/en/index.html](https://alpha.canada.ca/en/index.html)
-<a id="ref9"></a>
 
-* Secretariat, T. B. O. C. (2021, August 13). Government of Canada Digital
+### Ref10
+
+Secretariat, T. B. O. C. (2021, August 13). Government of Canada Digital
 Standards. Canada.ca.
 [https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
-<a id="ref10"></a>

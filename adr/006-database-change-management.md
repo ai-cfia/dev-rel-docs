@@ -35,7 +35,8 @@ To address the context and requirements, the following approach is adopted:
   version control. Semantic Versioning helps developers and users understand the
   nature of the changes in a new version of a software package, making it easier
   to manage dependencies and assess compatibility. It usually is in this format
-  : x.x.x (MAJOR.MINOR.PATCH) with each x being a number. ([PostgreSQL wiki, n.d.](#ref-changes))
+  : x.x.x (MAJOR.MINOR.PATCH) with each x being a number.
+  ([PostgreSQL wiki, n.d.](#changes))
 
   In our case, we use
   louis_x.x.x - a MAJOR release would break the database, it includes modifying
@@ -238,4 +239,8 @@ complexities and potential challenges.
 
 ## References
 
-* <a id="ref-changes"></a> Change management tools and techniques. Change management tools and techniques - PostgreSQL wiki. (n.d.). <https://wiki.postgresql.org/wiki/Change_management_tools_and_techniques>
+### Changes
+
+Change management tools and techniques. Change management tools and techniques
+- PostgreSQL wiki. (n.d.).
+<https://wiki.postgresql.org/wiki/Change_management_tools_and_techniques>
