@@ -1,4 +1,4 @@
-## Creating Automated Tests for React Components
+# Creating Automated Tests for React Components
 
 This comprehensive guide outlines how to set up and write automated tests for
 React components with Vitest and @testing-library/react.

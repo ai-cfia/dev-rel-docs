@@ -1,6 +1,6 @@
 # Integrating Environment Variables in TypeScript React Project
 
-### Overview
+## Overview
 
 Environment variables are a fundamental aspect of developing in TypeScript and
 React, allowing you to manage configurations separate from your codebase. This

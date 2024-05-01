@@ -5,7 +5,7 @@ TypeScript and SWC, and further enhancing it with ESLint for code linting and
 Prettier for code formatting. Following these steps will help you maintain a
 clean, consistent, and efficient codebase.
 
-# Table of Contents
+## Table of Contents
 
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
