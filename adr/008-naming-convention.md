@@ -218,14 +218,15 @@ https://gist.github.com/digitaljhelms/4287848)
 
 ### Microsoft-1
 
-Azure Naming Best Practices. (2023, March, 26). Microsoft.
-[https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/readyazure-best-practices/resource-naming)
+Azure Naming Best Practices. (2023, December, 13). Microsoft.
+[https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming](
+https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)
 
 ### Microsoft-2
 
-Azure Resource Abbreviations. (2023, April 17). Microsoft.
+Azure Resource Abbreviations. (2024, April 26). Microsoft.
 [https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations](
-https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/readyazure-best-practices/resource-abbreviations)
+https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations)
 
 ### Semver
 
