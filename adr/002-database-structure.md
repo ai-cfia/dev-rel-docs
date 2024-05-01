@@ -120,7 +120,7 @@ Cons:
 In summary, while the "Separate Databases (Current Setup)" option provides
 initial clarity, it has serious disadvantages, such as redundancy, decreased
 flexibility, difficulties with collaboration, and the possibility of data
-conflicts. 
+conflicts.
 
 ### Consolidated Database Approach
 
