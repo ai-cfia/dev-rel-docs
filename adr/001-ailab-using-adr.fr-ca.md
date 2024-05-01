@@ -7,7 +7,7 @@ au sein du Laboratoire d'Intelligence Artificielle (AI-Lab) de l'Agence
 Canadienne d'Inspection des Aliments (ACIA). Un ADR est conçu pour consigner les
 décisions qui traversent plusieurs projets et produits et qui sont suffisamment
 significatives pour nécessiter une conformité uniforme de toutes les équipes
-impliquées ([Ayers, 2019](#ref-ayers); [Henderson, s.d.](#ref-henderson)). Nous
+impliquées ([Ayers, 2019](#ayers); [Henderson, s.d.](#henderson)). Nous
 avons opté pour les ADR en raison de leur format versionné, clair et accessible,
 abordant des problèmes tels que les discussions répétées, les approches
 incohérentes et les difficultés d'intégration des nouveaux membres de l'équipe.
@@ -27,16 +27,16 @@ délibération collective et la prise de décision.
   de développement ouvert hébergé sur GitHub.
 - Wiki : Une plateforme collaborative qui permet la modification de pages Web
   interconnectées, souvent utilisée pour la documentation ([Lebar,
-  2022](#ref-lebar)).
+  2022](#lebar)).
 - Demande de Commentaires (RFC) : Une méthode permettant des discussions
   collectives sur un problème ou une fonctionnalité proposée, souvent formalisée
-  et contrôlée par version ([Calçado, 2018](#ref-calcado)).
+  et contrôlée par version ([Calçado, 2018](#calcado)).
 - Confluence : Un logiciel de collaboration développé par Atlassian, servant de
   wiki d'entreprise et d'outil de gestion de projet ([Atlassian,
-  s.d.](#ref-atlassian)).
+  s.d.](#atlassian)).
 - Journal de Décisions : Une méthode simple d'archivage qui consigne les
   décisions clés prises au cours d'un projet, généralement sans contrôle de
-  version ([Monday.com, s.d.](#ref-monday)).
+  version ([Monday.com, s.d.](#monday)).
 
 ## Contexte
 
@@ -104,7 +104,7 @@ décisions triviales.
   - XXX représente un numéro à trois chiffres pour le classement.
   - tag est une étiquette courte et descriptive de la décision.
   - code-langue est conforme à la norme ISO 639-1 pour les codes de langues
-    ([Library of Congress, 2017](#ref7)).
+    ([Library of Congress, 2017](#library-of-congress)).
 
   Exemples :
   - 001-ailab-using-adr.en-ca.md pour la version en anglais (Canada).
@@ -116,15 +116,16 @@ décisions triviales.
   titre.
 - Sections : Un ADR comprendra un résumé exécutif, le contexte, la décision, les
   alternatives envisagées, les conséquences et les références ([Microsoft,
-  2020](#ref-microsoft)). Voir le [Modèle
+  2020](#microsoft)). Voir le [Modèle
   ADR](./001-ailab-using-adr-template.fr-ca.md) pour plus de détails.
 - Format de Référencement : Utiliser le style APA pour la mise en forme des
-  références ([American Psychological Association, n.d.](#ref-apa-examples)).
+  références ([American Psychological Association, n.d.]
+  (#american-psychological-association)).
   Les citations dans le texte doivent être reliées aux références listées dans
   la section Références.
   - Exemple de référence : `<a id="ref-henderson"></a>Henderson, J. P. (s.d.).
       Enregistrement de Décision d'Architecture (ADR)...`
-  - Exemple de citation : `([Henderson, s.d.](#ref-henderson))`
+  - Exemple de citation : `([Henderson, s.d.](#henderson))`
 
 ### Statuts Implicites
 
@@ -180,7 +181,7 @@ décisions triviales.
 
 ## Alternatives Étudiées
 
-### [ADR](#ref-henderson)
+### [ADR](#henderson)
 
 Avantages :
 
@@ -200,7 +201,7 @@ Inconvénients :
 - Nécessite une discipline continue pour maintenir et mettre à jour les
   enregistrements.
 
-### [Continuer avec une Documentation basée sur Wiki](#ref-lebar)
+### [Continuer avec une Documentation basée sur Wiki](#lebar)
 
 Avantages :
 
@@ -213,7 +214,7 @@ Inconvénients :
 - Risque de devenir obsolète.
 - Inadéquat pour suivre l'historique des décisions.
 
-### [Demande de Commentaires (RFC)](#ref-calcado)
+### [Demande de Commentaires (RFC)](#calcado)
 
 Avantages :
 
@@ -226,7 +227,7 @@ Inconvénients :
 - Le processus formel peut dissuader les contributions de membres moins
   expérimentés de l'équipe.
 
-### [Confluence](#ref-atlassian)
+### [Confluence](#atlassian)
 
 Avantages :
 
@@ -239,7 +240,7 @@ Inconvénients :
 - Coût supplémentaire pour les licences.
 - La complexité peut entraîner un désordre.
 
-### [Journal de Décisions](#ref-monday)
+### [Journal de Décisions](#monday)
 
 Avantages :
 
@@ -266,31 +267,52 @@ Inconvénients :
 
 ## Références
 
-<a id="ref-ayers"></a>Ayers, D. (10 mai 2019). Communicating and Documenting
-Architectural Decisions. <https://www.youtube.com/watch?v=rwfXkSjFhzc>
+#### Ayers
 
-<a id="ref-atlassian"></a>Atlassian. (s. d.). DACI: Decision Documentation.
-<https://www.atlassian.com/software/confluence/templates/decision>
+Ayers, D. (10 mai 2019). Communicating and Documenting Architectural Decisions.
+Retrieved from https://www.youtube.com/watch?v=rwfXkSjFhzc
 
-<a id="ref-calcado"></a>Calçado, P. (19 novembre 2018). A Structured RFC
-Process. <https://philcalcado.com/2018/11/19/a_structured_rfc_process.html>
+#### Atlassian
 
-<a id="ref-henderson"></a>Henderson, J. P. (s. d.). Architecture Decision Record
-(ADR). <https://github.com/joelparkerhenderson/architecture-decision-record>
+Atlassian. (n. d.). DACI: Decision Documentation. Retrieved from
+https://www.atlassian.com/software/confluence/templates/decision
 
-<a id="ref-lebar"></a>LeBar, Z. (5 mars 2022). What Are Wikis, and Why Should
-You Use Them?
-<https://business.tutsplus.com/tutorials/what-are-wikis-and-why-should-you-use-them--cms-19540>
+#### Calçado
 
-<a id="ref-microsoft"></a>Microsoft. (20 mars 2020). Record Architecture
-Decisions. Code With Engineering Playbook.
-<https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/>
+Calçado, P. (19 novembre 2018). A Structured RFC Process. Retrieved from
+https://philcalcado.com/2018/11/19/a_structured_rfc_process.html
 
-<a id="ref-monday"></a>Monday.com. (s. d.). How to Use a Project Decision Log
-for Optimal Results. <https://monday.com/blog/project-management/decision-log/>
+#### Henderson
 
-<a id="ref-apa-examples"></a>American Psychological Association. (s. d.).
-Reference Examples.
-<https://apastyle.apa.org/style-grammar-guidelines/references/examples>
+Henderson, J. P. (n. d.). Architecture Decision Record (ADR). Retrieved from
+https://github.com/joelparkerhenderson/architecture-decision-record
 
-<a id="ref-library"></a>Library of Congress. (2017, December 21). Codes for the Representation of Names of Languages. <https://www.loc.gov/standards/iso639-2/php/code_list.php>
+#### LeBar
+
+LeBar, Z. (5 mars 2022). What Are Wikis, and Why Should You Use Them?
+Retrieved from
+https://business.tutsplus.com/tutorials/what-are-wikis-and-why-should-you-use-them--cms-19540
+
+#### Microsoft
+
+Microsoft. (20 mars 2020). Record Architecture Decisions.
+Code With Engineering Playbook. Retrieved from
+https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/
+
+#### Monday
+
+Monday.com. (n. d.). How to Use a Project Decision Log
+for Optimal Results.
+Retrieved from https://monday.com/blog/project-management/decision-log/
+
+#### American Psychological Association
+
+American Psychological Association. (n. d.).
+Reference Examples. Retrieved from
+https://apastyle.apa.org/style-grammar-guidelines/references/examples
+
+#### Library of Congress
+
+Library of Congress. (2017, December 21). Codes for the
+Representation of Names of Languages. Retrieved from
+https://www.loc.gov/standards/iso639-2/php/code_list.php

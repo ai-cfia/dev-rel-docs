@@ -1,6 +1,7 @@
 # ADR-002: Database Structure Design
 
 ## CFIA AI Lab Database Diagram
+
 ![The image is a visual representation of the Canadian Food Inspection Agency's
 (CFIA) AI Lab Database Organization. It details how different front-end and
 back-end systems are connected to their respective databases and a central
@@ -48,6 +49,7 @@ organization.](./002-database-structure-diagram.png)
 
 
 ## Executive Summary
+
 This Architecture Decision Record (ADR) describes our plan to promote sharing
 data between software products created by the Canadian Food Inspection Agency
 (CFIA) Artificial Intelligence (AI) Lab. At the same time, we aim to make things
@@ -55,6 +57,7 @@ more flexible and easier to maintain by bringing all our product databases
 together in a single database server.
 
 ## Context
+
 The database was originally created for Louis, our conversational agent. Over
 time, it expanded to include our public website's knowledge base and became
 essential for products like Finesse (search). However, the name "ailab-db" no
@@ -66,6 +69,7 @@ unified codebase has advantages, associating a schema with each app might not
 effectively communicate the entities organized within.
 
 ## Terminology
+
 **Database**: Database refers to a named collection of local SQL objects.
 
 **Database Server**: A specialized server managing access to databases.
@@ -76,6 +80,7 @@ descriptions (table definitions, constraints, comments, etc.) for a database or
 its subset.
 
 ## Decision
+
 We've decided to use a Consolidated Database Approach, which means we'll combine
 all our individual product databases into one central database server. This
 approach streamlines data management, reduces duplication, and makes it easier

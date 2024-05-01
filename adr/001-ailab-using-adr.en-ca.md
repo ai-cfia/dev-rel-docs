@@ -7,7 +7,7 @@ Artificial Intelligence Laboratory (AI-Lab) at Canadian Food Inspection Agency
 (CFIA) for documenting key architectural decisions. An ADR is a document
 designed to capture decisions across multiple projects and products and are of
 such significance that they require uniform compliance from all teams involved
-([Ayers, 2019](#ref-ayers); [Henderson, n.d.](#ref-henderson)). We chose ADRs
+([Ayers, 2019](#ayers); [Henderson, n.d.](#henderson)). We chose ADRs
 for their version-controlled, clear, and accessible format, addressing issues
 such as repeated discussions, inconsistent approaches, and difficulties in
 onboarding new team members. The document sets the standards for ADR creation,
@@ -25,16 +25,16 @@ process to enable collective deliberation and decision-making.
 - GitHub Pull Request: A mechanism for submitting contributions to an open
   development project hosted on GitHub.
 - Wiki: A collaborative platform that allows for the editing of interlinked web
-  pages, commonly used for documentation ([Lebar, 2022](#ref-lebar)).
+  pages, commonly used for documentation ([Lebar, 2022](#lebar)).
 - Request for Comment (RFC): A process that enables collective deliberation on a
   particular issue or proposed feature, often formalized and version-controlled
-  ([Calçado, 2018](#ref-calcado)).
+  ([Calçado, 2018](#calcado)).
 - Confluence: A collaboration software program developed by Atlassian that
   functions as an enterprise wiki and project management tool ([Atlassian,
-  n.d.](#ref-atlassian)).
+  n.d.](#atlassian)).
 - Decision Log: A record-keeping method that logs key decisions made throughout
   the course of a project, typically without version control ([Monday.com,
-  n.d.](#ref-monday)).
+  n.d.](#monday)).
 
 ## Context
 
@@ -96,7 +96,7 @@ significant architectural choices, not trivial decisions.
   - XXX is a three-digit number for ordering.
   - tag is a short, descriptive tag of the decision.
   - language-code follows the ISO 639-1 standard for language codes ([Library of
-    Congress, 2017](#ref-library)).
+    Congress, 2017](#library-of-congress)).
 
   Examples:
   - 001-ailab-using-adr.en-ca.md for the English (Canada) version.
@@ -107,14 +107,15 @@ significant architectural choices, not trivial decisions.
   description. Numbers should match between the file name and title.
 - Sections: An ADR will include Executive Summary, Context, Decision,
   Alternatives Considered, Consequences, and References ([Microsoft,
-  2020](#ref-microsoft)). See [ADR Template](./001-ailab-using-adr-template.en-ca.md)
+  2020](#microsoft)). See [ADR Template](./001-ailab-using-adr-template.en-ca.md)
   for more details.
 - Referencing Format: Use APA style for formatting references ([American
-  Psychological Association, n.d.](#ref-apa-examples)). In-text citations should
-  be linked to the detailed citations in the References section.
-    - Reference example: `<a id="ref-henderson"></a>Henderson, J. P. (n.d.).
-      Architecture Decision Record (ADR)...`
-    - Citation example: `([Henderson, n.d.](#ref-henderson))`
+  Psychological Association, n.d.](#american-psychological-association)).
+  In-text citations should be linked to the detailed citations in the
+  References section.
+  - Reference example: `<a id="ref-henderson"></a>Henderson, J. P. (n.d.).
+    Architecture Decision Record (ADR)...`
+  - Citation example: `([Henderson, n.d.](#henderson))`
 
 ### Implicit Statuses
 
@@ -168,7 +169,7 @@ significant architectural choices, not trivial decisions.
 
 ## Alternatives Considered
 
-### [ADR](#ref-henderson)
+### [ADR](#henderson)
 
 Pros:
 
@@ -187,7 +188,7 @@ Cons:
   initial phases of projects.
 - Requires ongoing discipline to maintain and update records.
 
-### [Continuing with Wiki-based Documentation](#ref-lebar)
+### [Continuing with Wiki-based Documentation](#lebar)
 
 Pros:
 
@@ -200,7 +201,7 @@ Cons:
 - Prone to becoming outdated.
 - Inadequate for tracking decision history.
 
-### [Request for Comments (RFC)](#ref-calcado)
+### [Request for Comments (RFC)](#calcado)
 
 Pros:
 
@@ -212,7 +213,7 @@ Cons:
 - Consumes significant time for discussion and approval.
 - Formal process may deter contributions from less experienced team members.
 
-### [Confluence](#ref-atlassian)
+### [Confluence](#atlassian)
 
 Pros:
 
@@ -224,7 +225,7 @@ Cons:
 - Additional cost for licenses.
 - Complexity can lead to disorganization.
 
-### [Decision Log](#ref-monday)
+### [Decision Log](#monday)
 
 Pros:
 
@@ -250,20 +251,52 @@ Cons:
 
 ## References
 
-<a id="ref-ayers"></a>Ayers, D. (10 mai 2019). Communicating and Documenting Architectural Decisions. Retrieved from https://www.youtube.com/watch?v=rwfXkSjFhzc
+#### Ayers
 
-<a id="ref-atlassian"></a>Atlassian. (n. d.). DACI: Decision Documentation. Retrieved from https://www.atlassian.com/software/confluence/templates/decision
+Ayers, D. (10 mai 2019). Communicating and Documenting Architectural Decisions.
+Retrieved from https://www.youtube.com/watch?v=rwfXkSjFhzc
 
-<a id="ref-calcado"></a>Calçado, P. (19 novembre 2018). A Structured RFC Process. Retrieved from https://philcalcado.com/2018/11/19/a_structured_rfc_process.html
+#### Atlassian
 
-<a id="ref-henderson"></a>Henderson, J. P. (n. d.). Architecture Decision Record (ADR). Retrieved from https://github.com/joelparkerhenderson/architecture-decision-record
+Atlassian. (n. d.). DACI: Decision Documentation. Retrieved from
+https://www.atlassian.com/software/confluence/templates/decision
 
-<a id="ref-lebar"></a>LeBar, Z. (5 mars 2022). What Are Wikis, and Why Should You Use Them? Retrieved from https://business.tutsplus.com/tutorials/what-are-wikis-and-why-should-you-use-them--cms-19540
+#### Calçado
 
-<a id="ref-microsoft"></a>Microsoft. (20 mars 2020). Record Architecture Decisions. Code With Engineering Playbook. Retrieved from https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/
+Calçado, P. (19 novembre 2018). A Structured RFC Process. Retrieved from
+https://philcalcado.com/2018/11/19/a_structured_rfc_process.html
 
-<a id="ref-monday"></a>Monday.com. (n. d.). How to Use a Project Decision Log for Optimal Results. Retrieved from https://monday.com/blog/project-management/decision-log/
+#### Henderson
 
-<a id="ref-apa-examples"></a>American Psychological Association. (n. d.). Reference Examples. Retrieved from https://apastyle.apa.org/style-grammar-guidelines/references/examples
+Henderson, J. P. (n. d.). Architecture Decision Record (ADR). Retrieved from
+https://github.com/joelparkerhenderson/architecture-decision-record
 
-<a id="ref-library"></a>Library of Congress. (2017, December 21). Codes for the Representation of Names of Languages. Retrieved from https://www.loc.gov/standards/iso639-2/php/code_list.php
+#### LeBar
+
+LeBar, Z. (5 mars 2022). What Are Wikis, and Why Should You Use Them?
+Retrieved from
+https://business.tutsplus.com/tutorials/what-are-wikis-and-why-should-you-use-them--cms-19540
+
+#### Microsoft
+
+Microsoft. (20 mars 2020). Record Architecture Decisions.
+Code With Engineering Playbook. Retrieved from
+https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/
+
+#### Monday
+
+Monday.com. (n. d.). How to Use a Project Decision Log
+for Optimal Results.
+Retrieved from https://monday.com/blog/project-management/decision-log/
+
+#### American Psychological Association
+
+American Psychological Association. (n. d.).
+Reference Examples. Retrieved from
+https://apastyle.apa.org/style-grammar-guidelines/references/examples
+
+#### Library of Congress
+
+Library of Congress. (2017, December 21). Codes for the
+Representation of Names of Languages. Retrieved from
+https://www.loc.gov/standards/iso639-2/php/code_list.php
