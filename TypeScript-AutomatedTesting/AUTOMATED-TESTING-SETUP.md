@@ -3,7 +3,7 @@
 This comprehensive guide outlines how to set up and write automated tests for
 React components with Vitest and @testing-library/react.
 
-### Setting Up the Environment
+## Setting Up the Environment
 
 Ensure your project includes Vitest, @testing-library/react, and
 @testing-library/user-event. Tailor `vitest.config.ts` with plugins from
