@@ -1,6 +1,6 @@
 # Nachet backend classification not working (incident #1)
 
-### Owner
+## Owner
 
 Jonathan Lopez (@SonOfLope) and Thomas Cardin (@ThomasCardin)
 
@@ -58,7 +58,7 @@ team lead.
 2. Classify button following the load button click: Regenerating the API Key of
 the Azure AI Model used inside nachet.
 
-### Impact
+### Impact by teams
 
 User impact
 
@@ -79,7 +79,7 @@ Revenue Impact
 - The time of developers and DevSecOps personnel.
 - The time of the tech lead.
 
-### Root Causes
+### Root Causes (step)
 
 1. To test the classification, it was necessary to upload an image by clicking
 on the "load" button. This resulted in a 413 Request Entity Too Large error.
@@ -101,23 +101,26 @@ maximum upload limite to the nachet backend.
 
 ## Action Items
 
-### Nachet backend team (NBT):
-|Action items|Type|Priority|Owner|Tracking bug|
-|--------|-------|-------|-------|-------|
-|Instrument the application|mitigate|P0|NBT|[issue 50](#ref-50)|
+### Nachet backend team (NBT)
 
-### Nachet frontend team (NFT):
 |Action items|Type|Priority|Owner|Tracking bug|
 |--------|-------|-------|-------|-------|
-|Instrument the application|mitigate|P0|NFT|[issue 88](#ref-88)|
+|Instrument the application|mitigate|P0|NBT|[issue 50](#ref50)|
 
-### DevSecOps Team (DT):
+### Nachet frontend team (NFT)
+
 |Action items|Type|Priority|Owner|Tracking bug|
 |--------|-------|-------|-------|-------|
-|Monitor API Key regeneration|detect|P1|DT|[issue 22](#ref-22)|
-|Add 500 internal server error alerts|detect|P1|DT|[issue 23](#ref-23)|
-|Disallow API Key changes without approval|mitigate|P1|DT|[issue 21](#ref-21)|
-|Support instrumented applications|mitigate|P1|DT|[issue 13](#ref-13)|
+|Instrument the application|mitigate|P0|NFT|[issue 88](#ref88)|
+
+### DevSecOps Team (DT)
+
+|Action items|Type|Priority|Owner|Tracking bug|
+|--------|-------|-------|-------|-------|
+|Monitor API Key regeneration|detect|P1|DT|[issue 22](#ref22)|
+|Add 500 internal server error alerts|detect|P1|DT|[issue 23](#ref23)|
+|Disallow API Key changes without approval|mitigate|P1|DT|[issue 21](#ref21)|
+|Support instrumented applications|mitigate|P1|DT|[issue 13](#ref13)|
 
 ## Lessons Learned
 
@@ -199,20 +202,32 @@ the model and the one in production.
 
 nachet
 
-- nachet-backend: https://github.com/ai-cfia/nachet-backend
+- nachet-backend: <https://github.com/ai-cfia/nachet-backend>
 
-- nachet-frontend: https://github.com/ai-cfia/nachet-frontend
+- nachet-frontend: <https://github.com/ai-cfia/nachet-frontend>
 
 ## Supporting information
 
-<a id="ref-50"></a> <https://github.com/ai-cfia/nachet-backend/issues/50>
+### Ref50
 
-<a id="ref-88"></a> <https://github.com/ai-cfia/nachet-frontend/issues/88>
+<https://github.com/ai-cfia/nachet-backend/issues/50>
 
-<a id="ref-13"></a> <https://github.com/ai-cfia/infra/issues/13>
+### Ref88
 
-<a id="ref-21"></a> <https://github.com/ai-cfia/infra/issues/21>
+<https://github.com/ai-cfia/nachet-frontend/issues/88>
 
-<a id="ref-22"></a><https://github.com/ai-cfia/infra/issues/22>
+### Ref13
 
-<a id="ref-23"></a><https://github.com/ai-cfia/infra/issues/23>
+<https://github.com/ai-cfia/infra/issues/13>
+
+### Ref21
+
+<https://github.com/ai-cfia/infra/issues/21>
+
+### Ref22
+
+<https://github.com/ai-cfia/infra/issues/22>
+
+### Ref23
+
+<https://github.com/ai-cfia/infra/issues/23>

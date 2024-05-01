@@ -1,6 +1,7 @@
-## Design Philosophy and UX Concept for CFIA Projects
+# Design Philosophy and UX Concept for CFIA Projects
 
-### User-Centric Design
+## User-Centric Design
+
 Our frontend development is guided by a user-first approach, ensuring a simple
 and intuitive search experience across all CFIA projects. This focus enhances
 user engagement and accessibility, aligning with the [Government of Canada's
@@ -10,6 +11,7 @@ for "Design with Users" and promoting an inclusive environment for a diverse
 user base.
 
 ### Overall User Experience Goal
+
 The core aim is to facilitate an efficient and streamlined user experience,
 enabling users to effortlessly access information and complete tasks. This
 commitment drives our frontend design, ensuring a seamless and intuitive

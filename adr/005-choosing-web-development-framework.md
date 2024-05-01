@@ -188,37 +188,58 @@ globally recognized, credible, and accessible source of AI knowledge.
 
 ## References
 
-* Homepage. (n.d.). Docusaurus. [https://docusaurus.io/](https://docusaurus.io/) <a id="ref1"></a>
+### Ref1
 
-* Secretariat, T. B. O. C. (2021, August 13). Government of Canada Digital
-  Standards.
-  Canada.ca. [https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html](https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html)
-  <a id="ref2"></a>
+Homepage. (n.d.). Docusaurus. [https://docusaurus.io/](https://docusaurus.io/)
 
-* i18n - Introduction. (2023, October 31).
-Docusaurus. [https://docusaurus.io/docs/i18n/introduction](https://docusaurus.io/docs/i18n/introduction) <a id="ref3"></a>
+### Ref2
 
-* Internationalization and localization. (n.d.).
-Wikipedia. [https://en.wikipedia.org/wiki/Internationalization_and_localization](https://en.wikipedia.org/wiki/Internationalization_and_localization)
-<a id="ref4"></a>
+Secretariat, T. B. O. C. (2021, August 13). Government of Canada Digital
+Standards.
+Canada.ca. [https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html](https://www.canada.ca/en/government/system/digital-governmentgovernment-canada-digital-standards.html)
 
-* Math Equations. (2023, October 31).
-Docusaurus. [https://docusaurus.io/docs/markdown-features/math-equations](https://docusaurus.io/docs/markdown-features/math-equations)
-<a id="ref5"></a>
+### Ref3
 
-* Plugins. (2023, October 31).
-Docusaurus. [https://docusaurus.io/docs/advanced/plugins](https://docusaurus.io/docs/advanced/plugins) <a id="ref6"></a>
+i18n - Introduction. (2023, October 31).
+Docusaurus. [https://docusaurus.io/docs/i18n/introduction](
+https://docusaurus.io/docs/i18n/introduction)
 
-* Search engine optimization (SEO). (2023, October 31).
+### Ref4
+
+Internationalization and localization. (n.d.).
+Wikipedia.
+[https://en.wikipedia.org/wiki/Internationalization_and_localization](
+https://en.wikipedia.org/wiki/Internationalization_and_localization)
+
+### Ref5
+
+Math Equations. (2023, October 31).
+Docusaurus. [https://docusaurus.io/docs/markdown-features/math-equations](
+https://docusaurus.io/docs/markdown-features/math-equations)
+
+### Ref6
+
+Plugins. (2023, October 31).
+Docusaurus. [https://docusaurus.io/docs/advanced/plugins](
+https://docusaurus.io/docs/advanced/plugins)
+
+### Ref7
+
+Search engine optimization (SEO). (2023, October 31).
 Docusaurus. [https://docusaurus.io/docs/seo](https://docusaurus.io/docs/seo)
-<a id="ref7"></a>
 
-* Homepage. (n.d.). Jekyll. [https://jekyllrb.com/](https://jekyllrb.com/)
-<a id="ref8"></a>
+### Ref8
 
-* Homepage. (n.d.). Hugo. [https://gohugo.io/](https://gohugo.io/)
-<a id="ref9"></a>
+Homepage. (n.d.). Jekyll. [https://jekyllrb.com/](https://jekyllrb.com/)
 
-* Homepage. (n.d.). Gatsby. [https://www.gatsbyjs.com/](https://www.gatsbyjs.com/) <a id="ref10"></a>
+### Ref9
 
-* Homepage. (n.d.). Wordpress. [https://wordpress.com/](https://wordpress.com/) <a id="ref11"></a>
+Homepage. (n.d.). Hugo. [https://gohugo.io/](https://gohugo.io/)
+
+### Ref10
+
+Homepage. (n.d.). Gatsby. [https://www.gatsbyjs.com/](https://www.gatsbyjs.com/)
+
+### Ref11
+
+Homepage. (n.d.). Wordpress. [https://wordpress.com/](https://wordpress.com/)
