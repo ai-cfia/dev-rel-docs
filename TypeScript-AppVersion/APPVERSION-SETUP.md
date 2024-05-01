@@ -18,7 +18,7 @@ npm i @saithodev/ts-appversion
 Before building the application, you need to run the TS-AppVersion script. This
 can be achieved using "prestart" and "prebuild" scripts in your package.json:
 
-**Getting Started**
+## Getting Started
 
 package.json:
 
@@ -48,14 +48,16 @@ The script (npm i @saithodev/ts-appversion) generates a TypeScript file
 various version-related variables extracted from the package.json and Git
 repository (if available). These variables include:
 
-    version
-    name
-    description
-    versionDate
-    versionLong
-    gitTag
-    gitCommitHash
-    gitCommitDate
+```text
+version
+name
+description
+versionDate
+versionLong
+gitTag
+gitCommitHash
+gitCommitDate
+```
 
 ## Environment-Related Versions
 

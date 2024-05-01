@@ -1,6 +1,6 @@
 # Nachet backend classification not working (incident #1)
 
-### Owner
+## Owner
 
 Jonathan Lopez (@SonOfLope) and Thomas Cardin (@ThomasCardin)
 
@@ -58,7 +58,7 @@ team lead.
 2. Classify button following the load button click: Regenerating the API Key of
 the Azure AI Model used inside nachet.
 
-### Impact
+### Impact by teams
 
 User impact
 
@@ -79,7 +79,7 @@ Revenue Impact
 - The time of developers and DevSecOps personnel.
 - The time of the tech lead.
 
-### Root Causes
+### Root Causes (step)
 
 1. To test the classification, it was necessary to upload an image by clicking
 on the "load" button. This resulted in a 413 Request Entity Too Large error.
@@ -101,19 +101,19 @@ maximum upload limite to the nachet backend.
 
 ## Action Items
 
-### Nachet backend team (NBT):
+### Nachet backend team (NBT)
 
 |Action items|Type|Priority|Owner|Tracking bug|
 |--------|-------|-------|-------|-------|
 |Instrument the application|mitigate|P0|NBT|[issue 50](#ref50)|
 
-### Nachet frontend team (NFT):
+### Nachet frontend team (NFT)
 
 |Action items|Type|Priority|Owner|Tracking bug|
 |--------|-------|-------|-------|-------|
 |Instrument the application|mitigate|P0|NFT|[issue 88](#ref88)|
 
-### DevSecOps Team (DT):
+### DevSecOps Team (DT)
 
 |Action items|Type|Priority|Owner|Tracking bug|
 |--------|-------|-------|-------|-------|
@@ -202,9 +202,9 @@ the model and the one in production.
 
 nachet
 
-- nachet-backend: https://github.com/ai-cfia/nachet-backend
+- nachet-backend: <https://github.com/ai-cfia/nachet-backend>
 
-- nachet-frontend: https://github.com/ai-cfia/nachet-frontend
+- nachet-frontend: <https://github.com/ai-cfia/nachet-frontend>
 
 ## Supporting information
 

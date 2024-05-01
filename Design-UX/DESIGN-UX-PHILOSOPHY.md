@@ -1,6 +1,6 @@
 # Design Philosophy and UX Concept for CFIA Projects
 
-### User-Centric Design
+## User-Centric Design
 
 Our frontend development is guided by a user-first approach, ensuring a simple
 and intuitive search experience across all CFIA projects. This focus enhances

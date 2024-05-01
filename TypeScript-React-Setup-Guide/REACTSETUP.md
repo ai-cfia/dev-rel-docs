@@ -1,4 +1,4 @@
-## Creating a TypeScript + SWC React App with Vite, ESLint, and Prettier
+# Creating a TypeScript + SWC React App with Vite, ESLint, and Prettier
 
 This guide walks you through the steps to set up a React app using Vite with
 TypeScript and SWC, and further enhancing it with ESLint for code linting and
@@ -79,7 +79,7 @@ TypeScript and modern JavaScript.
 
 ## Step 3: In the .eslintrc.cjs file, replace the existing content with the following configuration
 
-```
+```javascript
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },

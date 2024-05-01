@@ -1,4 +1,4 @@
-## Integrating Environment Variables in TypeScript React Project
+# Integrating Environment Variables in TypeScript React Project
 
 ### Overview
 
