@@ -25,6 +25,7 @@ researchers, developers.
 ## Decision
 
 ### GitHub repositories
+
 - **Convention**: Use lowercase and separate words with dashes.
 - **Example**: `my-repo-name`
 - **Reference**:
@@ -33,14 +34,17 @@ researchers, developers.
 
 
 ### Files
+
 - **Convention**: Use lowercase and separate words with dashes.
 - **Example**: `my-file.sh`
 
 ### Folders/directories
+
 - **Convention**: Use lowercase and separate words with dashes.
 - **Example**: `my-folder`
 
 ### Environment variables
+
 - **Convention**: Start with the uppercase repository name, followed by the
   actual variable name, separating words with underscores.
 - **Example**: `PROJECT_NAME_MY_ENV_VAR`
@@ -49,10 +53,12 @@ researchers, developers.
 - **Example**: `REACT_APP_PROJECT_NAME_ENV_VAR`
 
 ### Project name
+
 - **Standard Practice**: Our usual approach involves selecting a well-known
   figure associated with the project's theme.
 
 ### Azure resource groups
+
 - **Convention**: End with `-rg` followed by the name in lowercase, separating
   words with dashes. `-rg` stand for `resource group`.
 - **Example**: `resource-group-rg` **Reference**:
@@ -60,27 +66,32 @@ researchers, developers.
   - [Microsoft. Azure Resource Abbreviations](#ref-microsoft-2)
 
 ### Azure resources
+
 - **Convention**: Use lowercase and separate words with dashes. Include the
   project name and type of resource.
 - **Example**: `$(PROJECT_NAME)-storage-account`. So for `PROJECT_NAME=nachet`,
   use `nachet-storage-account`.
 
 ### SQL Files
+
 - **Convention**: Use prefix with date format yyyy-mm-dd followed by a
   description of the script.
 - **Example**: `2023-09-24-description-of-script.sql`
 
 ### Database Server / Cluster
+
 - **Convention**: The name should follow this pattern:
   `project-service-environment` all in lowercase, separating words with dashes.
 - **Example**: `nachet-postgresql-dev`
 - **Example**: `finesse-postgresql-prd`
 
 ### Database
+
 - **Convention**: Use in lowercase, don't use space.
 - **Example**: `databasefullname`
 
 ### Database Schema
+
 - **Convention**: Start with `name_` where name is the Schema name, followed by
   the current version numbers.
 - **Example**: `name_1.0.0`
@@ -98,6 +109,7 @@ researchers, developers.
 
 
  ### Database Table, Column and View
+
 - **Convention**: Use lowercase and separate words with underscore. For naming
   use plural.
 - **Why**: SQL reserved word are singular, so by using plural you're less likely
@@ -106,6 +118,7 @@ researchers, developers.
 - **Concrete example**: `html_contents`, `users`, `user_id`
 
 ### Abbreviation for Environment
+
 - `dev`: development environment (typically ongoing development branches
   deployed for developer testing)
 - `uat`: user-acceptance testing: new version that is shared to product
@@ -113,6 +126,7 @@ researchers, developers.
 - `prd`: production: production version of the system
 
 ## Notes
+
 - These naming conventions should be followed for all new resources that can be
   accessed or manipulated via CLI.
 - Existing resources that do not conform to these conventions should be

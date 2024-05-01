@@ -45,7 +45,7 @@ many administrative tasks.
 
 ### PostgreSQL
 
-#### Pros
+Pros:
 
 PostgreSQL stands out as a great DBMS solution that offers traditional database
 benefits with an emphasis on reliability and maturity ([T. Brown,
@@ -72,7 +72,7 @@ in Azure. Here are some key advantages of PostgreSQL:
   for handling vector data in our AI applications. Also provides robust support
   for spatial and geographic data through PostGIS.
 
-#### Cons
+Cons:
 
 - Complex Configuration: Complex to configure and optimize, especially for users
   with limited database administration experience.
@@ -83,7 +83,7 @@ in Azure. Here are some key advantages of PostgreSQL:
 
 ### Microsoft SQL Server
 
-#### Pros
+Pros:
 
 - Integrated Environment: Comprehensive tools and services for maintenance,
   business intelligence, and analytics.
@@ -91,14 +91,14 @@ in Azure. Here are some key advantages of PostgreSQL:
 applications.
 - Security Features: Advanced security features for data protection.
 
-#### Cons
+Cons:
 
 - Cost: High licensing costs.
 - Community Support: Less community support compared to open-source options.
 
 ### CosmosDB
 
-#### Pros
+Pros:
 
 - Tunable consistency model: Simplifies many challenges in distributed systems
   engineering.
@@ -106,7 +106,7 @@ applications.
   performance-intensive situations ([K. Velusamy &amp; S. Goyal,
   2023](#ref-compare2)).
 
-#### Cons
+Cons:
 
 - Detailed information: While it provides auto-indexing functionality, it can
   sometimes be a little mysterious and may require intentional thought
@@ -120,14 +120,14 @@ applications.
 
 ### MySQL
 
-#### Pros
+Pros:
 
 - User-Friendly: Easier to set up and manage, especially for users with basic
   database administration skills.
 - Performance: High-performance with read-heavy workloads.
 - Community Support: Active open-source community.
 
-#### Cons
+Cons:
 
 - Scalability: Limited scalability for handling complex queries and large
   datasets.

@@ -18,7 +18,6 @@ clean, consistent, and efficient codebase.
 - [Step 5: To format all the code in the project run](#step-5-to-format-all-the-code-in-the-project-run)
 - [Step 6: To run ESLint run](#step-6-to-run-eslint-run)
 
-
 ## Getting Started
 
 These instructions will get your copy of the project up and running on your
@@ -54,7 +53,7 @@ server URL.
 
 ### Why Vite and SWC?
 
-#### Advantages of Vite over npx create-react-app:
+#### Advantages of Vite over npx create-react-app
 
 - Faster Build Time: Vite significantly improves build time with an
 ESM-based dev server.
@@ -65,7 +64,7 @@ create-react-app.
 - CRA Deprecation: create-react-app was deprecated in early 2023, further
 favoring the adoption of more modern tools like Vite.
 
-#### Benefits of Using SWC:
+#### Benefits of Using SWC
 
 - Performance: SWC offers faster compilation of TypeScript/JavaScript than
 traditional compilers like Babel.

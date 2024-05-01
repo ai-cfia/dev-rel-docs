@@ -62,13 +62,13 @@ Blue-Green Deployment, and the concept of Database Views and Abstraction Layers.
 
 ### Alternative 1 : Manual SQL Scripts
 
-#### Pros
+Pros:
 
 * Full control.
 
 * No dependencies on third-party tools.
 
-#### Cons
+Cons:
 
 * Prone to human error.
 
@@ -77,14 +77,14 @@ Blue-Green Deployment, and the concept of Database Views and Abstraction Layers.
 
 ### Alternative 2 : Database Migration Tools
 
-#### Pros
+Pros:
 
 * Version control for database schema.
 
 * Controlled application of changes.
 * Support for multiple database systems.
 
-#### Cons
+Cons:
 
 * Learning curve for tools.
 
@@ -92,13 +92,13 @@ Blue-Green Deployment, and the concept of Database Views and Abstraction Layers.
 
 ### Alternative 3 : Change Management Systems
 
-#### Pros
+Pros:
 
 * Structured and formalized approach.
 
 * Enforces approvals and documentation.
 
-#### Cons
+Cons:
 
 * Slower process.
 
@@ -106,14 +106,14 @@ Blue-Green Deployment, and the concept of Database Views and Abstraction Layers.
 
 ### Alternative 4 : Database as Code
 
-#### Pros
+Pros:
 
 * Infrastructure-as-Code (IaC) principles.
 
 * Easy integration with DevOps practices.
 * Consistent versioning.
 
-#### Cons
+Cons:
 
 * Learning curve for IaC tools.
 
@@ -121,14 +121,14 @@ Blue-Green Deployment, and the concept of Database Views and Abstraction Layers.
 
 ### Alternative 5 : Blue-Green Deployment
 
-#### Pros
+Pros:
 
 * Minimizes downtime.
 
 * Easy rollback.
 * Isolated testing of new schema.
 
-#### Cons
+Cons:
 
 * Requires additional infrastructure.
 
@@ -136,13 +136,13 @@ Blue-Green Deployment, and the concept of Database Views and Abstraction Layers.
 
 ### Alternative 6 : Feature Flags
 
-#### Pros
+Pros:
 
 * Gradual and selective introduction of changes.
 
 * Easy rollbacks.
 
-#### Cons
+Cons:
 
 * Requires additional feature flag management.
 
@@ -150,13 +150,13 @@ Blue-Green Deployment, and the concept of Database Views and Abstraction Layers.
 
 ### Alternative 7 : Database Views and Abstraction Layers
 
-#### Pros
+Pros:
 
 * Provides backward compatibility.
 
 * Eases schema changes for applications.
 
-#### Cons
+Cons:
 
 * May not suit all use cases.
 
@@ -164,13 +164,13 @@ Blue-Green Deployment, and the concept of Database Views and Abstraction Layers.
 
 ### Alternative 8 : Data Virtualization
 
-#### Pros
+Pros:
 
 * Presents a consistent virtual schema.
 
 * Allows physical schema changes.
 
-#### Cons
+Cons:
 
 * Additional layer of complexity.
 
@@ -178,13 +178,13 @@ Blue-Green Deployment, and the concept of Database Views and Abstraction Layers.
 
 ### Alternative 9 : Continuous Integration/Continuous Deployment (CI/CD)
 
-#### Pros
+Pros:
 
 * Automated changes within CI/CD pipeline.
 
 * Data integrity testing.
 
-#### Cons
+Cons:
 
 * Requires careful testing.
 
@@ -192,11 +192,11 @@ Blue-Green Deployment, and the concept of Database Views and Abstraction Layers.
 
 ### Alternative 10 : Cloud Database Services
 
-#### Pros
+Pros:
 
 * Automated schema management, scaling, and backups.
 
-#### Cons
+Cons:
 
 * Vendor lock-in.
 
