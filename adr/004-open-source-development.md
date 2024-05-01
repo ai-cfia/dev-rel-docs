@@ -195,8 +195,8 @@ guidelines, will be instituted to mitigate these risks.
 ### Ref1
 
 Microsoft’s Open Source Program. Microsoft Open Source. (n.d.).
-[https://opensource.microsoft.com/program/#program-using]
-(https://opensource.microsoft.com/program/#program-using)
+[https://opensource.microsoft.com/program/#program-using](
+https://opensource.microsoft.com/program/#program-using)
 
 ### Ref2
 

@@ -139,7 +139,7 @@ Pros:
   redundant data. All information is stored in one place, reducing data
   duplication and ensuring data consistency. If I create a file in one database,
   I can access it in another without the need to recreate it. [Matillion - What
-  is Data Consolidation?](#matillon)
+  is Data Consolidation?](#matillion)
 
 - **Greater flexibility in product management:** A consolidated database
   provides greater flexibility in managing different products. It allows for
@@ -182,18 +182,15 @@ here. This can include academic papers, blog posts, or internal documents.
 
 #### Toptal
 
-Blog. (n.d.). Toptal. [Database Design Bad Practices,
-https://www.toptal.com/]
-(https://www.toptal.com/database/database-design-bad-practices)>
+Blog. (n.d.). Toptal. [Database Design Bad Practices](
+https://www.toptal.com/database/database-design-bad-practices)
 
 #### Budibase
 
-Blog. (2022, Mai 22). Budibase. [How to Integrate Multiple Databases,
-https://budibase.com/]
-(https://budibase.com/blog/data/how-to-integrate-multiple-databases)
+Blog. (2022, Mai 22). Budibase. [How to Integrate Multiple Databases](
+https://budibase.com/blog/data/how-to-integrate-multiple-databases)
 
 #### Matillion
 
-Blog. (2020, Décembre 16). Matillion. [What is Data Consolidation?,
-https://www.matillion.com/]
-(https://www.matillion.com/blog/what-is-data-consolidation)
+Blog. (2020, Décembre 16). Matillion. [What is Data Consolidation?,](
+https://www.matillion.com/blog/what-is-data-consolidation)

@@ -44,9 +44,9 @@ commands without `sudo`.
 3. Open terminal: `Terminal > New Terminal` or `` Ctrl+` ``.
 4. Create your project's folder in your working directory:
 
-```bash
-mkdir <your-project-folder>
-```
+  ```bash
+  mkdir <your-project-folder>
+  ```
 
 5. In Command Palette, select `WSL: Open Folder in WSL...` and choose your
 project folder.

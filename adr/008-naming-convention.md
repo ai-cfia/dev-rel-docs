@@ -32,7 +32,6 @@ researchers, developers.
   - [Tilburg. Best Practices for Naming Git Branches.](#tilburg)
   - [Branching. Digitaljhelms.](#digitaljhelms)
 
-
 ### Files
 
 - **Convention**: Use lowercase and separate words with dashes.
@@ -101,7 +100,7 @@ researchers, developers.
   manage changes in databases.
 - **Reference**:
   - [Semver.org, Semantic Versioning 2.0.0](#semver)
-  - [Pypi.org, semver](#rpypi)
+  - [Pypi.org, semver](#pypi)
   - [CFIA, ADR-006](#adr-006)
   - [Ovid. Database Naming Standards](#ovid)
   - [Rootsoft. Database Naming Convention](#rootsoft)
@@ -191,32 +190,32 @@ How we manage changes in databases. (2023, November 6). CFIA AI-Lab.
 ### Ovid
 
 Database Naming Standards. (2022, March 21). Ovid.
-[https://dev.to/ovid/database-naming-standards]
-(https://dev.to/ovid/database-naming-standards-2061)
+[https://dev.to/ovid/database-naming-standards](
+https://dev.to/ovid/database-naming-standards-2061)
 
 ### Rootsoft
 
 Database Naming Convention. (2017, June 15). RootSoft.
-[https://github.com/RootSoft/Database-Naming-Convention]
-(https://github.com/RootSoft/Database-Naming-Convention)
+[https://github.com/RootSoft/Database-Naming-Convention](
+https://github.com/RootSoft/Database-Naming-Convention)
 
 ### Vertabelo
 
 Worst Database Naming Conventions. (2021, August 31). Vertabelo
-[https://vertabelo.com/blog/database-naming-convention]
-(https://vertabelo.com/blog/database-naming-convention)
+[https://vertabelo.com/blog/database-naming-convention](
+https://vertabelo.com/blog/database-naming-convention)
 
 ### Tilburg
 
 Best Practices for Naming Git Branches. (n.d.). Tilburg Science Hub.
-[https://tilburgsciencehub.com/]
-(https://tilburgsciencehub.com/topics/automation/version-control/advanced-git/naming-git-branches/)
+[https://tilburgsciencehub.com/](
+https://tilburgsciencehub.com/topics/automation/version-control/advanced-git/naming-git-branches/)
 
 ### Digitaljhelms
 
 Branching. (n.d.). Digitaljhelms.
-[https://gist.github.com/digitaljhelms/4287848]
-(https://gist.github.com/digitaljhelms/4287848)
+[https://gist.github.com/digitaljhelms/4287848](
+https://gist.github.com/digitaljhelms/4287848)
 
 ### Microsoft-1
 
@@ -226,8 +225,8 @@ Azure Naming Best Practices. (2023, March, 26). Microsoft.
 ### Microsoft-2
 
 Azure Resource Abbreviations. (2023, April 17). Microsoft.
-[https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations]
-(https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/readyazure-best-practices/resource-abbreviations)
+[https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations](
+https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/readyazure-best-practices/resource-abbreviations)
 
 ### Semver
 

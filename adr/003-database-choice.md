@@ -65,7 +65,7 @@ in Azure. Here are some key advantages of PostgreSQL:
   Consistency, Isolation, Durability) properties, ensuring data integrity. For
   example, Microsoft used an analytics dashboard, which tracks quality of
   Windows updates analyzing 20K types of metrics from over 1.2 billion Windows
-  devices ([TECHCOMMUNITY.MICROSOFT.COM, 2023](#architecture)).
+  devices.
 - Diverse Data Types and Extensions: Supports a wide variety of data types (for
   example smallint, integer, decimal, numeric, real, serial...) and has powerful
   extensions such as pgvector ([B. Bytes, 2023](#pgvector)) which is crucial

@@ -241,6 +241,6 @@ complexities and potential challenges.
 
 ### Changes
 
-Change management tools and techniques. Change management tools and techniques
-- PostgreSQL wiki. (n.d.).
+Change management tools and techniques. Change management tools and techniques -
+PostgreSQL wiki. (n.d.).
 <https://wiki.postgresql.org/wiki/Change_management_tools_and_techniques>

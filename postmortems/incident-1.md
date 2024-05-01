@@ -102,16 +102,19 @@ maximum upload limite to the nachet backend.
 ## Action Items
 
 ### Nachet backend team (NBT):
+
 |Action items|Type|Priority|Owner|Tracking bug|
 |--------|-------|-------|-------|-------|
 |Instrument the application|mitigate|P0|NBT|[issue 50](#ref-50)|
 
 ### Nachet frontend team (NFT):
+
 |Action items|Type|Priority|Owner|Tracking bug|
 |--------|-------|-------|-------|-------|
 |Instrument the application|mitigate|P0|NFT|[issue 88](#ref-88)|
 
 ### DevSecOps Team (DT):
+
 |Action items|Type|Priority|Owner|Tracking bug|
 |--------|-------|-------|-------|-------|
 |Monitor API Key regeneration|detect|P1|DT|[issue 22](#ref-22)|
@@ -205,14 +208,26 @@ nachet
 
 ## Supporting information
 
-<a id="ref-50"></a> <https://github.com/ai-cfia/nachet-backend/issues/50>
+### Ref50
 
-<a id="ref-88"></a> <https://github.com/ai-cfia/nachet-frontend/issues/88>
+<https://github.com/ai-cfia/nachet-backend/issues/50>
 
-<a id="ref-13"></a> <https://github.com/ai-cfia/infra/issues/13>
+### Ref88
 
-<a id="ref-21"></a> <https://github.com/ai-cfia/infra/issues/21>
+<https://github.com/ai-cfia/nachet-frontend/issues/88>
 
-<a id="ref-22"></a><https://github.com/ai-cfia/infra/issues/22>
+### Ref13
 
-<a id="ref-23"></a><https://github.com/ai-cfia/infra/issues/23>
+<https://github.com/ai-cfia/infra/issues/13>
+
+### Ref21
+
+<https://github.com/ai-cfia/infra/issues/21>
+
+### Ref22
+
+<https://github.com/ai-cfia/infra/issues/22>
+
+### Ref23
+
+<https://github.com/ai-cfia/infra/issues/23>

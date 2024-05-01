@@ -201,26 +201,27 @@ Canada.ca. [https://www.canada.ca/en/government/system/digital-government/govern
 ### Ref3
 
 i18n - Introduction. (2023, October 31).
-Docusaurus. [https://docusaurus.io/docs/i18n/introduction]
-(https://docusaurus.io/docs/i18n/introduction)
+Docusaurus. [https://docusaurus.io/docs/i18n/introduction](
+https://docusaurus.io/docs/i18n/introduction)
 
 ### Ref4
 
 Internationalization and localization. (n.d.).
-Wikipedia. [https://en.wikipedia.org/wiki/Internationalization_and_localization]
-(https://en.wikipedia.org/wiki/Internationalization_and_localization)
+Wikipedia.
+[https://en.wikipedia.org/wiki/Internationalization_and_localization](
+https://en.wikipedia.org/wiki/Internationalization_and_localization)
 
 ### Ref5
 
 Math Equations. (2023, October 31).
-Docusaurus. [https://docusaurus.io/docs/markdown-features/math-equations]
-(https://docusaurus.io/docs/markdown-features/math-equations)
+Docusaurus. [https://docusaurus.io/docs/markdown-features/math-equations](
+https://docusaurus.io/docs/markdown-features/math-equations)
 
 ### Ref6
 
 Plugins. (2023, October 31).
-Docusaurus. [https://docusaurus.io/docs/advanced/plugins]
-(https://docusaurus.io/docs/advanced/plugins)
+Docusaurus. [https://docusaurus.io/docs/advanced/plugins](
+https://docusaurus.io/docs/advanced/plugins)
 
 ### Ref7
 
