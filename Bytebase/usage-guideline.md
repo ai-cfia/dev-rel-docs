@@ -126,5 +126,3 @@ steps:
 8. Add a `BYTEBASE_API` Secret with the value you noted on the 6th step.
 
 9. Enjoy :)
-## Databases
- test
