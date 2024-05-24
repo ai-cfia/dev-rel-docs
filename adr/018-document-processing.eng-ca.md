@@ -1,37 +1,62 @@
-## ADR-XXX : Document Processing Tool.
+## ADR-018 : Document Processing Tool
 
 ## Executive Summary
 
-The Canadian Food Inspection Agency (CFIA) has chosen the Document Intelligence platform for the development of the FertiScan application. This platform offers OCR (Optical Character Recognition) and models capable of accurately extracting text from images and classify it.
+The Canadian Food Inspection Agency (CFIA) has chosen the Document Intelligence
+platform for the development of the FertiScan application. This platform offers
+OCR (Optical Character Recognition) and models capable of accurately extracting
+text from images and classify it.
 
 ## Context
 
-FertiScan, developed by the CFIA AI Lab, aims to streamline the inspection process for fertilization labels. Inspectors capture images of these labels, and the application automatically populates the inspection form. To achieve this, the system must accurately read and interpret the information displayed on the packaging.
+FertiScan, developed by the CFIA AI Lab, aims to streamline the inspection
+process for fertilization labels. Inspectors capture images of these labels, and
+the application automatically populates the inspection form. To achieve this,
+the system must accurately read and interpret the information displayed on the
+packaging.
 
-The existing tools within the CFIA Lab—such as Gemini, GPT-4, and Llama—can partially understand image content. However, they occasionally “hallucinate” information, generating text that isn’t actually present in the image. This poses a risk of erroneous answers in the form.
+The existing tools within the CFIA Lab—such as Gemini, GPT-4, and Llama—can
+partially understand image content. However, they occasionally “hallucinate”
+information, generating text that isn’t actually present in the image. This
+poses a risk of erroneous answers in the form.
 
-Moreover, traditional language models (LLMs) struggle to grasp the context of specific text snippets. For instance, when presented with an image of a fertilizer package, GPT-4 might identify the text but misclassify it (e.g., labeling an address as a name).
+Moreover, traditional language models (LLMs) struggle to grasp the context of
+specific text snippets. For instance, when presented with an image of a
+fertilizer package, GPT-4 might identify the text but misclassify it (e.g.,
+labeling an address as a name).
 
-To address these challenges, we explored OCR (Optical Character Recognition) solutions. Our priorities were as follows:
+To address these challenges, we explored OCR (Optical Character Recognition)
+solutions. Our priorities were as follows:
 
-1. **Seamless Integration**: The chosen solution should seamlessly integrate with our cloud infrastructure—either executing on the inspector’s device or hosted on Azure.
+1. **Seamless Integration**: The chosen solution should seamlessly integrate
+with our cloud infrastructure—either executing on the inspector’s device or
+hosted on Azure.
 
-2. **Open Source**: Ideally, the solution should align with the Government of Canada’s Digital Standards, advocating for open standards and solutions.
+2. **Open Source**: Ideally, the solution should align with the Government of
+Canada’s Digital Standards, advocating for open standards and solutions.
 
-3. **Accuracy**: Accurate recognition and extraction of label text are essential to provide reliable information to users.
+3. **Accuracy**: Accurate recognition and extraction of label text are essential
+to provide reliable information to users.
 
 ## Decision
 
-The AI Lab has chosen Document Intelligence as the document processing platform for FertiScan. Here’s why:
+The AI Lab has chosen Document Intelligence as the document processing platform
+for FertiScan. Here’s why:
 
-1. **Layout Processor**: Document Intelligence excels at identifying tables, figures, headings, sections, and titles. This feature streamlines the model’s ability to answer questions about label content or further classify it.
+1. **Layout Processor**: Document Intelligence excels at identifying tables,
+figures, headings, sections, and titles. This feature streamlines the model’s
+ability to answer questions about label content or further classify it.
 
-2. **Azure Integration**: Document Intelligence seamlessly integrates with our existing Azure infrastructure, ensuring a smooth workflow.
+2. **Azure Integration**: Document Intelligence seamlessly integrates with our
+existing Azure infrastructure, ensuring a smooth workflow.
 
-On the other hand, we explored Tesseract, an open-source solution. While its local execution without an internet connection is appealing, its speed and accuracy fall short. Tesseract often misses text that other solutions successfully recognize, and it lags significantly behind them.
+On the other hand, we explored Tesseract, an open-source solution. While its
+local execution without an internet connection is appealing, its speed and
+accuracy fall short. Tesseract often misses text that other solutions
+successfully recognize, and it lags significantly behind them.
 
-In summary, Document Intelligence combines accuracy, layout analysis, and Azure compatibility, making it the optimal choice for FertiScan.
-
+In summary, Document Intelligence combines accuracy, layout analysis, and Azure
+compatibility, making it the optimal choice for FertiScan.
 
 ## Alternatives Considered
 
@@ -39,7 +64,8 @@ In summary, Document Intelligence combines accuracy, layout analysis, and Azure 
 
 |---|---|---|---|---|
 
-| **Pricing** | OCR: $1.50 per 1000 pages<br>Extract Entities: $30 per 1000 pages | OCR: $1.50 per 1000 pages<br>Layout: $10 per 1000 pages | Free | OCR: $1.50 per 1000 pages<br>Tables and Requests: $20 per 1000 pages |
+| **Pricing** | OCR: $1.50 per 1000 pages<br>Extract Entities: $30 per 1000 pages
+| OCR: $1.50 per 1000 pages<br>Layout: $10 per 1000 pages | Free | OCR: $1.50 per 1000 pages<br>Tables and Requests: $20 per 1000 pages |
 
 | **Performance** | Fast | Fast | Slow | Fast |
 
@@ -77,7 +103,8 @@ In summary, Document Intelligence combines accuracy, layout analysis, and Azure 
 
 - Requires an internet connection to access the service.
 
-- Struggles with handwritten or complex texts, as it’s primarily designed for structured content.
+- Struggles with handwritten or complex texts, as it’s primarily designed for
+structured content.
 
 ### Document Intelligence (Microsoft)
 
@@ -171,32 +198,50 @@ In summary, Document Intelligence combines accuracy, layout analysis, and Azure 
 
 ### Positive Impacts
 
-1. **Improved Efficiency**: The integration of Document Intelligence will significantly streamline the inspection process. Inspectors will be able to quickly capture and process fertilizer label information, reducing the time spent on manual data entry and increasing overall efficiency.
+1. **Improved Efficiency**: The integration of Document Intelligence will
+significantly streamline the inspection process. Inspectors will be able to
+quickly capture and process fertilizer label information, reducing the time
+spent on manual data entry and increasing overall efficiency.
 
-2. **Enhanced Accuracy**: By leveraging advanced OCR and layout analysis capabilities, Document Intelligence ensures more accurate text extraction and classification. This will minimize errors in the inspection forms, leading to more reliable data collection.
+2. **Enhanced Accuracy**: By leveraging advanced OCR and layout analysis
+capabilities, Document Intelligence ensures more accurate text extraction and
+classification. This will minimize errors in the inspection forms, leading to
+more reliable data collection.
 
-3. **Seamless Integration with Azure**: The compatibility with Azure allows for a smooth workflow within the existing CFIA infrastructure. This reduces the need for extensive reconfiguration or additional training for staff, facilitating a faster implementation.
+3. **Seamless Integration with Azure**: The compatibility with Azure allows for
+a smooth workflow within the existing CFIA infrastructure. This reduces the need
+for extensive reconfiguration or additional training for staff, facilitating a
+faster implementation.
 
-4. **Scalability and Customization**: The ability to create personalized models for text extraction and classification means that the system can be tailored to meet specific needs.
+4. **Scalability and Customization**: The ability to create personalized models
+for text extraction and classification means that the system can be tailored to
+meet specific needs.
 
 ### Negative Impacts
 
-1. **Cost Implications**: The pay-as-you-go model of Document Intelligence, coupled with costs for custom models, may result in higher expenses compared to using free solutions like Tesseract.
+1. **Cost Implications**: The pay-as-you-go model of Document Intelligence,
+coupled with costs for custom models, may result in higher expenses compared to
+using free solutions like Tesseract.
 
-2. **Dependency on Internet Connectivity**: Since Document Intelligence requires an internet connection for processing, any connectivity issues could disrupt the inspection workflow. This dependency might pose challenges in remote or less connected areas.
+2. **Dependency on Internet Connectivity**: Since Document Intelligence requires
+an internet connection for processing, any connectivity issues could disrupt
+the inspection workflow. This dependency might pose challenges in remote or less
+connected areas.
 
-3. **Data Privacy Concerns**: The temporary storage of input data and results for up to 24 hours may raise privacy concerns. It’s crucial to ensure that data handling complies with CFIA’s privacy policies and government regulations to maintain stakeholder trust.
+3. **Data Privacy Concerns**: The temporary storage of input data and results
+for up to 24 hours may raise privacy concerns. It’s crucial to ensure that data
+handling complies with CFIA’s privacy policies and government regulations to
+maintain stakeholder trust.
 
 
 ## References
 
-> Any documentation, research, or data that support the decision can be cited
+#### HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models:
 
-> here. This can include academic papers, blog posts, or internal documents.
-
-#### **HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models**:
-
-   - Li, J., Cheng, X., Zhao, W. X., Nie, J. Y., & Wen, J. R. (2023). HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models. *Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing*, 6449–6464. ¹²
+   - Li, J., Cheng, X., Zhao, W. X., Nie, J. Y., & Wen, J. R. (2023).
+HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language
+Models. *Proceedings of the 2023 Conference on Empirical Methods in Natural
+Language Processing*, 6449–6464. ¹²
 
 #### **Document AI**:
 
@@ -204,11 +249,13 @@ In summary, Document Intelligence combines accuracy, layout analysis, and Azure 
 
 #### **Document Intelligence**:
 
-   - Microsoft Azure. Document Intelligence Studio. https://documentintelligence.ai.azure.com
+   - Microsoft Azure. Document Intelligence Studio.
+https://documentintelligence.ai.azure.com
 
 #### **Amazon Textract**:
 
-   - Amazon Web Services (AWS). Amazon Textract. https://aws.amazon.com/fr/textract/
+   - Amazon Web Services (AWS). Amazon Textract.
+https://aws.amazon.com/fr/textract/
 
 #### **Tesseract OCR Engine**:
 
