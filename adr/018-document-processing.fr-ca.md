@@ -62,27 +62,20 @@ compatibilité Azure, en faisant le choix optimal pour FertiScan.
 
 ## Alternatives Considérées
 
-|| Document AI (Google) | Document Intelligence (Microsoft) | Tesseract |
-Textract (Amazon) |
-|---|---|---|---|---|
-| **Tarification** | OCR : 1,50 $ par 1000 pages<br>Extraction d'entités : 30 $
-par 1000 pages | OCR : 1,50 $ par 1000 pages<br>Mise en page : 10 $ par 1000
-pages | Gratuit |
-OCR : 1,50 $ par 1000 pages<br>Tableaux et requêtes : 20 $ par 1000 pages |
-| **Performance** | Rapide | Rapide | Lent | Rapide |
-| **Précision** | Élevée | Élevée | Modérée (avec ScribeOCR) | Élevée |
-| **Fonctionnalités Supplémentaires** | Extraction de paires clé-valeur<br>Modèles
- personnalisés d'extraction de texte<br>Traitement par lots | Reconnaissance de
- texte manuscrit<br>Détection de figures<br>Extraction de paires clé-valeur<br>
- Traitement par lots | Exécution locale (hors ligne) | Extraction de données à
- partir de tableaux, formulaires et paires clé-valeur |
-| **Plateforme Cloud** | Google Cloud | Azure | N/A | Amazon Web Service |
-| **Formation** | Le coût de l'affinage est de 46,39 $ par heure |
-Modèles personnalisés | N/A | N/A |
-| **Confidentialité** | [Avis de confidentialité](https://cloud.google.com/terms/cloud-privacy-notice?hl=fr) |
-[Avis de confidentialité](https://azure.microsoft.com/en-us/explore/trusted-cloud/privacy/) |
-N/A | [Avis de confidentialité](https://aws.amazon.com/fr/privacy/) |
-| **Licence** | Code fermé | Code fermé | Version Apache 2.0 | Code fermé |
+|                          | Document AI (Google) | Document Intelligence (Microsoft) | Tesseract | Textract (Amazon)     |
+|--------------------------|----------------------|-----------------------------------|-----------|-----------------------|
+| **Tarification**         | OCR : 1,50 $ par 1000 pages<br>Extraction d'entités : 30 $ par 1000 pages | OCR : 1,50 $ par 1000 pages<br>Mise en page : 10 $ par 1000 pages | Gratuit    | OCR : 1,50 $ par 1000 pages<br>Tableaux et requêtes : 20 $ par 1000 pages |
+| **Performance**          | Rapide               | Rapide                            | Lent      | Rapide                |
+| **Précision**            | Élevée               | Élevée                            | Modérée (avec ScribeOCR) | Élevée      |
+| **Fonctionnalités Supplémentaires** | Extraction de paires clé-valeur<br>Modèles personnalisés d'extraction de texte<br>Traitement par lots | Reconnaissance de texte manuscrit<br>Détection de figures<br>Extraction de paires clé-valeur<br>Traitement par lots | Exécution locale (hors ligne) | Extraction de données à partir de tableaux, formulaires et paires clé-valeur |
+| **Plateforme Cloud**     | Google Cloud         | Azure                             | N/A       | Amazon Web Service    |
+| **Formation**            | Le coût de l'affinage est de 46,39 $ par heure | Modèles personnalisés            | N/A       | N/A                   |
+| **Confidentialité**      | [Avis de confidentialité][1] | [Avis de confidentialité][2]     | N/A       | [Avis de confidentialité][3] |
+| **Licence**              | Code fermé           | Code fermé                        | Version Apache 2.0 | Code fermé           |
+
+[1]: <https://cloud.google.com/terms/cloud-privacy-notice?hl=fr>
+[2]: <https://azure.microsoft.com/en-us/explore/trusted-cloud/privacy/>
+[3]: <https://aws.amazon.com/fr/privacy/>
 
 ### Document AI (Google)
 
@@ -190,9 +183,8 @@ formulaires d'inspection, conduisant à une collecte de données plus fiable.
 3. **Intégration Transparente avec Azure** : La compatibilité avec Azure permet
 un flux de travail fluide au sein de l'infrastructure existante de l'ACIA.
 Cela réduit la nécessité d'une
-
- reconfiguration ou d'une formation supplémentaire pour le personnel, facilitant
- une mise en œuvre plus rapide.
+reconfiguration ou d'une formation supplémentaire pour le personnel, facilitant
+une mise en œuvre plus rapide.
 
 4. **Évolutivité et Personnalisation** : La capacité de créer des modèles
 personnalisés pour l'extraction et la classification de texte signifie que le
@@ -222,25 +214,25 @@ pour maintenir la confiance des parties prenantes.
 ici. Cela peut inclure des articles académiques,
 des articles de blog ou des documents internes.
 
-#### **HaluEval : Un Large-Scale Hallucination Evaluation Benchmark for Large Language Models**:
+### HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models
 
-   - Li, J., Cheng, X., Zhao, W. X., Nie, J. Y., & Wen, J. R. (2023). HaluEval :
-   Un Large-Scale Hallucination Evaluation Benchmark for Large Language Models.
-   *Proceedings of the 2023 Conference on Empirical Methods
-   in Natural Language Processing*, 6449–6464. ¹²
+- Li, J., Cheng, X., Zhao, W. X., Nie, J. Y., & Wen, J. R. (2023). HaluEval: A
+  Large-Scale Hallucination Evaluation Benchmark for Large Language Models.
+  *Proceedings of the 2023 Conference on Empirical Methods in Natural Language
+  Processing*, 6449–6464.
 
-#### **Document AI**:
+#### **Document AI**
 
-   - Google Cloud. Document AI. https://cloud.google.com/document-ai?hl=fr
+- Google Cloud. Document AI. <https://cloud.google.com/document-ai?hl=fr>
 
-#### **Document Intelligence**:
+#### **Document Intelligence**
 
-   - Microsoft Azure. Document Intelligence Studio. https://documentintelligence.ai.azure.com
+- Microsoft Azure. Document Intelligence Studio. <https://documentintelligence.ai.azure.com>
 
-#### **Amazon Textract**:
+#### **Amazon Textract**
 
-   - Amazon Web Services (AWS). Amazon Textract. https://aws.amazon.com/fr/textract/
+- Amazon Web Services (AWS). Amazon Textract. <https://aws.amazon.com/fr/textract/>
 
-#### **Tesseract OCR Engine**:
+#### **Tesseract OCR Engine**
 
-   - Dépôt GitHub : tesseract. https://github.com/tesseract-ocr/tesseract
+- Dépôt GitHub : tesseract. <https://github.com/tesseract-ocr/tesseract>
