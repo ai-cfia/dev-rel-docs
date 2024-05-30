@@ -1,4 +1,4 @@
-## ADR-018 : Document Processing Tool
+# ADR-018 : Document Processing Tool
 
 ## Executive Summary
 
@@ -60,25 +60,24 @@ compatibility, making it the optimal choice for FertiScan.
 
 ## Alternatives Considered
 
-|   | Document AI (Google) | Document Intelligence (Microsoft) | Tesseract | Textract (Amazon) |
-
+|| Document AI (Google) | Document Intelligence (Microsoft) | Tesseract |
+ Textract (Amazon) |
 |---|---|---|---|---|
-
 | **Pricing** | OCR: $1.50 per 1000 pages<br>Extract Entities: $30 per 1000 pages
-| OCR: $1.50 per 1000 pages<br>Layout: $10 per 1000 pages | Free | OCR: $1.50 per 1000 pages<br>Tables and Requests: $20 per 1000 pages |
-
+| OCR: $1.50 per 1000 pages<br>Layout: $10 per 1000 pages | Free |
+OCR: $1.50 per 1000 pages<br>Tables and Requests: $20 per 1000 pages |
 | **Performance** | Fast | Fast | Slow | Fast |
-
 | **Accuracy** | High | High | Moderate (with ScribeOCR) | High |
-
-| **Additional Features** | Key-value pair extraction<br>Personalized text extraction models<br>Batch processing | Handwritten text recognition<br>Figures detection<br>Key-value pair extraction<br>Batch processing | Local execution (offline) | Data extraction from tables, forms, and key-value pairs |
-
+| **Additional Features** | Key-value pair extraction<br>Personalized text
+extraction models<br>Batch processing | Handwritten text recognition<br>Figures
+detection<br>Key-value pair extraction<br>Batch processing | Local execution
+(offline) | Data extraction from tables, forms, and key-value pairs |
 | **Cloud Platform** | Google Cloud | Azure | N/A | Amazon Web Service |
-
 | **Training** | Fine-tuning costs $46.39 per hour | Custom models | N/A | N/A |
-
-| **Privacy** | [Privacy Notice](https://cloud.google.com/terms/cloud-privacy-notice?hl=fr)| [Privacy Notice](https://azure.microsoft.com/en-us/explore/trusted-cloud/privacy/)| N/A | [Privacy Notice](https://aws.amazon.com/fr/privacy/)|
-
+| **Privacy**
+| [Privacy Notice](https://cloud.google.com/terms/cloud-privacy-notice?hl=fr)|
+[Privacy Notice](https://azure.microsoft.com/en-us/explore/trusted-cloud/privacy/)|
+N/A | [Privacy Notice](https://aws.amazon.com/fr/privacy/)|
 | **Licensing** | Closed source | Closed source | Apache Version 2.0 | Closed source |
 
 ### Document AI (Google)
