@@ -24,7 +24,8 @@ Les outils existants au sein du laboratoire de l'ACIA, tels que Gemini, GPT-4 et
 De plus, les modèles linguistiques traditionnels (LLM) ont du mal à comprendre
 le contexte de certains fragments de texte. Par exemple, lorsqu'ils sont présentés
  avec une image d'un paquet d'engrais, GPT-4 pourrait identifier le texte mais le
-  classer de manière incorrecte (par exemple, en étiquetant une adresse comme un nom).
+  classer de manière incorrecte (par exemple,
+  en étiquetant une adresse comme un nom).
 
 Pour relever ces défis, nous avons exploré des solutions OCR.
 Nos priorités étaient les suivantes :
