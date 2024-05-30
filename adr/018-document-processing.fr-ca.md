@@ -67,7 +67,7 @@ compatibilité Azure, en faisant le choix optimal pour FertiScan.
 | **Tarification**         | OCR : 1,50 $ par 1000 pages<br>Extraction d'entités : 30 $ par 1000 pages | OCR : 1,50 $ par 1000 pages<br>Mise en page : 10 $ par 1000 pages | Gratuit    | OCR : 1,50 $ par 1000 pages<br>Tableaux et requêtes : 20 $ par 1000 pages |
 | **Performance**          | Rapide               | Rapide                            | Lent      | Rapide                |
 | **Précision**            | Élevée               | Élevée                            | Modérée (avec ScribeOCR) | Élevée      |
-| **Fonctionnalités Supplémentaires** | Extraction de paires clé-valeur<br>Modèles personnalisés d'extraction de texte<br>Traitement par lots | Reconnaissance de texte manuscrit<br>Détection de figures<br>Extraction de paires clé-valeur<br>Traitement par lots | Exécution locale (hors ligne) | Extraction de données à partir de tableaux, formulaires et paires clé-valeur |
+| **Fonctionnalités Supplémentaires** | Extraction de paires clé-valeur; Modèles personnalisés d'extraction de texte; Traitement par lots | Reconnaissance de texte manuscrit; Détection de figures; Extraction de paires clé-valeur; Traitement par lots | Exécution locale (hors ligne) | Extraction de données à partir de tableaux, formulaires et paires clé-valeur |
 | **Plateforme Cloud**     | Google Cloud         | Azure                             | N/A       | Amazon Web Service    |
 | **Formation**            | Le coût de l'affinage est de 46,39 $ par heure | Modèles personnalisés            | N/A       | N/A                   |
 | **Confidentialité**      | [Avis de confidentialité][1] | [Avis de confidentialité][2]     | N/A       | [Avis de confidentialité][3] |

@@ -62,7 +62,7 @@ compatibility, making it the optimal choice for FertiScan.
 | **Pricing**           | OCR: $1.50 per 1000 pages<br>Extract Entities: $30 per 1000 pages | OCR: $1.50 per 1000 pages<br>Layout: $10 per 1000 pages | Free                  | OCR: $1.50 per 1000 pages<br>Tables and Requests: $20 per 1000 pages |
 | **Performance**       | Fast                 | Fast                              | Slow                  | Fast                  |
 | **Accuracy**          | High                 | High                              | Moderate (with ScribeOCR) | High              |
-| **Additional Features** | Key-value pair extraction<br>Personalized text extraction models<br>Batch processing | Handwritten text recognition<br>Figures detection<br>Key-value pair extraction<br>Batch processing | Local execution (offline) | Data extraction from tables, forms, and key-value pairs |
+| **Additional Features** | Key-value pair extraction; Personalized text extraction models; Batch processing | Handwritten text recognition; Figures detection; Key-value pair extraction; Batch processing | Local execution (offline) | Data extraction from tables, forms, and key-value pairs |
 | **Cloud Platform**    | Google Cloud         | Azure                             | N/A                   | Amazon Web Service    |
 | **Training**          | Fine-tuning costs $46.39 per hour | Custom models                    | N/A                   | N/A                   |
 | **Privacy**           | [Privacy Notice][1] | [Privacy Notice][2] | N/A                   | [Privacy Notice][3] |
