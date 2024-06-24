@@ -1,0 +1,11 @@
+name: Translate ADR to french
+
+on:
+    pull_request_review_comment:
+        types: [created]
+
+jobs:
+    translate-adr:
+        if: startsWith(github.event.comment.body, '/gt')
+        uses: ai-cfia/github-workflows/.github/workflows/workflow-file-translation.yml@issue-18-implement-file-translation-workflow
+        secrets: inherit
