@@ -2,12 +2,21 @@
 
 ## Création du dépôt GitHub
 
-1. Créez un dépôt vide dans l'organisation sur GitHub. Donnez-lui un nom et une description significatifs. Assurez-vous de suivre les modèles de nommage des dépôts existants (par exemple : minuscules, tiret au lieu de souligné...).
-2. Protégez la branche principale : Cochez `Require a pull request before merging` et `Require Approvals`.
-3. Clonez le dépôt dans votre répertoire de travail et ouvrez-le dans VS Code via WSL.
-4. Ouvrez une issue pour la création de l'application. Assurez-vous que le titre et la description sont significatifs. Utilisez des étiquettes appropriées. Évitez de créer de nouvelles étiquettes spécifiquement pour le dépôt.
-5. Basculer vers une nouvelle branche où les modifications seront poussées. Nommez la branche d'après l'issue (par exemple, `<username>/issue<issue-number>-a-meaningful-tag`)
-6. Créez un `devcontainer` conformément à [ce guide](../Development-Environment-Setup-Guide/DEV-ENV-SETUP.md).
+1. Créez un dépôt vide dans l'organisation sur GitHub. Donnez-lui un nom et une
+   description significatifs. Assurez-vous de suivre les modèles de nommage des
+   dépôts existants (par exemple : minuscules, tiret au lieu de souligné...).
+2. Protégez la branche principale : Cochez `Require a pull request before
+   merging` et `Require Approvals`.
+3. Clonez le dépôt dans votre répertoire de travail et ouvrez-le dans VS Code
+   via WSL.
+4. Ouvrez une issue pour la création de l'application. Assurez-vous que le titre
+   et la description sont significatifs. Utilisez des étiquettes appropriées.
+   Évitez de créer de nouvelles étiquettes spécifiquement pour le dépôt.
+5. Basculer vers une nouvelle branche où les modifications seront poussées.
+   Nommez la branche d'après l'issue (par exemple,
+   `<username>/issue<issue-number>-a-meaningful-tag`)
+6. Créez un `devcontainer` conformément à [ce
+   guide](../Development-Environment-Setup-Guide/DEV-ENV-SETUP.md).
 
 ## Création d'une application Flask
 
@@ -58,7 +67,9 @@
          return {"current_time": timestamp_unix}
      ```
 
-     **Note** : Ne lancez pas l'application depuis le code (c'est-à-dire avec : `app.run(host='0.0.0.0', port=8000)`), car cela enfreint plusieurs règles du [12 factor app](https://12factor.net/fr/).
+     **Note** : Ne lancez pas l'application depuis le code (c'est-à-dire avec :
+     `app.run(host='0.0.0.0', port=8000)`), car cela enfreint plusieurs règles
+     du [12 factor app](https://12factor.net/fr/).
 
 6. Configuration des tests :
 
@@ -102,7 +113,8 @@
      ENTRYPOINT gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 --forwarded-allow-ips "*" main:app
      ```
 
-8. Ouvrez le projet dans Dev Containers ou rebuildez-le s'il était déjà ouvert dans Dev Containers.
+8. Ouvrez le projet dans Dev Containers ou rebuildez-le s'il était déjà ouvert
+   dans Dev Containers.
 
 9. Testez l'application Flask :
 
@@ -148,12 +160,13 @@
      ...
      ```
 
-3. Commitez et poussez les modifications sur le dépôt. Assurez-vous que le commit
-fait référence à l'issue (par exemple, `issue #<issue-number>`). Assurez-vous que le message de commit
-est significatif.
-4. Créez une Pull Request et soumettez-la pour révision. Assurez-vous que la PR fait référence à l'issue. Assurez-vous que la description de la PR inclut un tag tel que
-`issue<issue-number>-keywords`. Assurez-vous que la description de la PR est significative.
-Assurez-vous d'ajouter un reviewer et de le notifier.
+3. Commitez et poussez les modifications sur le dépôt. Assurez-vous que le
+commit fait référence à l'issue (par exemple, `issue #<issue-number>`).
+Assurez-vous que le message de commit est significatif.
+4. Créez une Pull Request et soumettez-la pour révision. Assurez-vous que la PR
+fait référence à l'issue. Assurez-vous que la description de la PR inclut un tag
+tel que `issue<issue-number>-keywords`. Assurez-vous que la description de la PR
+est significative. Assurez-vous d'ajouter un reviewer et de le notifier.
 
 ## Fusionner les modifications
 

@@ -48,14 +48,14 @@
   (~30 minutes)
 * Examiner le code source ouvert sur notre Github
   [https://github.com/ai-cfia](https://github.com/ai-cfia)
-  * Porter une attention particulière aux [ADR (Architecture Decision Records) - under
+  * Porter une attention particulière aux [ADR (Architecture Decision Records) -
+    under
     development](https://github.com/ai-cfia/dev-rel-docs/blob/main/adr/index.md)
 * Linux
   * [Ligne de commande Linux et le
     Shell](https://learn.microsoft.com/fr-fr/training/paths/shell/) (~25
     minutes)
-  * [Aide-mémoire programmation Bash](https://devhints.io/bash) (~45
-    minutes)
+  * [Aide-mémoire programmation Bash](https://devhints.io/bash) (~45 minutes)
   * [Guide de style Shell
     Google](https://google.github.io/styleguide/shellguide.html) (~25 minutes)
 * Utilisation de Markdown
@@ -68,9 +68,11 @@
   * [Meilleures pratiques pour les
     projets](https://docs.github.com/fr/issues/planning-and-tracking-with-issues/learning-about-projects/best-practices-for-projects)
     (~5 minutes)
-  * [À propos des issues](https://docs.github.com/fr/issues/tracking-your-work-with-issues/about-issues)
+  * [À propos des
+    issues](https://docs.github.com/fr/issues/tracking-your-work-with-issues/about-issues)
     (~5 minutes)
-  * [À propos des révisions de pull requests](https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
+  * [À propos des révisions de pull
+    requests](https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
     (~5 minutes)
   * [Création d'un dépôt
     Github](https://github.com/ai-cfia/devops/blob/main/github-repository-creation-guide.md)

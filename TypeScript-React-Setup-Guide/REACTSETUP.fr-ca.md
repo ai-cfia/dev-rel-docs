@@ -10,21 +10,13 @@ pour le linting de code et Prettier pour la mise en forme du code. Suivre ces
 - [Pour Commencer](#pour-commencer)
   - [Prérequis](#prérequis)
   - [Installation](#installation)
-- [Étape 1 : Configuration du Projet avec Vite et
-  SWC](#étape-1-configuration-du-projet-avec-vite-et-swc)
-  - [Pourquoi Vite et SWC ?](#pourquoi-vite-et-swc)
-- [Étape 2 : Étapes pour Intégrer ESLint et
-  Prettier](#étape-2-étapes-pour-intégrer-eslint-et-prettier)
-- [Étape 3 : Dans le fichier .eslintrc.cjs, remplacez le contenu existant par la
-  configuration
-  suivante](#étape-3-dans-le-fichier-eslintrccjs-remplacez-le-contenu-existant-par-la-configuration-suivante)
-- [Étape 4 : Dans le fichier package.json, ajoutez les deux lignes suivantes
-  dans la section
-  "scripts"](#étape-4-dans-le-fichier-packagejson-ajoutez-les-deux-lignes-suivantes-dans-la-section-scripts)
-- [Étape 5 : Pour formater tout le code du projet,
-  exécutez](#étape-5-pour-formater-tout-le-code-du-projet-exécutez)
-- [Étape 6 : Pour exécuter ESLint,
-  exécutez](#étape-6-pour-exécuter-eslint-exécutez)
+- [Étape 1 : Configuration du Projet avec Vite et SWC](#étape-1--configuration-du-projet-avec-vite-et-swc)
+  - [Pourquoi Vite et SWC ?](#pourquoi-vite-et-swc-)
+- [Étape 2 : Étapes pour Intégrer ESLint et Prettier](#étape-2--étapes-pour-intégrer-eslint-et-prettier)
+- [Étape 3 : Dans le fichier .eslintrc.cjs, remplacez le contenu existant par la configuration suivante](#étape-3--dans-le-fichier-eslintrccjs-remplacez-le-contenu-existant-par-la-configuration-suivante)
+- [Étape 4 : Dans le fichier package.json, ajoutez les deux lignes suivantes dans la section "scripts"](#étape-4--dans-le-fichier-packagejson-ajoutez-les-deux-lignes-suivantes-dans-la-section-scripts)
+- [Étape 5 : Pour formater tout le code du projet, exécutez](#étape-5--pour-formater-tout-le-code-du-projet-exécutez)
+- [Étape 6 : Pour exécuter ESLint, exécutez](#étape-6--pour-exécuter-eslint-exécutez)
 
 ## Pour Commencer
 

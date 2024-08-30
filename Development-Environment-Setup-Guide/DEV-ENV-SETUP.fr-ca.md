@@ -46,23 +46,23 @@ exécuter les commandes Docker sans `sudo`.
 3. Ouvrez le terminal : `Terminal > Nouveau terminal` ou `` Ctrl+` ``.
 4. Créez le dossier de votre projet dans votre répertoire de travail :
 
-```bash
-   mkdir <dossier-de-votre-projet>
-   ```
+  ```bash
+     mkdir <dossier-de-votre-projet>
+  ```
 
-5. Dans la Palette de Commandes, sélectionnez `WSL : Ouvrir le dossier dans
+1. Dans la Palette de Commandes, sélectionnez `WSL : Ouvrir le dossier dans
 WSL...` et choisissez le dossier de votre projet.
-6. Dans la Palette de Commandes, sélectionnez `Dev Containers : Ajouter des
+2. Dans la Palette de Commandes, sélectionnez `Dev Containers : Ajouter des
 fichiers de configuration de Conteneur de Développement...`, puis sélectionnez
 un modèle correspondant à vos besoins, par exemple : `Python 3`, puis
 sélectionnez la version qui vous intéresse, par exemple `3.11.bullseye`. Cliquez
 sur `OK`.
-7. Configurez le fichier `devcontainer.json` selon vos besoins. Consultez la
+3. Configurez le fichier `devcontainer.json` selon vos besoins. Consultez la
 [Directives pour la configuration de Conteneur de Développement]
 (#directives-pour-la-configuration-de-conteneur-de-développement).
-8. Dans la Palette de Commandes, sélectionnez `Dev Containers : Ouvrir le
+4. Dans la Palette de Commandes, sélectionnez `Dev Containers : Ouvrir le
    dossier dans un Conteneur...`.
-9. Une fois dans l'environnement conteneurisé, vous pouvez commencer à
+5. Une fois dans l'environnement conteneurisé, vous pouvez commencer à
    développer.
 
 ### Ouvrir un Projet de Conteneur de Développement Existante
