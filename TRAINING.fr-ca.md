@@ -66,7 +66,7 @@
   * NE PAS INSTALLER GITHUB DESKTOP (nous utilisons les fonctionnalités
     intégrées dans Visual Studio Code)
   * [Meilleures pratiques pour les
-    projets](https://docs.github.com/fr/issues/planning-and-tracking-with-issues/learning-about-projects/best-practices-for-projects)
+    projets](https://docs.github.com/fr/issues/planning-and-tracking-with-projects/learning-about-projects/best-practices-for-projects)
     (~5 minutes)
   * [À propos des
     issues](https://docs.github.com/fr/issues/tracking-your-work-with-issues/about-issues)
@@ -122,13 +122,13 @@
   * [30 jours de directives pour le
     Cloud](https://github.com/canada-ca/cloud-guardrails) (~20 minutes)
   * [Orientation sur l'évaluation et l'autorisation de sécurité du
-    cloud](https://www.cyber.gc.ca/fr/orientation/orientation-evaluation-securite-cloud-et-autorisation-itsp50105)
+    cloud](https://www.cyber.gc.ca/fr/orientation/guide-sur-levaluation-et-lautorisation-de-la-securite-infonuagique-itsp50105)
     (~30 minutes)
   * [L'art des SLOs (Objectifs de niveau de
     service)](https://docs.google.com/document/d/11qMVVdn95tyGvYiVA5HwjlIV750-gYiT-dJCNS0ZPE0/edit)
     (~10 minutes)
   * [Gestion des risques de sécurité informatique du GC
-    ITSG-33](https://www.cyber.gc.ca/fr/orientation/gestion-risque-securite-informatique-approche-cycle-vie-itsg-33)
+    ITSG-33](https://www.cyber.gc.ca/fr/orientation/la-gestion-des-risques-lies-la-securite-des-ti-une-methode-axee-sur-le-cycle-de-vie)
     (~15 min)
 * Backend
   * [Créer une application Web IA en utilisant Python et
