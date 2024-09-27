@@ -23,12 +23,12 @@ entire document.
 ## Context
 
 Currently, we use Flask to build our APIs. While Flask has been sufficient, it
-is synchronous and lacks some modern features like built-in asynchronous support
-and automatic API documentation (OpenAPI/Swagger). There are other open-source
-frameworks that could better suit our needs by offering enhanced developer
-experience and feature sets. We are considering alternatives like FastAPI,
-Quart, and others that meet our criteria, but only open-source solutions will be
-considered.
+ is synchronous and lacks some modern features like built-in asynchronous
+ support and automatic API documentation (OpenAPI/Swagger).
+ There are other open-source frameworks that could better suit our needs by
+ offering enhanced developer experience and feature sets. We are considering
+ alternatives like FastAPI, Quart, and others that meet our criteria,
+ but only open-source solutions will be considered.
 
 ## Decision
 
