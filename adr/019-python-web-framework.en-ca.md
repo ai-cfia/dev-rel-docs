@@ -22,7 +22,13 @@ entire document.
 
 ## Context
 
-Currently, we use Flask to build our APIs. While Flask has been sufficient, it is synchronous and lacks some modern features like built-in asynchronous support and automatic API documentation (OpenAPI/Swagger). There are other open-source frameworks that could better suit our needs by offering enhanced developer experience and feature sets. We are considering alternatives like FastAPI, Quart, and others that meet our criteria, but only open-source solutions will be considered.
+Currently, we use Flask to build our APIs. While Flask has been sufficient, it
+is synchronous and lacks some modern features like built-in asynchronous support
+and automatic API documentation (OpenAPI/Swagger). There are other open-source
+frameworks that could better suit our needs by offering enhanced developer
+experience and feature sets. We are considering alternatives like FastAPI,
+Quart, and others that meet our criteria, but only open-source solutions will be
+considered.
 
 ## Decision
 
@@ -41,52 +47,83 @@ Here's a list of pros and cons for each framework based on your context:
 
 **Pros :**
 
-1. **Lightweight**: Minimalistic framework with low overhead, making it easy to start with and highly flexible.
-2. **Rich Ecosystem**: Mature and well-documented with many extensions (e.g., Flask-RESTful, Flask-SQLAlchemy, etc.) to extend its functionality.
-3. **Simple to Learn**: Ideal for small projects and quick prototypes; well-suited for beginners.
-4. **Large Community**: As one of the most popular Python frameworks, Flask has a large community and plenty of resources for help.
-5. **Customizable**: You have full control over architecture and can handpick the tools you need.
+1. **Lightweight**: Minimalistic framework with low overhead, making it easy to
+   start with and highly flexible.
+2. **Rich Ecosystem**: Mature and well-documented with many extensions (e.g.,
+   Flask-RESTful, Flask-SQLAlchemy, etc.) to extend its functionality.
+3. **Simple to Learn**: Ideal for small projects and quick prototypes;
+   well-suited for beginners.
+4. **Large Community**: As one of the most popular Python frameworks, Flask has
+   a large community and plenty of resources for help.
+5. **Customizable**: You have full control over architecture and can handpick
+   the tools you need.
 
 **Cons :**
 
-1. **Synchronous by Default**: Flask's synchronous nature makes it less suited for highly concurrent workloads or real-time applications.
-2. **No Native Async Support**: Requires extra effort and libraries (e.g., `aiohttp`) to handle async tasks, which can complicate development.
-3. **Lack of Built-In Features**: Features like authentication, validation, and automatic API documentation require third-party extensions.
-4. **Manual API Documentation**: Needs external libraries (e.g., Flask-Swagger, Flask-RESTPlus) to generate OpenAPI documentation, adding developer overhead.
-5. **Limited for Large Applications**: Scaling Flask for larger, highly concurrent APIs or services requires more effort than modern async frameworks.
+1. **Synchronous by Default**: Flask's synchronous nature makes it less suited
+   for highly concurrent workloads or real-time applications.
+2. **No Native Async Support**: Requires extra effort and libraries (e.g.,
+   `aiohttp`) to handle async tasks, which can complicate development.
+3. **Lack of Built-In Features**: Features like authentication, validation, and
+   automatic API documentation require third-party extensions.
+4. **Manual API Documentation**: Needs external libraries (e.g., Flask-Swagger,
+   Flask-RESTPlus) to generate OpenAPI documentation, adding developer overhead.
+5. **Limited for Large Applications**: Scaling Flask for larger, highly
+   concurrent APIs or services requires more effort than modern async
+   frameworks.
 
 ### **FastAPI**
 
 **Pros :**
 
-1. **Asynchronous by Default**: Built on top of Starlette and Pydantic, it supports asynchronous programming natively, allowing for better performance under heavy concurrency.
-2. **Automatic Swagger/OpenAPI**: Automatically generates OpenAPI and interactive Swagger documentation with zero configuration, saving time and effort.
-3. **High Performance**: One of the fastest Python web frameworks, designed for performance and scalability.
-4. **Modern Python Features**: Type hints and data validation are built into the framework, leading to cleaner, more robust code.
-5. **Developer-Friendly**: Offers a great developer experience with features like automatic validation, dependency injection, and easy testing.
-6. **Easy Transition to Async**: You can mix synchronous and asynchronous routes easily, providing flexibility.
+1. **Asynchronous by Default**: Built on top of Starlette and Pydantic, it
+   supports asynchronous programming natively, allowing for better performance
+   under heavy concurrency.
+2. **Automatic Swagger/OpenAPI**: Automatically generates OpenAPI and
+   interactive Swagger documentation with zero configuration, saving time and
+   effort.
+3. **High Performance**: One of the fastest Python web frameworks, designed for
+   performance and scalability.
+4. **Modern Python Features**: Type hints and data validation are built into the
+   framework, leading to cleaner, more robust code.
+5. **Developer-Friendly**: Offers a great developer experience with features
+   like automatic validation, dependency injection, and easy testing.
+6. **Easy Transition to Async**: You can mix synchronous and asynchronous routes
+   easily, providing flexibility.
 
 **Cons :**
 
-1. **Learning Curve**: While FastAPI is developer-friendly, beginners might find the reliance on type hints and async a bit challenging.
-2. **Smaller Ecosystem**: Though growing, FastAPI’s ecosystem is not as large or mature as Flask’s. Fewer extensions and third-party libraries are available compared to Flask.
-3. **Less Mature**: As a newer framework, it may not be as battle-tested in certain scenarios compared to Flask.
+1. **Learning Curve**: While FastAPI is developer-friendly, beginners might find
+   the reliance on type hints and async a bit challenging.
+2. **Smaller Ecosystem**: Though growing, FastAPI’s ecosystem is not as large or
+   mature as Flask’s. Fewer extensions and third-party libraries are available
+   compared to Flask.
+3. **Less Mature**: As a newer framework, it may not be as battle-tested in
+   certain scenarios compared to Flask.
 
 ### **Quart**
 
 **Pros :**
 
-1. **Asynchronous Support**: Fully async-first framework, designed for handling concurrent requests more efficiently than Flask.
-2. **Familiar to Flask Users**: Quart maintains a Flask-like API, making it easier for Flask developers to switch without much relearning.
-3. **WebSocket and HTTP/2 Support**: Native support for WebSockets and HTTP/2, making it a good option for real-time applications.
-4. **Flexible**: Like Flask, Quart is highly customizable and can be tailored to the exact needs of the project.
+1. **Asynchronous Support**: Fully async-first framework, designed for handling
+   concurrent requests more efficiently than Flask.
+2. **Familiar to Flask Users**: Quart maintains a Flask-like API, making it
+   easier for Flask developers to switch without much relearning.
+3. **WebSocket and HTTP/2 Support**: Native support for WebSockets and HTTP/2,
+   making it a good option for real-time applications.
+4. **Flexible**: Like Flask, Quart is highly customizable and can be tailored to
+   the exact needs of the project.
 
 **Cons :**
 
-1. **No Built-In Swagger Support**: Unlike FastAPI, Quart does not provide automatic API documentation, requiring additional libraries or manual setup.
-2. **Smaller Ecosystem**: Quart’s ecosystem is less mature than Flask’s, meaning fewer extensions and tools are readily available.
-3. **Less Popular**: Quart has a smaller community compared to Flask and FastAPI, which might mean fewer resources and examples available.
-4. **Performance**: While Quart is async-first, it is generally considered slightly slower than FastAPI in high-concurrency use cases.
+1. **No Built-In Swagger Support**: Unlike FastAPI, Quart does not provide
+   automatic API documentation, requiring additional libraries or manual setup.
+2. **Smaller Ecosystem**: Quart’s ecosystem is less mature than Flask’s, meaning
+   fewer extensions and tools are readily available.
+3. **Less Popular**: Quart has a smaller community compared to Flask and
+   FastAPI, which might mean fewer resources and examples available.
+4. **Performance**: While Quart is async-first, it is generally considered
+   slightly slower than FastAPI in high-concurrency use cases.
 
 ## Consequences
 

@@ -77,10 +77,10 @@ Make sure to include the following fields:
 - **name**: Container name for VS Code.
 - **image**: The Docker image to use. We recommended using the Dev Container
 base images provided by Microsoft: [Docker Hub](
-https://hub.docker.com/_/microsoft-devcontainers?tab=description).
+https://hub.docker.com/r/microsoft/devcontainers).
 - **postCreateCommand**: Commands that will execute after the container's
-creation. This is useful for the installation of dependencies or initial
-setup tasks.
+creation. This is useful for the installation of dependencies or initial setup
+tasks.
 
 For a comprehensive list of options, refer to the [official documentation](
 https://containers.dev/implementors/json_reference/).
