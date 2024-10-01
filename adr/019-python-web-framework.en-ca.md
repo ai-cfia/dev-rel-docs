@@ -7,9 +7,9 @@
 | **Type**                     | Synchronous, WSGI-based                         | Asynchronous, ASGI-based                         | Asynchronous, ASGI-based                        |
 | **Performance**              | Moderate, struggles under high concurrency      | High-performance, async by default               | Good performance, fully async                   |
 | **Async Support**            | No native support, requires extensions          | Built-in async support                           | Fully async-first                               |
-| **Swagger/OpenAPI Support**   | Requires third-party extensions (Flask-Swagger) | Automatic generation of OpenAPI/Swagger docs     | Requires additional libraries (Quart-Swagger)   |
+| **Swagger/OpenAPI Support**   | Requires third-party extensions (Flask-Swagger) | Automatic generation of OpenAPI/Swagger docs     | Requires additional libraries (Quart-Swagger, Flasgger)   |
 | **Developer Experience**      | Simple to use, but requires manual setups       | Excellent, built-in type validation & async support | Familiar to Flask, but lacks built-in Swagger   |
-| **Ecosystem**                | Large and mature                                | Growing, but fewer extensions compared to Flask  | Smaller ecosystem, fewer resources              |
+| **Ecosystem**                | Large and mature                                | Growing, but fewer extensions compared to Flask  | Similar ecosystem to Flask              |
 | **WebSockets/HTTP2 Support** | No native support                               | WebSockets via Starlette, but not built-in       | Native WebSocket and HTTP/2 support             |
 | **Learning Curve**           | Easy to learn for beginners                     | Moderate, requires understanding of type hints   | Easy for Flask users, but async adds complexity |
 | **Best Use Case**            | Small to medium-sized apps                      | High-performance async APIs, microservices       | Real-time apps, Flask-like APIs with async      |
@@ -108,21 +108,21 @@ Here's a list of pros and cons for each framework based on your context:
 1. **Asynchronous Support**: Fully async-first framework, designed for handling
    concurrent requests more efficiently than Flask.
 2. **Familiar to Flask Users**: Quart maintains a Flask-like API, making it
-   easier for Flask developers to switch without much relearning.
-3. **WebSocket and HTTP/2 Support**: Native support for WebSockets and HTTP/2,
+   easier for Flask developers to switch without much relearning. Quart is
+   already used in Nachet so our team is already
+   familiar to it.
+3. **Rich Ecosystem**: A similar ecosystem as Flask. Both are developped by the
+   same team.
+4. **WebSocket and HTTP/2 Support**: Native support for WebSockets and HTTP/2,
    making it a good option for real-time applications.
-4. **Flexible**: Like Flask, Quart is highly customizable and can be tailored to
+5. **Flexible**: Like Flask, Quart is highly customizable and can be tailored to
    the exact needs of the project.
 
 **Cons :**
 
 1. **No Built-In Swagger Support**: Unlike FastAPI, Quart does not provide
    automatic API documentation, requiring additional libraries or manual setup.
-2. **Smaller Ecosystem**: Quart’s ecosystem is less mature than Flask’s, meaning
-   fewer extensions and tools are readily available.
-3. **Less Popular**: Quart has a smaller community compared to Flask and
-   FastAPI, which might mean fewer resources and examples available.
-4. **Performance**: While Quart is async-first, it is generally considered
+2. **Performance**: While Quart is async-first, it is generally considered
    slightly slower than FastAPI in high-concurrency use cases.
 
 ## Consequences
