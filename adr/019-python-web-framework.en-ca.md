@@ -8,7 +8,7 @@
 | **Performance**              | Moderate, struggles under high concurrency      | High-performance, async by default               | Good performance, fully async                   |
 | **Async Support**            | No native support, requires extensions          | Built-in async support                           | Fully async-first                               |
 | **Swagger/OpenAPI Support**   | Requires third-party extensions (Flask-Swagger) | Automatic generation of OpenAPI/Swagger docs     | Requires additional libraries (Quart-Swagger, Flasgger)   |
-| **Developer Experience**      | Simple to use, but requires manual setups       | Excellent, built-in type validation & async support | Familiar to Flask, but lacks built-in Swagger   |
+| **Developer Experience**      | Simple to use, but requires manual setups       | Excellent, built-in type validation & async support | Familiar to Flask, lacks built-in Swagger   |
 | **Ecosystem**                | Large and mature                                | Growing, but fewer extensions compared to Flask  | Similar ecosystem to Flask              |
 | **WebSockets/HTTP2 Support** | No native support                               | WebSockets via Starlette, but not built-in       | Native WebSocket and HTTP/2 support             |
 | **Learning Curve**           | Easy to learn for beginners                     | Moderate, requires understanding of type hints   | Easy for Flask users, but async adds complexity |
@@ -99,7 +99,7 @@ Here's a list of pros and cons for each framework based on your context:
    mature as Flask’s. Fewer extensions and third-party libraries are available
    compared to Flask.
 3. **Less Mature**: As a newer framework, it may not be as battle-tested in
-   certain scenarios compared to Flask.
+4. **Different Paradigm**: Our team is currently using either Flask or Quart, both of which share a similar API and development approach. FastAPI introduces a different paradigm and API, which would require our team to either fully adapt to it or support multiple frameworks, neither of which is ideal.
 
 ### **Quart**
 
@@ -124,6 +124,7 @@ Here's a list of pros and cons for each framework based on your context:
    automatic API documentation, requiring additional libraries or manual setup.
 2. **Performance**: While Quart is async-first, it is generally considered
    slightly slower than FastAPI in high-concurrency use cases.
+3. **Different Authentication Flow**: The most [well-maintained authentication library](https://quart-auth.readthedocs.io/en/latest/tutorials/quickstart.html) for Quart differs from the [current Flask authentication flow](https://pypi.org/project/Flask-HTTPAuth/), necessitating frontend changes. Although alternatives exist, they are not as well-maintained and may not be suitable long-term.
 
 ## Consequences
 
