@@ -35,9 +35,6 @@
 * **Rollout Policies ($)**: Implement policies requiring dedicated roles for
   change approvals.
 
-![Environment
-Management](/.attachments/image-c1dcadd7-9dbf-4300-9cf6-353f200599fe.png)
-
 ## GUI
 
 * Schema Edit Interface: Intuitive interface for editing database schemas.
@@ -48,8 +45,6 @@ Management](/.attachments/image-c1dcadd7-9dbf-4300-9cf6-353f200599fe.png)
 ## AI Augmentation
 
 * Utilize AI for enhanced database management capabilities.
-
-![AI Augmentation](/.attachments/image-ce666121-bd0d-4b80-8a86-30da9289e275.png)
 
 ## Support
 
@@ -72,8 +67,5 @@ Management](/.attachments/image-c1dcadd7-9dbf-4300-9cf6-353f200599fe.png)
   fine-grained permissions.
 * **Sensitive Data Management ($)**: Implement measures for managing sensitive
   data securely.
-
-![Security
-Features](/.attachments/image-848c1cdb-e708-4fd1-810c-0ec65c0e89f1.png)
 
 ## [Bytebase Subscription](https://bytebase.inspection.alpha.canada.ca/setting/subscription)

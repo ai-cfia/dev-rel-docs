@@ -6,7 +6,7 @@ consistency, efficiency, and quality in all aspects of our development
 processes.
 
 Please also refer to the [Database Change
-Management](./adr/006-database-change-management.md)
+Management](/adr/006-database-change-management.md)
 
 ## Link
 
@@ -44,7 +44,7 @@ In the main page of bytebase there are 2 options:
 
 New DB will create a Database within your instance. This is not something you
 should really be doing. However, refer to the [naming
-convention](008-naming-convention.md) for your database name
+convention](/adr/008-naming-convention.md) for your database name
 
 * `+Add Instance`
 
