@@ -76,18 +76,18 @@ We also chose Bytebase as a solution because it fits the open view of the agency
 adn also mimic and integrates perfectly our current workflow that is centralized
 on github.
 
-### Key Enhancements:
+### Key Enhancements
 
 1. **Integration with Bytebase**:
 
-   - Integrate Bytebase into our database change management workflow to
+   * Integrate Bytebase into our database change management workflow to
      centralize and automate the tracking of schema changes. Bytebase provides
      features such as version control, schema diff, and issue tracking, which
      will enhance our ability to manage database changes effectively.
 
 2. **Automation of Change Management**:
 
-   - Leverage Bytebase's automation capabilities to automate repetitive tasks
+   * Leverage Bytebase's automation capabilities to automate repetitive tasks
      involved in schema changes, such as generating SQL scripts, reviewing
      changes, and deploying updates. This automation will reduce manual effort,
      minimize the risk of errors, and improve the efficiency of our change
@@ -95,7 +95,7 @@ on github.
 
 3. **Enhanced Collaboration**:
 
-   - Utilize Bytebase's collaboration features to facilitate communication and
+   * Utilize Bytebase's collaboration features to facilitate communication and
      coordination among team members involved in database changes. With
      Bytebase, team members can collaborate on change requests, discuss
      implementation details, and track the status of changes in a centralized
@@ -103,7 +103,7 @@ on github.
 
 4. **Improved Auditing and Compliance**:
 
-   - Take advantage of Bytebase's audit trail and logging capabilities to
+   * Take advantage of Bytebase's audit trail and logging capabilities to
      maintain a comprehensive record of all database changes, including who made
      the changes, when they were made, and the reasons for the changes. This
      enhanced auditing capability will ensure compliance with regulatory
@@ -111,14 +111,14 @@ on github.
 
 5. **Approval Change Management Process**:
 
-   - Implement an approval change management process within Bytebase to control
+   * Implement an approval change management process within Bytebase to control
      and track database changes. This process will require changes to be
      reviewed and approved by designated stakeholders before being deployed,
      ensuring that only authorized changes are applied to the database.
 
 6. **Separate Environment for Testing and Development**:
 
-   - Utilize Bytebase's support for separate environments to establish dedicated
+   * Utilize Bytebase's support for separate environments to establish dedicated
      cloud based environments for testing and development. By isolating changes
      in these environments, we can prevent errors, identify potential issues
      early in the development cycle, and ensure that changes are thoroughly
@@ -127,7 +127,6 @@ on github.
 By implementing these enhancements through the adoption of Bytebase, we aim to
 improve the efficiency, reliability, and transparency of our database change
 management process, ultimately leading to a more robust and resilient system.
-
 
 ## Consequences
 
@@ -140,64 +139,64 @@ Implementing the Bytebase solution for database change management will bring
 about several consequences, both positive and potentially challenging, that need
 to be considered:
 
-### Positive Consequences:
+### Positive Consequences
 
 1. **Streamlined Change Management**:
-   - By integrating Bytebase into our workflow, we can streamline our change
+   * By integrating Bytebase into our workflow, we can streamline our change
      management process, automating repetitive tasks and centralizing the
      tracking of schema changes. This will lead to increased efficiency and
      productivity, as well as reduced manual effort.
 
 2. **Enhanced Collaboration and Communication**:
-   - Bytebase's collaboration features will facilitate better communication and
+   * Bytebase's collaboration features will facilitate better communication and
      coordination among team members involved in database changes. With a
      centralized platform for discussing change requests and tracking their
      status, collaboration will be more transparent and effective.
 
 3. **Improved Compliance and Auditing**:
-   - With Bytebase's audit trail and logging capabilities, we can maintain a
+   * With Bytebase's audit trail and logging capabilities, we can maintain a
      comprehensive record of all database changes, ensuring compliance with
-     regulatory requirements and facilitating post-change analysis and
+     regulatory requirements and facilitating post*change analysis and
      troubleshooting.
 
 4. **Greater Control and Visibility**:
-   - The approval change management process within Bytebase will provide greater
+   * The approval change management process within Bytebase will provide greater
      control over database changes, requiring review and approval by designated
      stakeholders. This will enhance accountability and ensure that only
      authorized changes are deployed to production.
 
 5. **Reduced Risk of Errors**:
-   - By utilizing separate environments for testing and development, we can
+   * By utilizing separate environments for testing and development, we can
      identify and resolve potential issues early in the development cycle,
      reducing the risk of errors and ensuring that changes are thoroughly tested
      before being deployed to production.
 
 6. **Centralization of Database Changes**:
-   - By centralizing all database changes within Bytebase, we create a single
+   * By centralizing all database changes within Bytebase, we create a single
      source of truth for tracking and managing schema modifications. This
      centralization simplifies the process of monitoring and reviewing changes,
      leading to improved visibility and control over our database
      infrastructure.
 
-### Potential Challenges:
+### Potential Challenges
 
 1. **Adoption and Training**:
 
-   - Introducing a new tool like Bytebase may require training for team members
+   * Introducing a new tool like Bytebase may require training for team members
      to familiarize themselves with its features and functionalities. Ensuring
      successful adoption will be essential for realizing the full benefits of
      the solution.
 
 2. **Integration Complexity**:
 
-   - Integrating Bytebase into our existing workflow and infrastructure may
+   * Integrating Bytebase into our existing workflow and infrastructure may
      present technical challenges and require adjustments to our processes. It's
      important to carefully plan and execute the integration to minimize
      disruption.
 
 3. **Data Security and Privacy**:
 
-   - Storing sensitive database information in Bytebase raises concerns about
+   * Storing sensitive database information in Bytebase raises concerns about
      data security and privacy. Implementing robust security measures and
      ensuring compliance with data protection regulations will be essential to
      safeguarding our data.
@@ -213,6 +212,6 @@ complexities and potential challenges.
 
 ## References
 
-* <a id="ref-changes"></a> Change management tools and techniques. Change
+* Change management tools and techniques. Change
   management tools and techniques - PostgreSQL wiki. (n.d.).
   <https://wiki.postgresql.org/wiki/Change_management_tools_and_techniques>

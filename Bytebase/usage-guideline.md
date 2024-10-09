@@ -15,7 +15,7 @@ Bytebase:
 
 ## User
 
-#### First time user
+### First time user
 
 *If we are using the Enterprise version, you should be able to create your own
 account and skip these steps*
@@ -26,28 +26,27 @@ account and skip these steps*
 
 3. Clic edit then enter your password (Weird UI, we know)
 
-
 ## Project
 
-#### New project
+### New project
 
-- Project Name: The name of the github repo associated with this project db
+* Project Name: The name of the github repo associated with this project db
   *EG:* ```nachet-datastore```
 
-- Key: Simply your project name *EG:*```Nachet```
+* Key: Simply your project name *EG:*```Nachet```
 
 ## Database
 
-#### New DB
+### New DB
 
 In the main page of bytebase there are 2 options:
-- `New DB`
+* `New DB`
 
 New DB will create a Database within your instance. This is not something you
 should really be doing. However, refer to the [naming
 convention](008-naming-convention.md) for your database name
 
-- `+Add Instance`
+* `+Add Instance`
 
 This allows you to create a connection with a database server and import the
 databases.
@@ -64,13 +63,13 @@ which will create issues.
 
 ## Gitops
 
-- SQL Review Workflow:
+* SQL Review Workflow:
 
     The SQL Github workflow is a great tool to apply our established review
     policies. However, it wont flag fundamental SQL errors within the logic of
     the statement.
 
-- Gitops migration pipeline
+* Gitops migration pipeline
 
     This features will hook a project to any specified git repo on a specified
     branch. Once hooked, all new .SQL file committed to that branch will be
@@ -102,7 +101,7 @@ end
 
 ```
 
-#### Configure GitOps workflow
+### Configure GitOps workflow
 
 1. On your Bytebase project configure GitOps; Login with your organization
    Github and select your desired repository.
@@ -110,7 +109,7 @@ end
 2. Specify the branch that should be hooked with this project and the directory
    in which you will store the .SQL files. EG: `datastore/db/bytebase`
 
-#### Use GitOps Workflow
+### Use GitOps Workflow
 
 1. Manually create a new schema on the database (Creating a schema on this
    workflow seems to be not working properly at the moment of writing this
@@ -125,21 +124,21 @@ end
 
 4. The file must be a runnable script; EG:
 
-```SQL
+    ```SQL
 
---Schema creation "<schema_name>"
-DO
-$do$
-BEGIN
-IF (EXISTS (SELECT 1 FROM information_schema.schemata WHERE schema_name = '<<>>')) THEN
--- your Schema DDL
-...
--- your Schema default data (DML)
-...
-END
-$do$;
+    --Schema creation "<schema_name>"
+    DO
+    $do$
+    BEGIN
+    IF (EXISTS (SELECT 1 FROM information_schema.schemata WHERE schema_name = '<<>>')) THEN
+    -- your Schema DDL
+    ...
+    -- your Schema default data (DML)
+    ...
+    END
+    $do$;
 
-```
+    ```
 
 5. Merge your PR on the specified branch for your GitOps (default should be
    `/main`)
