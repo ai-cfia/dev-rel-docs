@@ -42,7 +42,7 @@ To address the context and requirements, the following approach is adopted:
   nature of the changes in a new version of a software package, making it easier
   to manage dependencies and assess compatibility. It usually is in this format
   : x.x.x (MAJOR.MINOR.PATCH) with each x being a number. ([PostgreSQL wiki,
-  n.d.](#ref-changes))
+  n.d.](https://wiki.postgresql.org/wiki/Change_management_tools_and_techniques))
 
   In our case, we use louis_x.x.x - a MAJOR release would break the database, it
   includes modifying existing tables. MINOR release would not break anything
