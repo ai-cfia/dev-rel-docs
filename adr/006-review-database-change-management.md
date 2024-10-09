@@ -14,7 +14,7 @@ data integrity as well as good change management.**
 
 ## Context
 
-CFIA products Finesse, Louis Chat, Nachet and Harvester depend heavily on the
+CFIA products Finesse, Louis Chat, Nachet and FertiScan depend heavily on the
 PostgreSQL database. Changes to the database schema need to follow changes to
 the code as we introduce new features.
 
