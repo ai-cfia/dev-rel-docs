@@ -45,7 +45,8 @@ In the main page of bytebase there are 2 options:
 
 New DB will create a Database within your instance. This is not something you
 should really be doing. However, refer to the [naming
-convention](https://github.com/ai-cfia/dev-rel-docs/blob/main/adr/008-naming-convention.md) for your database name
+convention](https://github.com/ai-cfia/dev-rel-docs/blob/main/adr/008-naming-convention.md)
+for your database name
 
 * `+Add Instance`
 
