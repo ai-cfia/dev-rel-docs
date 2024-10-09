@@ -40,6 +40,7 @@ account and skip these steps*
 ### New DB
 
 In the main page of bytebase there are 2 options:
+
 * `New DB`
 
 New DB will create a Database within your instance. This is not something you
