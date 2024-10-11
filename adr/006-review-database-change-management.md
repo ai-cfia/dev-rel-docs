@@ -33,6 +33,11 @@ When deploying, we need to be able to:
 We adopted a decision in the past to incorporate semantic versioning. This
 decision will still stand, however we are going to improve it.
 
+We also need to be able to maintain and edit the database content. At the
+current time, it is not possible to establish Database connection under the
+network regulations. This should also be considered when making the decision if
+a tool offers a solution to this problem.
+
 ## Previous Decision
 
 To address the context and requirements, the following approach is adopted:
@@ -69,9 +74,9 @@ Blue-Green Deployment, and the concept of Database Views and Abstraction Layers.
 
 Based on the previous decision, we went ahead and decided it would be best to
 have a tool that would manage database versionning. We then went ahead and
-inspected alot of products but decided to sit with **Bytebase**.
+inspected alot of products.
 
-### Database versionning management tools
+### Considered versionning management tools
 
 #### Bytebase
 

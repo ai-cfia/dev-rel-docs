@@ -14,9 +14,9 @@ integrity as well as good change management.
 
 ## Context
 
-CFIA products Finesse, Louis Chat and Nachet depend heavily on the PostgreSQL database.
-Changes to the database schema need to follow changes to the code as we
-introduce new features.
+CFIA products Finesse, Louis Chat and Nachet depend heavily on the PostgreSQL
+database. Changes to the database schema need to follow changes to the code as
+we introduce new features.
 
 When deploying, we need to be able to:
 
@@ -35,14 +35,13 @@ To address the context and requirements, the following approach is adopted:
   version control. Semantic Versioning helps developers and users understand the
   nature of the changes in a new version of a software package, making it easier
   to manage dependencies and assess compatibility. It usually is in this format
-  : x.x.x (MAJOR.MINOR.PATCH) with each x being a number.
-  ([PostgreSQL wiki, n.d.](#changes))
+  : x.x.x (MAJOR.MINOR.PATCH) with each x being a number. ([PostgreSQL wiki,
+  n.d.](#changes))
 
-  In our case, we use
-  louis_x.x.x - a MAJOR release would break the database, it includes modifying
-  existing tables. MINOR release would not break anything major but will add
-  tables for example. PATCH is just minor modifications that shouldn't be
-  noticeable to users of the database.
+  In our case, we use louis_x.x.x - a MAJOR release would break the database, it
+  includes modifying existing tables. MINOR release would not break anything
+  major but will add tables for example. PATCH is just minor modifications that
+  shouldn't be noticeable to users of the database.
 * Clone the current schema to create a new schema focusing on changes.
 * Implement changes within the new schema, including columns, indexes, foreign
   keys, constraints, and functions.
