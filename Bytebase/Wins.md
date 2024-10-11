@@ -1,6 +1,7 @@
 # Bytebase Wins
 
 ## Built in SQL Editor
+
 One of the biggest win behind implementing Bytebase was the built-in SQL editor.
 We do not technically have access to SQL editor tools such as DBeaver. Also
 while being on the work network (VPN or in-office) it is **impossible** to

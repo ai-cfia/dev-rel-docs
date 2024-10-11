@@ -82,25 +82,25 @@ inspected alot of products.
 
 Pros:
 
-  * Offers a GUI (usefull for unexperienced devs)
+* Offers a GUI (usefull for unexperienced devs)
 
-  * Enables version management just like Github (branches, issues) and also
+* Enables version management just like Github (branches, issues) and also
     allow to see previous changes
 
-  * Offers a built-in SQL Editor
+* Offers a built-in SQL Editor
 
-  * Allow for multi-tier environment
+* Allow for multi-tier environment
 
-  * Is open source and can self-hosted
+* Is open source and can self-hosted
 
-  * Offers customizable workflow to verify the changes (GitOps)
+* Offers customizable workflow to verify the changes (GitOps)
 
 Cons:
 
-  * Some features are hiddent behind a pay wall (most of those features dont
+* Some features are hiddent behind a pay wall (most of those features dont
     seem to be necessary atm)
 
-  * Still in an early development phase
+* Still in an early development phase
 
 #### Liquipedia
 
@@ -126,7 +126,7 @@ Cons:
 
 Pros:
 
-*  Offers a GUI (usefull for unexperienced devs)
+* Offers a GUI (usefull for unexperienced devs)
 
 * Open source
 
@@ -139,6 +139,7 @@ Cons:
 * Most features are hidden behind a paywall
 
 * No SQL editor
+
 ## Improvement
 
 Building upon the previous decision, we aim to enhance our database change
