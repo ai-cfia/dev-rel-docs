@@ -65,15 +65,84 @@ Our decision to adopt this approach was influenced by a combination of multiple
 solutions considered, including : Manual SQL Scripts, Database Migration Tools,
 Blue-Green Deployment, and the concept of Database Views and Abstraction Layers.
 
+## New Decision
+
+Based on the previous decision, we went ahead and decided it would be best to
+have a tool that would manage database versionning. We then went ahead and
+inspected alot of products but decided to sit with **Bytebase**.
+
+### Database versionning management tools
+
+#### Bytebase
+
+Pros:
+
+  * Offers a GUI (usefull for unexperienced devs)
+
+  * Enables version management just like Github (branches, issues) and also
+    allow to see previous changes
+
+  * Offers a built-in SQL Editor
+
+  * Allow for multi-tier environment
+
+  * Is open source and can self-hosted
+
+  * Offers customizable workflow to verify the changes (GitOps)
+
+Cons:
+
+  * Some features are hiddent behind a pay wall (most of those features dont
+    seem to be necessary atm)
+
+  * Still in an early development phase
+
+#### Liquipedia
+
+Pros:
+
+* Offers a log features to track all changes
+
+* Is open source
+
+* Offers customizable workflow to verify the changes (GitOps)
+
+Cons:
+
+* Only offers Command-line (No GUI)
+
+* No built-in SQL editor
+
+* No multi-tier environment
+
+* features behind a pay wall
+
+#### Flyway
+
+Pros:
+
+*  Offers a GUI (usefull for unexperienced devs)
+
+* Open source
+
+* Offers a Cl/CD workflow (not a GitOps one)
+
+Cons:
+
+* Does not support Azure PostgreSQL instance
+
+* Most features are hidden behind a paywall
+
+* No SQL editor
 ## Improvement
 
 Building upon the previous decision, we aim to enhance our database change
-management process by incorporating a self-hosted instance of Bytebase. This
+management process by incorporating a self-hosted instance of **Bytebase**. This
 improvement will streamline the management of database schema changes and
 provide additional features for collaboration and automation.
 
 We also chose Bytebase as a solution because it fits the open view of the agency
-adn also mimic and integrates perfectly our current workflow that is centralized
+and also mimic and integrates perfectly our current workflow that is centralized
 on github.
 
 ### Key Enhancements
@@ -212,6 +281,6 @@ complexities and potential challenges.
 
 ## References
 
-* Change management tools and techniques. Change
-  management tools and techniques - PostgreSQL wiki. (n.d.).
+* Change management tools and techniques. Change management tools and techniques
+  - PostgreSQL wiki. (n.d.).
   <https://wiki.postgresql.org/wiki/Change_management_tools_and_techniques>

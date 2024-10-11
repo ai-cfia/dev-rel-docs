@@ -1,5 +1,18 @@
 # Bytebase Wins
 
+## Built in SQL Editor
+One of the biggest win behind implementing Bytebase was the built-in SQL editor.
+We do not technically have access to SQL editor tools such as DBeaver. Also
+while being on the work network (VPN or in-office) it is **impossible** to
+establish a connection to a Database port under IT's restriction. Even the FSDH
+DB server is not reachable.
+
+Therefore, having a built-in SQL editor that is hosted on our cluster (which is
+not on the same network and does not have the same restriction) allow us to
+establish connection to the database. This allows devs to maintain the DB from
+anywwhere at anytime, which was not previously the case when working in the
+office and lead to delays in performing our tasks.
+
 ## GitHub-like Features
 
 * Groups & Roles: Organize team members into groups and assign roles for
@@ -44,7 +57,8 @@
 
 ## AI Augmentation
 
-* Utilize AI for enhanced database management capabilities.
+* Utilize AI for enhanced database management capabilities. This is not
+  currently used nor explored.
 
 ## Support
 
