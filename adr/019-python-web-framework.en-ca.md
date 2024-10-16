@@ -20,6 +20,14 @@ This section provides a brief summary of the decision being made, outlining the
 main points so that the reader can understand the gist without reading the
 entire document.
 
+This ADR evaluates and selects a Python web framework for the fertiscan-backend
+project. After considering various options, including Flask, FastAPI, and Quart,
+the decision was made to adopt FastAPI. This choice is driven by FastAPI's
+built-in asynchronous support, automatic generation of OpenAPI/Swagger
+documentation, and high performance under heavy concurrency. While Flask and
+Quart offer their own advantages, FastAPI's modern features and
+developer-friendly experience make it the most suitable framework for our needs.
+
 ## Context
 
 Currently, we use Flask to build our APIs. While Flask has been sufficient, it
@@ -34,6 +42,13 @@ Currently, we use Flask to build our APIs. While Flask has been sufficient, it
 
 This section clearly states the decision that has been made, and may also
 include justification and reasoning.
+
+The decision was made to adopt FastAPI. This choice is driven by FastAPI's
+built-in asynchronous support, automatic generation of OpenAPI/Swagger
+documentation, and high performance under heavy concurrency. While Flask and
+Quart offer their own advantages, FastAPI's modern features, such as type
+validation and dependency injection, along with its excellent developer
+experience, make it the most suitable framework for our needs.
 
 ## Alternatives Considered
 
@@ -87,7 +102,8 @@ Here's a list of pros and cons for each framework based on your context:
 4. **Modern Python Features**: Type hints and data validation are built into the
    framework, leading to cleaner, more robust code.
 5. **Developer-Friendly**: Offers a great developer experience with features
-   like automatic validation, dependency injection, and easy testing.
+   like automatic validation, dependency injection, Pydantic integration and
+   easy testing.
 6. **Easy Transition to Async**: You can mix synchronous and asynchronous routes
    easily, providing flexibility.
 
@@ -99,7 +115,11 @@ Here's a list of pros and cons for each framework based on your context:
    mature as Flask’s. Fewer extensions and third-party libraries are available
    compared to Flask.
 3. **Less Mature**: As a newer framework, it may not be as battle-tested in
-4. **Different Paradigm**: Our team is currently using either Flask or Quart, both of which share a similar API and development approach. FastAPI introduces a different paradigm and API, which would require our team to either fully adapt to it or support multiple frameworks, neither of which is ideal.
+4. **Different Paradigm**: Our team is currently using either Flask or Quart,
+   both of which share a similar API and development approach. FastAPI
+   introduces a different paradigm and API, which would require our team to
+   either fully adapt to it or support multiple frameworks, neither of which is
+   ideal.
 
 ### **Quart**
 
@@ -109,8 +129,7 @@ Here's a list of pros and cons for each framework based on your context:
    concurrent requests more efficiently than Flask.
 2. **Familiar to Flask Users**: Quart maintains a Flask-like API, making it
    easier for Flask developers to switch without much relearning. Quart is
-   already used in Nachet so our team is already
-   familiar to it.
+   already used in Nachet so our team is already familiar to it.
 3. **Rich Ecosystem**: A similar ecosystem as Flask. Both are developped by the
    same team.
 4. **WebSocket and HTTP/2 Support**: Native support for WebSockets and HTTP/2,
@@ -124,13 +143,40 @@ Here's a list of pros and cons for each framework based on your context:
    automatic API documentation, requiring additional libraries or manual setup.
 2. **Performance**: While Quart is async-first, it is generally considered
    slightly slower than FastAPI in high-concurrency use cases.
-3. **Different Authentication Flow**: The most [well-maintained authentication library](https://quart-auth.readthedocs.io/en/latest/tutorials/quickstart.html) for Quart differs from the [current Flask authentication flow](https://pypi.org/project/Flask-HTTPAuth/), necessitating frontend changes. Although alternatives exist, they are not as well-maintained and may not be suitable long-term.
+3. **Different Authentication Flow**: The most [well-maintained authentication
+   library](https://quart-auth.readthedocs.io/en/latest/tutorials/quickstart.html)
+   for Quart differs from the [current Flask authentication
+   flow](https://pypi.org/project/Flask-HTTPAuth/), necessitating frontend
+   changes. Although alternatives exist, they are not as well-maintained and may
+   not be suitable long-term.
 
 ## Consequences
 
 This part outlines the expected outcomes, both positive and negative, of the
 decision. This may include its impact on different stakeholders, or any actions
 that need to be taken as a result of the decision.
+
+### Positive Outcomes
+
+1. **Improved Performance**: Adopting FastAPI will enhance the performance of
+   our backend, especially under high concurrency, due to its asynchronous
+   nature.
+2. **Automatic API Documentation**: FastAPI's built-in support for
+   OpenAPI/Swagger will streamline the process of generating and maintaining API
+   documentation.
+3. **Developer Experience**: FastAPI's developer-friendly features will likely
+   increase productivity and reduce the learning curve for new team members.
+
+### Negative Outcomes
+
+1. **Learning Curve**: Transitioning to FastAPI may require a learning period
+   for the team, especially for those unfamiliar with asynchronous programming
+   and type hints.
+2. **Refactoring Effort**: Existing Flask-based code will need to be refactored
+   to fit the FastAPI framework, which may require significant development time
+   and resources.
+3. **Dependency Management**: The switch to FastAPI may necessitate changes in
+   dependencies and libraries which are not compatible with out current setup.
 
 ## References
 
