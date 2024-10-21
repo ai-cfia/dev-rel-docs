@@ -9,8 +9,8 @@ optionnelle et devrait être incluse si elle apporte de la valeur au document.
 ## Résumé Exécutif
 
 Cette section fournit un bref résumé de la décision prise, en soulignant les
-points principaux afin que le lecteur puisse comprendre l'essentiel sans avoir
-à lire l'ensemble du document.
+points principaux afin que le lecteur puisse comprendre l'essentiel sans avoir à
+lire l'ensemble du document.
 
 ## Contexte
 

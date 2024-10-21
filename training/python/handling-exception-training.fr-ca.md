@@ -23,7 +23,7 @@
 ### Avant de commencer
 
 - [English version](handling-exception-training.md) :small_orange_diamond:
-- Cet entraînement est pour les développeurs backend, mais tous sont les
+- Cet entraînement est pour les développeur·euse·s backend, mais tous sont les
   bienvenus.
 
 ### Qu'est-ce qu'une Exception
@@ -48,7 +48,7 @@ Il existe deux types d'exceptions en Python :
 
 - Exceptions intégrées : Ces exceptions sont intégrées dans le langage.
 - Exceptions définies par l'utilisateur : Des exceptions personnalisées définies
-par les développeurs. Elles se trouvent généralement dans un module spécifique
+par les développeur·euse·s. Elles se trouvent généralement dans un module spécifique
 pour un projet donné.
 
 > Vous pouvez trouver la hiérarchie des exceptions intégrées [ici](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
@@ -199,7 +199,7 @@ exemple: du logging)
 > Python encourage l'approche **Easier to ask forgiveness than permission (EAFP)**
 plutôt que l'approche **Look before you lead (LBYL)**.
 
-|:bookmark_tabs:|C'est au développeur de décider du bon moment pour gérer une exception.|
+|:bookmark_tabs:|C'est à la·e développeur·euse de décider du bon moment pour gérer une exception.|
 |:--|:--|
 
 #### Utilisation du mot clé `raise`
@@ -271,8 +271,8 @@ clause `from` offre de meilleures alternatives.
 
 #### Utilisation de la clause `from`
 
-La clause optionnelle `from` permets au développeur d'associer une exception à celle
-qui est active.
+La clause optionnelle `from` permets à la·e développeur·euse d'associer une
+exception à celle qui est active.
 
 Si l'argument passé en paramètre à la clause `from` est une instance d'exception,
 celle-ci va s'attacher à l'attribut `__cause__`. S'il s'agit d'une classe d'exception,
@@ -430,9 +430,10 @@ ne faut pas lever manuellement ce type d'erreur dans votre code.
 Suivre ces règles lorsque vous écrivez des messages d'erreurs :
 
 - Les messages commencent par une lettre minuscule et se terminent sans point.
-- Le message d'erreur doit décrire clairement et succinctement la cause de l'exception.
-- N'oubliez pas que le message doit être suffisamment spécifique pour aider le développeur
-dans le processus de débogage.
+- Le message d'erreur doit décrire clairement et succinctement la cause de
+  l'exception.
+- N'oubliez pas que le message doit être suffisamment spécifique pour aider la·e
+développeur·se dans le processus de débogage.
 
 |:warning:|Message d'erreur|
 |--|:--|

@@ -7,8 +7,8 @@ au sein du Laboratoire d'Intelligence Artificielle (AI-Lab) de l'Agence
 Canadienne d'Inspection des Aliments (ACIA). Un ADR est conçu pour consigner les
 décisions qui traversent plusieurs projets et produits et qui sont suffisamment
 significatives pour nécessiter une conformité uniforme de toutes les équipes
-impliquées ([Ayers, 2019](#ayers); [Henderson, s.d.](#henderson)). Nous
-avons opté pour les ADR en raison de leur format versionné, clair et accessible,
+impliquées ([Ayers, 2019](#ayers); [Henderson, s.d.](#henderson)). Nous avons
+opté pour les ADR en raison de leur format versionné, clair et accessible,
 abordant des problèmes tels que les discussions répétées, les approches
 incohérentes et les difficultés d'intégration des nouveaux membres de l'équipe.
 Ce document définit les normes de création, de stockage et de modification des
@@ -40,12 +40,12 @@ délibération collective et la prise de décision.
 
 ## Contexte
 
-L'AI-Lab, composé de développeurs de logiciels et de scientifiques de données,
-est dédié à l'exploitation des technologies d'intelligence artificielle pour
-relever divers défis, tant au sein de l'organisation que dans des engagements
-externes. À mesure que l'équipe et ses projets se sont développés, des défis ont
-surgi pour maintenir un historique clair et compréhensible des décisions
-architecturales. Ces défis comprennent :
+L'AI-Lab, composé de développeur·euse·s de logiciels et de scientifiques de
+données, est dédié à l'exploitation des technologies d'intelligence artificielle
+pour relever divers défis, tant au sein de l'organisation que dans des
+engagements externes. À mesure que l'équipe et ses projets se sont développés,
+des défis ont surgi pour maintenir un historique clair et compréhensible des
+décisions architecturales. Ces défis comprennent :
 
 - Discussions répétées sur des décisions déjà prises : L'absence d'un processus
   formel de prise de décisions conduit souvent à revisiter les choix faits,
@@ -120,9 +120,8 @@ décisions triviales.
   ADR](./001-ailab-using-adr-template.fr-ca.md) pour plus de détails.
 - Format de Référencement : Utiliser le style APA pour la mise en forme des
   références ([American Psychological Association, n.d.]
-  (#american-psychological-association)).
-  Les citations dans le texte doivent être reliées aux références listées dans
-  la section Références.
+  (#american-psychological-association)). Les citations dans le texte doivent
+  être reliées aux références listées dans la section Références.
   - Exemple de référence : `<a id="ref-henderson"></a>Henderson, J. P. (s.d.).
       Enregistrement de Décision d'Architecture (ADR)...`
   - Exemple de citation : `([Henderson, s.d.](#henderson))`
@@ -289,30 +288,28 @@ Henderson, J. P. (n. d.). Architecture Decision Record (ADR). Retrieved from
 
 ### LeBar
 
-LeBar, Z. (5 mars 2022). What Are Wikis, and Why Should You Use Them?
-Retrieved from
+LeBar, Z. (5 mars 2022). What Are Wikis, and Why Should You Use Them? Retrieved
+from
 <https://business.tutsplus.com/tutorials/what-are-wikis-and-why-should-you-use-them--cms-19540>
 
 ### Microsoft
 
-Microsoft. (20 mars 2020). Record Architecture Decisions.
-Code With Engineering Playbook. Retrieved from
+Microsoft. (20 mars 2020). Record Architecture Decisions. Code With Engineering
+Playbook. Retrieved from
 <https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/>
 
 ### Monday
 
-Monday.com. (n. d.). How to Use a Project Decision Log
-for Optimal Results.
+Monday.com. (n. d.). How to Use a Project Decision Log for Optimal Results.
 Retrieved from <https://monday.com/blog/project-management/decision-log/>
 
 ### American Psychological Association
 
-American Psychological Association. (n. d.).
-Reference Examples. Retrieved from
+American Psychological Association. (n. d.). Reference Examples. Retrieved from
 <https://apastyle.apa.org/style-grammar-guidelines/references/examples>
 
 ### Library of Congress
 
-Library of Congress. (2017, December 21). Codes for the
-Representation of Names of Languages. Retrieved from
+Library of Congress. (2017, December 21). Codes for the Representation of Names
+of Languages. Retrieved from
 <https://www.loc.gov/standards/iso639-2/php/code_list.php>
