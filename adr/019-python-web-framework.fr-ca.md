@@ -17,17 +17,17 @@
 ## Résumé Exécutif
 
 Cette section fournit un résumé concis de la décision, en décrivant les points
-principaux pour que le lecteur comprenne l'essentiel sans lire l'intégralité
-du document.
+principaux pour que le lecteur comprenne l'essentiel sans lire l'intégralité du
+document.
 
 Cette ADR évalue et sélectionne un framework web Python pour le projet
 fertiscan-backend. Après avoir considéré plusieurs options, dont Flask, FastAPI
 et Quart, la décision a été prise d'adopter FastAPI. Ce choix est motivé par le
-support asynchrone intégré de FastAPI, la génération automatique de documentation
-OpenAPI/Swagger, et sa haute performance sous forte concurrence. Bien que Flask
-et Quart offrent leurs propres avantages, les fonctionnalités modernes et
-l'expérience développeur conviviale de FastAPI en font le framework le plus
-approprié pour nos besoins.
+support asynchrone intégré de FastAPI, la génération automatique de
+documentation OpenAPI/Swagger, et sa haute performance sous forte concurrence.
+Bien que Flask et Quart offrent leurs propres avantages, les fonctionnalités
+modernes et l'expérience développeur conviviale de FastAPI en font le framework
+le plus approprié pour nos besoins.
 
 ## Contexte
 
@@ -48,10 +48,10 @@ inclure des justifications et des arguments.
 La décision a été prise d'adopter FastAPI. Ce choix est motivé par le support
 asynchrone intégré de FastAPI, la génération automatique de documentation
 OpenAPI/Swagger, et sa haute performance sous forte concurrence. Bien que Flask
-et Quart offrent leurs propres avantages, les fonctionnalités modernes de FastAPI,
-telles que la validation des types et l'injection de dépendances, ainsi que
-son excellente expérience développeur, en font le framework le plus approprié
-pour nos besoins.
+et Quart offrent leurs propres avantages, les fonctionnalités modernes de
+FastAPI, telles que la validation des types et l'injection de dépendances, ainsi
+que son excellente expérience développeur, en font le framework le plus
+approprié pour nos besoins.
 
 ## Alternatives Considérées
 
@@ -69,7 +69,8 @@ de votre contexte :
 1. **Léger** : Framework minimaliste avec peu de surcharge, facile à démarrer et
    très flexible.
 2. **Écosystème Riche** : Mûr et bien documenté avec de nombreuses extensions
-   (e.g., Flask-RESTful, Flask-SQLAlchemy, etc.) pour étendre ses fonctionnalités.
+   (e.g., Flask-RESTful, Flask-SQLAlchemy, etc.) pour étendre ses
+   fonctionnalités.
 3. **Facile à Apprendre** : Idéal pour les petits projets et les prototypes
    rapides; bien adapté aux débutants.
 4. **Grande Communauté** : En tant que l'un des frameworks Python les plus
@@ -80,7 +81,8 @@ de votre contexte :
 **Inconvénients :**
 
 1. **Synchrone par Défaut** : La nature synchrone de Flask le rend moins adapté
-   aux charges de travail hautement concurrentes ou aux applications en temps réel.
+   aux charges de travail hautement concurrentes ou aux applications en temps
+   réel.
 2. **Pas de Support Asynchrone Natif** : Nécessite un effort supplémentaire et
    des bibliothèques (e.g., `aiohttp`) pour gérer les tâches asynchrones, ce qui
    peut compliquer le développement.
@@ -102,16 +104,16 @@ de votre contexte :
    la programmation asynchrone nativement, offrant de meilleures performances
    sous forte concurrence.
 2. **Swagger/OpenAPI Automatique** : Génère automatiquement la documentation
-   OpenAPI et Swagger interactive sans configuration, ce qui fait gagner du temps
-   et des efforts.
+   OpenAPI et Swagger interactive sans configuration, ce qui fait gagner du
+   temps et des efforts.
 3. **Haute Performance** : L'un des frameworks web Python les plus rapides,
    conçu pour la performance et l'évolutivité.
 4. **Fonctionnalités Modernes de Python** : Les annotations de type et la
    validation des données sont intégrées dans le framework, ce qui conduit à un
    code plus propre et plus robuste.
 5. **Convient aux Développeurs** : Offre une excellente expérience développeur
-   avec des fonctionnalités telles que la validation automatique, l'injection
-   de dépendances, l'intégration de Pydantic et des tests faciles.
+   avec des fonctionnalités telles que la validation automatique, l'injection de
+   dépendances, l'intégration de Pydantic et des tests faciles.
 6. **Transition Facile vers l'Asynchrone** : Vous pouvez facilement mélanger des
    routes synchrones et asynchrones, offrant une grande flexibilité.
 
@@ -153,23 +155,23 @@ de votre contexte :
 1. **Pas de Support Swagger Intégré** : Contrairement à FastAPI, Quart ne
    fournit pas de documentation API automatique, nécessitant des
 
- bibliothèques
-   supplémentaires ou une configuration manuelle.
+ bibliothèques supplémentaires ou une configuration manuelle.
 2. **Performance** : Bien que Quart soit asynchrone par défaut, il est
    généralement considéré comme légèrement plus lent que FastAPI dans les cas
    d'utilisation à haute concurrence.
 3. **Flux d'Authentification Différent** : La bibliothèque d'authentification la
-   plus [bien maintenue](https://quart-auth.readthedocs.io/en/latest/tutorials/quickstart.html)
-   pour Quart diffère du [flux d'authentification actuel de Flask](https://pypi.org/project/Flask-HTTPAuth/),
-   nécessitant des changements côté frontend. Bien que des alternatives existent,
-   elles ne sont pas aussi bien maintenues et peuvent ne pas être viables à
-   long terme.
+   plus [bien
+   maintenue](https://quart-auth.readthedocs.io/en/latest/tutorials/quickstart.html)
+   pour Quart diffère du [flux d'authentification actuel de
+   Flask](https://pypi.org/project/Flask-HTTPAuth/), nécessitant des changements
+   côté frontend. Bien que des alternatives existent, elles ne sont pas aussi
+   bien maintenues et peuvent ne pas être viables à long terme.
 
 ## Conséquences
 
 Cette partie expose les résultats attendus, positifs comme négatifs, de la
-décision. Cela peut inclure son impact sur les différentes parties prenantes,
-ou des actions à prendre en conséquence de la décision.
+décision. Cela peut inclure son impact sur les différentes parties prenantes, ou
+des actions à prendre en conséquence de la décision.
 
 ### Résultats Positifs
 
