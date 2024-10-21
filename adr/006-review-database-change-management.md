@@ -102,7 +102,7 @@ Cons:
 
 * Still in an early development phase
 
-#### Liquipedia
+#### Liquibase
 
 Pros:
 
