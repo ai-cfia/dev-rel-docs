@@ -102,6 +102,7 @@ experience, make it the most suitable framework for our needs.
    mature as Flask’s. Fewer extensions and third-party libraries are available
    compared to Flask.
 3. **Less Mature**: As a newer framework, it may not be as battle-tested in
+   certain scenarios compared to Flask.
 4. **Different Paradigm**: Our team is currently using either Flask or Quart,
    both of which share a similar API and development approach. FastAPI
    introduces a different paradigm and API, which would require our team to
