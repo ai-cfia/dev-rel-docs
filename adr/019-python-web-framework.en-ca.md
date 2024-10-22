@@ -16,10 +16,6 @@
 
 ## Executive Summary
 
-This section provides a brief summary of the decision being made, outlining the
-main points so that the reader can understand the gist without reading the
-entire document.
-
 This ADR evaluates and selects a Python web framework for the fertiscan-backend
 project. After considering various options, including Flask, FastAPI, and Quart,
 the decision was made to adopt FastAPI. This choice is driven by FastAPI's
@@ -40,9 +36,6 @@ Currently, we use Flask to build our APIs. While Flask has been sufficient, it
 
 ## Decision
 
-This section clearly states the decision that has been made, and may also
-include justification and reasoning.
-
 The decision was made to adopt FastAPI. This choice is driven by FastAPI's
 built-in asynchronous support, automatic generation of OpenAPI/Swagger
 documentation, and high performance under heavy concurrency. While Flask and
@@ -51,12 +44,6 @@ validation and dependency injection, along with its excellent developer
 experience, make it the most suitable framework for our needs.
 
 ## Alternatives Considered
-
-This section presents the different options or solutions considered before
-arriving at the final decision. Each alternative is usually discussed in a
-subsection.
-
-Here's a list of pros and cons for each framework based on your context:
 
 ### **Flask**
 
@@ -152,10 +139,6 @@ Here's a list of pros and cons for each framework based on your context:
 
 ## Consequences
 
-This part outlines the expected outcomes, both positive and negative, of the
-decision. This may include its impact on different stakeholders, or any actions
-that need to be taken as a result of the decision.
-
 ### Positive Outcomes
 
 1. **Improved Performance**: Adopting FastAPI will enhance the performance of
@@ -179,9 +162,6 @@ that need to be taken as a result of the decision.
    dependencies and libraries which are not compatible with out current setup.
 
 ## References
-
-Any documentation, research, or data that support the decision can be cited
-here. This can include academic papers, blog posts, or internal documents.
 
 - <https://fastapi.tiangolo.com/>
 - <https://flask.palletsprojects.com/en/3.0.x/>

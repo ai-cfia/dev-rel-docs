@@ -16,10 +16,6 @@
 
 ## Résumé Exécutif
 
-Cette section fournit un résumé concis de la décision, en décrivant les points
-principaux pour que le lecteur comprenne l'essentiel sans lire l'intégralité du
-document.
-
 Cette ADR évalue et sélectionne un framework web Python pour le projet
 fertiscan-backend. Après avoir considéré plusieurs options, dont Flask, FastAPI
 et Quart, la décision a été prise d'adopter FastAPI. Ce choix est motivé par le
@@ -54,10 +50,6 @@ que son excellente expérience développeur, en font le framework le plus
 approprié pour nos besoins.
 
 ## Alternatives Considérées
-
-Cette section présente les différentes options ou solutions envisagées avant
-d'arriver à la décision finale. Chaque alternative est généralement discutée
-dans une sous-section.
 
 Voici une liste des avantages et inconvénients de chaque framework en fonction
 de votre contexte :
@@ -169,10 +161,6 @@ de votre contexte :
 
 ## Conséquences
 
-Cette partie expose les résultats attendus, positifs comme négatifs, de la
-décision. Cela peut inclure son impact sur les différentes parties prenantes, ou
-des actions à prendre en conséquence de la décision.
-
 ### Résultats Positifs
 
 1. **Performance Améliorée** : L'adoption de FastAPI améliorera la performance
@@ -198,10 +186,6 @@ des actions à prendre en conséquence de la décision.
    avec notre configuration actuelle.
 
 ## Références
-
-Toute documentation, recherche ou donnée soutenant la décision peut être citée
-ici. Cela peut inclure des articles académiques, des billets de blog ou des
-documents internes.
 
 - <https://fastapi.tiangolo.com/>
 - <https://flask.palletsprojects.com/en/3.0.x/>
