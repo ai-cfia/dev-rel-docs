@@ -103,8 +103,6 @@
     (~40 minutes)
   * [Transactions avec
     Psycopg3](https://www.psycopg.org/psycopg3/docs/basic/transactions.html)
-  * [Bases de données pour les
-    développeur·euse·s](https://elenie.ca/databases-for-developers.html)
 * DevSecOps
   * [Qu'est-ce que DevOps ?](https://resources.github.com/devops/) (~25 minutes)
   * [DevOps
