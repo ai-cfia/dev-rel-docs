@@ -72,9 +72,9 @@ Blue-Green Deployment, and the concept of Database Views and Abstraction Layers.
 
 ## New Decision
 
-Based on the previous decision, we went ahead and decided it would be best to
-have a tool that would manage database versionning. We then went ahead and
-inspected alot of products.
+Based on the previous decision and the multi stage environment we are aiming to,
+we went ahead and decided it would be best to have a tool that would manage
+database versionning. We then went ahead and inspected alot of products.
 
 ### Considered versionning management tools
 
@@ -130,15 +130,18 @@ Pros:
 
 * Open source
 
-* Offers a Cl/CD workflow (not a GitOps one)
+* Support Azure PostgreSQL instances
+
+* Integrates with all common CI and release tools, including GitHub and Azure
+  DevOps.
 
 Cons:
 
-* Does not support Azure PostgreSQL instance
-
 * Most features are hidden behind a paywall
 
-* No SQL editor
+* Offers a Git client under paywall
+
+* Not an
 
 ## Improvement
 
