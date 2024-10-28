@@ -79,8 +79,8 @@ Make sure to include the following fields:
 base images provided by Microsoft: [GitHub](
 https://github.com/devcontainers/images).
 - **postCreateCommand**: Commands that will execute after the container's
-creation. This is useful for the installation of dependencies or initial
-setup tasks.
+creation. This is useful for the installation of dependencies or initial setup
+tasks.
 
 For a comprehensive list of options, refer to the [official documentation](
 https://containers.dev/implementors/json_reference/).
