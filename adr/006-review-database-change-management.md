@@ -141,8 +141,6 @@ Cons:
 
 * Offers a Git client under paywall
 
-* Not an
-
 ## Improvement
 
 Building upon the previous decision, we aim to enhance our database change
