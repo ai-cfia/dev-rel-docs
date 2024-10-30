@@ -64,7 +64,10 @@ briefly mention why in the following:
 ### Positive Outcomes
 
 1. **Improved Accuracy and Reliability**: DSPy optimizes prompts and weights,
-leading to more accurate and reliable data extraction.
+leading to more accurate and reliable data extraction. It has different
+mechanisms to improve the performance of LLMs which are so hard and time
+consuming to be done manually. Like using optimizaers that optimize prompts and
+weights to improve the defined metric.
 2. **Efficiency and Scalability**: DSPy's systematic approach simplifies
 development, enabling efficient scaling and adaptation to new data or LLMs.
 3. **Transparency and Control**: DSPy modules and signatures offer greater
